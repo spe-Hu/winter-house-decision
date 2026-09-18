@@ -15,6 +15,77 @@
     }
   ],
   "schools": {
+    "上海市嘉定区真新小学": {
+      "type": "primary",
+      "plate": "真新",
+      "tier": "成熟公办优质",
+      "range": "真新街道各社区（丰庄各村、金沙丽晶苑、真新新村等）",
+      "source_doc": "primary_img_08.jpg"
+    },
+    "上海市行知学校嘉定分校": {
+      "type": "middle",
+      "plate": "真新",
+      "tier": "行知品牌/区公办中坚",
+      "rank": 18,
+      "rate_26": "18.5%",
+      "range": "真新街道行政区域内所有住宅小区毕业生直升",
+      "source_doc": "middle_img_09.jpg"
+    },
+    "上海市嘉定区普通小学": {
+      "type": "primary",
+      "plate": "嘉定老城",
+      "tier": "百年公办名校/全区公办顶流",
+      "range": "嘉定老城区城中路、塔城路、博乐路等核心街道所属小区",
+      "source_doc": "primary_img_01.jpg"
+    },
+    "上海市嘉定区中溪小学": {
+      "type": "primary",
+      "plate": "嘉定老城",
+      "tier": "老牌公办优质",
+      "range": "塔城东路、仓场路、温宿路等周边居住区",
+      "source_doc": "primary_img_02.jpg"
+    },
+    "上海市嘉定一中附属实验中学": {
+      "type": "middle",
+      "plate": "嘉定老城",
+      "tier": "嘉一系区重点实验初中",
+      "rank": 6,
+      "rate_26": "28.5%",
+      "range": "对口中溪小学等老城优质小学毕业生按对口升学",
+      "source_doc": "middle_img_02.jpg"
+    },
+    "上海市嘉定区实验小学北校区": {
+      "type": "primary",
+      "plate": "菊园新区",
+      "tier": "全区公办顶流新校区",
+      "range": "胜竹路以南、平城路以北、城北路以西、胜辛路以东地区",
+      "source_doc": "primary_img_03.jpg"
+    },
+    "上海市嘉定区中科实验中学": {
+      "type": "middle",
+      "plate": "菊园新区",
+      "tier": "中科院系公办名校",
+      "rank": 11,
+      "rate_26": "23.8%",
+      "range": "菊园新区内实验小学北校区及相关社区对口直升",
+      "source_doc": "middle_img_03.jpg"
+    },
+    "上海市嘉定区外冈小学": {
+      "type": "primary",
+      "plate": "外冈",
+      "tier": "镇区成熟公办",
+      "range": "外冈镇全域各居委与行政村",
+      "source_doc": "primary_img_10.jpg"
+    },
+    "上海市嘉定区外冈中学": {
+      "type": "middle",
+      "plate": "外冈",
+      "tier": "镇区公办综合初中",
+      "rank": 35,
+      "rate_26": "12.0%",
+      "range": "接收外冈小学五年级毕业生直升",
+      "source_doc": "middle_img_10.jpg"
+    },
     "交大附中附属嘉定洪德中学": {
       "type": "middle",
       "plate": "嘉定新城",

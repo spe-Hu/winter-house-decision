@@ -22,7 +22,7 @@ echo "▶ [1/6] 执行户型图物理房间标尺元数据库构建 (build_floor
 python3 scripts/build_floorplan_catalog.py
 echo "  ✅ [1/6] 户型真值库构建完毕。"
 
-# 步骤 2：全量 80 个小区 168 套户型数据对齐与断言
+# 步骤 2：全量 140 个小区 288 套户型数据对齐与断言
 echo "▶ [2/6] 执行户型真实图片对齐与物理房间数硬断言 (refine_layouts_data.py)..."
 python3 scripts/refine_layouts_data.py
 echo "  ✅ [2/6] 户型档案物理真值对齐校验通过。"
@@ -30,7 +30,7 @@ echo "  ✅ [2/6] 户型档案物理真值对齐校验通过。"
 # 步骤 3：2026 官方权威双学区（小学+初中）真值库对齐与划片考证
 echo "▶ [3/6] 执行 2026 官方学区权威真值对齐与断言 (align_school_ground_truth.py)..."
 python3 scripts/align_school_ground_truth.py
-echo "  ✅ [3/6] 官方学区权威真值库与 80 个小区全量对齐完成。"
+echo "  ✅ [3/6] 官方学区权威真值库与 140 个小区全量对齐完成。"
 
 # 步骤 4：多源立体交通噪音空间矢量拓扑计算
 echo "▶ [4/6] 执行多源立体交通噪音空间几何引擎 (spatial_noise_engine.py)..."

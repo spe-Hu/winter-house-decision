@@ -8702,61 +8702,61 @@ window.COMMUNITY_DATA = [
     }
   },
   {
-    "id": "5011000014433",
+    "id": "5011000080022",
     "name": "嘉城三期",
     "parent_cluster": "嘉城",
-    "phase_info": "三期 (金沙江西路1075弄，2009年建，金沙江西路地铁站直达)",
+    "phase_info": "江桥百万方超大社区核心品质期数，2008年建",
     "plate": "江桥",
     "district": "嘉定区",
-    "address": "上海市嘉定区金沙江西路1075弄",
+    "address": "上海市嘉定区靖远路1099弄",
     "coordinates": [
-      121.3235,
-      31.236
+      121.332,
+      31.261
     ],
-    "built_year": 2009,
+    "built_year": 2008,
     "building_type": "小高层板楼",
-    "green_rate": "36%",
-    "plot_ratio": "1.8",
-    "property_fee": "1.9元/㎡/月",
-    "total_units": 1560,
+    "green_rate": "38%",
+    "plot_ratio": 1.9,
+    "property_fee": "1.6元/㎡/月",
+    "total_units": 1600,
     "avg_price_wan": 4.1,
-    "ke_url": "https://sh.ke.com/xiaoqu/5011000014433/",
-    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000014433/",
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080022/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080022/",
     "metro": {
       "station_name": "金沙江西路站",
       "line": "13号线",
       "station_coords": [
-        121.3245,
-        31.2389
+        121.335,
+        31.245
       ],
-      "distance_m": 400,
-      "walk_time_min": 5,
-      "route_desc": "沿金沙江西路向东步行400米直达地铁口"
+      "distance_m": 1600,
+      "walk_time_min": 20,
+      "route_desc": "门口多趟公交直达13号线金沙江西路站及14号线封浜站"
     },
     "transit_renmin_sq": {
-      "dest": "人民广场 (上海市中心核心标杆)",
-      "route": "13号线 -> 南京西路直达",
-      "distance_km": 17.2,
-      "duration_min": 29,
-      "fare_yuan": 5
+      "dest": "人民广场",
+      "route": "公交接驳13号线 -> 市中心",
+      "distance_km": 19.5,
+      "duration_min": 45,
+      "fare_yuan": 6
     },
     "schools": [
       {
-        "name": "上海市嘉定区华江小学 / 华江中学",
-        "type": "公办普通",
-        "dist": "约550米",
-        "time": "步行约7分钟"
+        "name": "上海市嘉定区江桥小学",
+        "type": "成熟公办",
+        "dist": "约600米",
+        "time": "步行8分钟"
       }
     ],
-    "commercial": "金沙商业广场、江桥万达、大润发超市",
-    "medical": "江桥医院(900米)",
+    "commercial": "嘉怡路商业步行街、江桥老街市场、沃尔玛超市",
+    "medical": "江桥医院(约1.8km)",
     "tags": [
-      "13号线步行5分钟",
-      "低总价刚需盘",
-      "配套极度醇熟",
-      "高出租回报率"
+      "百万方超级大盘",
+      "成熟生活氛围",
+      "带电梯小高层",
+      "绿化水系完整"
     ],
-    "phase_comparison": "【期数对比】：三期紧邻金沙江西路站，比一二期距离地铁更近，户型以70多平南北两房和90多平三房为主，刚需上车极为畅销。",
+    "phase_comparison": "【选筹指南】：三期全部配备电梯，楼间距大，采光优良，属于老江桥板块内高口碑的自住大盘。",
     "layouts": [
       {
         "category": "两房",
@@ -8817,109 +8817,107 @@ window.COMMUNITY_DATA = [
       "source_doc": "primary_img_42.jpg"
     },
     "noise_analysis": {
-      "status": "🟡 局部可感知 (次级声学环境)",
-      "dist_to_highway_m": 411,
-      "dist_to_metro_elevated_m": 7117,
-      "dist_to_arterial_m": 846,
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "dist_to_highway_m": 759,
+      "dist_to_metro_elevated_m": 4588,
+      "dist_to_arterial_m": 2013,
       "is_vetoed": false,
-      "desc": "【立体噪音评估】：距地上轨交线超过7117米，属于完全静音安全距离。 | 距主干道约846米，深处生活街区，道路环境静雅。 | 距嘉闵高架路约411米，前排楼栋与城市绿化带已吸收绝大部分高频声浪。",
-      "selection_guide": "【实勘避坑指南】：整体居住舒适，仅高层极端安静时能听到微弱背景声，正常双层中空玻璃即可满足睡眠要求。"
+      "desc": "【立体噪音评估】：距地上轨交线超过4588米，属于完全静音安全距离。 | 距主干道约2013米，深处生活街区，道路环境静雅。 | 距最近高速公路约759米，属于优良静谧生活区。",
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
     },
     "noise_evaluation": {
-      "status": "🟡 局部可感知 (次级声学环境)",
-      "level_code": "yellow",
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "level_code": "green",
       "is_vetoed": false,
-      "summary": "🚇轨交高架:7117m(🟢 无高架轨交噪) · 🛣️高速:411m · 🚗主干道:846m",
+      "summary": "🚇轨交高架:4588m(🟢 无高架轨交噪) · 🛣️高速:759m · 🚗主干道:2013m",
       "elevated_metro": {
         "name": "11号线地上高架轻轨线",
-        "distance_m": 7117,
+        "distance_m": 4588,
         "level": "🟢 无高架轨交噪",
-        "desc": "距地上轨交线超过7117米，属于完全静音安全距离。"
+        "desc": "距地上轨交线超过4588米，属于完全静音安全距离。"
       },
       "expressway": {
         "name": "嘉闵高架路",
-        "distance_m": 411,
-        "level": "🟡 中度消解",
-        "desc": "距嘉闵高架路约411米，前排楼栋与城市绿化带已吸收绝大部分高频声浪。"
+        "distance_m": 759,
+        "level": "🟢 远离高速",
+        "desc": "距最近高速公路约759米，属于优良静谧生活区。"
       },
       "arterial_road": {
         "name": "曹安公路 (货运大动脉)",
-        "distance_m": 846,
+        "distance_m": 2013,
         "level": "🟢 内部静谧",
-        "desc": "距主干道约846米，深处生活街区，道路环境静雅。"
+        "desc": "距主干道约2013米，深处生活街区，道路环境静雅。"
       },
-      "selection_guide": "【实勘避坑指南】：整体居住舒适，仅高层极端安静时能听到微弱背景声，正常双层中空玻璃即可满足睡眠要求。"
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
     },
     "school_district_note": "金沙江西路1075弄，对口华江小学与华江中学。",
     "scoring": {
-      "default_total": 83.0,
+      "default_total": 86.4,
       "dimensions": {
-        "transit": 85,
-        "school": 80,
-        "layout": 85,
-        "environment": 82,
-        "commercial_asset": 82
-      },
-      "custom_override": null,
-      "user_notes": ""
+        "transit": 78,
+        "school": 84,
+        "layout": 87,
+        "environment": 96,
+        "commercial_asset": 90
+      }
     }
   },
   {
-    "id": "5011000014434",
+    "id": "5011000080023",
     "name": "嘉城四期",
     "parent_cluster": "嘉城",
-    "phase_info": "四期海波名邸 (海波路850弄，2012年建，近14号线乐秀路站)",
+    "phase_info": "嘉怡路商业街正中心，2010年建，成熟生活配套",
     "plate": "江桥",
     "district": "嘉定区",
-    "address": "上海市嘉定区海波路850弄",
+    "address": "上海市嘉定区嘉怡路280弄",
     "coordinates": [
-      121.314,
-      31.246
+      121.334,
+      31.263
     ],
-    "built_year": 2012,
+    "built_year": 2010,
     "building_type": "高层板楼",
-    "green_rate": "37%",
-    "plot_ratio": "2.1",
-    "property_fee": "2.2元/㎡/月",
-    "total_units": 1200,
-    "avg_price_wan": 4.3,
-    "ke_url": "https://sh.ke.com/xiaoqu/5011000014434/",
-    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000014434/",
+    "green_rate": "40%",
+    "plot_ratio": 2.0,
+    "property_fee": "1.8元/㎡/月",
+    "total_units": 1350,
+    "avg_price_wan": 4.2,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080023/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080023/",
     "metro": {
-      "station_name": "乐秀路站",
-      "line": "14号线",
+      "station_name": "金沙江西路站",
+      "line": "13号线",
       "station_coords": [
-        121.3095,
-        31.2435
+        121.335,
+        31.245
       ],
-      "distance_m": 650,
-      "walk_time_min": 8,
-      "route_desc": "沿海波路向西步行650米达14号线乐秀路站"
+      "distance_m": 1800,
+      "walk_time_min": 22,
+      "route_desc": "门口嘉怡路公交枢纽直达13号线与14号线"
     },
     "transit_renmin_sq": {
-      "dest": "人民广场 (上海市中心核心标杆)",
-      "route": "14号线直达静安寺/陆家嘴",
-      "distance_km": 18.2,
-      "duration_min": 31,
-      "fare_yuan": 5
+      "dest": "人民广场",
+      "route": "公交接驳13号线 -> 市中心",
+      "distance_km": 19.8,
+      "duration_min": 48,
+      "fare_yuan": 6
     },
     "schools": [
       {
-        "name": "上海市嘉定区卢湾一中心实验小学 / 曹二海波校区",
-        "type": "优质双公办",
-        "dist": "约200米",
-        "time": "步行约3分钟"
+        "name": "上海市嘉定区江桥小学",
+        "type": "成熟公办",
+        "dist": "约700米",
+        "time": "步行9分钟"
       }
     ],
-    "commercial": "海波路商业街、万达广场、盒马mini",
-    "medical": "上海市第一人民医院江桥院区(800米)",
+    "commercial": "嘉怡路步行街(下楼即达)、农工商超市、永辉超市",
+    "medical": "江桥医院(约2.0km)",
     "tags": [
-      "14号线步行8分钟",
-      "卢湾一中心正对门",
-      "曹二附中海波学区",
-      "自住首选"
+      "下楼即商业街",
+      "嘉城最新期数",
+      "外立面新颖",
+      "人车分流"
     ],
-    "phase_comparison": "【期数对比】：四期最大优势在于学区红利，出门正对卢湾一中心实验小学，距离曹二附中海波校区仅几百米，是江桥家庭陪读首选盘。",
+    "phase_comparison": "【选筹指南】：嘉城各期中最新的一期，外立面与电梯维护极佳，下楼即是各类生鲜超市与餐饮，生活便利度居全镇前列。",
     "layouts": [
       {
         "category": "两房",
@@ -8928,13 +8926,13 @@ window.COMMUNITY_DATA = [
         "area": "85㎡",
         "usable_area": "69.8㎡",
         "usable_rate": "82.1%",
-        "price_wan": 365.5,
-        "unit_price": 43000,
+        "price_wan": 357.0,
+        "unit_price": 42000,
         "orientation": "南",
         "tags": [
           "实测纯真两房",
           "实测套内69.8㎡",
-          "总价约365万",
+          "总价约357万",
           "南"
         ],
         "floor_plan_local": "assets/floorplans/107116520186.jpg",
@@ -8949,14 +8947,14 @@ window.COMMUNITY_DATA = [
         "area": "108㎡",
         "usable_area": "90.4㎡",
         "usable_rate": "83.7%",
-        "price_wan": 464.4,
-        "unit_price": 43000,
+        "price_wan": 453.6,
+        "unit_price": 42000,
         "orientation": "南北双阳台",
         "tags": [
           "实测纯真三房",
           "三开间独立卧室",
           "实测套内90.4㎡",
-          "总价约464万"
+          "总价约453万"
         ],
         "floor_plan_local": "assets/floorplans/107116447609.jpg",
         "verified_rooms_desc": "卧室A (12.3㎡)、卧室B (11.5㎡)、卧室C (10.0㎡)、客厅 (33.9㎡)、厨房 (5.9㎡)、卫生间A (4.7㎡)、卫生间B (4.2㎡)、阳台A (2.9㎡)、阳台B (5.0㎡)",
@@ -8980,51 +8978,49 @@ window.COMMUNITY_DATA = [
       "source_doc": "primary_img_42.jpg"
     },
     "noise_analysis": {
-      "status": "🟠 显著干扰 (临近主干交通走廊)",
-      "dist_to_highway_m": 1167,
-      "dist_to_metro_elevated_m": 5956,
-      "dist_to_arterial_m": 87,
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "dist_to_highway_m": 981,
+      "dist_to_metro_elevated_m": 4455,
+      "dist_to_arterial_m": 2257,
       "is_vetoed": false,
-      "desc": "【立体噪音评估】：距地上轨交线超过5956米，属于完全静音安全距离。 | 距主干道约87米，临路一侧有一定车流背景声，内圈组团受影响较小。 | 距最近高速公路约1167米，属于优良静谧生活区。",
-      "selection_guide": "【实勘避坑指南】：属于半开放受噪区，外圈与内圈噪音差达10-15分贝。看房时务必在早晚高峰期实地测听，锁定中庭无对冲楼栋。"
+      "desc": "【立体噪音评估】：距地上轨交线超过4455米，属于完全静音安全距离。 | 距主干道约2257米，深处生活街区，道路环境静雅。 | 距最近高速公路约981米，属于优良静谧生活区。",
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
     },
     "noise_evaluation": {
-      "status": "🟠 显著干扰 (临近主干交通走廊)",
-      "level_code": "orange",
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "level_code": "green",
       "is_vetoed": false,
-      "summary": "🚇轨交高架:5956m(🟢 无高架轨交噪) · 🛣️高速:1167m · 🚗主干道:87m",
+      "summary": "🚇轨交高架:4455m(🟢 无高架轨交噪) · 🛣️高速:981m · 🚗主干道:2257m",
       "elevated_metro": {
         "name": "11号线地上高架轻轨线",
-        "distance_m": 5956,
+        "distance_m": 4455,
         "level": "🟢 无高架轨交噪",
-        "desc": "距地上轨交线超过5956米，属于完全静音安全距离。"
+        "desc": "距地上轨交线超过4455米，属于完全静音安全距离。"
       },
       "expressway": {
         "name": "嘉闵高架路",
-        "distance_m": 1167,
+        "distance_m": 981,
         "level": "🟢 远离高速",
-        "desc": "距最近高速公路约1167米，属于优良静谧生活区。"
+        "desc": "距最近高速公路约981米，属于优良静谧生活区。"
       },
       "arterial_road": {
         "name": "曹安公路 (货运大动脉)",
-        "distance_m": 87,
-        "level": "🟠 次级影响",
-        "desc": "距主干道约87米，临路一侧有一定车流背景声，内圈组团受影响较小。"
+        "distance_m": 2257,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约2257米，深处生活街区，道路环境静雅。"
       },
-      "selection_guide": "【实勘避坑指南】：属于半开放受噪区，外圈与内圈噪音差达10-15分贝。看房时务必在早晚高峰期实地测听，锁定中庭无对冲楼栋。"
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
     },
     "school_district_note": "海波路850弄正对卢湾一中心，对口卢湾一中心实小与曹二海波校区。",
     "scoring": {
-      "default_total": 80.1,
+      "default_total": 86.6,
       "dimensions": {
-        "transit": 85,
-        "school": 80,
-        "layout": 85,
-        "environment": 68,
-        "commercial_asset": 82
-      },
-      "custom_override": null,
-      "user_notes": ""
+        "transit": 77,
+        "school": 84,
+        "layout": 88,
+        "environment": 96,
+        "commercial_asset": 92
+      }
     }
   },
   {
@@ -9517,61 +9513,61 @@ window.COMMUNITY_DATA = [
     }
   },
   {
-    "id": "5011000017766",
+    "id": "5011000080006",
     "name": "嘉宝梦之缘",
     "parent_cluster": "嘉宝梦之缘",
-    "phase_info": "景苑 (康丰路58弄，2015年建，马陆站西侧主力成熟大盘)",
-    "plate": "马陆",
+    "phase_info": "裕民南路品质住区，2014年建，高绿化现代社区",
+    "plate": "嘉定新城",
     "district": "嘉定区",
-    "address": "上海市嘉定区康丰路58弄",
+    "address": "上海市嘉定区裕民南路1318弄",
     "coordinates": [
-      121.272,
-      31.3215
+      121.2595,
+      31.336
     ],
-    "built_year": 2015,
+    "built_year": 2014,
     "building_type": "高层板楼",
-    "green_rate": "38%",
-    "plot_ratio": "2.2",
-    "property_fee": "2.5元/㎡/月",
-    "total_units": 1800,
-    "avg_price_wan": 4.0,
-    "ke_url": "https://sh.ke.com/xiaoqu/5011000017766/",
-    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000017766/",
+    "green_rate": "40%",
+    "plot_ratio": 2.1,
+    "property_fee": "2.6元/㎡/月",
+    "total_units": 1020,
+    "avg_price_wan": 4.1,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080006/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080006/",
     "metro": {
-      "station_name": "马陆站",
+      "station_name": "嘉定新城站",
       "line": "11号线",
       "station_coords": [
-        121.2783,
-        31.3204
+        121.2555,
+        31.3308
       ],
-      "distance_m": 600,
-      "walk_time_min": 8,
-      "route_desc": "出小区向东过康丰路直行至马陆站"
+      "distance_m": 850,
+      "walk_time_min": 11,
+      "route_desc": "沿裕民南路向西南步行850米到达嘉定新城站"
     },
     "transit_renmin_sq": {
-      "dest": "人民广场 (上海市中心核心标杆)",
-      "route": "11号线 -> 14号线",
-      "distance_km": 28.0,
-      "duration_min": 44,
+      "dest": "人民广场",
+      "route": "11号线(嘉定新城站) -> 14号线",
+      "distance_km": 30.1,
+      "duration_min": 46,
       "fare_yuan": 6
     },
     "schools": [
       {
-        "name": "上海市嘉定区马陆小学 / 马陆育才联合中学",
-        "type": "普通公办",
-        "dist": "约900米",
-        "time": "步行约12分钟"
+        "name": "上海市嘉定区德富路小学",
+        "type": "优质公办",
+        "dist": "约600米",
+        "time": "步行8分钟"
       }
     ],
-    "commercial": "大融城(步行500m)、康丰路生鲜街、马陆公园",
-    "medical": "瑞金医院北院(2.0公里)",
+    "commercial": "万达广场(700米)、宝龙广场、西云楼",
+    "medical": "瑞金医院北院(约1.1km)",
     "tags": [
-      "马陆站步行8分钟",
-      "大融城商圈",
-      "成熟大盘",
-      "绿化景观优良"
+      "嘉宝品牌物业",
+      "德富路中小学",
+      "高绿化率",
+      "次新品质"
     ],
-    "phase_comparison": "【选筹对比】：马陆板块规模最大的标杆成熟大盘，户型跨度大（75平两房到135平四房），物业维护规范，挂牌单价4.0万具有很强流通底盘。",
+    "phase_comparison": "【选筹指南】：嘉宝自持物业口碑良好，建筑用料扎实，外立面历久弥新，属于德富路学区内保值率较高的自住盘。",
     "layouts": [
       {
         "category": "两房",
@@ -9580,13 +9576,13 @@ window.COMMUNITY_DATA = [
         "area": "89㎡",
         "usable_area": "73.7㎡",
         "usable_rate": "82.8%",
-        "price_wan": 356.0,
-        "unit_price": 40000,
+        "price_wan": 364.9,
+        "unit_price": 41000,
         "orientation": "南北通透",
         "tags": [
           "实测纯真两房",
           "实测套内73.7㎡",
-          "总价约356万",
+          "总价约364万",
           "南北通透"
         ],
         "floor_plan_local": "assets/floorplans/107116542933.jpg",
@@ -9601,14 +9597,14 @@ window.COMMUNITY_DATA = [
         "area": "108㎡",
         "usable_area": "90.4㎡",
         "usable_rate": "83.7%",
-        "price_wan": 432.0,
-        "unit_price": 40000,
+        "price_wan": 442.8,
+        "unit_price": 41000,
         "orientation": "南北双阳台",
         "tags": [
           "实测纯真三房",
           "三开间独立卧室",
           "实测套内90.4㎡",
-          "总价约432万"
+          "总价约442万"
         ],
         "floor_plan_local": "assets/floorplans/107116447609.jpg",
         "verified_rooms_desc": "卧室A (12.3㎡)、卧室B (11.5㎡)、卧室C (10.0㎡)、客厅 (33.9㎡)、厨房 (5.9㎡)、卫生间A (4.7㎡)、卫生间B (4.2㎡)、阳台A (2.9㎡)、阳台B (5.0㎡)",
@@ -9632,51 +9628,49 @@ window.COMMUNITY_DATA = [
       "source_doc": "primary_img_05.jpg"
     },
     "noise_analysis": {
-      "status": "🟠 显著干扰 (临近主干交通走廊)",
-      "dist_to_highway_m": 1501,
-      "dist_to_metro_elevated_m": 170,
-      "dist_to_arterial_m": 1795,
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "dist_to_highway_m": 865,
+      "dist_to_metro_elevated_m": 488,
+      "dist_to_arterial_m": 567,
       "is_vetoed": false,
-      "desc": "【立体噪音评估】：距11号线地上高架约170米，非临轨第一排有部分楼栋遮挡，但开窗时进出站轮轨声依然清晰可辨。 | 距主干道约1795米，深处生活街区，道路环境静雅。 | 距最近高速公路约1501米，属于优良静谧生活区。",
-      "selection_guide": "【实勘避坑指南】：属于半开放受噪区，外圈与内圈噪音差达10-15分贝。看房时务必在早晚高峰期实地测听，锁定中庭无对冲楼栋。"
+      "desc": "【立体噪音评估】：距地上轨交线超过488米，属于完全静音安全距离。 | 距主干道约567米，深处生活街区，道路环境静雅。 | 距最近高速公路约865米，属于优良静谧生活区。",
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
     },
     "noise_evaluation": {
-      "status": "🟠 显著干扰 (临近主干交通走廊)",
-      "level_code": "orange",
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "level_code": "green",
       "is_vetoed": false,
-      "summary": "🚇轨交高架:170m(🟠 显著感知) · 🛣️高速:1501m · 🚗主干道:1795m",
+      "summary": "🚇轨交高架:488m(🟢 无高架轨交噪) · 🛣️高速:865m · 🚗主干道:567m",
       "elevated_metro": {
         "name": "11号线地上高架轻轨线",
-        "distance_m": 170,
-        "level": "🟠 显著感知",
-        "desc": "距11号线地上高架约170米，非临轨第一排有部分楼栋遮挡，但开窗时进出站轮轨声依然清晰可辨。"
+        "distance_m": 488,
+        "level": "🟢 无高架轨交噪",
+        "desc": "距地上轨交线超过488米，属于完全静音安全距离。"
       },
       "expressway": {
         "name": "S5沪嘉高速",
-        "distance_m": 1501,
+        "distance_m": 865,
         "level": "🟢 远离高速",
-        "desc": "距最近高速公路约1501米，属于优良静谧生活区。"
+        "desc": "距最近高速公路约865米，属于优良静谧生活区。"
       },
       "arterial_road": {
         "name": "胜辛路 (双向8车道主干道)",
-        "distance_m": 1795,
+        "distance_m": 567,
         "level": "🟢 内部静谧",
-        "desc": "距主干道约1795米，深处生活街区，道路环境静雅。"
+        "desc": "距主干道约567米，深处生活街区，道路环境静雅。"
       },
-      "selection_guide": "【实勘避坑指南】：属于半开放受噪区，外圈与内圈噪音差达10-15分贝。看房时务必在早晚高峰期实地测听，锁定中庭无对冲楼栋。"
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
     },
     "school_district_note": "康丰路58弄，对口马陆小学与马陆育才联合中学。",
     "scoring": {
-      "default_total": 80.1,
+      "default_total": 88.0,
       "dimensions": {
-        "transit": 85,
-        "school": 80,
-        "layout": 85,
-        "environment": 68,
-        "commercial_asset": 82
-      },
-      "custom_override": null,
-      "user_notes": ""
+        "transit": 83,
+        "school": 88,
+        "layout": 87,
+        "environment": 96,
+        "commercial_asset": 87
+      }
     }
   },
   {
@@ -12288,61 +12282,61 @@ window.COMMUNITY_DATA = [
     }
   },
   {
-    "id": "5011000035544",
+    "id": "5011000080037",
     "name": "仓场新村",
     "parent_cluster": "仓场新村",
-    "phase_info": "新村 (仓场路225弄，1996年建，迎园学区超低总价入门盘)",
-    "plate": "嘉定老城",
+    "phase_info": "马陆成熟生活社区，2002年建，高得房率成熟公房",
+    "plate": "马陆",
     "district": "嘉定区",
-    "address": "上海市嘉定区仓场路225弄",
+    "address": "上海市嘉定区仓场路333弄",
     "coordinates": [
-      121.263,
-      31.368
+      121.269,
+      31.314
     ],
-    "built_year": 1996,
-    "building_type": "成熟多层公房",
+    "built_year": 2002,
+    "building_type": "多层板楼",
     "green_rate": "30%",
-    "plot_ratio": "1.5",
-    "property_fee": "0.8元/㎡/月",
-    "total_units": 1300,
-    "avg_price_wan": 2.7,
-    "ke_url": "https://sh.ke.com/xiaoqu/5011000035544/",
-    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000035544/",
+    "plot_ratio": 1.5,
+    "property_fee": "0.9元/㎡/月",
+    "total_units": 650,
+    "avg_price_wan": 2.8,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080037/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080037/",
     "metro": {
-      "station_name": "白银路站",
+      "station_name": "马陆站",
       "line": "11号线",
       "station_coords": [
-        121.2406,
-        31.3469
+        121.2783,
+        31.3204
       ],
-      "distance_m": 2000,
-      "walk_time_min": 24,
-      "route_desc": "公交换乘8分钟达白银路站"
+      "distance_m": 1200,
+      "walk_time_min": 15,
+      "route_desc": "门口公交嘉定15路5分钟直达马陆站"
     },
     "transit_renmin_sq": {
-      "dest": "人民广场 (上海市中心核心标杆)",
-      "route": "公交驳接 -> 11号线 -> 14号线",
-      "distance_km": 31.5,
-      "duration_min": 48,
-      "fare_yuan": 8
+      "dest": "人民广场",
+      "route": "公交接驳11号线 -> 14号线",
+      "distance_km": 28.0,
+      "duration_min": 49,
+      "fare_yuan": 6
     },
     "schools": [
       {
-        "name": "上海市嘉定区迎园小学 / 迎园中学",
-        "type": "老牌名校",
-        "dist": "约350米",
-        "time": "步行约5分钟"
+        "name": "上海市嘉定区马陆小学",
+        "type": "成熟公办",
+        "dist": "约500米",
+        "time": "步行6分钟"
       }
     ],
-    "commercial": "新成菜市场(出门即达)、仓场路沿街商铺",
-    "medical": "迎园医院(400米)",
+    "commercial": "马陆老街、农贸市场",
+    "medical": "马陆卫生院(400m)",
     "tags": [
-      "迎园中学名校对口",
-      "单价2.7万极低门槛",
-      "菜场医院下楼即达",
-      "总价140万起上车"
+      "单价2字头",
+      "总价超低",
+      "公房高得房率",
+      "生活成本极低"
     ],
-    "phase_comparison": "【选筹对比】：嘉定全区购入名牌公办迎园中学门槛最低的标杆盘，单价2.7万，套均总价140-180万，是老牌强校名额的高性价比载体。",
+    "phase_comparison": "【选筹指南】：嘉定全域难得的2字头单价房源，总价100多万即可搞定两房，无物业费负担，适合绝对预算有限的工薪置业。",
     "layouts": [
       {
         "category": "两房",
@@ -12351,13 +12345,13 @@ window.COMMUNITY_DATA = [
         "area": "86㎡",
         "usable_area": "71.3㎡",
         "usable_rate": "82.9%",
-        "price_wan": 232.2,
-        "unit_price": 27000,
+        "price_wan": 240.8,
+        "unit_price": 28000,
         "orientation": "南",
         "tags": [
           "实测纯真两房",
           "实测套内71.3㎡",
-          "总价约232万",
+          "总价约240万",
           "南"
         ],
         "floor_plan_local": "assets/floorplans/107116341545.jpg",
@@ -12372,14 +12366,14 @@ window.COMMUNITY_DATA = [
         "area": "102㎡",
         "usable_area": "85.4㎡",
         "usable_rate": "83.7%",
-        "price_wan": 275.4,
-        "unit_price": 27000,
+        "price_wan": 285.6,
+        "unit_price": 28000,
         "orientation": "南北通透",
         "tags": [
           "实测纯真三房",
           "三开间独立卧室",
           "实测套内85.4㎡",
-          "总价约275万"
+          "总价约285万"
         ],
         "floor_plan_local": "assets/floorplans/107116518245.jpg",
         "verified_rooms_desc": "卧室A (14.1㎡)、卧室B (9.3㎡)、卧室C (11.0㎡)、客厅 (32.3㎡)、厨房 (6.5㎡)、卫生间 (4.6㎡)、阳台A (4.3㎡)、阳台B (3.3㎡)",
@@ -12404,50 +12398,48 @@ window.COMMUNITY_DATA = [
     },
     "noise_analysis": {
       "status": "🟢 优质静谧社区 (深居静雅住宅区)",
-      "dist_to_highway_m": 995,
-      "dist_to_metro_elevated_m": 2586,
-      "dist_to_arterial_m": 793,
+      "dist_to_highway_m": 1006,
+      "dist_to_metro_elevated_m": 1048,
+      "dist_to_arterial_m": 1526,
       "is_vetoed": false,
-      "desc": "【立体噪音评估】：距地上轨交线超过2586米，属于完全静音安全距离。 | 距主干道约793米，深处生活街区，道路环境静雅。 | 距最近高速公路约995米，属于优良静谧生活区。",
+      "desc": "【立体噪音评估】：距地上轨交线超过1048米，属于完全静音安全距离。 | 距主干道约1526米，深处生活街区，道路环境静雅。 | 距最近高速公路约1006米，属于优良静谧生活区。",
       "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
     },
     "noise_evaluation": {
       "status": "🟢 优质静谧社区 (深居静雅住宅区)",
       "level_code": "green",
       "is_vetoed": false,
-      "summary": "🚇轨交高架:2586m(🟢 无高架轨交噪) · 🛣️高速:995m · 🚗主干道:793m",
+      "summary": "🚇轨交高架:1048m(🟢 无高架轨交噪) · 🛣️高速:1006m · 🚗主干道:1526m",
       "elevated_metro": {
         "name": "11号线地上高架轻轨线",
-        "distance_m": 2586,
+        "distance_m": 1048,
         "level": "🟢 无高架轨交噪",
-        "desc": "距地上轨交线超过2586米，属于完全静音安全距离。"
+        "desc": "距地上轨交线超过1048米，属于完全静音安全距离。"
       },
       "expressway": {
-        "name": "S5沪嘉高速",
-        "distance_m": 995,
+        "name": "S6沪翔高速",
+        "distance_m": 1006,
         "level": "🟢 远离高速",
-        "desc": "距最近高速公路约995米，属于优良静谧生活区。"
+        "desc": "距最近高速公路约1006米，属于优良静谧生活区。"
       },
       "arterial_road": {
         "name": "胜辛路 (双向8车道主干道)",
-        "distance_m": 793,
+        "distance_m": 1526,
         "level": "🟢 内部静谧",
-        "desc": "距主干道约793米，深处生活街区，道路环境静雅。"
+        "desc": "距主干道约1526米，深处生活街区，道路环境静雅。"
       },
       "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
     },
     "school_district_note": "仓场路225弄，对口迎园小学与迎园中学。",
     "scoring": {
-      "default_total": 85.8,
+      "default_total": 82.9,
       "dimensions": {
-        "transit": 85,
-        "school": 80,
-        "layout": 85,
+        "transit": 78,
+        "school": 78,
+        "layout": 83,
         "environment": 96,
-        "commercial_asset": 82
-      },
-      "custom_override": null,
-      "user_notes": ""
+        "commercial_asset": 80
+      }
     }
   },
   {
@@ -13263,6 +13255,9666 @@ window.COMMUNITY_DATA = [
       },
       "custom_override": null,
       "user_notes": ""
+    }
+  },
+  {
+    "id": "5011000080001",
+    "name": "白银时代",
+    "parent_cluster": "白银时代",
+    "phase_info": "白银路地铁核心生活区，2011年建，距白银路站380米",
+    "plate": "嘉定新城",
+    "district": "嘉定区",
+    "address": "上海市嘉定区白银路789弄",
+    "coordinates": [
+      121.2428,
+      31.344
+    ],
+    "built_year": 2011,
+    "building_type": "高层板楼",
+    "green_rate": "38%",
+    "plot_ratio": 2.2,
+    "property_fee": "2.3元/㎡/月",
+    "total_units": 1150,
+    "avg_price_wan": 4.0,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080001/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080001/",
+    "metro": {
+      "station_name": "白银路站",
+      "line": "11号线",
+      "station_coords": [
+        121.2406,
+        31.3469
+      ],
+      "distance_m": 380,
+      "walk_time_min": 5,
+      "route_desc": "出小区沿白银路向西北步行380米即达11号线白银路站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "11号线(白银路站) -> 曹杨路换乘14号线",
+      "distance_km": 31.2,
+      "duration_min": 48,
+      "fare_yuan": 7
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区普通小学白银路分校",
+        "type": "公办名校分校",
+        "dist": "约600米",
+        "time": "步行8分钟"
+      }
+    ],
+    "commercial": "白银路商圈、嘉定大融城(1.2km)、万达广场",
+    "medical": "瑞金医院北院(约1.8km)",
+    "tags": [
+      "白银路地铁口",
+      "成熟居住区",
+      "普小白银路学区",
+      "自住高流通"
+    ],
+    "phase_comparison": "【选筹指南】：小区紧邻白银路主干道，近地铁通勤极其便利；优选南向不临街的高层看中央景观花园，避免直接面对白银路红绿灯路口的楼栋。",
+    "scoring": {
+      "default_total": 60.8,
+      "dimensions": {
+        "transit": 92,
+        "school": 88,
+        "layout": 85,
+        "environment": 38,
+        "commercial_asset": 85
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区普通小学白银路分校",
+      "tier": "百年普小新校区/公办顶流",
+      "range": "永盛路以西、塔秀路以北、沈海高速（G15）以东、绕城高速（G1503）以南地区",
+      "source_doc": "primary_img_05.jpg"
+    },
+    "target_middle_school": {
+      "name": "交大附中附属嘉定洪德中学",
+      "tier": "区重点/交附系强校",
+      "rank": 7,
+      "public_rank": 7,
+      "rate_26": "27.8%",
+      "range": "沈海高速（G15）以东、绕城高速（G1503）以南、胜辛路以西、伊宁路以北地区",
+      "source_doc": "middle_img_04.jpg"
+    },
+    "school_district_note": "白银路789弄，白银路地铁圈，对口普小白银路分校与洪德中学。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "白银时代 经典全明两居 (2室2厅1厨1卫+独立储物间)",
+        "rooms": "2室2厅1厨1卫+独立储物间",
+        "area": "80㎡",
+        "usable_area": "66.2㎡",
+        "usable_rate": "82.8%",
+        "price_wan": 320.0,
+        "unit_price": 40000,
+        "orientation": "南",
+        "tags": [
+          "实测纯真两房",
+          "实测套内66.2㎡",
+          "总价约320万",
+          "南"
+        ],
+        "floor_plan_local": "assets/floorplans/107116526797.jpg",
+        "verified_rooms_desc": "卧室A (10.3㎡)、卧室B (11.5㎡)、储物间 (7.0㎡)、客厅 (24.4㎡)、厨房 (5.1㎡)、卫生间 (2.6㎡)、阳台B (5.3㎡)",
+        "pros": "罕见配置7平米独立储物间（可改衣帽间或独立小书房），客厅开间大视野佳。",
+        "cons": "卫生间进深较浅，洗衣机建议布置于南阳台生活区。"
+      },
+      {
+        "category": "三房",
+        "title": "白银时代 阔绰全明舒适三居 (3室2厅1厨2卫)",
+        "rooms": "3室2厅1厨2卫",
+        "area": "114㎡",
+        "usable_area": "95.1㎡",
+        "usable_rate": "83.4%",
+        "price_wan": 456.0,
+        "unit_price": 40000,
+        "orientation": "南北通透",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内95.1㎡",
+          "总价约456万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116377745.jpg",
+        "verified_rooms_desc": "卧室A (16.2㎡)、卧室B (14.2㎡)、卧室C (9.9㎡)、客厅 (38.2㎡)、厨房 (5.8㎡)、卫生间A (4.3㎡)、卫生间B (6.5㎡)",
+        "pros": "【真·大三房双卫王牌】三卧全明！客餐厅面积高达38平米大横厅，主卧带独立明卫与衣帽间，三开间朝南，居住尊崇感极强！",
+        "cons": "总价较高，契税与首付预算需充分准备。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🔴 重度冲击 (紧邻11号线高架轨交)",
+      "level_code": "red",
+      "is_vetoed": true,
+      "summary": "🚇轨交高架:34m(🔴 重度冲击) · 🛣️高速:1671m · 🚗主干道:1059m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 34,
+        "level": "🔴 重度冲击",
+        "desc": "紧贴11号线高架轻轨线(约34米)，早晚高峰列车加减速轮轨啸叫与电弓接触网噪直扑前排，高层震感明显。"
+      },
+      "expressway": {
+        "name": "S5沪嘉高速",
+        "distance_m": 1671,
+        "level": "🟢 远离高速",
+        "desc": "距最近高速公路约1671米，属于优良静谧生活区。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 1059,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约1059米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：距离高等级噪音源不足警戒线，受全天候持续声浪冲击。★非预算极度受限不建议考虑外圈临路/临轨房源；若购入必须全屋更换高端系统断桥铝双层夹胶窗。"
+    },
+    "noise_analysis": {
+      "status": "🔴 重度冲击 (紧邻11号线高架轨交)",
+      "dist_to_highway_m": 1671,
+      "dist_to_metro_elevated_m": 34,
+      "dist_to_arterial_m": 1059,
+      "is_vetoed": true,
+      "desc": "【立体噪音评估】：紧贴11号线高架轻轨线(约34米)，早晚高峰列车加减速轮轨啸叫与电弓接触网噪直扑前排，高层震感明显。 | 距主干道约1059米，深处生活街区，道路环境静雅。 | 距最近高速公路约1671米，属于优良静谧生活区。",
+      "selection_guide": "【实勘避坑指南】：距离高等级噪音源不足警戒线，受全天候持续声浪冲击。★非预算极度受限不建议考虑外圈临路/临轨房源；若购入必须全屋更换高端系统断桥铝双层夹胶窗。"
+    }
+  },
+  {
+    "id": "5011000080002",
+    "name": "新城香溢铂格",
+    "parent_cluster": "新城香溢铂格",
+    "phase_info": "新城高品质次新，2014年建，人车分流花园住宅",
+    "plate": "嘉定新城",
+    "district": "嘉定区",
+    "address": "上海市嘉定区洪德路288弄",
+    "coordinates": [
+      121.2465,
+      31.3418
+    ],
+    "built_year": 2014,
+    "building_type": "小高层板楼",
+    "green_rate": "42%",
+    "plot_ratio": 2.0,
+    "property_fee": "2.8元/㎡/月",
+    "total_units": 860,
+    "avg_price_wan": 4.3,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080002/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080002/",
+    "metro": {
+      "station_name": "白银路站",
+      "line": "11号线",
+      "station_coords": [
+        121.2406,
+        31.3469
+      ],
+      "distance_m": 720,
+      "walk_time_min": 10,
+      "route_desc": "向西北沿洪德路转云谷路步行720米到达白银路地铁站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "11号线(白银路站) -> 曹杨路换乘14号线",
+      "distance_km": 31.5,
+      "duration_min": 50,
+      "fare_yuan": 7
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区普通小学白银路分校",
+        "type": "公办名校分校",
+        "dist": "约450米",
+        "time": "步行6分钟"
+      }
+    ],
+    "commercial": "万达广场、东宝商业街、宝龙广场",
+    "medical": "瑞金医院北院(约1.5km)",
+    "tags": [
+      "高绿化景观",
+      "普小洪德双学区",
+      "品质次新",
+      "人车分流"
+    ],
+    "phase_comparison": "【选筹指南】：小区内部园林水系保养极佳，户型多为南北通透户型，得房率高达80%以上，属于新城核心改善型标杆小区之一。",
+    "scoring": {
+      "default_total": 60.4,
+      "dimensions": {
+        "transit": 85,
+        "school": 90,
+        "layout": 88,
+        "environment": 38,
+        "commercial_asset": 86
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区普通小学白银路分校",
+      "tier": "百年普小新校区/公办顶流",
+      "range": "永盛路以西、塔秀路以北、沈海高速（G15）以东、绕城高速（G1503）以南地区",
+      "source_doc": "primary_img_05.jpg"
+    },
+    "target_middle_school": {
+      "name": "交大附中附属嘉定洪德中学",
+      "tier": "区重点/交附系强校",
+      "rank": 7,
+      "public_rank": 7,
+      "rate_26": "27.8%",
+      "range": "沈海高速（G15）以东、绕城高速（G1503）以南、胜辛路以西、伊宁路以北地区",
+      "source_doc": "middle_img_04.jpg"
+    },
+    "school_district_note": "洪德路288弄，对口普小白银路分校与洪德中学。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "新城香溢铂格 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "89㎡",
+        "usable_area": "73.7㎡",
+        "usable_rate": "82.8%",
+        "price_wan": 382.7,
+        "unit_price": 43000,
+        "orientation": "南北通透",
+        "tags": [
+          "实测纯真两房",
+          "实测套内73.7㎡",
+          "总价约382万",
+          "南北通透"
+        ],
+        "floor_plan_local": "assets/floorplans/107116542933.jpg",
+        "verified_rooms_desc": "卧室A (16.0㎡)、卧室B (11.0㎡)、客厅 (14.8㎡)、餐厅 (12.2㎡)、厨房 (11.4㎡)、卫生间 (3.8㎡)、阳台 (4.5㎡)",
+        "pros": "主卧达16平米奢适套间！厨房超大11.4平米带吧台备餐区，南北对流空气清新。",
+        "cons": "客厅面积相对餐厅适中，整体重心偏向居室与厨房空间。"
+      },
+      {
+        "category": "三房",
+        "title": "新城香溢铂格 阔绰全明舒适三居 (3室2厅1厨2卫)",
+        "rooms": "3室2厅1厨2卫",
+        "area": "108㎡",
+        "usable_area": "90.4㎡",
+        "usable_rate": "83.7%",
+        "price_wan": 464.4,
+        "unit_price": 43000,
+        "orientation": "南北双阳台",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内90.4㎡",
+          "总价约464万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116447609.jpg",
+        "verified_rooms_desc": "卧室A (12.3㎡)、卧室B (11.5㎡)、卧室C (10.0㎡)、客厅 (33.9㎡)、厨房 (5.9㎡)、卫生间A (4.7㎡)、卫生间B (4.2㎡)、阳台A (2.9㎡)、阳台B (5.0㎡)",
+        "pros": "【真·南北双阳台全明三房】三间卧室均有完整窗户无暗间！南北对流极佳，客餐厅南北通透，双卫干湿分离，是品质家庭改善换房首选！",
+        "cons": "北向卧室进深标准，放置1.8米大床需合理规划衣柜走道。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🔴 重度冲击 (紧邻11号线高架轨交)",
+      "level_code": "red",
+      "is_vetoed": true,
+      "summary": "🚇轨交高架:93m(🔴 重度冲击) · 🛣️高速:1520m · 🚗主干道:697m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 93,
+        "level": "🔴 重度冲击",
+        "desc": "紧贴11号线高架轻轨线(约93米)，早晚高峰列车加减速轮轨啸叫与电弓接触网噪直扑前排，高层震感明显。"
+      },
+      "expressway": {
+        "name": "S5沪嘉高速",
+        "distance_m": 1520,
+        "level": "🟢 远离高速",
+        "desc": "距最近高速公路约1520米，属于优良静谧生活区。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 697,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约697米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：距离高等级噪音源不足警戒线，受全天候持续声浪冲击。★非预算极度受限不建议考虑外圈临路/临轨房源；若购入必须全屋更换高端系统断桥铝双层夹胶窗。"
+    },
+    "noise_analysis": {
+      "status": "🔴 重度冲击 (紧邻11号线高架轨交)",
+      "dist_to_highway_m": 1520,
+      "dist_to_metro_elevated_m": 93,
+      "dist_to_arterial_m": 697,
+      "is_vetoed": true,
+      "desc": "【立体噪音评估】：紧贴11号线高架轻轨线(约93米)，早晚高峰列车加减速轮轨啸叫与电弓接触网噪直扑前排，高层震感明显。 | 距主干道约697米，深处生活街区，道路环境静雅。 | 距最近高速公路约1520米，属于优良静谧生活区。",
+      "selection_guide": "【实勘避坑指南】：距离高等级噪音源不足警戒线，受全天候持续声浪冲击。★非预算极度受限不建议考虑外圈临路/临轨房源；若购入必须全屋更换高端系统断桥铝双层夹胶窗。"
+    }
+  },
+  {
+    "id": "5011000080003",
+    "name": "宝龙城市广场住宅",
+    "parent_cluster": "宝龙城市广场",
+    "phase_info": "远香湖商圈宝龙天街上盖综合体住宅，2015年建",
+    "plate": "嘉定新城",
+    "district": "嘉定区",
+    "address": "上海市嘉定区阿克苏路1099弄",
+    "coordinates": [
+      121.2612,
+      31.3421
+    ],
+    "built_year": 2015,
+    "building_type": "高层板楼",
+    "green_rate": "35%",
+    "plot_ratio": 2.5,
+    "property_fee": "2.9元/㎡/月",
+    "total_units": 920,
+    "avg_price_wan": 3.9,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080003/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080003/",
+    "metro": {
+      "station_name": "白银路站",
+      "line": "11号线",
+      "station_coords": [
+        121.2406,
+        31.3469
+      ],
+      "distance_m": 1600,
+      "walk_time_min": 20,
+      "route_desc": "小区门口公交嘉定14路直达白银路地铁站或嘉定新城站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "公交接驳11号线 -> 14号线",
+      "distance_km": 30.0,
+      "duration_min": 58,
+      "fare_yuan": 7
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区德富路小学",
+        "type": "优质公办",
+        "dist": "约500米",
+        "time": "步行6分钟"
+      }
+    ],
+    "commercial": "宝龙商业广场(楼下即达)、远香湖天街、保利大剧院",
+    "medical": "瑞金医院北院(约2.1km)",
+    "tags": [
+      "下楼即商场",
+      "近远香湖公园",
+      "德富路学区",
+      "生活极其便利"
+    ],
+    "phase_comparison": "【选筹指南】：下楼直接享受宝龙商业街各类餐饮休闲配套，距离远香湖核心公园步道约600米；缺点是离地铁有一定距离，需公交或电动车接驳。",
+    "scoring": {
+      "default_total": 83.5,
+      "dimensions": {
+        "transit": 72,
+        "school": 88,
+        "layout": 86,
+        "environment": 82,
+        "commercial_asset": 95
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区德富路小学",
+      "tier": "优质公办一梯队",
+      "range": "沪宜公路以西、塔秀路以北、永盛路以东、绕城高速（G1503）以南地区，以及洪德路35弄、38弄",
+      "source_doc": "primary_img_05.jpg"
+    },
+    "target_middle_school": {
+      "name": "交大附中附属嘉定德富中学",
+      "tier": "区重点/交附系核心",
+      "rank": 8,
+      "public_rank": 8,
+      "rate_26": "25.4%",
+      "range": "胜辛路以东、绕城高速（G1503）以南、沪宜公路以西、伊宁路以北地区，以及洪德路35弄、38弄",
+      "source_doc": "middle_img_04.jpg"
+    },
+    "school_district_note": "阿克苏路1099弄，远香湖商圈，对口德富路小学与德富路中学。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "宝龙城市广场住宅 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "82㎡",
+        "usable_area": "67.9㎡",
+        "usable_rate": "82.8%",
+        "price_wan": 319.8,
+        "unit_price": 39000,
+        "orientation": "南",
+        "tags": [
+          "实测纯真两房",
+          "实测套内67.9㎡",
+          "总价约319万",
+          "南"
+        ],
+        "floor_plan_local": "assets/floorplans/107116550624.jpg",
+        "verified_rooms_desc": "卧室A (14.9㎡)、卧室B (11.9㎡)、客厅 (15.6㎡)、餐厅 (14.3㎡)、厨房 (5.4㎡)、卫生间 (4.2㎡)、阳台B (1.6㎡)",
+        "pros": "德系方正低密花园户型，双卧面宽均在3.3米以上，采光无遮挡，得房率超83%。",
+        "cons": "南阳台偏向观景窄阳台，晾晒衣物多使用烘干机。"
+      },
+      {
+        "category": "三房",
+        "title": "宝龙城市广场住宅 阔绰全明舒适三居 (3室2厅1厨1卫)",
+        "rooms": "3室2厅1厨1卫",
+        "area": "102㎡",
+        "usable_area": "85.4㎡",
+        "usable_rate": "83.7%",
+        "price_wan": 397.8,
+        "unit_price": 39000,
+        "orientation": "南北通透",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内85.4㎡",
+          "总价约397万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116518245.jpg",
+        "verified_rooms_desc": "卧室A (14.1㎡)、卧室B (9.3㎡)、卧室C (11.0㎡)、客厅 (32.3㎡)、厨房 (6.5㎡)、卫生间 (4.6㎡)、阳台A (4.3㎡)、阳台B (3.3㎡)",
+        "pros": "【真·经典全功能三房】实测包含三个完整独立卧室（A、B、C），双阳台南北对流，客厅面宽超3.9米，三代同堂功能完备且总价可控！",
+        "cons": "单卫配置，早高峰家庭成员洗漱需合理安排时间。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟡 局部可感知 (次级声学环境)",
+      "level_code": "yellow",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:1015m(🟢 无高架轨交噪) · 🛣️高速:338m · 🚗主干道:698m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 1015,
+        "level": "🟢 无高架轨交噪",
+        "desc": "距地上轨交线超过1015米，属于完全静音安全距离。"
+      },
+      "expressway": {
+        "name": "S5沪嘉高速",
+        "distance_m": 338,
+        "level": "🟡 中度消解",
+        "desc": "距S5沪嘉高速约338米，前排楼栋与城市绿化带已吸收绝大部分高频声浪。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 698,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约698米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：整体居住舒适，仅高层极端安静时能听到微弱背景声，正常双层中空玻璃即可满足睡眠要求。"
+    },
+    "noise_analysis": {
+      "status": "🟡 局部可感知 (次级声学环境)",
+      "dist_to_highway_m": 338,
+      "dist_to_metro_elevated_m": 1015,
+      "dist_to_arterial_m": 698,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距地上轨交线超过1015米，属于完全静音安全距离。 | 距主干道约698米，深处生活街区，道路环境静雅。 | 距S5沪嘉高速约338米，前排楼栋与城市绿化带已吸收绝大部分高频声浪。",
+      "selection_guide": "【实勘避坑指南】：整体居住舒适，仅高层极端安静时能听到微弱背景声，正常双层中空玻璃即可满足睡眠要求。"
+    }
+  },
+  {
+    "id": "5011000080004",
+    "name": "双单新村",
+    "parent_cluster": "双单新村",
+    "phase_info": "嘉定新城站南侧成熟居住区，2012年建，高性价比房源",
+    "plate": "嘉定新城",
+    "district": "嘉定区",
+    "address": "上海市嘉定区双单路268弄",
+    "coordinates": [
+      121.258,
+      31.3285
+    ],
+    "built_year": 2012,
+    "building_type": "多层与小高层板楼",
+    "green_rate": "36%",
+    "plot_ratio": 1.8,
+    "property_fee": "1.8元/㎡/月",
+    "total_units": 1380,
+    "avg_price_wan": 3.4,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080004/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080004/",
+    "metro": {
+      "station_name": "嘉定新城站",
+      "line": "11号线",
+      "station_coords": [
+        121.2555,
+        31.3308
+      ],
+      "distance_m": 450,
+      "walk_time_min": 6,
+      "route_desc": "沿双单路向西步行450米即达11号线嘉定新城站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "11号线(嘉定新城站) -> 14号线",
+      "distance_km": 29.8,
+      "duration_min": 45,
+      "fare_yuan": 6
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区新城实验小学",
+        "type": "优质公办",
+        "dist": "约700米",
+        "time": "步行9分钟"
+      }
+    ],
+    "commercial": "万达广场(500米)、大融城、西云楼",
+    "medical": "瑞金医院北院(约900m)",
+    "tags": [
+      "嘉定新城站步行6分钟",
+      "近万达广场",
+      "超低总价门槛",
+      "刚需首选"
+    ],
+    "phase_comparison": "【选筹指南】：总价在嘉定新城地铁核心圈具备极高性价比，适合预算有限但对11号线地铁通勤有强刚需的年轻首置家庭。",
+    "scoring": {
+      "default_total": 82.6,
+      "dimensions": {
+        "transit": 92,
+        "school": 82,
+        "layout": 82,
+        "environment": 68,
+        "commercial_asset": 88
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区新城实验小学",
+      "tier": "实验系优质公办",
+      "range": "合作路以西、宝安公路以北、沈海高速（G15）以东、伊宁路以南地区",
+      "source_doc": "primary_img_05.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海市嘉定区新城实验中学",
+      "tier": "公办新秀优质",
+      "rank": 13,
+      "public_rank": 13,
+      "rate_26": "22.1%",
+      "range": "合作路以西、宝安公路以北、沈海高速（G15）以东、伊宁路以南的地区",
+      "source_doc": "middle_img_04.jpg"
+    },
+    "school_district_note": "双单路268弄，嘉定新城站南侧，对口新城实验小学与新城实验中学。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "双单新村 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "71㎡",
+        "usable_area": "58.6㎡",
+        "usable_rate": "82.5%",
+        "price_wan": 241.4,
+        "unit_price": 34000,
+        "orientation": "南",
+        "tags": [
+          "实测纯真两房",
+          "实测套内58.6㎡",
+          "总价约241万",
+          "南"
+        ],
+        "floor_plan_local": "assets/floorplans/107116553867.jpg",
+        "verified_rooms_desc": "卧室A (9.4㎡)、卧室B (12.6㎡)、客厅 (21.6㎡)、厨房 (7.2㎡)、卫生间 (4.9㎡)、阳台 (2.9㎡)",
+        "pros": "紧凑两房利用率极致，客厅开间超3.8米，总价在全区域极低，投资自住两相宜。",
+        "cons": "房龄较成熟，梯户比以两梯四户为主。"
+      },
+      {
+        "category": "三房",
+        "title": "双单新村 阔绰全明舒适三居 (3室2厅1厨1卫)",
+        "rooms": "3室2厅1厨1卫",
+        "area": "91㎡",
+        "usable_area": "76.0㎡",
+        "usable_rate": "83.5%",
+        "price_wan": 309.4,
+        "unit_price": 34000,
+        "orientation": "三开间朝南",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内76.0㎡",
+          "总价约309万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116528811.jpg",
+        "verified_rooms_desc": "卧室A (7.5㎡)、卧室B (9.4㎡)、卧室C (12.8㎡)、客厅 (17.3㎡)、餐厅 (12.5㎡)、厨房 (5.4㎡)、阳台 (4.3㎡)",
+        "pros": "【绝版89㎡三房神户型】三开间朝南！实测拥有三个独立卧室（A、B、C），空间利用率达到极致，得房率超85.4%，无一丝浪费走廊！",
+        "cons": "北向小次卧仅7.5㎡，更适合做独立书房、茶室或儿童房榻榻米。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟠 显著干扰 (临近主干交通走廊)",
+      "level_code": "orange",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:238m(🟡 轻度背景) · 🛣️高速:1507m · 🚗主干道:467m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 238,
+        "level": "🟡 轻度背景",
+        "desc": "距11号线高架约238米，已有大面积多排建筑完全隔断，常规生活不受干扰。"
+      },
+      "expressway": {
+        "name": "S5沪嘉高速",
+        "distance_m": 1507,
+        "level": "🟢 远离高速",
+        "desc": "距最近高速公路约1507米，属于优良静谧生活区。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 467,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约467米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：属于半开放受噪区，外圈与内圈噪音差达10-15分贝。看房时务必在早晚高峰期实地测听，锁定中庭无对冲楼栋。"
+    },
+    "noise_analysis": {
+      "status": "🟠 显著干扰 (临近主干交通走廊)",
+      "dist_to_highway_m": 1507,
+      "dist_to_metro_elevated_m": 238,
+      "dist_to_arterial_m": 467,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距11号线高架约238米，已有大面积多排建筑完全隔断，常规生活不受干扰。 | 距主干道约467米，深处生活街区，道路环境静雅。 | 距最近高速公路约1507米，属于优良静谧生活区。",
+      "selection_guide": "【实勘避坑指南】：属于半开放受噪区，外圈与内圈噪音差达10-15分贝。看房时务必在早晚高峰期实地测听，锁定中庭无对冲楼栋。"
+    }
+  },
+  {
+    "id": "5011000080005",
+    "name": "白银新村",
+    "parent_cluster": "白银新村",
+    "phase_info": "白银路南侧成熟居住区，2008年建，经典公房与多层住宅",
+    "plate": "嘉定新城",
+    "district": "嘉定区",
+    "address": "上海市嘉定区白银路298弄",
+    "coordinates": [
+      121.2482,
+      31.3475
+    ],
+    "built_year": 2008,
+    "building_type": "多层板楼",
+    "green_rate": "35%",
+    "plot_ratio": 1.6,
+    "property_fee": "1.2元/㎡/月",
+    "total_units": 960,
+    "avg_price_wan": 3.3,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080005/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080005/",
+    "metro": {
+      "station_name": "白银路站",
+      "line": "11号线",
+      "station_coords": [
+        121.2406,
+        31.3469
+      ],
+      "distance_m": 750,
+      "walk_time_min": 10,
+      "route_desc": "沿白银路向西直行750米直达白银路站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "11号线(白银路站) -> 14号线",
+      "distance_km": 31.6,
+      "duration_min": 49,
+      "fare_yuan": 7
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区普通小学白银路分校",
+        "type": "公办名校分校",
+        "dist": "约500米",
+        "time": "步行6分钟"
+      }
+    ],
+    "commercial": "东宝百货商圈、万达广场",
+    "medical": "瑞金医院北院(约1.7km)",
+    "tags": [
+      "低物业费",
+      "普小双学区",
+      "得房率高达86%",
+      "单价洼地"
+    ],
+    "phase_comparison": "【选筹指南】：多层板楼得房率极高，且学区划归普通小学白银路分校，总价门槛极低，适合学区挂户与刚需自住。",
+    "scoring": {
+      "default_total": 87.5,
+      "dimensions": {
+        "transit": 84,
+        "school": 90,
+        "layout": 85,
+        "environment": 96,
+        "commercial_asset": 82
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区普通小学白银路分校",
+      "tier": "百年普小新校区/公办顶流",
+      "range": "永盛路以西、塔秀路以北、沈海高速（G15）以东、绕城高速（G1503）以南地区",
+      "source_doc": "primary_img_05.jpg"
+    },
+    "target_middle_school": {
+      "name": "交大附中附属嘉定洪德中学",
+      "tier": "区重点/交附系强校",
+      "rank": 7,
+      "public_rank": 7,
+      "rate_26": "27.8%",
+      "range": "沈海高速（G15）以东、绕城高速（G1503）以南、胜辛路以西、伊宁路以北地区",
+      "source_doc": "middle_img_04.jpg"
+    },
+    "school_district_note": "白银路298弄，对口普小白银路分校与洪德中学。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "白银新村 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "78㎡",
+        "usable_area": "64.1㎡",
+        "usable_rate": "82.2%",
+        "price_wan": 257.4,
+        "unit_price": 33000,
+        "orientation": "南",
+        "tags": [
+          "实测纯真两房",
+          "实测套内64.1㎡",
+          "总价约257万",
+          "南"
+        ],
+        "floor_plan_local": "assets/floorplans/107115288242.jpg",
+        "verified_rooms_desc": "卧室A (9.7㎡)、卧室B (14.3㎡)、客厅 (12.9㎡)、餐厅 (12.1㎡)、厨房 (6.2㎡)、卫生间 (5.0㎡)、阳台 (3.9㎡)",
+        "pros": "双卧朝南采光优秀，客餐厅动线分离，卫生间干湿分离，总价紧凑适合首套刚需上车。",
+        "cons": "厨房为长条形，进深较长，厨电收纳需做整体定制。"
+      },
+      {
+        "category": "三房",
+        "title": "白银新村 阔绰全明舒适三居 (3室2厅1厨2卫)",
+        "rooms": "3室2厅1厨2卫",
+        "area": "114㎡",
+        "usable_area": "95.1㎡",
+        "usable_rate": "83.4%",
+        "price_wan": 376.2,
+        "unit_price": 33000,
+        "orientation": "南北通透",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内95.1㎡",
+          "总价约376万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116377745.jpg",
+        "verified_rooms_desc": "卧室A (16.2㎡)、卧室B (14.2㎡)、卧室C (9.9㎡)、客厅 (38.2㎡)、厨房 (5.8㎡)、卫生间A (4.3㎡)、卫生间B (6.5㎡)",
+        "pros": "【真·大三房双卫王牌】三卧全明！客餐厅面积高达38平米大横厅，主卧带独立明卫与衣帽间，三开间朝南，居住尊崇感极强！",
+        "cons": "总价较高，契税与首付预算需充分准备。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "level_code": "green",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:618m(🟢 无高架轨交噪) · 🛣️高速:1019m · 🚗主干道:559m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 618,
+        "level": "🟢 无高架轨交噪",
+        "desc": "距地上轨交线超过618米，属于完全静音安全距离。"
+      },
+      "expressway": {
+        "name": "S5沪嘉高速",
+        "distance_m": 1019,
+        "level": "🟢 远离高速",
+        "desc": "距最近高速公路约1019米，属于优良静谧生活区。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 559,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约559米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    },
+    "noise_analysis": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "dist_to_highway_m": 1019,
+      "dist_to_metro_elevated_m": 618,
+      "dist_to_arterial_m": 559,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距地上轨交线超过618米，属于完全静音安全距离。 | 距主干道约559米，深处生活街区，道路环境静雅。 | 距最近高速公路约1019米，属于优良静谧生活区。",
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    }
+  },
+  {
+    "id": "5011000080007",
+    "name": "嘉富坊",
+    "parent_cluster": "嘉富坊",
+    "phase_info": "紧邻远香湖高端水岸景观住宅，2016年建，品质次新",
+    "plate": "嘉定新城",
+    "district": "嘉定区",
+    "address": "上海市嘉定区塔秀路388弄",
+    "coordinates": [
+      121.2635,
+      31.3385
+    ],
+    "built_year": 2016,
+    "building_type": "高层板楼",
+    "green_rate": "45%",
+    "plot_ratio": 2.0,
+    "property_fee": "3.2元/㎡/月",
+    "total_units": 680,
+    "avg_price_wan": 4.5,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080007/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080007/",
+    "metro": {
+      "station_name": "白银路站",
+      "line": "11号线",
+      "station_coords": [
+        121.2406,
+        31.3469
+      ],
+      "distance_m": 1800,
+      "walk_time_min": 22,
+      "route_desc": "门口有直达短驳公交接驳白银路站及嘉定新城站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "公交接驳11号线 -> 14号线",
+      "distance_km": 30.5,
+      "duration_min": 60,
+      "fare_yuan": 7
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区德富路小学",
+        "type": "优质公办",
+        "dist": "约700米",
+        "time": "步行9分钟"
+      }
+    ],
+    "commercial": "保利大剧院、远香湖生态公园(300米)、宝龙广场",
+    "medical": "瑞金医院北院(约1.9km)",
+    "tags": [
+      "远香湖头排景观",
+      "高阶改善",
+      "人车分流",
+      "德富路学区"
+    ],
+    "phase_comparison": "【选筹指南】：主打生态景观与高品质居住环境，适合注重居住舒适度、周末跑步露营的有车改善客群。",
+    "scoring": {
+      "default_total": 83.0,
+      "dimensions": {
+        "transit": 70,
+        "school": 88,
+        "layout": 90,
+        "environment": 82,
+        "commercial_asset": 90
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区德富路小学",
+      "tier": "优质公办一梯队",
+      "range": "沪宜公路以西、塔秀路以北、永盛路以东、绕城高速（G1503）以南地区，以及洪德路35弄、38弄",
+      "source_doc": "primary_img_05.jpg"
+    },
+    "target_middle_school": {
+      "name": "交大附中附属嘉定德富中学",
+      "tier": "区重点/交附系核心",
+      "rank": 8,
+      "public_rank": 8,
+      "rate_26": "25.4%",
+      "range": "胜辛路以东、绕城高速（G1503）以南、沪宜公路以西、伊宁路以北地区，以及洪德路35弄、38弄",
+      "source_doc": "middle_img_04.jpg"
+    },
+    "school_district_note": "塔秀路388弄，远香湖畔，对口德富路小学与德富路中学。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "嘉富坊 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "85㎡",
+        "usable_area": "70.1㎡",
+        "usable_rate": "82.5%",
+        "price_wan": 382.5,
+        "unit_price": 45000,
+        "orientation": "南北对流",
+        "tags": [
+          "实测纯真两房",
+          "实测套内70.1㎡",
+          "总价约382万",
+          "南北对流"
+        ],
+        "floor_plan_local": "assets/floorplans/107115438394.jpg",
+        "verified_rooms_desc": "卧室A (8.8㎡)、卧室B (13.7㎡)、客厅 (19.4㎡)、餐厅 (14.8㎡)、厨房 (5.6㎡)、卫生间 (3.7㎡)、阳台 (4.1㎡)",
+        "pros": "客餐厅贯通面宽达3.8米，南北通透对流，大阳台视野宽阔，通风采光极佳。",
+        "cons": "北向次卧面积约8.8㎡，摆放双人床后衣柜需做移门设计。"
+      },
+      {
+        "category": "三房",
+        "title": "嘉富坊 阔绰全明舒适三居 (3室2厅1厨2卫)",
+        "rooms": "3室2厅1厨2卫",
+        "area": "108㎡",
+        "usable_area": "90.4㎡",
+        "usable_rate": "83.7%",
+        "price_wan": 486.0,
+        "unit_price": 45000,
+        "orientation": "南北双阳台",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内90.4㎡",
+          "总价约486万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116447609.jpg",
+        "verified_rooms_desc": "卧室A (12.3㎡)、卧室B (11.5㎡)、卧室C (10.0㎡)、客厅 (33.9㎡)、厨房 (5.9㎡)、卫生间A (4.7㎡)、卫生间B (4.2㎡)、阳台A (2.9㎡)、阳台B (5.0㎡)",
+        "pros": "【真·南北双阳台全明三房】三间卧室均有完整窗户无暗间！南北对流极佳，客餐厅南北通透，双卫干湿分离，是品质家庭改善换房首选！",
+        "cons": "北向卧室进深标准，放置1.8米大床需合理规划衣柜走道。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟡 局部可感知 (次级声学环境)",
+      "level_code": "yellow",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:940m(🟢 无高架轨交噪) · 🛣️高速:388m · 🚗主干道:935m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 940,
+        "level": "🟢 无高架轨交噪",
+        "desc": "距地上轨交线超过940米，属于完全静音安全距离。"
+      },
+      "expressway": {
+        "name": "S5沪嘉高速",
+        "distance_m": 388,
+        "level": "🟡 中度消解",
+        "desc": "距S5沪嘉高速约388米，前排楼栋与城市绿化带已吸收绝大部分高频声浪。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 935,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约935米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：整体居住舒适，仅高层极端安静时能听到微弱背景声，正常双层中空玻璃即可满足睡眠要求。"
+    },
+    "noise_analysis": {
+      "status": "🟡 局部可感知 (次级声学环境)",
+      "dist_to_highway_m": 388,
+      "dist_to_metro_elevated_m": 940,
+      "dist_to_arterial_m": 935,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距地上轨交线超过940米，属于完全静音安全距离。 | 距主干道约935米，深处生活街区，道路环境静雅。 | 距S5沪嘉高速约388米，前排楼栋与城市绿化带已吸收绝大部分高频声浪。",
+      "selection_guide": "【实勘避坑指南】：整体居住舒适，仅高层极端安静时能听到微弱背景声，正常双层中空玻璃即可满足睡眠要求。"
+    }
+  },
+  {
+    "id": "5011000080008",
+    "name": "金隅大成郡",
+    "parent_cluster": "金隅大成郡",
+    "phase_info": "新中式低密院落社区，2018年建，高得房率洋房与小高层",
+    "plate": "嘉定新城",
+    "district": "嘉定区",
+    "address": "上海市嘉定区胜竹路1999弄",
+    "coordinates": [
+      121.268,
+      31.352
+    ],
+    "built_year": 2018,
+    "building_type": "花园洋房与小高层",
+    "green_rate": "38%",
+    "plot_ratio": 1.6,
+    "property_fee": "3.1元/㎡/月",
+    "total_units": 890,
+    "avg_price_wan": 3.8,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080008/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080008/",
+    "metro": {
+      "station_name": "嘉定北站",
+      "line": "11号线",
+      "station_coords": [
+        121.2427,
+        31.3934
+      ],
+      "distance_m": 3200,
+      "walk_time_min": 35,
+      "route_desc": "门口胜竹路快速公交接驳11号线嘉定北站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "公交接驳11号线 -> 14号线",
+      "distance_km": 34.0,
+      "duration_min": 65,
+      "fare_yuan": 7
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区城北小学",
+        "type": "公办优质",
+        "dist": "约800米",
+        "time": "步行10分钟"
+      }
+    ],
+    "commercial": "百联嘉定购物中心、日月光中心、喜友邻里商业街",
+    "medical": "嘉定区中心医院(约2.5km)",
+    "tags": [
+      "低容积率",
+      "新中式洋房",
+      "得房率超84%",
+      "金隅品质国企"
+    ],
+    "phase_comparison": "【选筹指南】：低密度居住体验极佳，楼间距开阔，洋房一楼带院顶楼带露台，适合在嘉定本地自驾通勤的改善自住家庭。",
+    "scoring": {
+      "default_total": 83.3,
+      "dimensions": {
+        "transit": 65,
+        "school": 83,
+        "layout": 92,
+        "environment": 99,
+        "commercial_asset": 82
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区清水路小学",
+      "tier": "菊园核心公办",
+      "range": "菊园新区“城北路以西、环城河-清河路-沪宜公路-练祁河以北、胜辛路以东、胜竹路以南”地区",
+      "source_doc": "primary_img_13.jpg"
+    },
+    "target_middle_school": {
+      "name": "中科院上海实验学校",
+      "tier": "中科院合作九年一贯强校",
+      "rank": 4,
+      "public_rank": 4,
+      "rate_26": "33.5%",
+      "range": "菊园新区“城北路-陈家山路-和硕路以西、练祁河以北、霍城路以东、胜竹路以南”地区",
+      "source_doc": "middle_img_08.jpg"
+    },
+    "school_district_note": "胜竹路1999弄，菊园城北片区，对口清水路小学与中科实验。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "金隅大成郡 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "86㎡",
+        "usable_area": "71.3㎡",
+        "usable_rate": "82.9%",
+        "price_wan": 326.8,
+        "unit_price": 38000,
+        "orientation": "南",
+        "tags": [
+          "实测纯真两房",
+          "实测套内71.3㎡",
+          "总价约326万",
+          "南"
+        ],
+        "floor_plan_local": "assets/floorplans/107116341545.jpg",
+        "verified_rooms_desc": "卧室A (11.3㎡)、卧室B (15.4㎡)、客厅 (14.4㎡)、餐厅 (15.3㎡)、厨房 (6.8㎡)、卫生间 (4.9㎡)、阳台B (3.2㎡)",
+        "pros": "主卧面宽达3.6米阔绰舒适，厨房带独立备餐阳台，卫生间全明采光无暗角。",
+        "cons": "入口玄关进深稍短，需倚靠侧墙设置嵌入式鞋柜。"
+      },
+      {
+        "category": "三房",
+        "title": "金隅大成郡 阔绰全明舒适三居 (3室2厅1厨1卫)",
+        "rooms": "3室2厅1厨1卫",
+        "area": "102㎡",
+        "usable_area": "85.4㎡",
+        "usable_rate": "83.7%",
+        "price_wan": 387.6,
+        "unit_price": 38000,
+        "orientation": "南北通透",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内85.4㎡",
+          "总价约387万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116518245.jpg",
+        "verified_rooms_desc": "卧室A (14.1㎡)、卧室B (9.3㎡)、卧室C (11.0㎡)、客厅 (32.3㎡)、厨房 (6.5㎡)、卫生间 (4.6㎡)、阳台A (4.3㎡)、阳台B (3.3㎡)",
+        "pros": "【真·经典全功能三房】实测包含三个完整独立卧室（A、B、C），双阳台南北对流，客厅面宽超3.9米，三代同堂功能完备且总价可控！",
+        "cons": "单卫配置，早高峰家庭成员洗漱需合理安排时间。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "level_code": "green",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:2287m(🟢 无高架轨交噪) · 🛣️高速:835m · 🚗主干道:1308m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 2287,
+        "level": "🟢 无高架轨交噪",
+        "desc": "距地上轨交线超过2287米，属于完全静音安全距离。"
+      },
+      "expressway": {
+        "name": "S5沪嘉高速",
+        "distance_m": 835,
+        "level": "🟢 远离高速",
+        "desc": "距最近高速公路约835米，属于优良静谧生活区。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 1308,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约1308米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    },
+    "noise_analysis": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "dist_to_highway_m": 835,
+      "dist_to_metro_elevated_m": 2287,
+      "dist_to_arterial_m": 1308,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距地上轨交线超过2287米，属于完全静音安全距离。 | 距主干道约1308米，深处生活街区，道路环境静雅。 | 距最近高速公路约835米，属于优良静谧生活区。",
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    }
+  },
+  {
+    "id": "5011000080009",
+    "name": "嘉境御果",
+    "parent_cluster": "嘉境御果",
+    "phase_info": "新城高科技恒温恒湿科技系统住宅，2017年建",
+    "plate": "嘉定新城",
+    "district": "嘉定区",
+    "address": "上海市嘉定区双丁路888弄",
+    "coordinates": [
+      121.244,
+      31.333
+    ],
+    "built_year": 2017,
+    "building_type": "高层板楼",
+    "green_rate": "41%",
+    "plot_ratio": 2.2,
+    "property_fee": "3.5元/㎡/月",
+    "total_units": 650,
+    "avg_price_wan": 4.6,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080009/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080009/",
+    "metro": {
+      "station_name": "嘉定新城站",
+      "line": "11号线",
+      "station_coords": [
+        121.2555,
+        31.3308
+      ],
+      "distance_m": 1200,
+      "walk_time_min": 15,
+      "route_desc": "沿双丁路向东步行1200米到达嘉定新城站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "11号线(嘉定新城站) -> 14号线",
+      "distance_km": 30.6,
+      "duration_min": 49,
+      "fare_yuan": 6
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区普通小学白银路分校",
+        "type": "公办名校分校",
+        "dist": "约800米",
+        "time": "步行10分钟"
+      }
+    ],
+    "commercial": "中信泰富万达广场、西云楼水岸商业街",
+    "medical": "瑞金医院北院(约1.0km)",
+    "tags": [
+      "科技恒温系统",
+      "普小白银路学区",
+      "品质次新",
+      "全人车分流"
+    ],
+    "phase_comparison": "【选筹指南】：采用集中供暖与毛细管网温控，居住四季如春，户型赠送飘窗面积多，兼顾学区与高标准自住舒适度。",
+    "scoring": {
+      "default_total": 82.5,
+      "dimensions": {
+        "transit": 78,
+        "school": 90,
+        "layout": 91,
+        "environment": 68,
+        "commercial_asset": 88
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区普通小学白银路分校",
+      "tier": "百年普小新校区/公办顶流",
+      "range": "永盛路以西、塔秀路以北、沈海高速（G15）以东、绕城高速（G1503）以南地区",
+      "source_doc": "primary_img_05.jpg"
+    },
+    "target_middle_school": {
+      "name": "交大附中附属嘉定洪德中学",
+      "tier": "区重点/交附系强校",
+      "rank": 7,
+      "public_rank": 7,
+      "rate_26": "27.8%",
+      "range": "沈海高速（G15）以东、绕城高速（G1503）以南、胜辛路以西、伊宁路以北地区",
+      "source_doc": "middle_img_04.jpg"
+    },
+    "school_district_note": "双丁路888弄，对口普小白银路分校与洪德中学。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "嘉境御果 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "87㎡",
+        "usable_area": "72.0㎡",
+        "usable_rate": "82.8%",
+        "price_wan": 400.2,
+        "unit_price": 46000,
+        "orientation": "南北双阳台",
+        "tags": [
+          "实测纯真两房",
+          "实测套内72.0㎡",
+          "总价约400万",
+          "南北双阳台"
+        ],
+        "floor_plan_local": "assets/floorplans/107116374473.jpg",
+        "verified_rooms_desc": "卧室A (12.6㎡)、卧室B (15.5㎡)、客厅 (18.9㎡)、餐厅 (6.1㎡)、厨房 (5.5㎡)、卫生间 (4.4㎡)、阳台A (3.8㎡)、阳台B (5.2㎡)",
+        "pros": "前后双阳台对流设计！主卧与次卧均带大飘窗，全明户型毫无死角，得房率扎实。",
+        "cons": "客厅与餐厅为开放连体布局，油烟隔离需安装大功率吸油烟机。"
+      },
+      {
+        "category": "三房",
+        "title": "嘉境御果 阔绰全明舒适三居 (3室2厅1厨1卫)",
+        "rooms": "3室2厅1厨1卫",
+        "area": "91㎡",
+        "usable_area": "76.0㎡",
+        "usable_rate": "83.5%",
+        "price_wan": 418.6,
+        "unit_price": 46000,
+        "orientation": "三开间朝南",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内76.0㎡",
+          "总价约418万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116528811.jpg",
+        "verified_rooms_desc": "卧室A (7.5㎡)、卧室B (9.4㎡)、卧室C (12.8㎡)、客厅 (17.3㎡)、餐厅 (12.5㎡)、厨房 (5.4㎡)、阳台 (4.3㎡)",
+        "pros": "【绝版89㎡三房神户型】三开间朝南！实测拥有三个独立卧室（A、B、C），空间利用率达到极致，得房率超85.4%，无一丝浪费走廊！",
+        "cons": "北向小次卧仅7.5㎡，更适合做独立书房、茶室或儿童房榻榻米。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟠 显著干扰 (临近主干交通走廊)",
+      "level_code": "orange",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:228m(🟡 轻度背景) · 🛣️高速:2282m · 🚗主干道:844m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 228,
+        "level": "🟡 轻度背景",
+        "desc": "距11号线高架约228米，已有大面积多排建筑完全隔断，常规生活不受干扰。"
+      },
+      "expressway": {
+        "name": "S5沪嘉高速",
+        "distance_m": 2282,
+        "level": "🟢 远离高速",
+        "desc": "距最近高速公路约2282米，属于优良静谧生活区。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 844,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约844米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：属于半开放受噪区，外圈与内圈噪音差达10-15分贝。看房时务必在早晚高峰期实地测听，锁定中庭无对冲楼栋。"
+    },
+    "noise_analysis": {
+      "status": "🟠 显著干扰 (临近主干交通走廊)",
+      "dist_to_highway_m": 2282,
+      "dist_to_metro_elevated_m": 228,
+      "dist_to_arterial_m": 844,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距11号线高架约228米，已有大面积多排建筑完全隔断，常规生活不受干扰。 | 距主干道约844米，深处生活街区，道路环境静雅。 | 距最近高速公路约2282米，属于优良静谧生活区。",
+      "selection_guide": "【实勘避坑指南】：属于半开放受噪区，外圈与内圈噪音差达10-15分贝。看房时务必在早晚高峰期实地测听，锁定中庭无对冲楼栋。"
+    }
+  },
+  {
+    "id": "5011000080010",
+    "name": "东方豪园",
+    "parent_cluster": "东方豪园",
+    "phase_info": "永盛路成熟学区改善盘，2010年建，成熟生活社区",
+    "plate": "嘉定新城",
+    "district": "嘉定区",
+    "address": "上海市嘉定区永盛路1199弄",
+    "coordinates": [
+      121.2505,
+      31.349
+    ],
+    "built_year": 2010,
+    "building_type": "高层板楼",
+    "green_rate": "37%",
+    "plot_ratio": 2.0,
+    "property_fee": "2.2元/㎡/月",
+    "total_units": 1280,
+    "avg_price_wan": 3.8,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080010/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080010/",
+    "metro": {
+      "station_name": "白银路站",
+      "line": "11号线",
+      "station_coords": [
+        121.2406,
+        31.3469
+      ],
+      "distance_m": 900,
+      "walk_time_min": 12,
+      "route_desc": "沿塔秀路转云谷路步行900米到达白银路站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "11号线(白银路站) -> 14号线",
+      "distance_km": 31.8,
+      "duration_min": 52,
+      "fare_yuan": 7
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区普通小学白银路分校",
+        "type": "公办名校分校",
+        "dist": "约600米",
+        "time": "步行8分钟"
+      }
+    ],
+    "commercial": "东宝百货、大融城、邻里中心",
+    "medical": "瑞金医院北院(约1.8km)",
+    "tags": [
+      "普小双学区",
+      "成熟生活氛围",
+      "户型方正",
+      "保值率高"
+    ],
+    "phase_comparison": "【选筹指南】：属于新城早期品质住宅，入住率极高，烟火气浓厚；对口普通小学白银路分校，是学区与自住均衡的性价比之选。",
+    "scoring": {
+      "default_total": 87.4,
+      "dimensions": {
+        "transit": 81,
+        "school": 90,
+        "layout": 86,
+        "environment": 96,
+        "commercial_asset": 85
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区普通小学白银路分校",
+      "tier": "百年普小新校区/公办顶流",
+      "range": "永盛路以西、塔秀路以北、沈海高速（G15）以东、绕城高速（G1503）以南地区",
+      "source_doc": "primary_img_05.jpg"
+    },
+    "target_middle_school": {
+      "name": "交大附中附属嘉定洪德中学",
+      "tier": "区重点/交附系强校",
+      "rank": 7,
+      "public_rank": 7,
+      "rate_26": "27.8%",
+      "range": "沈海高速（G15）以东、绕城高速（G1503）以南、胜辛路以西、伊宁路以北地区",
+      "source_doc": "middle_img_04.jpg"
+    },
+    "school_district_note": "永盛路1199弄，对口普小白银路分校与洪德中学。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "东方豪园 经典全明两居 (2室2厅1厨1卫+储物间)",
+        "rooms": "2室2厅1厨1卫+储物间",
+        "area": "78㎡",
+        "usable_area": "64.6㎡",
+        "usable_rate": "82.8%",
+        "price_wan": 296.4,
+        "unit_price": 38000,
+        "orientation": "南",
+        "tags": [
+          "实测纯真两房",
+          "实测套内64.6㎡",
+          "总价约296万",
+          "南"
+        ],
+        "floor_plan_local": "assets/floorplans/107116515364.jpg",
+        "verified_rooms_desc": "卧室A (13.9㎡)、卧室B (11.6㎡)、储物间 (1.3㎡)、客厅 (23.2㎡)、厨房 (4.2㎡)、卫生间 (4.9㎡)、阳台 (5.5㎡)",
+        "pros": "带独立独立小储物间！客厅开间超4米大宽厅，采光面极其开阔，主卧空间充裕。",
+        "cons": "厨房面积4.2㎡稍显紧凑，适宜L型吊柜设计。"
+      },
+      {
+        "category": "三房",
+        "title": "东方豪园 阔绰全明舒适三居 (3室2厅1厨2卫)",
+        "rooms": "3室2厅1厨2卫",
+        "area": "114㎡",
+        "usable_area": "95.1㎡",
+        "usable_rate": "83.4%",
+        "price_wan": 433.2,
+        "unit_price": 38000,
+        "orientation": "南北通透",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内95.1㎡",
+          "总价约433万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116377745.jpg",
+        "verified_rooms_desc": "卧室A (16.2㎡)、卧室B (14.2㎡)、卧室C (9.9㎡)、客厅 (38.2㎡)、厨房 (5.8㎡)、卫生间A (4.3㎡)、卫生间B (6.5㎡)",
+        "pros": "【真·大三房双卫王牌】三卧全明！客餐厅面积高达38平米大横厅，主卧带独立明卫与衣帽间，三开间朝南，居住尊崇感极强！",
+        "cons": "总价较高，契税与首付预算需充分准备。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "level_code": "green",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:896m(🟢 无高架轨交噪) · 🛣️高速:741m · 🚗主干道:345m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 896,
+        "level": "🟢 无高架轨交噪",
+        "desc": "距地上轨交线超过896米，属于完全静音安全距离。"
+      },
+      "expressway": {
+        "name": "S5沪嘉高速",
+        "distance_m": 741,
+        "level": "🟢 远离高速",
+        "desc": "距最近高速公路约741米，属于优良静谧生活区。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 345,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约345米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    },
+    "noise_analysis": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "dist_to_highway_m": 741,
+      "dist_to_metro_elevated_m": 896,
+      "dist_to_arterial_m": 345,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距地上轨交线超过896米，属于完全静音安全距离。 | 距主干道约345米，深处生活街区，道路环境静雅。 | 距最近高速公路约741米，属于优良静谧生活区。",
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    }
+  },
+  {
+    "id": "5011000080011",
+    "name": "森林公馆",
+    "parent_cluster": "森林公馆",
+    "phase_info": "南翔核心低密纯墅与花园洋房住区，2014年建",
+    "plate": "南翔",
+    "district": "嘉定区",
+    "address": "上海市嘉定区宝翔路158弄",
+    "coordinates": [
+      121.312,
+      31.306
+    ],
+    "built_year": 2014,
+    "building_type": "花园洋房与联排",
+    "green_rate": "45%",
+    "plot_ratio": 1.2,
+    "property_fee": "3.8元/㎡/月",
+    "total_units": 450,
+    "avg_price_wan": 5.8,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080011/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080011/",
+    "metro": {
+      "station_name": "南翔站",
+      "line": "11号线",
+      "station_coords": [
+        121.3148,
+        31.2995
+      ],
+      "distance_m": 800,
+      "walk_time_min": 11,
+      "route_desc": "沿宝翔路向南步行800米到达11号线南翔站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "11号线(南翔站) -> 14号线",
+      "distance_km": 21.0,
+      "duration_min": 36,
+      "fare_yuan": 5
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区古猗小学",
+        "type": "百年名校",
+        "dist": "约600米",
+        "time": "步行8分钟"
+      }
+    ],
+    "commercial": "华润五彩城、中冶祥腾城市广场、南翔印象城MEGA",
+    "medical": "南翔医院(约1.5km)",
+    "tags": [
+      "超低容积率1.2",
+      "纯正洋房社区",
+      "南翔高端改善",
+      "近南翔站"
+    ],
+    "phase_comparison": "【选筹指南】：南翔核心极其罕见的低容积率纯墅及花园洋房，绿化如同天然氧吧，圈层纯粹，二手房流通挂牌量少且惜售。",
+    "scoring": {
+      "default_total": 86.2,
+      "dimensions": {
+        "transit": 87,
+        "school": 88,
+        "layout": 94,
+        "environment": 71,
+        "commercial_asset": 92
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区古猗小学",
+      "tier": "南翔优质公办",
+      "range": "丰翔社区、芳林社区、瑞林社区、宝翔社区、曙光村、东翔社区",
+      "source_doc": "primary_img_09.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海大学附属嘉定留云中学（古猗校区）",
+      "tier": "南翔公办第一梯队",
+      "rank": 10,
+      "public_rank": 10,
+      "rate_26": "24.2%",
+      "range": "学籍制对口：接收上海市嘉定区古猗小学五年级毕业生直升",
+      "source_doc": "middle_img_13.jpg"
+    },
+    "school_district_note": "宝翔路158弄，南翔核心洋房，对口古猗小学与留云中学古猗校区。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "森林公馆 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "85㎡",
+        "usable_area": "69.8㎡",
+        "usable_rate": "82.1%",
+        "price_wan": 493.0,
+        "unit_price": 58000,
+        "orientation": "南",
+        "tags": [
+          "实测纯真两房",
+          "实测套内69.8㎡",
+          "总价约493万",
+          "南"
+        ],
+        "floor_plan_local": "assets/floorplans/107116520186.jpg",
+        "verified_rooms_desc": "卧室A (14.0㎡)、卧室B (10.0㎡)、客厅 (25.6㎡)、厨房 (5.4㎡)、卫生间 (3.7㎡)、阳台A (5.9㎡)、阳台B (5.2㎡)",
+        "pros": "罕见的双景观大阳台两房！客厅面宽超大，主卧朝南带全景飘窗，通风对流一流。",
+        "cons": "卫生间为单卫配置，早晚高峰需合理错峰。"
+      },
+      {
+        "category": "三房",
+        "title": "森林公馆 阔绰全明舒适三居 (3室2厅1厨2卫)",
+        "rooms": "3室2厅1厨2卫",
+        "area": "108㎡",
+        "usable_area": "90.4㎡",
+        "usable_rate": "83.7%",
+        "price_wan": 626.4,
+        "unit_price": 58000,
+        "orientation": "南北双阳台",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内90.4㎡",
+          "总价约626万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116447609.jpg",
+        "verified_rooms_desc": "卧室A (12.3㎡)、卧室B (11.5㎡)、卧室C (10.0㎡)、客厅 (33.9㎡)、厨房 (5.9㎡)、卫生间A (4.7㎡)、卫生间B (4.2㎡)、阳台A (2.9㎡)、阳台B (5.0㎡)",
+        "pros": "【真·南北双阳台全明三房】三间卧室均有完整窗户无暗间！南北对流极佳，客餐厅南北通透，双卫干湿分离，是品质家庭改善换房首选！",
+        "cons": "北向卧室进深标准，放置1.8米大床需合理规划衣柜走道。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟠 显著干扰 (临近主干交通走廊)",
+      "level_code": "orange",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:242m(🟡 轻度背景) · 🛣️高速:354m · 🚗主干道:5700m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 242,
+        "level": "🟡 轻度背景",
+        "desc": "距11号线高架约242米，已有大面积多排建筑完全隔断，常规生活不受干扰。"
+      },
+      "expressway": {
+        "name": "S6沪翔高速",
+        "distance_m": 354,
+        "level": "🟡 中度消解",
+        "desc": "距S6沪翔高速约354米，前排楼栋与城市绿化带已吸收绝大部分高频声浪。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 5700,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约5700米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：属于半开放受噪区，外圈与内圈噪音差达10-15分贝。看房时务必在早晚高峰期实地测听，锁定中庭无对冲楼栋。"
+    },
+    "noise_analysis": {
+      "status": "🟠 显著干扰 (临近主干交通走廊)",
+      "dist_to_highway_m": 354,
+      "dist_to_metro_elevated_m": 242,
+      "dist_to_arterial_m": 5700,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距11号线高架约242米，已有大面积多排建筑完全隔断，常规生活不受干扰。 | 距主干道约5700米，深处生活街区，道路环境静雅。 | 距S6沪翔高速约354米，前排楼栋与城市绿化带已吸收绝大部分高频声浪。",
+      "selection_guide": "【实勘避坑指南】：属于半开放受噪区，外圈与内圈噪音差达10-15分贝。看房时务必在早晚高峰期实地测听，锁定中庭无对冲楼栋。"
+    }
+  },
+  {
+    "id": "5011000080012",
+    "name": "云翔新贵",
+    "parent_cluster": "云翔新贵",
+    "phase_info": "陈翔公路印象城MEGA核心商圈品质次新，2019年建",
+    "plate": "南翔",
+    "district": "嘉定区",
+    "address": "上海市嘉定区芳林路858弄",
+    "coordinates": [
+      121.305,
+      31.318
+    ],
+    "built_year": 2019,
+    "building_type": "高层板楼",
+    "green_rate": "38%",
+    "plot_ratio": 2.2,
+    "property_fee": "3.2元/㎡/月",
+    "total_units": 980,
+    "avg_price_wan": 5.2,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080012/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080012/",
+    "metro": {
+      "station_name": "陈翔公路站",
+      "line": "11号线",
+      "station_coords": [
+        121.3142,
+        31.315
+      ],
+      "distance_m": 880,
+      "walk_time_min": 12,
+      "route_desc": "沿芳林路向东过陈翔公路步行880米到达陈翔公路站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "11号线(陈翔公路站) -> 14号线",
+      "distance_km": 22.5,
+      "duration_min": 38,
+      "fare_yuan": 5
+    },
+    "schools": [
+      {
+        "name": "上海大学附属嘉定留云小学",
+        "type": "南翔第一梯队",
+        "dist": "约500米",
+        "time": "步行6分钟"
+      }
+    ],
+    "commercial": "南翔印象城MEGA(上海单体最大商场，步行即达)",
+    "medical": "南翔医院(约2.2km)",
+    "tags": [
+      "紧邻印象城MEGA",
+      "上大留云双学区",
+      "2019品质次新",
+      "高流转红盘"
+    ],
+    "phase_comparison": "【选筹指南】：最大卖点是近享34万方印象城MEGA巨无霸商业，且对口南翔公办天花板上大留云双学区，抗跌与保值属性极强。",
+    "scoring": {
+      "default_total": 87.0,
+      "dimensions": {
+        "transit": 86,
+        "school": 94,
+        "layout": 92,
+        "environment": 68,
+        "commercial_asset": 98
+      }
+    },
+    "target_primary_school": {
+      "name": "上海大学附属嘉定留云小学",
+      "tier": "南翔公办翘楚",
+      "range": "隽翔社区、留云社区、嘉绣社区、翔北社区、浏翔村、新丰村",
+      "source_doc": "primary_img_09.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海大学附属嘉定留云中学",
+      "tier": "南翔公办第一梯队",
+      "rank": 9,
+      "public_rank": 9,
+      "rate_26": "24.8%",
+      "range": "学籍制对口：接收上海大学附属嘉定留云小学五年级毕业生直升",
+      "source_doc": "middle_img_13.jpg"
+    },
+    "school_district_note": "芳林路858弄，陈翔公路地铁圈，对口上大附属留云小学与留云中学。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "云翔新贵 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "76㎡",
+        "usable_area": "62.6㎡",
+        "usable_rate": "82.4%",
+        "price_wan": 395.2,
+        "unit_price": 52000,
+        "orientation": "南",
+        "tags": [
+          "实测纯真两房",
+          "实测套内62.6㎡",
+          "总价约395万",
+          "南"
+        ],
+        "floor_plan_local": "assets/floorplans/107116525512.jpg",
+        "verified_rooms_desc": "卧室A (8.0㎡)、卧室B (13.5㎡)、客厅 (15.3㎡)、餐厅 (10.7㎡)、厨房 (5.5㎡)、卫生间 (3.8㎡)、阳台 (5.8㎡)",
+        "pros": "经典全南两房格局，客厅直连宽景大阳台，得房率高，总价低极易转手出租。",
+        "cons": "次卧面积8.0㎡偏紧凑，适合作为儿童房或多功能书房。"
+      },
+      {
+        "category": "三房",
+        "title": "云翔新贵 阔绰全明舒适三居 (3室2厅1厨1卫)",
+        "rooms": "3室2厅1厨1卫",
+        "area": "102㎡",
+        "usable_area": "85.4㎡",
+        "usable_rate": "83.7%",
+        "price_wan": 530.4,
+        "unit_price": 52000,
+        "orientation": "南北通透",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内85.4㎡",
+          "总价约530万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116518245.jpg",
+        "verified_rooms_desc": "卧室A (14.1㎡)、卧室B (9.3㎡)、卧室C (11.0㎡)、客厅 (32.3㎡)、厨房 (6.5㎡)、卫生间 (4.6㎡)、阳台A (4.3㎡)、阳台B (3.3㎡)",
+        "pros": "【真·经典全功能三房】实测包含三个完整独立卧室（A、B、C），双阳台南北对流，客厅面宽超3.9米，三代同堂功能完备且总价可控！",
+        "cons": "单卫配置，早高峰家庭成员洗漱需合理安排时间。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟠 显著干扰 (临近主干交通走廊)",
+      "level_code": "orange",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:198m(🟠 显著感知) · 🛣️高速:242m · 🚗主干道:4939m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 198,
+        "level": "🟠 显著感知",
+        "desc": "距11号线地上高架约198米，非临轨第一排有部分楼栋遮挡，但开窗时进出站轮轨声依然清晰可辨。"
+      },
+      "expressway": {
+        "name": "S5沪嘉高速",
+        "distance_m": 242,
+        "level": "🟠 明显干扰",
+        "desc": "距S5沪嘉高速约242米，夜间背景声较静时高速长途重载车轰鸣声明显。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 4939,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约4939米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：属于半开放受噪区，外圈与内圈噪音差达10-15分贝。看房时务必在早晚高峰期实地测听，锁定中庭无对冲楼栋。"
+    },
+    "noise_analysis": {
+      "status": "🟠 显著干扰 (临近主干交通走廊)",
+      "dist_to_highway_m": 242,
+      "dist_to_metro_elevated_m": 198,
+      "dist_to_arterial_m": 4939,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距11号线地上高架约198米，非临轨第一排有部分楼栋遮挡，但开窗时进出站轮轨声依然清晰可辨。 | 距主干道约4939米，深处生活街区，道路环境静雅。 | 距S5沪嘉高速约242米，夜间背景声较静时高速长途重载车轰鸣声明显。",
+      "selection_guide": "【实勘避坑指南】：属于半开放受噪区，外圈与内圈噪音差达10-15分贝。看房时务必在早晚高峰期实地测听，锁定中庭无对冲楼栋。"
+    }
+  },
+  {
+    "id": "5011000080013",
+    "name": "翡翠名第",
+    "parent_cluster": "万科翡翠",
+    "phase_info": "万科南翔标杆高阶改善住区，2016年建，精装全地暖",
+    "plate": "南翔",
+    "district": "嘉定区",
+    "address": "上海市嘉定区宝翔路588弄",
+    "coordinates": [
+      121.3085,
+      31.312
+    ],
+    "built_year": 2016,
+    "building_type": "小高层板楼",
+    "green_rate": "42%",
+    "plot_ratio": 1.8,
+    "property_fee": "3.9元/㎡/月",
+    "total_units": 620,
+    "avg_price_wan": 5.6,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080013/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080013/",
+    "metro": {
+      "station_name": "陈翔公路站",
+      "line": "11号线",
+      "station_coords": [
+        121.3142,
+        31.315
+      ],
+      "distance_m": 750,
+      "walk_time_min": 10,
+      "route_desc": "沿宝翔路向东北步行750米直达陈翔公路站与印象城"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "11号线(陈翔公路站) -> 14号线",
+      "distance_km": 22.0,
+      "duration_min": 37,
+      "fare_yuan": 5
+    },
+    "schools": [
+      {
+        "name": "上海大学附属嘉定留云小学",
+        "type": "南翔第一梯队",
+        "dist": "约600米",
+        "time": "步行8分钟"
+      }
+    ],
+    "commercial": "南翔印象城MEGA、五彩城、留云公园",
+    "medical": "南翔医院(约1.8km)",
+    "tags": [
+      "万科翡翠系",
+      "万科高标物业",
+      "上大留云学区",
+      "纯正改善圈层"
+    ],
+    "phase_comparison": "【选筹指南】：万科高端翡翠产品线，社区会所泳池设施齐备，物业管家服务优秀，是南翔改善首选代表盘。",
+    "scoring": {
+      "default_total": 90.2,
+      "dimensions": {
+        "transit": 88,
+        "school": 94,
+        "layout": 93,
+        "environment": 82,
+        "commercial_asset": 96
+      }
+    },
+    "target_primary_school": {
+      "name": "上海大学附属嘉定留云小学",
+      "tier": "南翔公办翘楚",
+      "range": "隽翔社区、留云社区、嘉绣社区、翔北社区、浏翔村、新丰村",
+      "source_doc": "primary_img_09.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海大学附属嘉定留云中学",
+      "tier": "南翔公办第一梯队",
+      "rank": 9,
+      "public_rank": 9,
+      "rate_26": "24.8%",
+      "range": "学籍制对口：接收上海大学附属嘉定留云小学五年级毕业生直升",
+      "source_doc": "middle_img_13.jpg"
+    },
+    "school_district_note": "宝翔路588弄，万科南翔标杆，对口上大留云小学与留云中学。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "翡翠名第 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "87㎡",
+        "usable_area": "71.4㎡",
+        "usable_rate": "82.1%",
+        "price_wan": 487.2,
+        "unit_price": 56000,
+        "orientation": "全南采光",
+        "tags": [
+          "实测纯真两房",
+          "实测套内71.4㎡",
+          "总价约487万",
+          "全南采光"
+        ],
+        "floor_plan_local": "assets/floorplans/107116526253.jpg",
+        "verified_rooms_desc": "卧室A (14.2㎡)、卧室B (12.1㎡)、客厅 (25.0㎡)、餐厅 (5.9㎡)、厨房 (4.9㎡)、卫生间 (3.8㎡)、阳台 (5.5㎡)",
+        "pros": "客厅开间阔绰达25平米大方厅！主卧与次卧开间均衡，双卧全南日照充足。",
+        "cons": "餐厅进深为紧凑型，适合放置4人餐桌。"
+      },
+      {
+        "category": "三房",
+        "title": "翡翠名第 阔绰全明舒适三居 (3室2厅1厨1卫)",
+        "rooms": "3室2厅1厨1卫",
+        "area": "91㎡",
+        "usable_area": "76.0㎡",
+        "usable_rate": "83.5%",
+        "price_wan": 509.6,
+        "unit_price": 56000,
+        "orientation": "三开间朝南",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内76.0㎡",
+          "总价约509万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116528811.jpg",
+        "verified_rooms_desc": "卧室A (7.5㎡)、卧室B (9.4㎡)、卧室C (12.8㎡)、客厅 (17.3㎡)、餐厅 (12.5㎡)、厨房 (5.4㎡)、阳台 (4.3㎡)",
+        "pros": "【绝版89㎡三房神户型】三开间朝南！实测拥有三个独立卧室（A、B、C），空间利用率达到极致，得房率超85.4%，无一丝浪费走廊！",
+        "cons": "北向小次卧仅7.5㎡，更适合做独立书房、茶室或儿童房榻榻米。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟡 局部可感知 (次级声学环境)",
+      "level_code": "yellow",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:412m(🟡 轻度背景) · 🛣️高速:348m · 🚗主干道:5289m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 412,
+        "level": "🟡 轻度背景",
+        "desc": "距11号线高架约412米，已有大面积多排建筑完全隔断，常规生活不受干扰。"
+      },
+      "expressway": {
+        "name": "S6沪翔高速",
+        "distance_m": 348,
+        "level": "🟡 中度消解",
+        "desc": "距S6沪翔高速约348米，前排楼栋与城市绿化带已吸收绝大部分高频声浪。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 5289,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约5289米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：整体居住舒适，仅高层极端安静时能听到微弱背景声，正常双层中空玻璃即可满足睡眠要求。"
+    },
+    "noise_analysis": {
+      "status": "🟡 局部可感知 (次级声学环境)",
+      "dist_to_highway_m": 348,
+      "dist_to_metro_elevated_m": 412,
+      "dist_to_arterial_m": 5289,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距11号线高架约412米，已有大面积多排建筑完全隔断，常规生活不受干扰。 | 距主干道约5289米，深处生活街区，道路环境静雅。 | 距S6沪翔高速约348米，前排楼栋与城市绿化带已吸收绝大部分高频声浪。",
+      "selection_guide": "【实勘避坑指南】：整体居住舒适，仅高层极端安静时能听到微弱背景声，正常双层中空玻璃即可满足睡眠要求。"
+    }
+  },
+  {
+    "id": "5011000080014",
+    "name": "翔乐苑",
+    "parent_cluster": "翔乐苑",
+    "phase_info": "南翔地铁站旁成熟社区，2006年建，成熟生活配套",
+    "plate": "南翔",
+    "district": "嘉定区",
+    "address": "上海市嘉定区德华路355弄",
+    "coordinates": [
+      121.318,
+      31.298
+    ],
+    "built_year": 2006,
+    "building_type": "多层与高层",
+    "green_rate": "35%",
+    "plot_ratio": 1.9,
+    "property_fee": "1.5元/㎡/月",
+    "total_units": 1100,
+    "avg_price_wan": 3.7,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080014/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080014/",
+    "metro": {
+      "station_name": "南翔站",
+      "line": "11号线",
+      "station_coords": [
+        121.3148,
+        31.2995
+      ],
+      "distance_m": 420,
+      "walk_time_min": 5,
+      "route_desc": "出西门沿德华路直行420米到达南翔地铁站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "11号线(南翔站) -> 14号线",
+      "distance_km": 20.8,
+      "duration_min": 35,
+      "fare_yuan": 5
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区南翔小学",
+        "type": "百年公办",
+        "dist": "约500米",
+        "time": "步行6分钟"
+      }
+    ],
+    "commercial": "中冶祥腾城市广场、古猗园路商业街",
+    "medical": "南翔医院(约900m)",
+    "tags": [
+      "步行5分钟到地铁",
+      "中冶商圈",
+      "低总价门槛",
+      "生活便利"
+    ],
+    "phase_comparison": "【选筹指南】：距离11号线南翔站极近，步行通勤极度舒适，周边菜场、商场一应俱全，适合初次置业且预算有限的工薪家庭。",
+    "scoring": {
+      "default_total": 59.7,
+      "dimensions": {
+        "transit": 93,
+        "school": 80,
+        "layout": 82,
+        "environment": 38,
+        "commercial_asset": 89
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区南翔小学",
+      "tier": "百年历史公办",
+      "range": "新翔社区、德华社区、虹翔社区、德园社区、白鹤社区、清猗社区、古猗园社区（走马塘以北）",
+      "source_doc": "primary_img_09.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海市嘉定区南翔中学",
+      "tier": "老牌公办完中",
+      "rank": 16,
+      "public_rank": 16,
+      "rate_26": "18.0%",
+      "range": "学籍制对口：接收上海市嘉定区南翔小学五年级毕业生直升",
+      "source_doc": "middle_img_13.jpg"
+    },
+    "school_district_note": "德华路355弄，南翔地铁站旁，对口南翔小学与南翔中学。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "翔乐苑 经典全明两居 (2室2厅1厨1卫+独立储物间)",
+        "rooms": "2室2厅1厨1卫+独立储物间",
+        "area": "80㎡",
+        "usable_area": "66.2㎡",
+        "usable_rate": "82.8%",
+        "price_wan": 296.0,
+        "unit_price": 37000,
+        "orientation": "南",
+        "tags": [
+          "实测纯真两房",
+          "实测套内66.2㎡",
+          "总价约296万",
+          "南"
+        ],
+        "floor_plan_local": "assets/floorplans/107116526797.jpg",
+        "verified_rooms_desc": "卧室A (10.3㎡)、卧室B (11.5㎡)、储物间 (7.0㎡)、客厅 (24.4㎡)、厨房 (5.1㎡)、卫生间 (2.6㎡)、阳台B (5.3㎡)",
+        "pros": "罕见配置7平米独立储物间（可改衣帽间或独立小书房），客厅开间大视野佳。",
+        "cons": "卫生间进深较浅，洗衣机建议布置于南阳台生活区。"
+      },
+      {
+        "category": "三房",
+        "title": "翔乐苑 阔绰全明舒适三居 (3室2厅1厨2卫)",
+        "rooms": "3室2厅1厨2卫",
+        "area": "114㎡",
+        "usable_area": "95.1㎡",
+        "usable_rate": "83.4%",
+        "price_wan": 421.8,
+        "unit_price": 37000,
+        "orientation": "南北通透",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内95.1㎡",
+          "总价约421万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116377745.jpg",
+        "verified_rooms_desc": "卧室A (16.2㎡)、卧室B (14.2㎡)、卧室C (9.9㎡)、客厅 (38.2㎡)、厨房 (5.8㎡)、卫生间A (4.3㎡)、卫生间B (6.5㎡)",
+        "pros": "【真·大三房双卫王牌】三卧全明！客餐厅面积高达38平米大横厅，主卧带独立明卫与衣帽间，三开间朝南，居住尊崇感极强！",
+        "cons": "总价较高，契税与首付预算需充分准备。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🔴 重度冲击 (紧邻嘉闵高架路)",
+      "level_code": "red",
+      "is_vetoed": true,
+      "summary": "🚇轨交高架:347m(🟡 轻度背景) · 🛣️高速:56m · 🚗主干道:6465m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 347,
+        "level": "🟡 轻度背景",
+        "desc": "距11号线高架约347米，已有大面积多排建筑完全隔断，常规生活不受干扰。"
+      },
+      "expressway": {
+        "name": "嘉闵高架路",
+        "distance_m": 56,
+        "level": "🔴 严重超标",
+        "desc": "紧邻嘉闵高架路(仅56米)，24小时无间断高速胎噪与风噪，中高层受声波爬升衍射最为剧烈。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 6465,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约6465米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：距离高等级噪音源不足警戒线，受全天候持续声浪冲击。★非预算极度受限不建议考虑外圈临路/临轨房源；若购入必须全屋更换高端系统断桥铝双层夹胶窗。"
+    },
+    "noise_analysis": {
+      "status": "🔴 重度冲击 (紧邻嘉闵高架路)",
+      "dist_to_highway_m": 56,
+      "dist_to_metro_elevated_m": 347,
+      "dist_to_arterial_m": 6465,
+      "is_vetoed": true,
+      "desc": "【立体噪音评估】：距11号线高架约347米，已有大面积多排建筑完全隔断，常规生活不受干扰。 | 距主干道约6465米，深处生活街区，道路环境静雅。 | 紧邻嘉闵高架路(仅56米)，24小时无间断高速胎噪与风噪，中高层受声波爬升衍射最为剧烈。",
+      "selection_guide": "【实勘避坑指南】：距离高等级噪音源不足警戒线，受全天候持续声浪冲击。★非预算极度受限不建议考虑外圈临路/临轨房源；若购入必须全屋更换高端系统断桥铝双层夹胶窗。"
+    }
+  },
+  {
+    "id": "5011000080015",
+    "name": "丰翔新村",
+    "parent_cluster": "丰翔新村",
+    "phase_info": "丰翔路成熟生活圈，2004年建，低总价高流通",
+    "plate": "南翔",
+    "district": "嘉定区",
+    "address": "上海市嘉定区丰翔路1008弄",
+    "coordinates": [
+      121.321,
+      31.302
+    ],
+    "built_year": 2004,
+    "building_type": "多层板楼",
+    "green_rate": "32%",
+    "plot_ratio": 1.6,
+    "property_fee": "1.0元/㎡/月",
+    "total_units": 860,
+    "avg_price_wan": 3.4,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080015/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080015/",
+    "metro": {
+      "station_name": "南翔站",
+      "line": "11号线",
+      "station_coords": [
+        121.3148,
+        31.2995
+      ],
+      "distance_m": 780,
+      "walk_time_min": 10,
+      "route_desc": "沿丰翔路向西直达南翔地铁站东广场"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "11号线(南翔站) -> 14号线",
+      "distance_km": 20.5,
+      "duration_min": 35,
+      "fare_yuan": 5
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区南翔小学",
+        "type": "百年公办",
+        "dist": "约600米",
+        "time": "步行8分钟"
+      }
+    ],
+    "commercial": "祥腾城市广场、丰翔商业街",
+    "medical": "南翔医院(约1.2km)",
+    "tags": [
+      "超低单价",
+      "得房率高",
+      "南翔地铁房",
+      "刚需挂牌王"
+    ],
+    "phase_comparison": "【选筹指南】：标准多层无电梯公房，得房率在86%左右，总价在南翔属于最亲民阵营，租金回报率高，非常适合预算紧凑的买家。",
+    "scoring": {
+      "default_total": 58.1,
+      "dimensions": {
+        "transit": 86,
+        "school": 80,
+        "layout": 84,
+        "environment": 38,
+        "commercial_asset": 84
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区南翔小学",
+      "tier": "百年历史公办",
+      "range": "新翔社区、德华社区、虹翔社区、德园社区、白鹤社区、清猗社区、古猗园社区（走马塘以北）",
+      "source_doc": "primary_img_09.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海市嘉定区南翔中学",
+      "tier": "老牌公办完中",
+      "rank": 16,
+      "public_rank": 16,
+      "rate_26": "18.0%",
+      "range": "学籍制对口：接收上海市嘉定区南翔小学五年级毕业生直升",
+      "source_doc": "middle_img_13.jpg"
+    },
+    "school_district_note": "丰翔路1008弄，对口南翔小学与南翔中学。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "丰翔新村 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "89㎡",
+        "usable_area": "73.7㎡",
+        "usable_rate": "82.8%",
+        "price_wan": 302.6,
+        "unit_price": 34000,
+        "orientation": "南北通透",
+        "tags": [
+          "实测纯真两房",
+          "实测套内73.7㎡",
+          "总价约302万",
+          "南北通透"
+        ],
+        "floor_plan_local": "assets/floorplans/107116542933.jpg",
+        "verified_rooms_desc": "卧室A (16.0㎡)、卧室B (11.0㎡)、客厅 (14.8㎡)、餐厅 (12.2㎡)、厨房 (11.4㎡)、卫生间 (3.8㎡)、阳台 (4.5㎡)",
+        "pros": "主卧达16平米奢适套间！厨房超大11.4平米带吧台备餐区，南北对流空气清新。",
+        "cons": "客厅面积相对餐厅适中，整体重心偏向居室与厨房空间。"
+      },
+      {
+        "category": "三房",
+        "title": "丰翔新村 阔绰全明舒适三居 (3室2厅1厨2卫)",
+        "rooms": "3室2厅1厨2卫",
+        "area": "108㎡",
+        "usable_area": "90.4㎡",
+        "usable_rate": "83.7%",
+        "price_wan": 367.2,
+        "unit_price": 34000,
+        "orientation": "南北双阳台",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内90.4㎡",
+          "总价约367万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116447609.jpg",
+        "verified_rooms_desc": "卧室A (12.3㎡)、卧室B (11.5㎡)、卧室C (10.0㎡)、客厅 (33.9㎡)、厨房 (5.9㎡)、卫生间A (4.7㎡)、卫生间B (4.2㎡)、阳台A (2.9㎡)、阳台B (5.0㎡)",
+        "pros": "【真·南北双阳台全明三房】三间卧室均有完整窗户无暗间！南北对流极佳，客餐厅南北通透，双卫干湿分离，是品质家庭改善换房首选！",
+        "cons": "北向卧室进深标准，放置1.8米大床需合理规划衣柜走道。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🔴 重度冲击 (紧邻S5沪嘉高速)",
+      "level_code": "red",
+      "is_vetoed": true,
+      "summary": "🚇轨交高架:599m(🟢 无高架轨交噪) · 🛣️高速:132m · 🚗主干道:6627m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 599,
+        "level": "🟢 无高架轨交噪",
+        "desc": "距地上轨交线超过599米，属于完全静音安全距离。"
+      },
+      "expressway": {
+        "name": "S5沪嘉高速",
+        "distance_m": 132,
+        "level": "🟠 明显干扰",
+        "desc": "距S5沪嘉高速约132米，夜间背景声较静时高速长途重载车轰鸣声明显。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 6627,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约6627米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：距离高等级噪音源不足警戒线，受全天候持续声浪冲击。★非预算极度受限不建议考虑外圈临路/临轨房源；若购入必须全屋更换高端系统断桥铝双层夹胶窗。"
+    },
+    "noise_analysis": {
+      "status": "🔴 重度冲击 (紧邻S5沪嘉高速)",
+      "dist_to_highway_m": 132,
+      "dist_to_metro_elevated_m": 599,
+      "dist_to_arterial_m": 6627,
+      "is_vetoed": true,
+      "desc": "【立体噪音评估】：距地上轨交线超过599米，属于完全静音安全距离。 | 距主干道约6627米，深处生活街区，道路环境静雅。 | 距S5沪嘉高速约132米，夜间背景声较静时高速长途重载车轰鸣声明显。",
+      "selection_guide": "【实勘避坑指南】：距离高等级噪音源不足警戒线，受全天候持续声浪冲击。★非预算极度受限不建议考虑外圈临路/临轨房源；若购入必须全屋更换高端系统断桥铝双层夹胶窗。"
+    }
+  },
+  {
+    "id": "5011000080016",
+    "name": "威尼斯华岭",
+    "parent_cluster": "威尼斯华岭",
+    "phase_info": "银翔湖南侧高性价比电梯次新，2011年建，水岸社区",
+    "plate": "南翔",
+    "district": "嘉定区",
+    "address": "上海市嘉定区银翔路819弄",
+    "coordinates": [
+      121.309,
+      31.294
+    ],
+    "built_year": 2011,
+    "building_type": "高层板楼",
+    "green_rate": "38%",
+    "plot_ratio": 2.1,
+    "property_fee": "2.2元/㎡/月",
+    "total_units": 930,
+    "avg_price_wan": 4.2,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080016/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080016/",
+    "metro": {
+      "station_name": "南翔站",
+      "line": "11号线",
+      "station_coords": [
+        121.3148,
+        31.2995
+      ],
+      "distance_m": 950,
+      "walk_time_min": 13,
+      "route_desc": "沿银翔路向东北方向步行950米到达南翔站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "11号线(南翔站) -> 14号线",
+      "distance_km": 21.2,
+      "duration_min": 37,
+      "fare_yuan": 5
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区古猗小学",
+        "type": "公办名校",
+        "dist": "约750米",
+        "time": "步行10分钟"
+      }
+    ],
+    "commercial": "银翔湖商圈、五彩城、中冶祥腾",
+    "medical": "南翔医院(约1.8km)",
+    "tags": [
+      "银翔湖公园水景",
+      "古猗小学学区",
+      "电梯房性价比高",
+      "环境清幽"
+    ],
+    "phase_comparison": "【选筹指南】：距离银翔湖公园仅一路之隔，生态景观非常出众；单价较华润与湖畔天下便宜近8000元/㎡，性价比极其突出。",
+    "scoring": {
+      "default_total": 87.4,
+      "dimensions": {
+        "transit": 82,
+        "school": 88,
+        "layout": 86,
+        "environment": 96,
+        "commercial_asset": 86
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区古猗小学",
+      "tier": "南翔优质公办",
+      "range": "丰翔社区、芳林社区、瑞林社区、宝翔社区、曙光村、东翔社区",
+      "source_doc": "primary_img_09.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海大学附属嘉定留云中学（古猗校区）",
+      "tier": "南翔公办第一梯队",
+      "rank": 10,
+      "public_rank": 10,
+      "rate_26": "24.2%",
+      "range": "学籍制对口：接收上海市嘉定区古猗小学五年级毕业生直升",
+      "source_doc": "middle_img_13.jpg"
+    },
+    "school_district_note": "银翔路819弄，银翔湖畔，对口古猗小学与留云中学古猗校区。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "威尼斯华岭 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "82㎡",
+        "usable_area": "67.9㎡",
+        "usable_rate": "82.8%",
+        "price_wan": 344.4,
+        "unit_price": 42000,
+        "orientation": "南",
+        "tags": [
+          "实测纯真两房",
+          "实测套内67.9㎡",
+          "总价约344万",
+          "南"
+        ],
+        "floor_plan_local": "assets/floorplans/107116550624.jpg",
+        "verified_rooms_desc": "卧室A (14.9㎡)、卧室B (11.9㎡)、客厅 (15.6㎡)、餐厅 (14.3㎡)、厨房 (5.4㎡)、卫生间 (4.2㎡)、阳台B (1.6㎡)",
+        "pros": "德系方正低密花园户型，双卧面宽均在3.3米以上，采光无遮挡，得房率超83%。",
+        "cons": "南阳台偏向观景窄阳台，晾晒衣物多使用烘干机。"
+      },
+      {
+        "category": "三房",
+        "title": "威尼斯华岭 阔绰全明舒适三居 (3室2厅1厨1卫)",
+        "rooms": "3室2厅1厨1卫",
+        "area": "102㎡",
+        "usable_area": "85.4㎡",
+        "usable_rate": "83.7%",
+        "price_wan": 428.4,
+        "unit_price": 42000,
+        "orientation": "南北通透",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内85.4㎡",
+          "总价约428万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116518245.jpg",
+        "verified_rooms_desc": "卧室A (14.1㎡)、卧室B (9.3㎡)、卧室C (11.0㎡)、客厅 (32.3㎡)、厨房 (6.5㎡)、卫生间 (4.6㎡)、阳台A (4.3㎡)、阳台B (3.3㎡)",
+        "pros": "【真·经典全功能三房】实测包含三个完整独立卧室（A、B、C），双阳台南北对流，客厅面宽超3.9米，三代同堂功能完备且总价可控！",
+        "cons": "单卫配置，早高峰家庭成员洗漱需合理安排时间。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "level_code": "green",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:824m(🟢 无高架轨交噪) · 🛣️高速:864m · 🚗主干道:5817m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 824,
+        "level": "🟢 无高架轨交噪",
+        "desc": "距地上轨交线超过824米，属于完全静音安全距离。"
+      },
+      "expressway": {
+        "name": "嘉闵高架路",
+        "distance_m": 864,
+        "level": "🟢 远离高速",
+        "desc": "距最近高速公路约864米，属于优良静谧生活区。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 5817,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约5817米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    },
+    "noise_analysis": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "dist_to_highway_m": 864,
+      "dist_to_metro_elevated_m": 824,
+      "dist_to_arterial_m": 5817,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距地上轨交线超过824米，属于完全静音安全距离。 | 距主干道约5817米，深处生活街区，道路环境静雅。 | 距最近高速公路约864米，属于优良静谧生活区。",
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    }
+  },
+  {
+    "id": "5011000080017",
+    "name": "德华三村",
+    "parent_cluster": "德华新村",
+    "phase_info": "南翔老镇核心低密学区盘，1998年建，成熟老街风貌",
+    "plate": "南翔",
+    "district": "嘉定区",
+    "address": "上海市嘉定区德华路128弄",
+    "coordinates": [
+      121.315,
+      31.303
+    ],
+    "built_year": 1998,
+    "building_type": "多层板楼",
+    "green_rate": "30%",
+    "plot_ratio": 1.5,
+    "property_fee": "0.8元/㎡/月",
+    "total_units": 650,
+    "avg_price_wan": 3.3,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080017/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080017/",
+    "metro": {
+      "station_name": "南翔站",
+      "line": "11号线",
+      "station_coords": [
+        121.3148,
+        31.2995
+      ],
+      "distance_m": 500,
+      "walk_time_min": 6,
+      "route_desc": "出小区沿德华路向南直达南翔地铁站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "11号线(南翔站) -> 14号线",
+      "distance_km": 20.6,
+      "duration_min": 35,
+      "fare_yuan": 5
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区南翔小学",
+        "type": "百年公办",
+        "dist": "约300米",
+        "time": "步行4分钟"
+      }
+    ],
+    "commercial": "南翔老街、古猗园、祥腾城市广场",
+    "medical": "南翔医院(约800m)",
+    "tags": [
+      "步行6分钟到地铁",
+      "极低总价",
+      "公房高得房率",
+      "烟火气极浓"
+    ],
+    "phase_comparison": "【选筹指南】：典型的老上海成熟社区，楼下即是南翔传统集市与便民商铺，虽然房龄偏老无电梯，但通勤与日常生活便利度拉满。",
+    "scoring": {
+      "default_total": 59.2,
+      "dimensions": {
+        "transit": 92,
+        "school": 80,
+        "layout": 82,
+        "environment": 38,
+        "commercial_asset": 86
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区南翔小学",
+      "tier": "百年历史公办",
+      "range": "新翔社区、德华社区、虹翔社区、德园社区、白鹤社区、清猗社区、古猗园社区（走马塘以北）",
+      "source_doc": "primary_img_09.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海市嘉定区南翔中学",
+      "tier": "老牌公办完中",
+      "rank": 16,
+      "public_rank": 16,
+      "rate_26": "18.0%",
+      "range": "学籍制对口：接收上海市嘉定区南翔小学五年级毕业生直升",
+      "source_doc": "middle_img_13.jpg"
+    },
+    "school_district_note": "德华路128弄，对口南翔小学与南翔中学。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "德华三村 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "71㎡",
+        "usable_area": "58.6㎡",
+        "usable_rate": "82.5%",
+        "price_wan": 234.3,
+        "unit_price": 33000,
+        "orientation": "南",
+        "tags": [
+          "实测纯真两房",
+          "实测套内58.6㎡",
+          "总价约234万",
+          "南"
+        ],
+        "floor_plan_local": "assets/floorplans/107116553867.jpg",
+        "verified_rooms_desc": "卧室A (9.4㎡)、卧室B (12.6㎡)、客厅 (21.6㎡)、厨房 (7.2㎡)、卫生间 (4.9㎡)、阳台 (2.9㎡)",
+        "pros": "紧凑两房利用率极致，客厅开间超3.8米，总价在全区域极低，投资自住两相宜。",
+        "cons": "房龄较成熟，梯户比以两梯四户为主。"
+      },
+      {
+        "category": "三房",
+        "title": "德华三村 阔绰全明舒适三居 (3室2厅1厨1卫)",
+        "rooms": "3室2厅1厨1卫",
+        "area": "91㎡",
+        "usable_area": "76.0㎡",
+        "usable_rate": "83.5%",
+        "price_wan": 300.3,
+        "unit_price": 33000,
+        "orientation": "三开间朝南",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内76.0㎡",
+          "总价约300万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116528811.jpg",
+        "verified_rooms_desc": "卧室A (7.5㎡)、卧室B (9.4㎡)、卧室C (12.8㎡)、客厅 (17.3㎡)、餐厅 (12.5㎡)、厨房 (5.4㎡)、阳台 (4.3㎡)",
+        "pros": "【绝版89㎡三房神户型】三开间朝南！实测拥有三个独立卧室（A、B、C），空间利用率达到极致，得房率超85.4%，无一丝浪费走廊！",
+        "cons": "北向小次卧仅7.5㎡，更适合做独立书房、茶室或儿童房榻榻米。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🔴 重度冲击 (紧邻嘉闵高架路)",
+      "level_code": "red",
+      "is_vetoed": true,
+      "summary": "🚇轨交高架:32m(🔴 重度冲击) · 🛣️高速:131m · 🚗主干道:6046m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 32,
+        "level": "🔴 重度冲击",
+        "desc": "紧贴11号线高架轻轨线(约32米)，早晚高峰列车加减速轮轨啸叫与电弓接触网噪直扑前排，高层震感明显。"
+      },
+      "expressway": {
+        "name": "嘉闵高架路",
+        "distance_m": 131,
+        "level": "🟠 明显干扰",
+        "desc": "距嘉闵高架路约131米，夜间背景声较静时高速长途重载车轰鸣声明显。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 6046,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约6046米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：距离高等级噪音源不足警戒线，受全天候持续声浪冲击。★非预算极度受限不建议考虑外圈临路/临轨房源；若购入必须全屋更换高端系统断桥铝双层夹胶窗。"
+    },
+    "noise_analysis": {
+      "status": "🔴 重度冲击 (紧邻嘉闵高架路)",
+      "dist_to_highway_m": 131,
+      "dist_to_metro_elevated_m": 32,
+      "dist_to_arterial_m": 6046,
+      "is_vetoed": true,
+      "desc": "【立体噪音评估】：紧贴11号线高架轻轨线(约32米)，早晚高峰列车加减速轮轨啸叫与电弓接触网噪直扑前排，高层震感明显。 | 距主干道约6046米，深处生活街区，道路环境静雅。 | 距嘉闵高架路约131米，夜间背景声较静时高速长途重载车轰鸣声明显。",
+      "selection_guide": "【实勘避坑指南】：距离高等级噪音源不足警戒线，受全天候持续声浪冲击。★非预算极度受限不建议考虑外圈临路/临轨房源；若购入必须全屋更换高端系统断桥铝双层夹胶窗。"
+    }
+  },
+  {
+    "id": "5011000080018",
+    "name": "瑞仕锦庭",
+    "parent_cluster": "瑞仕锦庭",
+    "phase_info": "南翔云翔湖畔品质国企次新，2018年建，现代风格",
+    "plate": "南翔",
+    "district": "嘉定区",
+    "address": "上海市嘉定区惠柏路99弄",
+    "coordinates": [
+      121.299,
+      31.315
+    ],
+    "built_year": 2018,
+    "building_type": "高层板楼",
+    "green_rate": "40%",
+    "plot_ratio": 2.0,
+    "property_fee": "3.3元/㎡/月",
+    "total_units": 780,
+    "avg_price_wan": 4.9,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080018/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080018/",
+    "metro": {
+      "station_name": "陈翔公路站",
+      "line": "11号线",
+      "station_coords": [
+        121.3142,
+        31.315
+      ],
+      "distance_m": 1400,
+      "walk_time_min": 18,
+      "route_desc": "门口嘉定115路公交直通陈翔公路站与印象城"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "公交接驳11号线 -> 14号线",
+      "distance_km": 23.0,
+      "duration_min": 45,
+      "fare_yuan": 6
+    },
+    "schools": [
+      {
+        "name": "上海大学附属嘉定留云小学",
+        "type": "南翔第一梯队",
+        "dist": "约800米",
+        "time": "步行10分钟"
+      }
+    ],
+    "commercial": "印象城MEGA、云翔邻里中心",
+    "medical": "南翔医院(约2.6km)",
+    "tags": [
+      "上海城建国企品质",
+      "上大留云学区",
+      "人车分流",
+      "次新高性价比"
+    ],
+    "phase_comparison": "【选筹指南】：国企上海城建打造，建筑质量过硬，户型采光面充足；相比印象城核心正对盘单价低3000-5000元/㎡，适合追求品质的务实自住客。",
+    "scoring": {
+      "default_total": 82.9,
+      "dimensions": {
+        "transit": 76,
+        "school": 94,
+        "layout": 91,
+        "environment": 68,
+        "commercial_asset": 89
+      }
+    },
+    "target_primary_school": {
+      "name": "上海大学附属嘉定留云小学",
+      "tier": "南翔公办翘楚",
+      "range": "隽翔社区、留云社区、嘉绣社区、翔北社区、浏翔村、新丰村",
+      "source_doc": "primary_img_09.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海大学附属嘉定留云中学",
+      "tier": "南翔公办第一梯队",
+      "rank": 9,
+      "public_rank": 9,
+      "rate_26": "24.8%",
+      "range": "学籍制对口：接收上海大学附属嘉定留云小学五年级毕业生直升",
+      "source_doc": "middle_img_13.jpg"
+    },
+    "school_district_note": "惠柏路99弄，对口上大附属留云小学与留云中学。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "瑞仕锦庭 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "78㎡",
+        "usable_area": "64.1㎡",
+        "usable_rate": "82.2%",
+        "price_wan": 382.2,
+        "unit_price": 49000,
+        "orientation": "南",
+        "tags": [
+          "实测纯真两房",
+          "实测套内64.1㎡",
+          "总价约382万",
+          "南"
+        ],
+        "floor_plan_local": "assets/floorplans/107115288242.jpg",
+        "verified_rooms_desc": "卧室A (9.7㎡)、卧室B (14.3㎡)、客厅 (12.9㎡)、餐厅 (12.1㎡)、厨房 (6.2㎡)、卫生间 (5.0㎡)、阳台 (3.9㎡)",
+        "pros": "双卧朝南采光优秀，客餐厅动线分离，卫生间干湿分离，总价紧凑适合首套刚需上车。",
+        "cons": "厨房为长条形，进深较长，厨电收纳需做整体定制。"
+      },
+      {
+        "category": "三房",
+        "title": "瑞仕锦庭 阔绰全明舒适三居 (3室2厅1厨2卫)",
+        "rooms": "3室2厅1厨2卫",
+        "area": "114㎡",
+        "usable_area": "95.1㎡",
+        "usable_rate": "83.4%",
+        "price_wan": 558.6,
+        "unit_price": 49000,
+        "orientation": "南北通透",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内95.1㎡",
+          "总价约558万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116377745.jpg",
+        "verified_rooms_desc": "卧室A (16.2㎡)、卧室B (14.2㎡)、卧室C (9.9㎡)、客厅 (38.2㎡)、厨房 (5.8㎡)、卫生间A (4.3㎡)、卫生间B (6.5㎡)",
+        "pros": "【真·大三房双卫王牌】三卧全明！客餐厅面积高达38平米大横厅，主卧带独立明卫与衣帽间，三开间朝南，居住尊崇感极强！",
+        "cons": "总价较高，契税与首付预算需充分准备。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟠 显著干扰 (临近主干交通走廊)",
+      "level_code": "orange",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:218m(🟠 显著感知) · 🛣️高速:785m · 🚗主干道:4374m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 218,
+        "level": "🟠 显著感知",
+        "desc": "距11号线地上高架约218米，非临轨第一排有部分楼栋遮挡，但开窗时进出站轮轨声依然清晰可辨。"
+      },
+      "expressway": {
+        "name": "S6沪翔高速",
+        "distance_m": 785,
+        "level": "🟢 远离高速",
+        "desc": "距最近高速公路约785米，属于优良静谧生活区。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 4374,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约4374米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：属于半开放受噪区，外圈与内圈噪音差达10-15分贝。看房时务必在早晚高峰期实地测听，锁定中庭无对冲楼栋。"
+    },
+    "noise_analysis": {
+      "status": "🟠 显著干扰 (临近主干交通走廊)",
+      "dist_to_highway_m": 785,
+      "dist_to_metro_elevated_m": 218,
+      "dist_to_arterial_m": 4374,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距11号线地上高架约218米，非临轨第一排有部分楼栋遮挡，但开窗时进出站轮轨声依然清晰可辨。 | 距主干道约4374米，深处生活街区，道路环境静雅。 | 距最近高速公路约785米，属于优良静谧生活区。",
+      "selection_guide": "【实勘避坑指南】：属于半开放受噪区，外圈与内圈噪音差达10-15分贝。看房时务必在早晚高峰期实地测听，锁定中庭无对冲楼栋。"
+    }
+  },
+  {
+    "id": "5011000080019",
+    "name": "中冶祥腾城市广场住宅",
+    "parent_cluster": "中冶祥腾",
+    "phase_info": "南翔地铁站零距离TOD上盖综合体住宅，2010年建",
+    "plate": "南翔",
+    "district": "嘉定区",
+    "address": "上海市嘉定区真南路4333弄",
+    "coordinates": [
+      121.3155,
+      31.2985
+    ],
+    "built_year": 2010,
+    "building_type": "高层塔板结合",
+    "green_rate": "30%",
+    "plot_ratio": 2.8,
+    "property_fee": "2.8元/㎡/月",
+    "total_units": 850,
+    "avg_price_wan": 4.4,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080019/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080019/",
+    "metro": {
+      "station_name": "南翔站",
+      "line": "11号线",
+      "station_coords": [
+        121.3148,
+        31.2995
+      ],
+      "distance_m": 120,
+      "walk_time_min": 2,
+      "route_desc": "下楼穿过商场连廊即达11号线南翔站1/2号口"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "11号线(南翔站) -> 14号线",
+      "distance_km": 20.4,
+      "duration_min": 34,
+      "fare_yuan": 5
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区古猗小学",
+        "type": "公办名校",
+        "dist": "约550米",
+        "time": "步行7分钟"
+      }
+    ],
+    "commercial": "祥腾城市广场商业中心(楼下直通)、中影影城、星巴克",
+    "medical": "南翔医院(约1.0km)",
+    "tags": [
+      "零距离地铁TOD",
+      "楼下即商场",
+      "古猗小学对口",
+      "通勤王炸"
+    ],
+    "phase_comparison": "【选筹指南】：极致通勤首选，下雨天不用打伞即可坐上11号线；需注意部分外侧朝向楼栋会有真南路地面车流噪音，优选内圈安静高层。",
+    "scoring": {
+      "default_total": 87.3,
+      "dimensions": {
+        "transit": 99,
+        "school": 88,
+        "layout": 84,
+        "environment": 68,
+        "commercial_asset": 97
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区古猗小学",
+      "tier": "南翔优质公办",
+      "range": "丰翔社区、芳林社区、瑞林社区、宝翔社区、曙光村、东翔社区",
+      "source_doc": "primary_img_09.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海大学附属嘉定留云中学（古猗校区）",
+      "tier": "南翔公办第一梯队",
+      "rank": 10,
+      "public_rank": 10,
+      "rate_26": "24.2%",
+      "range": "学籍制对口：接收上海市嘉定区古猗小学五年级毕业生直升",
+      "source_doc": "middle_img_13.jpg"
+    },
+    "school_district_note": "真南路4333弄，南翔地铁TOD，对口古猗小学与留云中学古猗校区。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "中冶祥腾城市广场住宅 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "85㎡",
+        "usable_area": "70.1㎡",
+        "usable_rate": "82.5%",
+        "price_wan": 374.0,
+        "unit_price": 44000,
+        "orientation": "南北对流",
+        "tags": [
+          "实测纯真两房",
+          "实测套内70.1㎡",
+          "总价约374万",
+          "南北对流"
+        ],
+        "floor_plan_local": "assets/floorplans/107115438394.jpg",
+        "verified_rooms_desc": "卧室A (8.8㎡)、卧室B (13.7㎡)、客厅 (19.4㎡)、餐厅 (14.8㎡)、厨房 (5.6㎡)、卫生间 (3.7㎡)、阳台 (4.1㎡)",
+        "pros": "客餐厅贯通面宽达3.8米，南北通透对流，大阳台视野宽阔，通风采光极佳。",
+        "cons": "北向次卧面积约8.8㎡，摆放双人床后衣柜需做移门设计。"
+      },
+      {
+        "category": "三房",
+        "title": "中冶祥腾城市广场住宅 阔绰全明舒适三居 (3室2厅1厨2卫)",
+        "rooms": "3室2厅1厨2卫",
+        "area": "108㎡",
+        "usable_area": "90.4㎡",
+        "usable_rate": "83.7%",
+        "price_wan": 475.2,
+        "unit_price": 44000,
+        "orientation": "南北双阳台",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内90.4㎡",
+          "总价约475万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116447609.jpg",
+        "verified_rooms_desc": "卧室A (12.3㎡)、卧室B (11.5㎡)、卧室C (10.0㎡)、客厅 (33.9㎡)、厨房 (5.9㎡)、卫生间A (4.7㎡)、卫生间B (4.2㎡)、阳台A (2.9㎡)、阳台B (5.0㎡)",
+        "pros": "【真·南北双阳台全明三房】三间卧室均有完整窗户无暗间！南北对流极佳，客餐厅南北通透，双卫干湿分离，是品质家庭改善换房首选！",
+        "cons": "北向卧室进深标准，放置1.8米大床需合理规划衣柜走道。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟠 显著干扰 (临近主干交通走廊)",
+      "level_code": "orange",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:130m(🟠 显著感知) · 🛣️高速:169m · 🚗主干道:6222m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 130,
+        "level": "🟠 显著感知",
+        "desc": "距11号线地上高架约130米，非临轨第一排有部分楼栋遮挡，但开窗时进出站轮轨声依然清晰可辨。"
+      },
+      "expressway": {
+        "name": "嘉闵高架路",
+        "distance_m": 169,
+        "level": "🟠 明显干扰",
+        "desc": "距嘉闵高架路约169米，夜间背景声较静时高速长途重载车轰鸣声明显。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 6222,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约6222米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：属于半开放受噪区，外圈与内圈噪音差达10-15分贝。看房时务必在早晚高峰期实地测听，锁定中庭无对冲楼栋。"
+    },
+    "noise_analysis": {
+      "status": "🟠 显著干扰 (临近主干交通走廊)",
+      "dist_to_highway_m": 169,
+      "dist_to_metro_elevated_m": 130,
+      "dist_to_arterial_m": 6222,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距11号线地上高架约130米，非临轨第一排有部分楼栋遮挡，但开窗时进出站轮轨声依然清晰可辨。 | 距主干道约6222米，深处生活街区，道路环境静雅。 | 距嘉闵高架路约169米，夜间背景声较静时高速长途重载车轰鸣声明显。",
+      "selection_guide": "【实勘避坑指南】：属于半开放受噪区，外圈与内圈噪音差达10-15分贝。看房时务必在早晚高峰期实地测听，锁定中庭无对冲楼栋。"
+    }
+  },
+  {
+    "id": "5011000080020",
+    "name": "金鹤新城二街坊",
+    "parent_cluster": "金鹤新城",
+    "phase_info": "江桥万达核心生活圈，2006年建，成熟生活大盘",
+    "plate": "江桥",
+    "district": "嘉定区",
+    "address": "上海市嘉定区鹤旋路58弄",
+    "coordinates": [
+      121.328,
+      31.252
+    ],
+    "built_year": 2006,
+    "building_type": "多层与小高层",
+    "green_rate": "35%",
+    "plot_ratio": 1.8,
+    "property_fee": "1.3元/㎡/月",
+    "total_units": 1400,
+    "avg_price_wan": 3.8,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080020/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080020/",
+    "metro": {
+      "station_name": "金运路站",
+      "line": "13号线",
+      "station_coords": [
+        121.3198,
+        31.2415
+      ],
+      "distance_m": 850,
+      "walk_time_min": 11,
+      "route_desc": "沿鹤旋路向西南步行850米到达13号线金运路站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "13号线(金运路站) -> 汉中路换乘1号线/直达新天地",
+      "distance_km": 18.5,
+      "duration_min": 36,
+      "fare_yuan": 5
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区江桥小学",
+        "type": "成熟公办",
+        "dist": "约600米",
+        "time": "步行8分钟"
+      }
+    ],
+    "commercial": "江桥万达广场(步行600米)、鹤旋路步行街",
+    "medical": "嘉定区江桥医院(三级综合，约1.2km)",
+    "tags": [
+      "步行至万达广场",
+      "13号线直达市中心",
+      "低总价两房",
+      "配套极全"
+    ],
+    "phase_comparison": "【选筹指南】：金鹤新城二街坊位于万达商圈北侧，生活极其方便，13号线直达淮海路新天地，是市区白领置业高频选择。",
+    "scoring": {
+      "default_total": 82.6,
+      "dimensions": {
+        "transit": 88,
+        "school": 82,
+        "layout": 84,
+        "environment": 68,
+        "commercial_asset": 92
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区金鹤小学",
+      "tier": "公办骨干",
+      "range": "金鹤片区金达社区、金德社区等",
+      "source_doc": "primary_img_42.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海市嘉定区金鹤学校（初中部）",
+      "tier": "公办骨干",
+      "rank": 25,
+      "public_rank": 25,
+      "rate_26": "15.8%",
+      "range": "金鹤新城、海川路、金运路以东部分社区",
+      "source_doc": "middle_img_19.jpg"
+    },
+    "school_district_note": "鹤旋路58弄，江桥万达圈，对口金鹤小学与金鹤学校初中部。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "金鹤新城二街坊 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "86㎡",
+        "usable_area": "71.3㎡",
+        "usable_rate": "82.9%",
+        "price_wan": 326.8,
+        "unit_price": 38000,
+        "orientation": "南",
+        "tags": [
+          "实测纯真两房",
+          "实测套内71.3㎡",
+          "总价约326万",
+          "南"
+        ],
+        "floor_plan_local": "assets/floorplans/107116341545.jpg",
+        "verified_rooms_desc": "卧室A (11.3㎡)、卧室B (15.4㎡)、客厅 (14.4㎡)、餐厅 (15.3㎡)、厨房 (6.8㎡)、卫生间 (4.9㎡)、阳台B (3.2㎡)",
+        "pros": "主卧面宽达3.6米阔绰舒适，厨房带独立备餐阳台，卫生间全明采光无暗角。",
+        "cons": "入口玄关进深稍短，需倚靠侧墙设置嵌入式鞋柜。"
+      },
+      {
+        "category": "三房",
+        "title": "金鹤新城二街坊 阔绰全明舒适三居 (3室2厅1厨1卫)",
+        "rooms": "3室2厅1厨1卫",
+        "area": "102㎡",
+        "usable_area": "85.4㎡",
+        "usable_rate": "83.7%",
+        "price_wan": 387.6,
+        "unit_price": 38000,
+        "orientation": "南北通透",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内85.4㎡",
+          "总价约387万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116518245.jpg",
+        "verified_rooms_desc": "卧室A (14.1㎡)、卧室B (9.3㎡)、卧室C (11.0㎡)、客厅 (32.3㎡)、厨房 (6.5㎡)、卫生间 (4.6㎡)、阳台A (4.3㎡)、阳台B (3.3㎡)",
+        "pros": "【真·经典全功能三房】实测包含三个完整独立卧室（A、B、C），双阳台南北对流，客厅面宽超3.9米，三代同堂功能完备且总价可控！",
+        "cons": "单卫配置，早高峰家庭成员洗漱需合理安排时间。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟠 显著干扰 (临近主干交通走廊)",
+      "level_code": "orange",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:5435m(🟢 无高架轨交噪) · 🛣️高速:241m · 🚗主干道:973m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 5435,
+        "level": "🟢 无高架轨交噪",
+        "desc": "距地上轨交线超过5435米，属于完全静音安全距离。"
+      },
+      "expressway": {
+        "name": "嘉闵高架路",
+        "distance_m": 241,
+        "level": "🟠 明显干扰",
+        "desc": "距嘉闵高架路约241米，夜间背景声较静时高速长途重载车轰鸣声明显。"
+      },
+      "arterial_road": {
+        "name": "曹安公路 (货运大动脉)",
+        "distance_m": 973,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约973米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：属于半开放受噪区，外圈与内圈噪音差达10-15分贝。看房时务必在早晚高峰期实地测听，锁定中庭无对冲楼栋。"
+    },
+    "noise_analysis": {
+      "status": "🟠 显著干扰 (临近主干交通走廊)",
+      "dist_to_highway_m": 241,
+      "dist_to_metro_elevated_m": 5435,
+      "dist_to_arterial_m": 973,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距地上轨交线超过5435米，属于完全静音安全距离。 | 距主干道约973米，深处生活街区，道路环境静雅。 | 距嘉闵高架路约241米，夜间背景声较静时高速长途重载车轰鸣声明显。",
+      "selection_guide": "【实勘避坑指南】：属于半开放受噪区，外圈与内圈噪音差达10-15分贝。看房时务必在早晚高峰期实地测听，锁定中庭无对冲楼栋。"
+    }
+  },
+  {
+    "id": "5011000080021",
+    "name": "金鹤新城三街坊",
+    "parent_cluster": "金鹤新城",
+    "phase_info": "金鹤新城内圈静谧组团，2007年建，远离主干道车流",
+    "plate": "江桥",
+    "district": "嘉定区",
+    "address": "上海市嘉定区鹤友路288弄",
+    "coordinates": [
+      121.326,
+      31.249
+    ],
+    "built_year": 2007,
+    "building_type": "多层板楼",
+    "green_rate": "36%",
+    "plot_ratio": 1.7,
+    "property_fee": "1.3元/㎡/月",
+    "total_units": 1260,
+    "avg_price_wan": 3.9,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080021/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080021/",
+    "metro": {
+      "station_name": "金运路站",
+      "line": "13号线",
+      "station_coords": [
+        121.3198,
+        31.2415
+      ],
+      "distance_m": 750,
+      "walk_time_min": 10,
+      "route_desc": "沿鹤友路向西南穿过金运路即达地铁站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "13号线(金运路站) -> 直达市中心",
+      "distance_km": 18.2,
+      "duration_min": 35,
+      "fare_yuan": 5
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区江桥小学",
+        "type": "成熟公办",
+        "dist": "约500米",
+        "time": "步行6分钟"
+      }
+    ],
+    "commercial": "江桥万达广场、金沙生活广场",
+    "medical": "嘉定区江桥医院(约1.0km)",
+    "tags": [
+      "静谧内圈街坊",
+      "步行10分钟金运路站",
+      "得房率超85%",
+      "曹杨二中实验学区"
+    ],
+    "phase_comparison": "【选筹指南】：相比临街的一二街坊，三街坊内部无任何主干道贯穿，极其安静；户型多为南北通透标准双南两居室。",
+    "scoring": {
+      "default_total": 60.1,
+      "dimensions": {
+        "transit": 89,
+        "school": 83,
+        "layout": 85,
+        "environment": 38,
+        "commercial_asset": 91
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区金鹤小学",
+      "tier": "公办骨干",
+      "range": "金鹤片区金达社区、金德社区等",
+      "source_doc": "primary_img_42.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海市嘉定区金鹤学校（初中部）",
+      "tier": "公办骨干",
+      "rank": 25,
+      "public_rank": 25,
+      "rate_26": "15.8%",
+      "range": "金鹤新城、海川路、金运路以东部分社区",
+      "source_doc": "middle_img_19.jpg"
+    },
+    "school_district_note": "鹤友路288弄，对口金鹤小学与金鹤学校初中部。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "金鹤新城三街坊 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "87㎡",
+        "usable_area": "72.0㎡",
+        "usable_rate": "82.8%",
+        "price_wan": 339.3,
+        "unit_price": 39000,
+        "orientation": "南北双阳台",
+        "tags": [
+          "实测纯真两房",
+          "实测套内72.0㎡",
+          "总价约339万",
+          "南北双阳台"
+        ],
+        "floor_plan_local": "assets/floorplans/107116374473.jpg",
+        "verified_rooms_desc": "卧室A (12.6㎡)、卧室B (15.5㎡)、客厅 (18.9㎡)、餐厅 (6.1㎡)、厨房 (5.5㎡)、卫生间 (4.4㎡)、阳台A (3.8㎡)、阳台B (5.2㎡)",
+        "pros": "前后双阳台对流设计！主卧与次卧均带大飘窗，全明户型毫无死角，得房率扎实。",
+        "cons": "客厅与餐厅为开放连体布局，油烟隔离需安装大功率吸油烟机。"
+      },
+      {
+        "category": "三房",
+        "title": "金鹤新城三街坊 阔绰全明舒适三居 (3室2厅1厨1卫)",
+        "rooms": "3室2厅1厨1卫",
+        "area": "91㎡",
+        "usable_area": "76.0㎡",
+        "usable_rate": "83.5%",
+        "price_wan": 354.9,
+        "unit_price": 39000,
+        "orientation": "三开间朝南",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内76.0㎡",
+          "总价约354万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116528811.jpg",
+        "verified_rooms_desc": "卧室A (7.5㎡)、卧室B (9.4㎡)、卧室C (12.8㎡)、客厅 (17.3㎡)、餐厅 (12.5㎡)、厨房 (5.4㎡)、阳台 (4.3㎡)",
+        "pros": "【绝版89㎡三房神户型】三开间朝南！实测拥有三个独立卧室（A、B、C），空间利用率达到极致，得房率超85.4%，无一丝浪费走廊！",
+        "cons": "北向小次卧仅7.5㎡，更适合做独立书房、茶室或儿童房榻榻米。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🔴 重度冲击 (紧邻嘉闵高架路)",
+      "level_code": "red",
+      "is_vetoed": true,
+      "summary": "🚇轨交高架:5722m(🟢 无高架轨交噪) · 🛣️高速:9m · 🚗主干道:619m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 5722,
+        "level": "🟢 无高架轨交噪",
+        "desc": "距地上轨交线超过5722米，属于完全静音安全距离。"
+      },
+      "expressway": {
+        "name": "嘉闵高架路",
+        "distance_m": 9,
+        "level": "🔴 严重超标",
+        "desc": "紧邻嘉闵高架路(仅9米)，24小时无间断高速胎噪与风噪，中高层受声波爬升衍射最为剧烈。"
+      },
+      "arterial_road": {
+        "name": "曹安公路 (货运大动脉)",
+        "distance_m": 619,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约619米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：距离高等级噪音源不足警戒线，受全天候持续声浪冲击。★非预算极度受限不建议考虑外圈临路/临轨房源；若购入必须全屋更换高端系统断桥铝双层夹胶窗。"
+    },
+    "noise_analysis": {
+      "status": "🔴 重度冲击 (紧邻嘉闵高架路)",
+      "dist_to_highway_m": 9,
+      "dist_to_metro_elevated_m": 5722,
+      "dist_to_arterial_m": 619,
+      "is_vetoed": true,
+      "desc": "【立体噪音评估】：距地上轨交线超过5722米，属于完全静音安全距离。 | 距主干道约619米，深处生活街区，道路环境静雅。 | 紧邻嘉闵高架路(仅9米)，24小时无间断高速胎噪与风噪，中高层受声波爬升衍射最为剧烈。",
+      "selection_guide": "【实勘避坑指南】：距离高等级噪音源不足警戒线，受全天候持续声浪冲击。★非预算极度受限不建议考虑外圈临路/临轨房源；若购入必须全屋更换高端系统断桥铝双层夹胶窗。"
+    }
+  },
+  {
+    "id": "5011000080024",
+    "name": "馨盛佳苑",
+    "parent_cluster": "馨盛佳苑",
+    "phase_info": "近13号线金运路站高品质动迁房，2013年建，高得房率",
+    "plate": "江桥",
+    "district": "嘉定区",
+    "address": "上海市嘉定区金园一路1118弄",
+    "coordinates": [
+      121.322,
+      31.245
+    ],
+    "built_year": 2013,
+    "building_type": "高层板楼",
+    "green_rate": "35%",
+    "plot_ratio": 2.1,
+    "property_fee": "1.5元/㎡/月",
+    "total_units": 1800,
+    "avg_price_wan": 3.6,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080024/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080024/",
+    "metro": {
+      "station_name": "金运路站",
+      "line": "13号线",
+      "station_coords": [
+        121.3198,
+        31.2415
+      ],
+      "distance_m": 480,
+      "walk_time_min": 6,
+      "route_desc": "向南沿金园一路步行480米直达13号线金运路站8号口"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "13号线(金运路站) -> 直达市中心",
+      "distance_km": 18.0,
+      "duration_min": 34,
+      "fare_yuan": 5
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区江桥小学",
+        "type": "成熟公办",
+        "dist": "约750米",
+        "time": "步行10分钟"
+      }
+    ],
+    "commercial": "江桥万达广场(步行500米)、金园一路沿街商铺",
+    "medical": "江桥医院(约1.1km)",
+    "tags": [
+      "步行6分钟到13号线",
+      "近万达广场",
+      "低总价两房",
+      "超高流转率"
+    ],
+    "phase_comparison": "【选筹指南】：距离金运路地铁站与江桥万达都很近，总价控制在250-320万区间，是刚需上车上海核心地铁房的热门标的。",
+    "scoring": {
+      "default_total": 86.9,
+      "dimensions": {
+        "transit": 92,
+        "school": 82,
+        "layout": 85,
+        "environment": 82,
+        "commercial_asset": 94
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区金鹤小学",
+      "tier": "公办骨干",
+      "range": "金鹤片区金达社区、金德社区等",
+      "source_doc": "primary_img_42.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海市嘉定区金鹤学校（初中部）",
+      "tier": "公办骨干",
+      "rank": 25,
+      "public_rank": 25,
+      "rate_26": "15.8%",
+      "range": "金鹤新城、海川路、金运路以东部分社区",
+      "source_doc": "middle_img_19.jpg"
+    },
+    "school_district_note": "金园一路1118弄，近金运路站，对口金鹤小学与金鹤学校初中部。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "馨盛佳苑 经典全明两居 (2室2厅1厨1卫+储物间)",
+        "rooms": "2室2厅1厨1卫+储物间",
+        "area": "78㎡",
+        "usable_area": "64.6㎡",
+        "usable_rate": "82.8%",
+        "price_wan": 280.8,
+        "unit_price": 36000,
+        "orientation": "南",
+        "tags": [
+          "实测纯真两房",
+          "实测套内64.6㎡",
+          "总价约280万",
+          "南"
+        ],
+        "floor_plan_local": "assets/floorplans/107116515364.jpg",
+        "verified_rooms_desc": "卧室A (13.9㎡)、卧室B (11.6㎡)、储物间 (1.3㎡)、客厅 (23.2㎡)、厨房 (4.2㎡)、卫生间 (4.9㎡)、阳台 (5.5㎡)",
+        "pros": "带独立独立小储物间！客厅开间超4米大宽厅，采光面极其开阔，主卧空间充裕。",
+        "cons": "厨房面积4.2㎡稍显紧凑，适宜L型吊柜设计。"
+      },
+      {
+        "category": "三房",
+        "title": "馨盛佳苑 阔绰全明舒适三居 (3室2厅1厨2卫)",
+        "rooms": "3室2厅1厨2卫",
+        "area": "114㎡",
+        "usable_area": "95.1㎡",
+        "usable_rate": "83.4%",
+        "price_wan": 410.4,
+        "unit_price": 36000,
+        "orientation": "南北通透",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内95.1㎡",
+          "总价约410万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116377745.jpg",
+        "verified_rooms_desc": "卧室A (16.2㎡)、卧室B (14.2㎡)、卧室C (9.9㎡)、客厅 (38.2㎡)、厨房 (5.8㎡)、卫生间A (4.3㎡)、卫生间B (6.5㎡)",
+        "pros": "【真·大三房双卫王牌】三卧全明！客餐厅面积高达38平米大横厅，主卧带独立明卫与衣帽间，三开间朝南，居住尊崇感极强！",
+        "cons": "总价较高，契税与首付预算需充分准备。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟡 局部可感知 (次级声学环境)",
+      "level_code": "yellow",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:6105m(🟢 无高架轨交噪) · 🛣️高速:425m · 🚗主干道:133m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 6105,
+        "level": "🟢 无高架轨交噪",
+        "desc": "距地上轨交线超过6105米，属于完全静音安全距离。"
+      },
+      "expressway": {
+        "name": "嘉闵高架路",
+        "distance_m": 425,
+        "level": "🟡 中度消解",
+        "desc": "距嘉闵高架路约425米，前排楼栋与城市绿化带已吸收绝大部分高频声浪。"
+      },
+      "arterial_road": {
+        "name": "曹安公路 (货运大动脉)",
+        "distance_m": 133,
+        "level": "🟠 次级影响",
+        "desc": "距主干道约133米，临路一侧有一定车流背景声，内圈组团受影响较小。"
+      },
+      "selection_guide": "【实勘避坑指南】：整体居住舒适，仅高层极端安静时能听到微弱背景声，正常双层中空玻璃即可满足睡眠要求。"
+    },
+    "noise_analysis": {
+      "status": "🟡 局部可感知 (次级声学环境)",
+      "dist_to_highway_m": 425,
+      "dist_to_metro_elevated_m": 6105,
+      "dist_to_arterial_m": 133,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距地上轨交线超过6105米，属于完全静音安全距离。 | 距主干道约133米，临路一侧有一定车流背景声，内圈组团受影响较小。 | 距嘉闵高架路约425米，前排楼栋与城市绿化带已吸收绝大部分高频声浪。",
+      "selection_guide": "【实勘避坑指南】：整体居住舒适，仅高层极端安静时能听到微弱背景声，正常双层中空玻璃即可满足睡眠要求。"
+    }
+  },
+  {
+    "id": "5011000080025",
+    "name": "恒锦馨苑",
+    "parent_cluster": "恒锦馨苑",
+    "phase_info": "曹安公路南侧性价比品质盘，2009年建，采光极佳",
+    "plate": "江桥",
+    "district": "嘉定区",
+    "address": "上海市嘉定区曹安公路2300弄",
+    "coordinates": [
+      121.336,
+      31.258
+    ],
+    "built_year": 2009,
+    "building_type": "高层板楼",
+    "green_rate": "37%",
+    "plot_ratio": 2.0,
+    "property_fee": "1.7元/㎡/月",
+    "total_units": 950,
+    "avg_price_wan": 3.7,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080025/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080025/",
+    "metro": {
+      "station_name": "金沙江西路站",
+      "line": "13号线",
+      "station_coords": [
+        121.335,
+        31.245
+      ],
+      "distance_m": 1400,
+      "walk_time_min": 17,
+      "route_desc": "向南步行或骑行直达13号线金沙江西路站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "13号线(金沙江西路站) -> 直达市中心",
+      "distance_km": 18.8,
+      "duration_min": 38,
+      "fare_yuan": 5
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区江桥小学",
+        "type": "成熟公办",
+        "dist": "约650米",
+        "time": "步行8分钟"
+      }
+    ],
+    "commercial": "曹安商贸圈、绿地新都会商业街",
+    "medical": "江桥医院(约1.6km)",
+    "tags": [
+      "低单价",
+      "大户型赠送多",
+      "曹杨二中实验对口",
+      "采光无遮挡"
+    ],
+    "phase_comparison": "【选筹指南】：小区内部楼距宽，视野通透无遮挡；优选靠南侧内圈楼栋，避开北侧曹安公路主干道红绿灯噪音。",
+    "scoring": {
+      "default_total": 86.0,
+      "dimensions": {
+        "transit": 80,
+        "school": 83,
+        "layout": 86,
+        "environment": 96,
+        "commercial_asset": 87
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区华江小学",
+      "tier": "老牌公办",
+      "range": "建华村、恒嘉社区、嘉城社区、嘉川社区、嘉星社区、嘉航社区等",
+      "source_doc": "primary_img_42.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海市曹杨二中附属江桥实验中学（海波校区）",
+      "tier": "市重点曹二附中/江桥核心",
+      "rank": 14,
+      "public_rank": 14,
+      "rate_26": "21.8%",
+      "range": "江桥镇嘉禧社区、嘉翔社区、嘉海社区、嘉峪社区、嘉龙社区、嘉巷社区、嘉云社区等",
+      "source_doc": "middle_img_19.jpg"
+    },
+    "school_district_note": "曹安公路2300弄，对口华江小学与曹杨二中江桥实验中学。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "恒锦馨苑 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "85㎡",
+        "usable_area": "69.8㎡",
+        "usable_rate": "82.1%",
+        "price_wan": 314.5,
+        "unit_price": 37000,
+        "orientation": "南",
+        "tags": [
+          "实测纯真两房",
+          "实测套内69.8㎡",
+          "总价约314万",
+          "南"
+        ],
+        "floor_plan_local": "assets/floorplans/107116520186.jpg",
+        "verified_rooms_desc": "卧室A (14.0㎡)、卧室B (10.0㎡)、客厅 (25.6㎡)、厨房 (5.4㎡)、卫生间 (3.7㎡)、阳台A (5.9㎡)、阳台B (5.2㎡)",
+        "pros": "罕见的双景观大阳台两房！客厅面宽超大，主卧朝南带全景飘窗，通风对流一流。",
+        "cons": "卫生间为单卫配置，早晚高峰需合理错峰。"
+      },
+      {
+        "category": "三房",
+        "title": "恒锦馨苑 阔绰全明舒适三居 (3室2厅1厨2卫)",
+        "rooms": "3室2厅1厨2卫",
+        "area": "108㎡",
+        "usable_area": "90.4㎡",
+        "usable_rate": "83.7%",
+        "price_wan": 399.6,
+        "unit_price": 37000,
+        "orientation": "南北双阳台",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内90.4㎡",
+          "总价约399万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116447609.jpg",
+        "verified_rooms_desc": "卧室A (12.3㎡)、卧室B (11.5㎡)、卧室C (10.0㎡)、客厅 (33.9㎡)、厨房 (5.9㎡)、卫生间A (4.7㎡)、卫生间B (4.2㎡)、阳台A (2.9㎡)、阳台B (5.0㎡)",
+        "pros": "【真·南北双阳台全明三房】三间卧室均有完整窗户无暗间！南北对流极佳，客餐厅南北通透，双卫干湿分离，是品质家庭改善换房首选！",
+        "cons": "北向卧室进深标准，放置1.8米大床需合理规划衣柜走道。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "level_code": "green",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:5041m(🟢 无高架轨交噪) · 🛣️高速:1086m · 🚗主干道:1726m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 5041,
+        "level": "🟢 无高架轨交噪",
+        "desc": "距地上轨交线超过5041米，属于完全静音安全距离。"
+      },
+      "expressway": {
+        "name": "嘉闵高架路",
+        "distance_m": 1086,
+        "level": "🟢 远离高速",
+        "desc": "距最近高速公路约1086米，属于优良静谧生活区。"
+      },
+      "arterial_road": {
+        "name": "曹安公路 (货运大动脉)",
+        "distance_m": 1726,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约1726米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    },
+    "noise_analysis": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "dist_to_highway_m": 1086,
+      "dist_to_metro_elevated_m": 5041,
+      "dist_to_arterial_m": 1726,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距地上轨交线超过5041米，属于完全静音安全距离。 | 距主干道约1726米，深处生活街区，道路环境静雅。 | 距最近高速公路约1086米，属于优良静谧生活区。",
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    }
+  },
+  {
+    "id": "5011000080026",
+    "name": "幸福水岸",
+    "parent_cluster": "幸福水岸",
+    "phase_info": "华江支路水岸景观电梯次新，2011年建，水景环抱",
+    "plate": "江桥",
+    "district": "嘉定区",
+    "address": "上海市嘉定区华江支路666弄",
+    "coordinates": [
+      121.329,
+      31.247
+    ],
+    "built_year": 2011,
+    "building_type": "小高层板楼",
+    "green_rate": "42%",
+    "plot_ratio": 1.9,
+    "property_fee": "2.1元/㎡/月",
+    "total_units": 820,
+    "avg_price_wan": 4.3,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080026/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080026/",
+    "metro": {
+      "station_name": "金沙江西路站",
+      "line": "13号线",
+      "station_coords": [
+        121.335,
+        31.245
+      ],
+      "distance_m": 700,
+      "walk_time_min": 9,
+      "route_desc": "向东沿金沙江西路步行700米即达13号线金沙江西路站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "13号线(金沙江西路站) -> 汉中路换乘",
+      "distance_km": 17.6,
+      "duration_min": 32,
+      "fare_yuan": 5
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区江桥小学",
+        "type": "成熟公办",
+        "dist": "约500米",
+        "time": "步行6分钟"
+      }
+    ],
+    "commercial": "江桥万达、金沙生活广场、绿地新都会",
+    "medical": "江桥医院(约1.0km)",
+    "tags": [
+      "临河水系景观",
+      "步行9分钟到13号线",
+      "电梯小高层",
+      "人车分流"
+    ],
+    "phase_comparison": "【选筹指南】：小区南面临吴淞江支流，水岸视野极其宽广，且步行至13号线金沙江西路站非常方便，兼顾了生态与通勤。",
+    "scoring": {
+      "default_total": 83.6,
+      "dimensions": {
+        "transit": 89,
+        "school": 83,
+        "layout": 88,
+        "environment": 68,
+        "commercial_asset": 90
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区华江小学",
+      "tier": "老牌公办",
+      "range": "建华村、恒嘉社区、嘉城社区、嘉川社区、嘉星社区、嘉航社区等",
+      "source_doc": "primary_img_42.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海市曹杨二中附属江桥实验中学（海波校区）",
+      "tier": "市重点曹二附中/江桥核心",
+      "rank": 14,
+      "public_rank": 14,
+      "rate_26": "21.8%",
+      "range": "江桥镇嘉禧社区、嘉翔社区、嘉海社区、嘉峪社区、嘉龙社区、嘉巷社区、嘉云社区等",
+      "source_doc": "middle_img_19.jpg"
+    },
+    "school_district_note": "华江支路666弄，对口华江小学与曹杨二中江桥实验中学。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "幸福水岸 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "76㎡",
+        "usable_area": "62.6㎡",
+        "usable_rate": "82.4%",
+        "price_wan": 326.8,
+        "unit_price": 43000,
+        "orientation": "南",
+        "tags": [
+          "实测纯真两房",
+          "实测套内62.6㎡",
+          "总价约326万",
+          "南"
+        ],
+        "floor_plan_local": "assets/floorplans/107116525512.jpg",
+        "verified_rooms_desc": "卧室A (8.0㎡)、卧室B (13.5㎡)、客厅 (15.3㎡)、餐厅 (10.7㎡)、厨房 (5.5㎡)、卫生间 (3.8㎡)、阳台 (5.8㎡)",
+        "pros": "经典全南两房格局，客厅直连宽景大阳台，得房率高，总价低极易转手出租。",
+        "cons": "次卧面积8.0㎡偏紧凑，适合作为儿童房或多功能书房。"
+      },
+      {
+        "category": "三房",
+        "title": "幸福水岸 阔绰全明舒适三居 (3室2厅1厨1卫)",
+        "rooms": "3室2厅1厨1卫",
+        "area": "102㎡",
+        "usable_area": "85.4㎡",
+        "usable_rate": "83.7%",
+        "price_wan": 438.6,
+        "unit_price": 43000,
+        "orientation": "南北通透",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内85.4㎡",
+          "总价约438万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116518245.jpg",
+        "verified_rooms_desc": "卧室A (14.1㎡)、卧室B (9.3㎡)、卧室C (11.0㎡)、客厅 (32.3㎡)、厨房 (6.5㎡)、卫生间 (4.6㎡)、阳台A (4.3㎡)、阳台B (3.3㎡)",
+        "pros": "【真·经典全功能三房】实测包含三个完整独立卧室（A、B、C），双阳台南北对流，客厅面宽超3.9米，三代同堂功能完备且总价可控！",
+        "cons": "单卫配置，早高峰家庭成员洗漱需合理安排时间。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟠 显著干扰 (临近主干交通走廊)",
+      "level_code": "orange",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:5998m(🟢 无高架轨交噪) · 🛣️高速:265m · 🚗主干道:431m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 5998,
+        "level": "🟢 无高架轨交噪",
+        "desc": "距地上轨交线超过5998米，属于完全静音安全距离。"
+      },
+      "expressway": {
+        "name": "嘉闵高架路",
+        "distance_m": 265,
+        "level": "🟡 中度消解",
+        "desc": "距嘉闵高架路约265米，前排楼栋与城市绿化带已吸收绝大部分高频声浪。"
+      },
+      "arterial_road": {
+        "name": "曹安公路 (货运大动脉)",
+        "distance_m": 431,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约431米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：属于半开放受噪区，外圈与内圈噪音差达10-15分贝。看房时务必在早晚高峰期实地测听，锁定中庭无对冲楼栋。"
+    },
+    "noise_analysis": {
+      "status": "🟠 显著干扰 (临近主干交通走廊)",
+      "dist_to_highway_m": 265,
+      "dist_to_metro_elevated_m": 5998,
+      "dist_to_arterial_m": 431,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距地上轨交线超过5998米，属于完全静音安全距离。 | 距主干道约431米，深处生活街区，道路环境静雅。 | 距嘉闵高架路约265米，前排楼栋与城市绿化带已吸收绝大部分高频声浪。",
+      "selection_guide": "【实勘避坑指南】：属于半开放受噪区，外圈与内圈噪音差达10-15分贝。看房时务必在早晚高峰期实地测听，锁定中庭无对冲楼栋。"
+    }
+  },
+  {
+    "id": "5011000080027",
+    "name": "富友嘉园",
+    "parent_cluster": "富友嘉园",
+    "phase_info": "金运路万达核心生活圈高品质商品房，2012年建",
+    "plate": "江桥",
+    "district": "嘉定区",
+    "address": "上海市嘉定区鹤旋路366弄",
+    "coordinates": [
+      121.3245,
+      31.2495
+    ],
+    "built_year": 2012,
+    "building_type": "高层板楼",
+    "green_rate": "39%",
+    "plot_ratio": 2.2,
+    "property_fee": "2.4元/㎡/月",
+    "total_units": 760,
+    "avg_price_wan": 4.4,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080027/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080027/",
+    "metro": {
+      "station_name": "金运路站",
+      "line": "13号线",
+      "station_coords": [
+        121.3198,
+        31.2415
+      ],
+      "distance_m": 600,
+      "walk_time_min": 8,
+      "route_desc": "沿鹤旋路向西南步行600米直通13号线金运路站与万达"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "13号线(金运路站) -> 直达市中心",
+      "distance_km": 18.1,
+      "duration_min": 34,
+      "fare_yuan": 5
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区江桥小学",
+        "type": "成熟公办",
+        "dist": "约550米",
+        "time": "步行7分钟"
+      }
+    ],
+    "commercial": "江桥万达广场(300米)、大润发超市",
+    "medical": "江桥医院(约900m)",
+    "tags": [
+      "万达商圈300米",
+      "步行8分钟金运路站",
+      "品质次新",
+      "全人车分流"
+    ],
+    "phase_comparison": "【选筹指南】：小区由品质开发商承建，物业管理规范，步行至万达广场仅300米，是金运路商圈综合质素最优的商品房之一。",
+    "scoring": {
+      "default_total": 61.5,
+      "dimensions": {
+        "transit": 91,
+        "school": 83,
+        "layout": 88,
+        "environment": 38,
+        "commercial_asset": 95
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区金鹤小学",
+      "tier": "公办骨干",
+      "range": "金鹤片区金达社区、金德社区等",
+      "source_doc": "primary_img_42.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海市嘉定区金鹤学校（初中部）",
+      "tier": "公办骨干",
+      "rank": 25,
+      "public_rank": 25,
+      "rate_26": "15.8%",
+      "range": "金鹤新城、海川路、金运路以东部分社区",
+      "source_doc": "middle_img_19.jpg"
+    },
+    "school_district_note": "鹤旋路366弄，对口金鹤小学与金鹤学校初中部。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "富友嘉园 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "87㎡",
+        "usable_area": "71.4㎡",
+        "usable_rate": "82.1%",
+        "price_wan": 382.8,
+        "unit_price": 44000,
+        "orientation": "全南采光",
+        "tags": [
+          "实测纯真两房",
+          "实测套内71.4㎡",
+          "总价约382万",
+          "全南采光"
+        ],
+        "floor_plan_local": "assets/floorplans/107116526253.jpg",
+        "verified_rooms_desc": "卧室A (14.2㎡)、卧室B (12.1㎡)、客厅 (25.0㎡)、餐厅 (5.9㎡)、厨房 (4.9㎡)、卫生间 (3.8㎡)、阳台 (5.5㎡)",
+        "pros": "客厅开间阔绰达25平米大方厅！主卧与次卧开间均衡，双卧全南日照充足。",
+        "cons": "餐厅进深为紧凑型，适合放置4人餐桌。"
+      },
+      {
+        "category": "三房",
+        "title": "富友嘉园 阔绰全明舒适三居 (3室2厅1厨1卫)",
+        "rooms": "3室2厅1厨1卫",
+        "area": "91㎡",
+        "usable_area": "76.0㎡",
+        "usable_rate": "83.5%",
+        "price_wan": 400.4,
+        "unit_price": 44000,
+        "orientation": "三开间朝南",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内76.0㎡",
+          "总价约400万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116528811.jpg",
+        "verified_rooms_desc": "卧室A (7.5㎡)、卧室B (9.4㎡)、卧室C (12.8㎡)、客厅 (17.3㎡)、餐厅 (12.5㎡)、厨房 (5.4㎡)、阳台 (4.3㎡)",
+        "pros": "【绝版89㎡三房神户型】三开间朝南！实测拥有三个独立卧室（A、B、C），空间利用率达到极致，得房率超85.4%，无一丝浪费走廊！",
+        "cons": "北向小次卧仅7.5㎡，更适合做独立书房、茶室或儿童房榻榻米。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🔴 重度冲击 (紧邻嘉闵高架路)",
+      "level_code": "red",
+      "is_vetoed": true,
+      "summary": "🚇轨交高架:5642m(🟢 无高架轨交噪) · 🛣️高速:125m · 🚗主干道:658m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 5642,
+        "level": "🟢 无高架轨交噪",
+        "desc": "距地上轨交线超过5642米，属于完全静音安全距离。"
+      },
+      "expressway": {
+        "name": "嘉闵高架路",
+        "distance_m": 125,
+        "level": "🟠 明显干扰",
+        "desc": "距嘉闵高架路约125米，夜间背景声较静时高速长途重载车轰鸣声明显。"
+      },
+      "arterial_road": {
+        "name": "曹安公路 (货运大动脉)",
+        "distance_m": 658,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约658米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：距离高等级噪音源不足警戒线，受全天候持续声浪冲击。★非预算极度受限不建议考虑外圈临路/临轨房源；若购入必须全屋更换高端系统断桥铝双层夹胶窗。"
+    },
+    "noise_analysis": {
+      "status": "🔴 重度冲击 (紧邻嘉闵高架路)",
+      "dist_to_highway_m": 125,
+      "dist_to_metro_elevated_m": 5642,
+      "dist_to_arterial_m": 658,
+      "is_vetoed": true,
+      "desc": "【立体噪音评估】：距地上轨交线超过5642米，属于完全静音安全距离。 | 距主干道约658米，深处生活街区，道路环境静雅。 | 距嘉闵高架路约125米，夜间背景声较静时高速长途重载车轰鸣声明显。",
+      "selection_guide": "【实勘避坑指南】：距离高等级噪音源不足警戒线，受全天候持续声浪冲击。★非预算极度受限不建议考虑外圈临路/临轨房源；若购入必须全屋更换高端系统断桥铝双层夹胶窗。"
+    }
+  },
+  {
+    "id": "5011000080028",
+    "name": "丰庄一村",
+    "parent_cluster": "丰庄新村",
+    "phase_info": "丰庄路商业街成熟商圈，1995年建，成熟公房高得房率",
+    "plate": "真新",
+    "district": "嘉定区",
+    "address": "上海市嘉定区丰庄路390弄",
+    "coordinates": [
+      121.355,
+      31.248
+    ],
+    "built_year": 1995,
+    "building_type": "多层板楼",
+    "green_rate": "30%",
+    "plot_ratio": 1.5,
+    "property_fee": "0.8元/㎡/月",
+    "total_units": 1500,
+    "avg_price_wan": 3.9,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080028/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080028/",
+    "metro": {
+      "station_name": "丰庄站",
+      "line": "13号线",
+      "station_coords": [
+        121.3585,
+        31.249
+      ],
+      "distance_m": 400,
+      "walk_time_min": 5,
+      "route_desc": "沿丰庄路向东步行400米直达13号线丰庄站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "13号线(丰庄站) -> 市中心直达",
+      "distance_km": 14.5,
+      "duration_min": 28,
+      "fare_yuan": 4
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区真新小学",
+        "type": "成熟公办",
+        "dist": "约400米",
+        "time": "步行5分钟"
+      }
+    ],
+    "commercial": "丰庄商业步行街(楼下即达)、大转盘商圈、普陀百联中环",
+    "medical": "普陀区利群医院(约1.8km)",
+    "tags": [
+      "步行5分钟到丰庄站",
+      "极速直通市中心",
+      "紧邻普陀区",
+      "成熟生活天花板"
+    ],
+    "phase_comparison": "【选筹指南】：嘉定全域距离市中心最近的板块之一，13号线28分钟直达人民广场与南京西路；虽房龄偏老但租金极高、抗跌属性强。",
+    "scoring": {
+      "default_total": 90.1,
+      "dimensions": {
+        "transit": 96,
+        "school": 81,
+        "layout": 82,
+        "environment": 96,
+        "commercial_asset": 95
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区真新小学",
+      "tier": "成熟公办优质",
+      "range": "真新街道各社区（丰庄各村、金沙丽晶苑、真新新村等）",
+      "source_doc": "primary_img_08.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海市行知学校嘉定分校",
+      "tier": "行知品牌/区公办中坚",
+      "rank": 18,
+      "public_rank": 18,
+      "rate_26": "18.5%",
+      "range": "真新街道行政区域内所有住宅小区毕业生直升",
+      "source_doc": "middle_img_09.jpg"
+    },
+    "school_district_note": "丰庄路390弄，真新街道商业街，对口真新小学与行知学校嘉定分校。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "丰庄一村 经典全明两居 (2室2厅1厨1卫+独立储物间)",
+        "rooms": "2室2厅1厨1卫+独立储物间",
+        "area": "80㎡",
+        "usable_area": "66.2㎡",
+        "usable_rate": "82.8%",
+        "price_wan": 312.0,
+        "unit_price": 39000,
+        "orientation": "南",
+        "tags": [
+          "实测纯真两房",
+          "实测套内66.2㎡",
+          "总价约312万",
+          "南"
+        ],
+        "floor_plan_local": "assets/floorplans/107116526797.jpg",
+        "verified_rooms_desc": "卧室A (10.3㎡)、卧室B (11.5㎡)、储物间 (7.0㎡)、客厅 (24.4㎡)、厨房 (5.1㎡)、卫生间 (2.6㎡)、阳台B (5.3㎡)",
+        "pros": "罕见配置7平米独立储物间（可改衣帽间或独立小书房），客厅开间大视野佳。",
+        "cons": "卫生间进深较浅，洗衣机建议布置于南阳台生活区。"
+      },
+      {
+        "category": "三房",
+        "title": "丰庄一村 阔绰全明舒适三居 (3室2厅1厨2卫)",
+        "rooms": "3室2厅1厨2卫",
+        "area": "114㎡",
+        "usable_area": "95.1㎡",
+        "usable_rate": "83.4%",
+        "price_wan": 444.6,
+        "unit_price": 39000,
+        "orientation": "南北通透",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内95.1㎡",
+          "总价约444万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116377745.jpg",
+        "verified_rooms_desc": "卧室A (16.2㎡)、卧室B (14.2㎡)、卧室C (9.9㎡)、客厅 (38.2㎡)、厨房 (5.8㎡)、卫生间A (4.3㎡)、卫生间B (6.5㎡)",
+        "pros": "【真·大三房双卫王牌】三卧全明！客餐厅面积高达38平米大横厅，主卧带独立明卫与衣帽间，三开间朝南，居住尊崇感极强！",
+        "cons": "总价较高，契税与首付预算需充分准备。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "level_code": "green",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:6892m(🟢 无高架轨交噪) · 🛣️高速:2736m · 🚗主干道:12239m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 6892,
+        "level": "🟢 无高架轨交噪",
+        "desc": "距地上轨交线超过6892米，属于完全静音安全距离。"
+      },
+      "expressway": {
+        "name": "嘉闵高架路",
+        "distance_m": 2736,
+        "level": "🟢 远离高速",
+        "desc": "距最近高速公路约2736米，属于优良静谧生活区。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 12239,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约12239米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    },
+    "noise_analysis": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "dist_to_highway_m": 2736,
+      "dist_to_metro_elevated_m": 6892,
+      "dist_to_arterial_m": 12239,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距地上轨交线超过6892米，属于完全静音安全距离。 | 距主干道约12239米，深处生活街区，道路环境静雅。 | 距最近高速公路约2736米，属于优良静谧生活区。",
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    }
+  },
+  {
+    "id": "5011000080029",
+    "name": "丰庄二村",
+    "parent_cluster": "丰庄新村",
+    "phase_info": "紧邻13号线丰庄站地铁口，1996年建，交通无敌",
+    "plate": "真新",
+    "district": "嘉定区",
+    "address": "上海市嘉定区丰庄西路433弄",
+    "coordinates": [
+      121.358,
+      31.251
+    ],
+    "built_year": 1996,
+    "building_type": "多层板楼",
+    "green_rate": "30%",
+    "plot_ratio": 1.5,
+    "property_fee": "0.8元/㎡/月",
+    "total_units": 1300,
+    "avg_price_wan": 4.0,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080029/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080029/",
+    "metro": {
+      "station_name": "丰庄站",
+      "line": "13号线",
+      "station_coords": [
+        121.3585,
+        31.249
+      ],
+      "distance_m": 250,
+      "walk_time_min": 3,
+      "route_desc": "出小区向南步行250米即达13号线丰庄站1号口"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "13号线(丰庄站) -> 市中心直达",
+      "distance_km": 14.2,
+      "duration_min": 26,
+      "fare_yuan": 4
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区真新小学",
+        "type": "成熟公办",
+        "dist": "约500米",
+        "time": "步行6分钟"
+      }
+    ],
+    "commercial": "丰庄商业圈、曹安轻纺市场、近铁城市广场",
+    "medical": "利群医院(约1.9km)",
+    "tags": [
+      "步行3分钟到地铁",
+      "13号线26分钟市中心",
+      "得房率高达87%",
+      "挂牌秒成交"
+    ],
+    "phase_comparison": "【选筹指南】：步行到13号线丰庄站仅需250米，是整个嘉定区到市中心耗时最短的小区之一；双南两室户型极其抢手。",
+    "scoring": {
+      "default_total": 90.8,
+      "dimensions": {
+        "transit": 98,
+        "school": 81,
+        "layout": 84,
+        "environment": 96,
+        "commercial_asset": 94
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区真新小学",
+      "tier": "成熟公办优质",
+      "range": "真新街道各社区（丰庄各村、金沙丽晶苑、真新新村等）",
+      "source_doc": "primary_img_08.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海市行知学校嘉定分校",
+      "tier": "行知品牌/区公办中坚",
+      "rank": 18,
+      "public_rank": 18,
+      "rate_26": "18.5%",
+      "range": "真新街道行政区域内所有住宅小区毕业生直升",
+      "source_doc": "middle_img_09.jpg"
+    },
+    "school_district_note": "丰庄西路433弄，近13号线丰庄站，对口真新小学与行知学校嘉定分校。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "丰庄二村 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "89㎡",
+        "usable_area": "73.7㎡",
+        "usable_rate": "82.8%",
+        "price_wan": 356.0,
+        "unit_price": 40000,
+        "orientation": "南北通透",
+        "tags": [
+          "实测纯真两房",
+          "实测套内73.7㎡",
+          "总价约356万",
+          "南北通透"
+        ],
+        "floor_plan_local": "assets/floorplans/107116542933.jpg",
+        "verified_rooms_desc": "卧室A (16.0㎡)、卧室B (11.0㎡)、客厅 (14.8㎡)、餐厅 (12.2㎡)、厨房 (11.4㎡)、卫生间 (3.8㎡)、阳台 (4.5㎡)",
+        "pros": "主卧达16平米奢适套间！厨房超大11.4平米带吧台备餐区，南北对流空气清新。",
+        "cons": "客厅面积相对餐厅适中，整体重心偏向居室与厨房空间。"
+      },
+      {
+        "category": "三房",
+        "title": "丰庄二村 阔绰全明舒适三居 (3室2厅1厨2卫)",
+        "rooms": "3室2厅1厨2卫",
+        "area": "108㎡",
+        "usable_area": "90.4㎡",
+        "usable_rate": "83.7%",
+        "price_wan": 432.0,
+        "unit_price": 40000,
+        "orientation": "南北双阳台",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内90.4㎡",
+          "总价约432万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116447609.jpg",
+        "verified_rooms_desc": "卧室A (12.3㎡)、卧室B (11.5㎡)、卧室C (10.0㎡)、客厅 (33.9㎡)、厨房 (5.9㎡)、卫生间A (4.7㎡)、卫生间B (4.2㎡)、阳台A (2.9㎡)、阳台B (5.0㎡)",
+        "pros": "【真·南北双阳台全明三房】三间卧室均有完整窗户无暗间！南北对流极佳，客餐厅南北通透，双卫干湿分离，是品质家庭改善换房首选！",
+        "cons": "北向卧室进深标准，放置1.8米大床需合理规划衣柜走道。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "level_code": "green",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:6785m(🟢 无高架轨交噪) · 🛣️高速:3062m · 🚗主干道:12270m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 6785,
+        "level": "🟢 无高架轨交噪",
+        "desc": "距地上轨交线超过6785米，属于完全静音安全距离。"
+      },
+      "expressway": {
+        "name": "嘉闵高架路",
+        "distance_m": 3062,
+        "level": "🟢 远离高速",
+        "desc": "距最近高速公路约3062米，属于优良静谧生活区。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 12270,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约12270米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    },
+    "noise_analysis": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "dist_to_highway_m": 3062,
+      "dist_to_metro_elevated_m": 6785,
+      "dist_to_arterial_m": 12270,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距地上轨交线超过6785米，属于完全静音安全距离。 | 距主干道约12270米，深处生活街区，道路环境静雅。 | 距最近高速公路约3062米，属于优良静谧生活区。",
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    }
+  },
+  {
+    "id": "5011000080030",
+    "name": "丰庄三村",
+    "parent_cluster": "丰庄新村",
+    "phase_info": "丰庄成熟生活区内圈，1997年建，安静宜居公房",
+    "plate": "真新",
+    "district": "嘉定区",
+    "address": "上海市嘉定区丰庄路550弄",
+    "coordinates": [
+      121.353,
+      31.252
+    ],
+    "built_year": 1997,
+    "building_type": "多层板楼",
+    "green_rate": "31%",
+    "plot_ratio": 1.5,
+    "property_fee": "0.8元/㎡/月",
+    "total_units": 1100,
+    "avg_price_wan": 3.8,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080030/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080030/",
+    "metro": {
+      "station_name": "丰庄站",
+      "line": "13号线",
+      "station_coords": [
+        121.3585,
+        31.249
+      ],
+      "distance_m": 600,
+      "walk_time_min": 8,
+      "route_desc": "沿丰庄路向东步行600米直达13号线丰庄站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "13号线(丰庄站) -> 市中心直达",
+      "distance_km": 14.8,
+      "duration_min": 29,
+      "fare_yuan": 4
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区真新小学",
+        "type": "成熟公办",
+        "dist": "约350米",
+        "time": "步行4分钟"
+      }
+    ],
+    "commercial": "丰庄茶城、丰庄路各类生鲜超市、餐饮街",
+    "medical": "真新社区卫生服务中心(400m)",
+    "tags": [
+      "步行8分钟到地铁",
+      "公房经典双南",
+      "低总价市区后花园",
+      "租售比极高"
+    ],
+    "phase_comparison": "【选筹指南】：相比一村更靠内圈，避开了主要商铺的嘈杂，居家生活更安静，总价200多万即可在距市中心半小时圈上车两房。",
+    "scoring": {
+      "default_total": 89.0,
+      "dimensions": {
+        "transit": 93,
+        "school": 81,
+        "layout": 83,
+        "environment": 96,
+        "commercial_asset": 92
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区真新小学",
+      "tier": "成熟公办优质",
+      "range": "真新街道各社区（丰庄各村、金沙丽晶苑、真新新村等）",
+      "source_doc": "primary_img_08.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海市行知学校嘉定分校",
+      "tier": "行知品牌/区公办中坚",
+      "rank": 18,
+      "public_rank": 18,
+      "rate_26": "18.5%",
+      "range": "真新街道行政区域内所有住宅小区毕业生直升",
+      "source_doc": "middle_img_09.jpg"
+    },
+    "school_district_note": "丰庄路550弄，对口真新小学与行知学校嘉定分校。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "丰庄三村 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "82㎡",
+        "usable_area": "67.9㎡",
+        "usable_rate": "82.8%",
+        "price_wan": 311.6,
+        "unit_price": 38000,
+        "orientation": "南",
+        "tags": [
+          "实测纯真两房",
+          "实测套内67.9㎡",
+          "总价约311万",
+          "南"
+        ],
+        "floor_plan_local": "assets/floorplans/107116550624.jpg",
+        "verified_rooms_desc": "卧室A (14.9㎡)、卧室B (11.9㎡)、客厅 (15.6㎡)、餐厅 (14.3㎡)、厨房 (5.4㎡)、卫生间 (4.2㎡)、阳台B (1.6㎡)",
+        "pros": "德系方正低密花园户型，双卧面宽均在3.3米以上，采光无遮挡，得房率超83%。",
+        "cons": "南阳台偏向观景窄阳台，晾晒衣物多使用烘干机。"
+      },
+      {
+        "category": "三房",
+        "title": "丰庄三村 阔绰全明舒适三居 (3室2厅1厨1卫)",
+        "rooms": "3室2厅1厨1卫",
+        "area": "102㎡",
+        "usable_area": "85.4㎡",
+        "usable_rate": "83.7%",
+        "price_wan": 387.6,
+        "unit_price": 38000,
+        "orientation": "南北通透",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内85.4㎡",
+          "总价约387万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116518245.jpg",
+        "verified_rooms_desc": "卧室A (14.1㎡)、卧室B (9.3㎡)、卧室C (11.0㎡)、客厅 (32.3㎡)、厨房 (6.5㎡)、卫生间 (4.6㎡)、阳台A (4.3㎡)、阳台B (3.3㎡)",
+        "pros": "【真·经典全功能三房】实测包含三个完整独立卧室（A、B、C），双阳台南北对流，客厅面宽超3.9米，三代同堂功能完备且总价可控！",
+        "cons": "单卫配置，早高峰家庭成员洗漱需合理安排时间。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "level_code": "green",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:6416m(🟢 无高架轨交噪) · 🛣️高速:2603m · 🚗主干道:11819m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 6416,
+        "level": "🟢 无高架轨交噪",
+        "desc": "距地上轨交线超过6416米，属于完全静音安全距离。"
+      },
+      "expressway": {
+        "name": "嘉闵高架路",
+        "distance_m": 2603,
+        "level": "🟢 远离高速",
+        "desc": "距最近高速公路约2603米，属于优良静谧生活区。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 11819,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约11819米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    },
+    "noise_analysis": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "dist_to_highway_m": 2603,
+      "dist_to_metro_elevated_m": 6416,
+      "dist_to_arterial_m": 11819,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距地上轨交线超过6416米，属于完全静音安全距离。 | 距主干道约11819米，深处生活街区，道路环境静雅。 | 距最近高速公路约2603米，属于优良静谧生活区。",
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    }
+  },
+  {
+    "id": "5011000080031",
+    "name": "金沙丽晶苑",
+    "parent_cluster": "金沙丽晶苑",
+    "phase_info": "丰庄高品质电梯次新商品房标杆，2004年建，花园水系",
+    "plate": "真新",
+    "district": "嘉定区",
+    "address": "上海市嘉定区金沙江路2777弄",
+    "coordinates": [
+      121.359,
+      31.245
+    ],
+    "built_year": 2004,
+    "building_type": "高层板楼",
+    "green_rate": "42%",
+    "plot_ratio": 2.2,
+    "property_fee": "2.2元/㎡/月",
+    "total_units": 750,
+    "avg_price_wan": 5.2,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080031/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080031/",
+    "metro": {
+      "station_name": "丰庄站",
+      "line": "13号线",
+      "station_coords": [
+        121.3585,
+        31.249
+      ],
+      "distance_m": 450,
+      "walk_time_min": 6,
+      "route_desc": "向北沿丰庄路步行450米到达13号线丰庄站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "13号线(丰庄站) -> 市中心直达",
+      "distance_km": 14.0,
+      "duration_min": 27,
+      "fare_yuan": 4
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区真新小学",
+        "type": "成熟公办",
+        "dist": "约600米",
+        "time": "步行8分钟"
+      }
+    ],
+    "commercial": "百联中环购物中心、金沙和美广场、近铁城市广场",
+    "medical": "利群医院(约1.5km)",
+    "tags": [
+      "丰庄高端电梯房",
+      "步行6分钟到13号线",
+      "近金沙江路",
+      "环境品质极佳"
+    ],
+    "phase_comparison": "【选筹指南】：整个丰庄板块极稀缺的带电梯高端次新商品房，绿化率高达42%，外立面保养良好，是真新丰庄改善客的首选标杆。",
+    "scoring": {
+      "default_total": 92.0,
+      "dimensions": {
+        "transit": 95,
+        "school": 82,
+        "layout": 91,
+        "environment": 96,
+        "commercial_asset": 96
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区真新小学",
+      "tier": "成熟公办优质",
+      "range": "真新街道各社区（丰庄各村、金沙丽晶苑、真新新村等）",
+      "source_doc": "primary_img_08.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海市行知学校嘉定分校",
+      "tier": "行知品牌/区公办中坚",
+      "rank": 18,
+      "public_rank": 18,
+      "rate_26": "18.5%",
+      "range": "真新街道行政区域内所有住宅小区毕业生直升",
+      "source_doc": "middle_img_09.jpg"
+    },
+    "school_district_note": "金沙江路2777弄，丰庄高端电梯房，对口真新小学与行知学校嘉定分校。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "金沙丽晶苑 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "71㎡",
+        "usable_area": "58.6㎡",
+        "usable_rate": "82.5%",
+        "price_wan": 369.2,
+        "unit_price": 52000,
+        "orientation": "南",
+        "tags": [
+          "实测纯真两房",
+          "实测套内58.6㎡",
+          "总价约369万",
+          "南"
+        ],
+        "floor_plan_local": "assets/floorplans/107116553867.jpg",
+        "verified_rooms_desc": "卧室A (9.4㎡)、卧室B (12.6㎡)、客厅 (21.6㎡)、厨房 (7.2㎡)、卫生间 (4.9㎡)、阳台 (2.9㎡)",
+        "pros": "紧凑两房利用率极致，客厅开间超3.8米，总价在全区域极低，投资自住两相宜。",
+        "cons": "房龄较成熟，梯户比以两梯四户为主。"
+      },
+      {
+        "category": "三房",
+        "title": "金沙丽晶苑 阔绰全明舒适三居 (3室2厅1厨1卫)",
+        "rooms": "3室2厅1厨1卫",
+        "area": "91㎡",
+        "usable_area": "76.0㎡",
+        "usable_rate": "83.5%",
+        "price_wan": 473.2,
+        "unit_price": 52000,
+        "orientation": "三开间朝南",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内76.0㎡",
+          "总价约473万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116528811.jpg",
+        "verified_rooms_desc": "卧室A (7.5㎡)、卧室B (9.4㎡)、卧室C (12.8㎡)、客厅 (17.3㎡)、餐厅 (12.5㎡)、厨房 (5.4㎡)、阳台 (4.3㎡)",
+        "pros": "【绝版89㎡三房神户型】三开间朝南！实测拥有三个独立卧室（A、B、C），空间利用率达到极致，得房率超85.4%，无一丝浪费走廊！",
+        "cons": "北向小次卧仅7.5㎡，更适合做独立书房、茶室或儿童房榻榻米。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "level_code": "green",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:7382m(🟢 无高架轨交噪) · 🛣️高速:3071m · 🚗主干道:12744m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 7382,
+        "level": "🟢 无高架轨交噪",
+        "desc": "距地上轨交线超过7382米，属于完全静音安全距离。"
+      },
+      "expressway": {
+        "name": "嘉闵高架路",
+        "distance_m": 3071,
+        "level": "🟢 远离高速",
+        "desc": "距最近高速公路约3071米，属于优良静谧生活区。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 12744,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约12744米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    },
+    "noise_analysis": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "dist_to_highway_m": 3071,
+      "dist_to_metro_elevated_m": 7382,
+      "dist_to_arterial_m": 12744,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距地上轨交线超过7382米，属于完全静音安全距离。 | 距主干道约12744米，深处生活街区，道路环境静雅。 | 距最近高速公路约3071米，属于优良静谧生活区。",
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    }
+  },
+  {
+    "id": "5011000080032",
+    "name": "真新新村",
+    "parent_cluster": "真新新村",
+    "phase_info": "真新街道行政核心，1998年建，成熟生活配套",
+    "plate": "真新",
+    "district": "嘉定区",
+    "address": "上海市嘉定区曹安路1555弄",
+    "coordinates": [
+      121.351,
+      31.246
+    ],
+    "built_year": 1998,
+    "building_type": "多层板楼",
+    "green_rate": "30%",
+    "plot_ratio": 1.6,
+    "property_fee": "0.9元/㎡/月",
+    "total_units": 1050,
+    "avg_price_wan": 3.7,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080032/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080032/",
+    "metro": {
+      "station_name": "丰庄站",
+      "line": "13号线",
+      "station_coords": [
+        121.3585,
+        31.249
+      ],
+      "distance_m": 850,
+      "walk_time_min": 11,
+      "route_desc": "沿丰庄西路向东步行850米到达13号线丰庄站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "13号线(丰庄站) -> 市中心直达",
+      "distance_km": 15.0,
+      "duration_min": 30,
+      "fare_yuan": 4
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区真新小学",
+        "type": "成熟公办",
+        "dist": "约300米",
+        "time": "步行4分钟"
+      }
+    ],
+    "commercial": "真新街道社区商圈、轻纺市场、大润发",
+    "medical": "真新社区卫生中心(300m)",
+    "tags": [
+      "街道行政中心",
+      "生活极其方便",
+      "高得房率",
+      "近曹安商贸"
+    ],
+    "phase_comparison": "【选筹指南】：紧邻真新街道办事处，办事、就医、上学步行5分钟内搞定，总价亲民，是追求生活便利人士的坚实选择。",
+    "scoring": {
+      "default_total": 87.8,
+      "dimensions": {
+        "transit": 88,
+        "school": 81,
+        "layout": 83,
+        "environment": 96,
+        "commercial_asset": 92
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区真新小学",
+      "tier": "成熟公办优质",
+      "range": "真新街道各社区（丰庄各村、金沙丽晶苑、真新新村等）",
+      "source_doc": "primary_img_08.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海市行知学校嘉定分校",
+      "tier": "行知品牌/区公办中坚",
+      "rank": 18,
+      "public_rank": 18,
+      "rate_26": "18.5%",
+      "range": "真新街道行政区域内所有住宅小区毕业生直升",
+      "source_doc": "middle_img_09.jpg"
+    },
+    "school_district_note": "曹安路1555弄，真新街道办事处旁，对口真新小学与行知学校嘉定分校。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "真新新村 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "78㎡",
+        "usable_area": "64.1㎡",
+        "usable_rate": "82.2%",
+        "price_wan": 288.6,
+        "unit_price": 37000,
+        "orientation": "南",
+        "tags": [
+          "实测纯真两房",
+          "实测套内64.1㎡",
+          "总价约288万",
+          "南"
+        ],
+        "floor_plan_local": "assets/floorplans/107115288242.jpg",
+        "verified_rooms_desc": "卧室A (9.7㎡)、卧室B (14.3㎡)、客厅 (12.9㎡)、餐厅 (12.1㎡)、厨房 (6.2㎡)、卫生间 (5.0㎡)、阳台 (3.9㎡)",
+        "pros": "双卧朝南采光优秀，客餐厅动线分离，卫生间干湿分离，总价紧凑适合首套刚需上车。",
+        "cons": "厨房为长条形，进深较长，厨电收纳需做整体定制。"
+      },
+      {
+        "category": "三房",
+        "title": "真新新村 阔绰全明舒适三居 (3室2厅1厨2卫)",
+        "rooms": "3室2厅1厨2卫",
+        "area": "114㎡",
+        "usable_area": "95.1㎡",
+        "usable_rate": "83.4%",
+        "price_wan": 421.8,
+        "unit_price": 37000,
+        "orientation": "南北通透",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内95.1㎡",
+          "总价约421万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116377745.jpg",
+        "verified_rooms_desc": "卧室A (16.2㎡)、卧室B (14.2㎡)、卧室C (9.9㎡)、客厅 (38.2㎡)、厨房 (5.8㎡)、卫生间A (4.3㎡)、卫生间B (6.5㎡)",
+        "pros": "【真·大三房双卫王牌】三卧全明！客餐厅面积高达38平米大横厅，主卧带独立明卫与衣帽间，三开间朝南，居住尊崇感极强！",
+        "cons": "总价较高，契税与首付预算需充分准备。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "level_code": "green",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:6880m(🟢 无高架轨交噪) · 🛣️高速:2329m · 🚗主干道:12080m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 6880,
+        "level": "🟢 无高架轨交噪",
+        "desc": "距地上轨交线超过6880米，属于完全静音安全距离。"
+      },
+      "expressway": {
+        "name": "嘉闵高架路",
+        "distance_m": 2329,
+        "level": "🟢 远离高速",
+        "desc": "距最近高速公路约2329米，属于优良静谧生活区。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 12080,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约12080米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    },
+    "noise_analysis": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "dist_to_highway_m": 2329,
+      "dist_to_metro_elevated_m": 6880,
+      "dist_to_arterial_m": 12080,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距地上轨交线超过6880米，属于完全静音安全距离。 | 距主干道约12080米，深处生活街区，道路环境静雅。 | 距最近高速公路约2329米，属于优良静谧生活区。",
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    }
+  },
+  {
+    "id": "5011000080033",
+    "name": "梅川一村",
+    "parent_cluster": "梅川新村",
+    "phase_info": "梅川路文化街辐射圈，1997年建，与普陀一路之隔",
+    "plate": "真新",
+    "district": "嘉定区",
+    "address": "上海市嘉定区梅川路1500弄",
+    "coordinates": [
+      121.362,
+      31.242
+    ],
+    "built_year": 1997,
+    "building_type": "多层板楼",
+    "green_rate": "32%",
+    "plot_ratio": 1.6,
+    "property_fee": "0.9元/㎡/月",
+    "total_units": 920,
+    "avg_price_wan": 4.1,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080033/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080033/",
+    "metro": {
+      "station_name": "丰庄站",
+      "line": "13号线",
+      "station_coords": [
+        121.3585,
+        31.249
+      ],
+      "distance_m": 800,
+      "walk_time_min": 10,
+      "route_desc": "向北沿丰庄路步行800米到达13号线丰庄站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "13号线(丰庄站) -> 市中心直达",
+      "distance_km": 13.8,
+      "duration_min": 27,
+      "fare_yuan": 4
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区真新小学",
+        "type": "成熟公办",
+        "dist": "约650米",
+        "time": "步行8分钟"
+      }
+    ],
+    "commercial": "梅川路步行街、百联中环购物广场、麦德龙",
+    "medical": "普陀区利群医院(约1.3km)",
+    "tags": [
+      "与普陀仅隔一条马路",
+      "享百联中环商圈",
+      "步行10分钟地铁",
+      "生活极度便利"
+    ],
+    "phase_comparison": "【选筹指南】：过马路即是普陀区核心商圈，共享百联中环与梅川路步行街高端商业资源，地段溢价明显且流通极其活跃。",
+    "scoring": {
+      "default_total": 89.2,
+      "dimensions": {
+        "transit": 89,
+        "school": 81,
+        "layout": 84,
+        "environment": 96,
+        "commercial_asset": 98
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区真新小学",
+      "tier": "成熟公办优质",
+      "range": "真新街道各社区（丰庄各村、金沙丽晶苑、真新新村等）",
+      "source_doc": "primary_img_08.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海市行知学校嘉定分校",
+      "tier": "行知品牌/区公办中坚",
+      "rank": 18,
+      "public_rank": 18,
+      "rate_26": "18.5%",
+      "range": "真新街道行政区域内所有住宅小区毕业生直升",
+      "source_doc": "middle_img_09.jpg"
+    },
+    "school_district_note": "梅川路1500弄，近普陀，对口真新小学与行知学校嘉定分校。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "梅川一村 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "85㎡",
+        "usable_area": "70.1㎡",
+        "usable_rate": "82.5%",
+        "price_wan": 348.5,
+        "unit_price": 41000,
+        "orientation": "南北对流",
+        "tags": [
+          "实测纯真两房",
+          "实测套内70.1㎡",
+          "总价约348万",
+          "南北对流"
+        ],
+        "floor_plan_local": "assets/floorplans/107115438394.jpg",
+        "verified_rooms_desc": "卧室A (8.8㎡)、卧室B (13.7㎡)、客厅 (19.4㎡)、餐厅 (14.8㎡)、厨房 (5.6㎡)、卫生间 (3.7㎡)、阳台 (4.1㎡)",
+        "pros": "客餐厅贯通面宽达3.8米，南北通透对流，大阳台视野宽阔，通风采光极佳。",
+        "cons": "北向次卧面积约8.8㎡，摆放双人床后衣柜需做移门设计。"
+      },
+      {
+        "category": "三房",
+        "title": "梅川一村 阔绰全明舒适三居 (3室2厅1厨2卫)",
+        "rooms": "3室2厅1厨2卫",
+        "area": "108㎡",
+        "usable_area": "90.4㎡",
+        "usable_rate": "83.7%",
+        "price_wan": 442.8,
+        "unit_price": 41000,
+        "orientation": "南北双阳台",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内90.4㎡",
+          "总价约442万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116447609.jpg",
+        "verified_rooms_desc": "卧室A (12.3㎡)、卧室B (11.5㎡)、卧室C (10.0㎡)、客厅 (33.9㎡)、厨房 (5.9㎡)、卫生间A (4.7㎡)、卫生间B (4.2㎡)、阳台A (2.9㎡)、阳台B (5.0㎡)",
+        "pros": "【真·南北双阳台全明三房】三间卧室均有完整窗户无暗间！南北对流极佳，客餐厅南北通透，双卫干湿分离，是品质家庭改善换房首选！",
+        "cons": "北向卧室进深标准，放置1.8米大床需合理规划衣柜走道。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "level_code": "green",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:7819m(🟢 无高架轨交噪) · 🛣️高速:3312m · 🚗主干道:13175m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 7819,
+        "level": "🟢 无高架轨交噪",
+        "desc": "距地上轨交线超过7819米，属于完全静音安全距离。"
+      },
+      "expressway": {
+        "name": "嘉闵高架路",
+        "distance_m": 3312,
+        "level": "🟢 远离高速",
+        "desc": "距最近高速公路约3312米，属于优良静谧生活区。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 13175,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约13175米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    },
+    "noise_analysis": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "dist_to_highway_m": 3312,
+      "dist_to_metro_elevated_m": 7819,
+      "dist_to_arterial_m": 13175,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距地上轨交线超过7819米，属于完全静音安全距离。 | 距主干道约13175米，深处生活街区，道路环境静雅。 | 距最近高速公路约3312米，属于优良静谧生活区。",
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    }
+  },
+  {
+    "id": "5011000080034",
+    "name": "阳光威尼斯嘉定段",
+    "parent_cluster": "阳光威尼斯",
+    "phase_info": "欧式水系超大综合社区，2005年建，环境优美",
+    "plate": "真新",
+    "district": "嘉定区",
+    "address": "上海市嘉定区祁连山南路2727弄",
+    "coordinates": [
+      121.364,
+      31.255
+    ],
+    "built_year": 2005,
+    "building_type": "高层板楼",
+    "green_rate": "45%",
+    "plot_ratio": 1.9,
+    "property_fee": "1.8元/㎡/月",
+    "total_units": 1800,
+    "avg_price_wan": 4.6,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080034/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080034/",
+    "metro": {
+      "station_name": "祁连山南路站",
+      "line": "13号线",
+      "station_coords": [
+        121.368,
+        31.248
+      ],
+      "distance_m": 850,
+      "walk_time_min": 11,
+      "route_desc": "向南沿祁连山南路步行850米到达13号线祁连山南路站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "13号线(祁连山南路站) -> 直达市中心",
+      "distance_km": 13.5,
+      "duration_min": 25,
+      "fare_yuan": 4
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区真新小学",
+        "type": "成熟公办",
+        "dist": "约800米",
+        "time": "步行10分钟"
+      }
+    ],
+    "commercial": "威尼斯商业水岸、百联中环、近铁城市广场",
+    "medical": "利群医院(约1.6km)",
+    "tags": [
+      "威尼斯欧式水系",
+      "超高绿化率45%",
+      "步行11分钟到13号线",
+      "近普陀"
+    ],
+    "phase_comparison": "【选筹指南】：小区内部环绕贯通人工湖，居住环境在整个板块首屈一指；13号线25分钟直入市中心，是真新板块景观与品质的旗舰大盘。",
+    "scoring": {
+      "default_total": 90.0,
+      "dimensions": {
+        "transit": 90,
+        "school": 81,
+        "layout": 89,
+        "environment": 96,
+        "commercial_asset": 95
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区真新小学",
+      "tier": "成熟公办优质",
+      "range": "真新街道各社区（丰庄各村、金沙丽晶苑、真新新村等）",
+      "source_doc": "primary_img_08.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海市行知学校嘉定分校",
+      "tier": "行知品牌/区公办中坚",
+      "rank": 18,
+      "public_rank": 18,
+      "rate_26": "18.5%",
+      "range": "真新街道行政区域内所有住宅小区毕业生直升",
+      "source_doc": "middle_img_09.jpg"
+    },
+    "school_district_note": "祁连山南路2727弄，欧式水系大盘，对口真新小学与行知学校嘉定分校。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "阳光威尼斯嘉定段 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "86㎡",
+        "usable_area": "71.3㎡",
+        "usable_rate": "82.9%",
+        "price_wan": 395.6,
+        "unit_price": 46000,
+        "orientation": "南",
+        "tags": [
+          "实测纯真两房",
+          "实测套内71.3㎡",
+          "总价约395万",
+          "南"
+        ],
+        "floor_plan_local": "assets/floorplans/107116341545.jpg",
+        "verified_rooms_desc": "卧室A (11.3㎡)、卧室B (15.4㎡)、客厅 (14.4㎡)、餐厅 (15.3㎡)、厨房 (6.8㎡)、卫生间 (4.9㎡)、阳台B (3.2㎡)",
+        "pros": "主卧面宽达3.6米阔绰舒适，厨房带独立备餐阳台，卫生间全明采光无暗角。",
+        "cons": "入口玄关进深稍短，需倚靠侧墙设置嵌入式鞋柜。"
+      },
+      {
+        "category": "三房",
+        "title": "阳光威尼斯嘉定段 阔绰全明舒适三居 (3室2厅1厨1卫)",
+        "rooms": "3室2厅1厨1卫",
+        "area": "102㎡",
+        "usable_area": "85.4㎡",
+        "usable_rate": "83.7%",
+        "price_wan": 469.2,
+        "unit_price": 46000,
+        "orientation": "南北通透",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内85.4㎡",
+          "总价约469万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116518245.jpg",
+        "verified_rooms_desc": "卧室A (14.1㎡)、卧室B (9.3㎡)、卧室C (11.0㎡)、客厅 (32.3㎡)、厨房 (6.5㎡)、卫生间 (4.6㎡)、阳台A (4.3㎡)、阳台B (3.3㎡)",
+        "pros": "【真·经典全功能三房】实测包含三个完整独立卧室（A、B、C），双阳台南北对流，客厅面宽超3.9米，三代同堂功能完备且总价可控！",
+        "cons": "单卫配置，早高峰家庭成员洗漱需合理安排时间。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "level_code": "green",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:6815m(🟢 无高架轨交噪) · 🛣️高速:3685m · 🚗主干道:12495m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 6815,
+        "level": "🟢 无高架轨交噪",
+        "desc": "距地上轨交线超过6815米，属于完全静音安全距离。"
+      },
+      "expressway": {
+        "name": "嘉闵高架路",
+        "distance_m": 3685,
+        "level": "🟢 远离高速",
+        "desc": "距最近高速公路约3685米，属于优良静谧生活区。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 12495,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约12495米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    },
+    "noise_analysis": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "dist_to_highway_m": 3685,
+      "dist_to_metro_elevated_m": 6815,
+      "dist_to_arterial_m": 12495,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距地上轨交线超过6815米，属于完全静音安全距离。 | 距主干道约12495米，深处生活街区，道路环境静雅。 | 距最近高速公路约3685米，属于优良静谧生活区。",
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    }
+  },
+  {
+    "id": "5011000080035",
+    "name": "恒荣马陆水岸",
+    "parent_cluster": "恒荣水岸",
+    "phase_info": "马陆水岸景观品质住宅，2015年建，品质次新",
+    "plate": "马陆",
+    "district": "嘉定区",
+    "address": "上海市嘉定区宝安公路3055弄",
+    "coordinates": [
+      121.272,
+      31.318
+    ],
+    "built_year": 2015,
+    "building_type": "高层板楼",
+    "green_rate": "38%",
+    "plot_ratio": 2.0,
+    "property_fee": "2.4元/㎡/月",
+    "total_units": 780,
+    "avg_price_wan": 3.6,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080035/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080035/",
+    "metro": {
+      "station_name": "马陆站",
+      "line": "11号线",
+      "station_coords": [
+        121.2783,
+        31.3204
+      ],
+      "distance_m": 650,
+      "walk_time_min": 8,
+      "route_desc": "沿宝安公路向东北步行650米到达11号线马陆站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "11号线(马陆站) -> 14号线",
+      "distance_km": 27.5,
+      "duration_min": 42,
+      "fare_yuan": 6
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区马陆小学",
+        "type": "成熟公办",
+        "dist": "约600米",
+        "time": "步行8分钟"
+      }
+    ],
+    "commercial": "马陆包装城商业街、育英生活广场",
+    "medical": "瑞金医院北院(约2.2km)",
+    "tags": [
+      "步行8分钟到马陆站",
+      "水岸景观",
+      "2015次新",
+      "单价洼地"
+    ],
+    "phase_comparison": "【选筹指南】：紧邻马陆站通勤便捷，且楼栋南面临水，视野开阔；相比嘉定新城站核心区单价低近5000元/㎡，性价比出众。",
+    "scoring": {
+      "default_total": 87.2,
+      "dimensions": {
+        "transit": 90,
+        "school": 80,
+        "layout": 86,
+        "environment": 96,
+        "commercial_asset": 82
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区马陆小学",
+      "tier": "普通公办",
+      "range": "马陆镇樊家村、包桥村、李家村、马陆片区育兰居委、育英街等",
+      "source_doc": "primary_img_05.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海市嘉定区马陆育才联合中学",
+      "tier": "普通公办",
+      "rank": 38,
+      "public_rank": 38,
+      "rate_26": "9.5%",
+      "range": "马陆片区（除金沙湾、沈徐社区等）、陆家片区、彭赵村、包桥村、仓新居委、石冈沥苑等",
+      "source_doc": "middle_img_04.jpg"
+    },
+    "school_district_note": "宝安公路3055弄，对口马陆小学与马陆育才联合中学。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "恒荣马陆水岸 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "87㎡",
+        "usable_area": "72.0㎡",
+        "usable_rate": "82.8%",
+        "price_wan": 313.2,
+        "unit_price": 36000,
+        "orientation": "南北双阳台",
+        "tags": [
+          "实测纯真两房",
+          "实测套内72.0㎡",
+          "总价约313万",
+          "南北双阳台"
+        ],
+        "floor_plan_local": "assets/floorplans/107116374473.jpg",
+        "verified_rooms_desc": "卧室A (12.6㎡)、卧室B (15.5㎡)、客厅 (18.9㎡)、餐厅 (6.1㎡)、厨房 (5.5㎡)、卫生间 (4.4㎡)、阳台A (3.8㎡)、阳台B (5.2㎡)",
+        "pros": "前后双阳台对流设计！主卧与次卧均带大飘窗，全明户型毫无死角，得房率扎实。",
+        "cons": "客厅与餐厅为开放连体布局，油烟隔离需安装大功率吸油烟机。"
+      },
+      {
+        "category": "三房",
+        "title": "恒荣马陆水岸 阔绰全明舒适三居 (3室2厅1厨1卫)",
+        "rooms": "3室2厅1厨1卫",
+        "area": "91㎡",
+        "usable_area": "76.0㎡",
+        "usable_rate": "83.5%",
+        "price_wan": 327.6,
+        "unit_price": 36000,
+        "orientation": "三开间朝南",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内76.0㎡",
+          "总价约327万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116528811.jpg",
+        "verified_rooms_desc": "卧室A (7.5㎡)、卧室B (9.4㎡)、卧室C (12.8㎡)、客厅 (17.3㎡)、餐厅 (12.5㎡)、厨房 (5.4㎡)、阳台 (4.3㎡)",
+        "pros": "【绝版89㎡三房神户型】三开间朝南！实测拥有三个独立卧室（A、B、C），空间利用率达到极致，得房率超85.4%，无一丝浪费走廊！",
+        "cons": "北向小次卧仅7.5㎡，更适合做独立书房、茶室或儿童房榻榻米。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "level_code": "green",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:518m(🟢 无高架轨交噪) · 🛣️高速:1416m · 🚗主干道:1802m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 518,
+        "level": "🟢 无高架轨交噪",
+        "desc": "距地上轨交线超过518米，属于完全静音安全距离。"
+      },
+      "expressway": {
+        "name": "S6沪翔高速",
+        "distance_m": 1416,
+        "level": "🟢 远离高速",
+        "desc": "距最近高速公路约1416米，属于优良静谧生活区。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 1802,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约1802米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    },
+    "noise_analysis": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "dist_to_highway_m": 1416,
+      "dist_to_metro_elevated_m": 518,
+      "dist_to_arterial_m": 1802,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距地上轨交线超过518米，属于完全静音安全距离。 | 距主干道约1802米，深处生活街区，道路环境静雅。 | 距最近高速公路约1416米，属于优良静谧生活区。",
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    }
+  },
+  {
+    "id": "5011000080036",
+    "name": "好世皇冠花园",
+    "parent_cluster": "好世皇冠花园",
+    "phase_info": "马陆地铁站旁日系品质改善标杆，2013年建，日系精工",
+    "plate": "马陆",
+    "district": "嘉定区",
+    "address": "上海市嘉定区崇福路399弄",
+    "coordinates": [
+      121.282,
+      31.322
+    ],
+    "built_year": 2013,
+    "building_type": "高层板楼",
+    "green_rate": "42%",
+    "plot_ratio": 1.9,
+    "property_fee": "2.8元/㎡/月",
+    "total_units": 920,
+    "avg_price_wan": 4.2,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080036/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080036/",
+    "metro": {
+      "station_name": "马陆站",
+      "line": "11号线",
+      "station_coords": [
+        121.2783,
+        31.3204
+      ],
+      "distance_m": 420,
+      "walk_time_min": 5,
+      "route_desc": "沿崇福路向西直达11号线马陆站1号口"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "11号线(马陆站) -> 14号线",
+      "distance_km": 27.2,
+      "duration_min": 41,
+      "fare_yuan": 6
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区马陆小学",
+        "type": "成熟公办",
+        "dist": "约700米",
+        "time": "步行9分钟"
+      }
+    ],
+    "commercial": "佳兆业城市广场商业中心、弘久商业广场",
+    "medical": "瑞金医院北院(约2.4km)",
+    "tags": [
+      "步行5分钟到马陆站",
+      "好世日系精工品质",
+      "全人车分流",
+      "马陆品质天花板"
+    ],
+    "phase_comparison": "【选筹指南】：日企好世倾力打造，园区园林、大堂挑高与车库地坪极具质感，户型收纳设计精巧，是马陆板块绝对的品质标杆。",
+    "scoring": {
+      "default_total": 84.5,
+      "dimensions": {
+        "transit": 94,
+        "school": 80,
+        "layout": 92,
+        "environment": 68,
+        "commercial_asset": 87
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区马陆小学",
+      "tier": "普通公办",
+      "range": "马陆镇樊家村、包桥村、李家村、马陆片区育兰居委、育英街等",
+      "source_doc": "primary_img_05.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海市嘉定区马陆育才联合中学",
+      "tier": "普通公办",
+      "rank": 38,
+      "public_rank": 38,
+      "rate_26": "9.5%",
+      "range": "马陆片区（除金沙湾、沈徐社区等）、陆家片区、彭赵村、包桥村、仓新居委、石冈沥苑等",
+      "source_doc": "middle_img_04.jpg"
+    },
+    "school_district_note": "崇福路399弄，马陆站旁日系标杆，对口马陆小学与马陆育才联合中学。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "好世皇冠花园 经典全明两居 (2室2厅1厨1卫+储物间)",
+        "rooms": "2室2厅1厨1卫+储物间",
+        "area": "78㎡",
+        "usable_area": "64.6㎡",
+        "usable_rate": "82.8%",
+        "price_wan": 327.6,
+        "unit_price": 42000,
+        "orientation": "南",
+        "tags": [
+          "实测纯真两房",
+          "实测套内64.6㎡",
+          "总价约327万",
+          "南"
+        ],
+        "floor_plan_local": "assets/floorplans/107116515364.jpg",
+        "verified_rooms_desc": "卧室A (13.9㎡)、卧室B (11.6㎡)、储物间 (1.3㎡)、客厅 (23.2㎡)、厨房 (4.2㎡)、卫生间 (4.9㎡)、阳台 (5.5㎡)",
+        "pros": "带独立独立小储物间！客厅开间超4米大宽厅，采光面极其开阔，主卧空间充裕。",
+        "cons": "厨房面积4.2㎡稍显紧凑，适宜L型吊柜设计。"
+      },
+      {
+        "category": "三房",
+        "title": "好世皇冠花园 阔绰全明舒适三居 (3室2厅1厨2卫)",
+        "rooms": "3室2厅1厨2卫",
+        "area": "114㎡",
+        "usable_area": "95.1㎡",
+        "usable_rate": "83.4%",
+        "price_wan": 478.8,
+        "unit_price": 42000,
+        "orientation": "南北通透",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内95.1㎡",
+          "总价约478万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116377745.jpg",
+        "verified_rooms_desc": "卧室A (16.2㎡)、卧室B (14.2㎡)、卧室C (9.9㎡)、客厅 (38.2㎡)、厨房 (5.8㎡)、卫生间A (4.3㎡)、卫生间B (6.5㎡)",
+        "pros": "【真·大三房双卫王牌】三卧全明！客餐厅面积高达38平米大横厅，主卧带独立明卫与衣帽间，三开间朝南，居住尊崇感极强！",
+        "cons": "总价较高，契税与首付预算需充分准备。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟠 显著干扰 (临近主干交通走廊)",
+      "level_code": "orange",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:245m(🟡 轻度背景) · 🛣️高速:968m · 🚗主干道:2745m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 245,
+        "level": "🟡 轻度背景",
+        "desc": "距11号线高架约245米，已有大面积多排建筑完全隔断，常规生活不受干扰。"
+      },
+      "expressway": {
+        "name": "S5沪嘉高速",
+        "distance_m": 968,
+        "level": "🟢 远离高速",
+        "desc": "距最近高速公路约968米，属于优良静谧生活区。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 2745,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约2745米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：属于半开放受噪区，外圈与内圈噪音差达10-15分贝。看房时务必在早晚高峰期实地测听，锁定中庭无对冲楼栋。"
+    },
+    "noise_analysis": {
+      "status": "🟠 显著干扰 (临近主干交通走廊)",
+      "dist_to_highway_m": 968,
+      "dist_to_metro_elevated_m": 245,
+      "dist_to_arterial_m": 2745,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距11号线高架约245米，已有大面积多排建筑完全隔断，常规生活不受干扰。 | 距主干道约2745米，深处生活街区，道路环境静雅。 | 距最近高速公路约968米，属于优良静谧生活区。",
+      "selection_guide": "【实勘避坑指南】：属于半开放受噪区，外圈与内圈噪音差达10-15分贝。看房时务必在早晚高峰期实地测听，锁定中庭无对冲楼栋。"
+    }
+  },
+  {
+    "id": "5011000080038",
+    "name": "育英公寓",
+    "parent_cluster": "育英公寓",
+    "phase_info": "马陆育英街成熟学区生活圈，2006年建，成熟生活配套",
+    "plate": "马陆",
+    "district": "嘉定区",
+    "address": "上海市嘉定区育英街188弄",
+    "coordinates": [
+      121.275,
+      31.316
+    ],
+    "built_year": 2006,
+    "building_type": "多层板楼",
+    "green_rate": "33%",
+    "plot_ratio": 1.6,
+    "property_fee": "1.2元/㎡/月",
+    "total_units": 580,
+    "avg_price_wan": 3.1,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080038/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080038/",
+    "metro": {
+      "station_name": "马陆站",
+      "line": "11号线",
+      "station_coords": [
+        121.2783,
+        31.3204
+      ],
+      "distance_m": 700,
+      "walk_time_min": 9,
+      "route_desc": "沿育英街向北转宝安公路步行700米到马陆站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "11号线(马陆站) -> 14号线",
+      "distance_km": 27.6,
+      "duration_min": 43,
+      "fare_yuan": 6
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区马陆小学",
+        "type": "成熟公办",
+        "dist": "约400米",
+        "time": "步行5分钟"
+      }
+    ],
+    "commercial": "育英街餐饮街、马陆镇老街商圈",
+    "medical": "马陆镇社区医院(500m)",
+    "tags": [
+      "步行9分钟到地铁",
+      "近马陆学校",
+      "成熟烟火气",
+      "高得房率"
+    ],
+    "phase_comparison": "【选筹指南】：周边配套极其成熟，出门就是超市生鲜，步行至马陆站不到10分钟，兼备了成熟生活与便捷地铁出行。",
+    "scoring": {
+      "default_total": 86.2,
+      "dimensions": {
+        "transit": 88,
+        "school": 79,
+        "layout": 84,
+        "environment": 96,
+        "commercial_asset": 83
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区马陆小学",
+      "tier": "普通公办",
+      "range": "马陆镇樊家村、包桥村、李家村、马陆片区育兰居委、育英街等",
+      "source_doc": "primary_img_05.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海市嘉定区马陆育才联合中学",
+      "tier": "普通公办",
+      "rank": 38,
+      "public_rank": 38,
+      "rate_26": "9.5%",
+      "range": "马陆片区（除金沙湾、沈徐社区等）、陆家片区、彭赵村、包桥村、仓新居委、石冈沥苑等",
+      "source_doc": "middle_img_04.jpg"
+    },
+    "school_district_note": "育英街188弄，对口马陆小学与马陆育才联合中学。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "育英公寓 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "85㎡",
+        "usable_area": "69.8㎡",
+        "usable_rate": "82.1%",
+        "price_wan": 263.5,
+        "unit_price": 31000,
+        "orientation": "南",
+        "tags": [
+          "实测纯真两房",
+          "实测套内69.8㎡",
+          "总价约263万",
+          "南"
+        ],
+        "floor_plan_local": "assets/floorplans/107116520186.jpg",
+        "verified_rooms_desc": "卧室A (14.0㎡)、卧室B (10.0㎡)、客厅 (25.6㎡)、厨房 (5.4㎡)、卫生间 (3.7㎡)、阳台A (5.9㎡)、阳台B (5.2㎡)",
+        "pros": "罕见的双景观大阳台两房！客厅面宽超大，主卧朝南带全景飘窗，通风对流一流。",
+        "cons": "卫生间为单卫配置，早晚高峰需合理错峰。"
+      },
+      {
+        "category": "三房",
+        "title": "育英公寓 阔绰全明舒适三居 (3室2厅1厨2卫)",
+        "rooms": "3室2厅1厨2卫",
+        "area": "108㎡",
+        "usable_area": "90.4㎡",
+        "usable_rate": "83.7%",
+        "price_wan": 334.8,
+        "unit_price": 31000,
+        "orientation": "南北双阳台",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内90.4㎡",
+          "总价约334万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116447609.jpg",
+        "verified_rooms_desc": "卧室A (12.3㎡)、卧室B (11.5㎡)、卧室C (10.0㎡)、客厅 (33.9㎡)、厨房 (5.9㎡)、卫生间A (4.7㎡)、卫生间B (4.2㎡)、阳台A (2.9㎡)、阳台B (5.0㎡)",
+        "pros": "【真·南北双阳台全明三房】三间卧室均有完整窗户无暗间！南北对流极佳，客餐厅南北通透，双卫干湿分离，是品质家庭改善换房首选！",
+        "cons": "北向卧室进深标准，放置1.8米大床需合理规划衣柜走道。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "level_code": "green",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:582m(🟢 无高架轨交噪) · 🛣️高速:1161m · 🚗主干道:2090m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 582,
+        "level": "🟢 无高架轨交噪",
+        "desc": "距地上轨交线超过582米，属于完全静音安全距离。"
+      },
+      "expressway": {
+        "name": "S6沪翔高速",
+        "distance_m": 1161,
+        "level": "🟢 远离高速",
+        "desc": "距最近高速公路约1161米，属于优良静谧生活区。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 2090,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约2090米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    },
+    "noise_analysis": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "dist_to_highway_m": 1161,
+      "dist_to_metro_elevated_m": 582,
+      "dist_to_arterial_m": 2090,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距地上轨交线超过582米，属于完全静音安全距离。 | 距主干道约2090米，深处生活街区，道路环境静雅。 | 距最近高速公路约1161米，属于优良静谧生活区。",
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    }
+  },
+  {
+    "id": "5011000080039",
+    "name": "荣华坊",
+    "parent_cluster": "荣华坊",
+    "phase_info": "宝安公路生活圈成熟社区，2008年建，成熟生活配套",
+    "plate": "马陆",
+    "district": "嘉定区",
+    "address": "上海市嘉定区宝安公路2888弄",
+    "coordinates": [
+      121.28,
+      31.319
+    ],
+    "built_year": 2008,
+    "building_type": "多层与小高层",
+    "green_rate": "35%",
+    "plot_ratio": 1.7,
+    "property_fee": "1.4元/㎡/月",
+    "total_units": 720,
+    "avg_price_wan": 3.2,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080039/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080039/",
+    "metro": {
+      "station_name": "马陆站",
+      "line": "11号线",
+      "station_coords": [
+        121.2783,
+        31.3204
+      ],
+      "distance_m": 500,
+      "walk_time_min": 6,
+      "route_desc": "沿宝安公路向西直达11号线马陆站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "11号线(马陆站) -> 14号线",
+      "distance_km": 27.3,
+      "duration_min": 41,
+      "fare_yuan": 6
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区马陆小学",
+        "type": "成熟公办",
+        "dist": "约600米",
+        "time": "步行8分钟"
+      }
+    ],
+    "commercial": "宝安公路商圈、佳兆业广场",
+    "medical": "瑞金北院(约2.3km)",
+    "tags": [
+      "步行6分钟到马陆站",
+      "性价比之选",
+      "多层得房率高",
+      "采光充足"
+    ],
+    "phase_comparison": "【选筹指南】：距离马陆站500米，上下班通勤非常轻松；优选远离宝安公路沿街的后排楼栋，有效隔绝主路货车声响。",
+    "scoring": {
+      "default_total": 81.5,
+      "dimensions": {
+        "transit": 92,
+        "school": 79,
+        "layout": 83,
+        "environment": 68,
+        "commercial_asset": 83
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区马陆小学",
+      "tier": "普通公办",
+      "range": "马陆镇樊家村、包桥村、李家村、马陆片区育兰居委、育英街等",
+      "source_doc": "primary_img_05.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海市嘉定区马陆育才联合中学",
+      "tier": "普通公办",
+      "rank": 38,
+      "public_rank": 38,
+      "rate_26": "9.5%",
+      "range": "马陆片区（除金沙湾、沈徐社区等）、陆家片区、彭赵村、包桥村、仓新居委、石冈沥苑等",
+      "source_doc": "middle_img_04.jpg"
+    },
+    "school_district_note": "宝安公路2888弄，对口马陆小学与马陆育才联合中学。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "荣华坊 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "76㎡",
+        "usable_area": "62.6㎡",
+        "usable_rate": "82.4%",
+        "price_wan": 243.2,
+        "unit_price": 32000,
+        "orientation": "南",
+        "tags": [
+          "实测纯真两房",
+          "实测套内62.6㎡",
+          "总价约243万",
+          "南"
+        ],
+        "floor_plan_local": "assets/floorplans/107116525512.jpg",
+        "verified_rooms_desc": "卧室A (8.0㎡)、卧室B (13.5㎡)、客厅 (15.3㎡)、餐厅 (10.7㎡)、厨房 (5.5㎡)、卫生间 (3.8㎡)、阳台 (5.8㎡)",
+        "pros": "经典全南两房格局，客厅直连宽景大阳台，得房率高，总价低极易转手出租。",
+        "cons": "次卧面积8.0㎡偏紧凑，适合作为儿童房或多功能书房。"
+      },
+      {
+        "category": "三房",
+        "title": "荣华坊 阔绰全明舒适三居 (3室2厅1厨1卫)",
+        "rooms": "3室2厅1厨1卫",
+        "area": "102㎡",
+        "usable_area": "85.4㎡",
+        "usable_rate": "83.7%",
+        "price_wan": 326.4,
+        "unit_price": 32000,
+        "orientation": "南北通透",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内85.4㎡",
+          "总价约326万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116518245.jpg",
+        "verified_rooms_desc": "卧室A (14.1㎡)、卧室B (9.3㎡)、卧室C (11.0㎡)、客厅 (32.3㎡)、厨房 (6.5㎡)、卫生间 (4.6㎡)、阳台A (4.3㎡)、阳台B (3.3㎡)",
+        "pros": "【真·经典全功能三房】实测包含三个完整独立卧室（A、B、C），双阳台南北对流，客厅面宽超3.9米，三代同堂功能完备且总价可控！",
+        "cons": "单卫配置，早高峰家庭成员洗漱需合理安排时间。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟠 显著干扰 (临近主干交通走廊)",
+      "level_code": "orange",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:121m(🟠 显著感知) · 🛣️高速:1356m · 🚗主干道:2560m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 121,
+        "level": "🟠 显著感知",
+        "desc": "距11号线地上高架约121米，非临轨第一排有部分楼栋遮挡，但开窗时进出站轮轨声依然清晰可辨。"
+      },
+      "expressway": {
+        "name": "S5沪嘉高速",
+        "distance_m": 1356,
+        "level": "🟢 远离高速",
+        "desc": "距最近高速公路约1356米，属于优良静谧生活区。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 2560,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约2560米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：属于半开放受噪区，外圈与内圈噪音差达10-15分贝。看房时务必在早晚高峰期实地测听，锁定中庭无对冲楼栋。"
+    },
+    "noise_analysis": {
+      "status": "🟠 显著干扰 (临近主干交通走廊)",
+      "dist_to_highway_m": 1356,
+      "dist_to_metro_elevated_m": 121,
+      "dist_to_arterial_m": 2560,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距11号线地上高架约121米，非临轨第一排有部分楼栋遮挡，但开窗时进出站轮轨声依然清晰可辨。 | 距主干道约2560米，深处生活街区，道路环境静雅。 | 距最近高速公路约1356米，属于优良静谧生活区。",
+      "selection_guide": "【实勘避坑指南】：属于半开放受噪区，外圈与内圈噪音差达10-15分贝。看房时务必在早晚高峰期实地测听，锁定中庭无对冲楼栋。"
+    }
+  },
+  {
+    "id": "5011000080040",
+    "name": "新绿葱翠",
+    "parent_cluster": "新绿葱翠",
+    "phase_info": "近马陆站性价比高流转小区，2011年建，成熟生活配套",
+    "plate": "马陆",
+    "district": "嘉定区",
+    "address": "上海市嘉定区崇福路200弄",
+    "coordinates": [
+      121.285,
+      31.324
+    ],
+    "built_year": 2011,
+    "building_type": "高层板楼",
+    "green_rate": "38%",
+    "plot_ratio": 2.1,
+    "property_fee": "2.0元/㎡/月",
+    "total_units": 850,
+    "avg_price_wan": 3.5,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080040/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080040/",
+    "metro": {
+      "station_name": "马陆站",
+      "line": "11号线",
+      "station_coords": [
+        121.2783,
+        31.3204
+      ],
+      "distance_m": 750,
+      "walk_time_min": 10,
+      "route_desc": "沿崇福路向西南步行750米直达11号线马陆站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "11号线(马陆站) -> 14号线",
+      "distance_km": 27.5,
+      "duration_min": 42,
+      "fare_yuan": 6
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区马陆小学",
+        "type": "成熟公办",
+        "dist": "约800米",
+        "time": "步行10分钟"
+      }
+    ],
+    "commercial": "佳兆业商业广场、崇福路商业街",
+    "medical": "瑞金医院北院(约2.5km)",
+    "tags": [
+      "步行10分钟到地铁",
+      "电梯高层视野好",
+      "总价亲民",
+      "次新高性价比"
+    ],
+    "phase_comparison": "【选筹指南】：小区户型多为紧凑实用两房与紧凑三房，总价控制得体，是外溢至马陆板块年轻人群的高频上车盘。",
+    "scoring": {
+      "default_total": 87.0,
+      "dimensions": {
+        "transit": 89,
+        "school": 79,
+        "layout": 86,
+        "environment": 96,
+        "commercial_asset": 84
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区马陆小学",
+      "tier": "普通公办",
+      "range": "马陆镇樊家村、包桥村、李家村、马陆片区育兰居委、育英街等",
+      "source_doc": "primary_img_05.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海市嘉定区马陆育才联合中学",
+      "tier": "普通公办",
+      "rank": 38,
+      "public_rank": 38,
+      "rate_26": "9.5%",
+      "range": "马陆片区（除金沙湾、沈徐社区等）、陆家片区、彭赵村、包桥村、仓新居委、石冈沥苑等",
+      "source_doc": "middle_img_04.jpg"
+    },
+    "school_district_note": "崇福路200弄，对口马陆小学与马陆育才联合中学。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "新绿葱翠 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "87㎡",
+        "usable_area": "71.4㎡",
+        "usable_rate": "82.1%",
+        "price_wan": 304.5,
+        "unit_price": 35000,
+        "orientation": "全南采光",
+        "tags": [
+          "实测纯真两房",
+          "实测套内71.4㎡",
+          "总价约304万",
+          "全南采光"
+        ],
+        "floor_plan_local": "assets/floorplans/107116526253.jpg",
+        "verified_rooms_desc": "卧室A (14.2㎡)、卧室B (12.1㎡)、客厅 (25.0㎡)、餐厅 (5.9㎡)、厨房 (4.9㎡)、卫生间 (3.8㎡)、阳台 (5.5㎡)",
+        "pros": "客厅开间阔绰达25平米大方厅！主卧与次卧开间均衡，双卧全南日照充足。",
+        "cons": "餐厅进深为紧凑型，适合放置4人餐桌。"
+      },
+      {
+        "category": "三房",
+        "title": "新绿葱翠 阔绰全明舒适三居 (3室2厅1厨1卫)",
+        "rooms": "3室2厅1厨1卫",
+        "area": "91㎡",
+        "usable_area": "76.0㎡",
+        "usable_rate": "83.5%",
+        "price_wan": 318.5,
+        "unit_price": 35000,
+        "orientation": "三开间朝南",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内76.0㎡",
+          "总价约318万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116528811.jpg",
+        "verified_rooms_desc": "卧室A (7.5㎡)、卧室B (9.4㎡)、卧室C (12.8㎡)、客厅 (17.3㎡)、餐厅 (12.5㎡)、厨房 (5.4㎡)、阳台 (4.3㎡)",
+        "pros": "【绝版89㎡三房神户型】三开间朝南！实测拥有三个独立卧室（A、B、C），空间利用率达到极致，得房率超85.4%，无一丝浪费走廊！",
+        "cons": "北向小次卧仅7.5㎡，更适合做独立书房、茶室或儿童房榻榻米。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "level_code": "green",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:520m(🟢 无高架轨交噪) · 🛣️高速:629m · 🚗主干道:3027m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 520,
+        "level": "🟢 无高架轨交噪",
+        "desc": "距地上轨交线超过520米，属于完全静音安全距离。"
+      },
+      "expressway": {
+        "name": "S5沪嘉高速",
+        "distance_m": 629,
+        "level": "🟢 远离高速",
+        "desc": "距最近高速公路约629米，属于优良静谧生活区。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 3027,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约3027米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    },
+    "noise_analysis": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "dist_to_highway_m": 629,
+      "dist_to_metro_elevated_m": 520,
+      "dist_to_arterial_m": 3027,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距地上轨交线超过520米，属于完全静音安全距离。 | 距主干道约3027米，深处生活街区，道路环境静雅。 | 距最近高速公路约629米，属于优良静谧生活区。",
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    }
+  },
+  {
+    "id": "5011000080041",
+    "name": "安亭新镇·奥德豪斯",
+    "parent_cluster": "安亭新镇",
+    "phase_info": "安亭新镇德国大师核心风貌组团，2012年建，纯正德式低密",
+    "plate": "安亭",
+    "district": "嘉定区",
+    "address": "上海市嘉定区安礼路228弄",
+    "coordinates": [
+      121.182,
+      31.279
+    ],
+    "built_year": 2012,
+    "building_type": "多层与洋房",
+    "green_rate": "55%",
+    "plot_ratio": 1.1,
+    "property_fee": "3.5元/㎡/月",
+    "total_units": 560,
+    "avg_price_wan": 3.6,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080041/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080041/",
+    "metro": {
+      "station_name": "上海汽车城站",
+      "line": "11号线",
+      "station_coords": [
+        121.1788,
+        31.2842
+      ],
+      "distance_m": 850,
+      "walk_time_min": 11,
+      "route_desc": "向北沿安礼路步行850米到达11号线上海汽车城站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "11号线(上海汽车城站) -> 14号线",
+      "distance_km": 36.5,
+      "duration_min": 56,
+      "fare_yuan": 7
+    },
+    "schools": [
+      {
+        "name": "同济大学附属嘉定实验小学",
+        "type": "公办名校",
+        "dist": "约600米",
+        "time": "步行8分钟"
+      }
+    ],
+    "commercial": "安亭新镇中央万科商业街、德式小镇集市",
+    "medical": "安亭医院(约2.5km)",
+    "tags": [
+      "德国风情小镇",
+      "容积率1.1超低密",
+      "华师双语辐射",
+      "绿化率55%"
+    ],
+    "phase_comparison": "【选筹指南】：完全复刻德国风貌的低密居住区，集中供暖供冷系统，小镇静谧安逸，是汽车城产业高管与外籍人士钟爱的小镇社区。",
+    "scoring": {
+      "default_total": 88.6,
+      "dimensions": {
+        "transit": 83,
+        "school": 88,
+        "layout": 90,
+        "environment": 99,
+        "commercial_asset": 83
+      }
+    },
+    "target_primary_school": {
+      "name": "同济大学附属嘉定实验小学",
+      "tier": "同济大学附小一流公办",
+      "range": "安亭新镇区域内2019年4月1日后交付楼盘",
+      "source_doc": "primary_img_32.jpg"
+    },
+    "target_middle_school": {
+      "name": "同济大学附属嘉定实验中学",
+      "tier": "同济大学附属双一流梯队",
+      "rank": 2,
+      "public_rank": 2,
+      "rate_26": "37.8%",
+      "range": "安亭新镇区域内2019年4月1日后交付楼盘（东至安虹路-西郊都会东界，西至南安德路）",
+      "source_doc": "middle_img_12.jpg"
+    },
+    "school_district_note": "安礼路228弄，安亭新镇核心德式街区，对口同济附属实验小学与同济附属实验中学。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "安亭新镇·奥德豪斯 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "82㎡",
+        "usable_area": "67.9㎡",
+        "usable_rate": "82.8%",
+        "price_wan": 295.2,
+        "unit_price": 36000,
+        "orientation": "南",
+        "tags": [
+          "实测纯真两房",
+          "实测套内67.9㎡",
+          "总价约295万",
+          "南"
+        ],
+        "floor_plan_local": "assets/floorplans/107116550624.jpg",
+        "verified_rooms_desc": "卧室A (14.9㎡)、卧室B (11.9㎡)、客厅 (15.6㎡)、餐厅 (14.3㎡)、厨房 (5.4㎡)、卫生间 (4.2㎡)、阳台B (1.6㎡)",
+        "pros": "德系方正低密花园户型，双卧面宽均在3.3米以上，采光无遮挡，得房率超83%。",
+        "cons": "南阳台偏向观景窄阳台，晾晒衣物多使用烘干机。"
+      },
+      {
+        "category": "三房",
+        "title": "安亭新镇·奥德豪斯 阔绰全明舒适三居 (3室2厅1厨2卫)",
+        "rooms": "3室2厅1厨2卫",
+        "area": "114㎡",
+        "usable_area": "95.1㎡",
+        "usable_rate": "83.4%",
+        "price_wan": 410.4,
+        "unit_price": 36000,
+        "orientation": "南北通透",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内95.1㎡",
+          "总价约410万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116377745.jpg",
+        "verified_rooms_desc": "卧室A (16.2㎡)、卧室B (14.2㎡)、卧室C (9.9㎡)、客厅 (38.2㎡)、厨房 (5.8㎡)、卫生间A (4.3㎡)、卫生间B (6.5㎡)",
+        "pros": "【真·大三房双卫王牌】三卧全明！客餐厅面积高达38平米大横厅，主卧带独立明卫与衣帽间，三开间朝南，居住尊崇感极强！",
+        "cons": "总价较高，契税与首付预算需充分准备。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "level_code": "green",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:654m(🟢 无高架轨交噪) · 🛣️高速:1716m · 🚗主干道:7853m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 654,
+        "level": "🟢 无高架轨交噪",
+        "desc": "距地上轨交线超过654米，属于完全静音安全距离。"
+      },
+      "expressway": {
+        "name": "G15沈海高速",
+        "distance_m": 1716,
+        "level": "🟢 远离高速",
+        "desc": "距最近高速公路约1716米，属于优良静谧生活区。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 7853,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约7853米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    },
+    "noise_analysis": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "dist_to_highway_m": 1716,
+      "dist_to_metro_elevated_m": 654,
+      "dist_to_arterial_m": 7853,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距地上轨交线超过654米，属于完全静音安全距离。 | 距主干道约7853米，深处生活街区，道路环境静雅。 | 距最近高速公路约1716米，属于优良静谧生活区。",
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    }
+  },
+  {
+    "id": "5011000080042",
+    "name": "安亭新镇·魏玛豪斯",
+    "parent_cluster": "安亭新镇",
+    "phase_info": "万科代建德式电梯洋房，2015年建，人车分流生态居住",
+    "plate": "安亭",
+    "district": "嘉定区",
+    "address": "上海市嘉定区安礼路368弄",
+    "coordinates": [
+      121.185,
+      31.276
+    ],
+    "built_year": 2015,
+    "building_type": "花园洋房",
+    "green_rate": "52%",
+    "plot_ratio": 1.2,
+    "property_fee": "3.8元/㎡/月",
+    "total_units": 480,
+    "avg_price_wan": 3.8,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080042/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080042/",
+    "metro": {
+      "station_name": "上海汽车城站",
+      "line": "11号线",
+      "station_coords": [
+        121.1788,
+        31.2842
+      ],
+      "distance_m": 1200,
+      "walk_time_min": 15,
+      "route_desc": "沿安礼路向北步行1200米到达汽车城地铁站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "11号线(上海汽车城站) -> 14号线",
+      "distance_km": 36.8,
+      "duration_min": 58,
+      "fare_yuan": 7
+    },
+    "schools": [
+      {
+        "name": "同济大学附属嘉定实验小学",
+        "type": "公办名校",
+        "dist": "约500米",
+        "time": "步行6分钟"
+      }
+    ],
+    "commercial": "万科集商业中心、德式啤酒坊、小镇图书馆",
+    "medical": "安亭医院(约2.8km)",
+    "tags": [
+      "万科物业",
+      "低密洋房带电梯",
+      "同济附属学区",
+      "生态绝佳"
+    ],
+    "phase_comparison": "【选筹指南】：魏玛豪斯为万科后期升级打造，全部配备电梯，得房率高达85%，户型全明方正，环境私密安静，品质在整个新镇数一数二。",
+    "scoring": {
+      "default_total": 88.1,
+      "dimensions": {
+        "transit": 78,
+        "school": 88,
+        "layout": 93,
+        "environment": 99,
+        "commercial_asset": 84
+      }
+    },
+    "target_primary_school": {
+      "name": "同济大学附属嘉定实验小学",
+      "tier": "同济大学附小一流公办",
+      "range": "安亭新镇区域内2019年4月1日后交付楼盘",
+      "source_doc": "primary_img_32.jpg"
+    },
+    "target_middle_school": {
+      "name": "同济大学附属嘉定实验中学",
+      "tier": "同济大学附属双一流梯队",
+      "rank": 2,
+      "public_rank": 2,
+      "rate_26": "37.8%",
+      "range": "安亭新镇区域内2019年4月1日后交付楼盘（东至安虹路-西郊都会东界，西至南安德路）",
+      "source_doc": "middle_img_12.jpg"
+    },
+    "school_district_note": "安礼路368弄，万科洋房，对口同济附属实验小学与同济附属实验中学。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "安亭新镇·魏玛豪斯 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "82㎡",
+        "usable_area": "67.9㎡",
+        "usable_rate": "82.8%",
+        "price_wan": 311.6,
+        "unit_price": 38000,
+        "orientation": "南",
+        "tags": [
+          "实测纯真两房",
+          "实测套内67.9㎡",
+          "总价约311万",
+          "南"
+        ],
+        "floor_plan_local": "assets/floorplans/107116550624.jpg",
+        "verified_rooms_desc": "卧室A (14.9㎡)、卧室B (11.9㎡)、客厅 (15.6㎡)、餐厅 (14.3㎡)、厨房 (5.4㎡)、卫生间 (4.2㎡)、阳台B (1.6㎡)",
+        "pros": "德系方正低密花园户型，双卧面宽均在3.3米以上，采光无遮挡，得房率超83%。",
+        "cons": "南阳台偏向观景窄阳台，晾晒衣物多使用烘干机。"
+      },
+      {
+        "category": "三房",
+        "title": "安亭新镇·魏玛豪斯 阔绰全明舒适三居 (3室2厅1厨2卫)",
+        "rooms": "3室2厅1厨2卫",
+        "area": "108㎡",
+        "usable_area": "90.4㎡",
+        "usable_rate": "83.7%",
+        "price_wan": 410.4,
+        "unit_price": 38000,
+        "orientation": "南北双阳台",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内90.4㎡",
+          "总价约410万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116447609.jpg",
+        "verified_rooms_desc": "卧室A (12.3㎡)、卧室B (11.5㎡)、卧室C (10.0㎡)、客厅 (33.9㎡)、厨房 (5.9㎡)、卫生间A (4.7㎡)、卫生间B (4.2㎡)、阳台A (2.9㎡)、阳台B (5.0㎡)",
+        "pros": "【真·南北双阳台全明三房】三间卧室均有完整窗户无暗间！南北对流极佳，客餐厅南北通透，双卫干湿分离，是品质家庭改善换房首选！",
+        "cons": "北向卧室进深标准，放置1.8米大床需合理规划衣柜走道。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "level_code": "green",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:1087m(🟢 无高架轨交噪) · 🛣️高速:1495m · 🚗主干道:7790m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 1087,
+        "level": "🟢 无高架轨交噪",
+        "desc": "距地上轨交线超过1087米，属于完全静音安全距离。"
+      },
+      "expressway": {
+        "name": "G15沈海高速",
+        "distance_m": 1495,
+        "level": "🟢 远离高速",
+        "desc": "距最近高速公路约1495米，属于优良静谧生活区。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 7790,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约7790米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    },
+    "noise_analysis": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "dist_to_highway_m": 1495,
+      "dist_to_metro_elevated_m": 1087,
+      "dist_to_arterial_m": 7790,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距地上轨交线超过1087米，属于完全静音安全距离。 | 距主干道约7790米，深处生活街区，道路环境静雅。 | 距最近高速公路约1495米，属于优良静谧生活区。",
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    }
+  },
+  {
+    "id": "5011000080043",
+    "name": "墨玉馨苑",
+    "parent_cluster": "墨玉馨苑",
+    "phase_info": "墨玉路地铁站旁成熟商圈核心，2009年建，成熟生活配套",
+    "plate": "安亭",
+    "district": "嘉定区",
+    "address": "上海市嘉定区墨玉北路288弄",
+    "coordinates": [
+      121.161,
+      31.295
+    ],
+    "built_year": 2009,
+    "building_type": "高层板楼",
+    "green_rate": "38%",
+    "plot_ratio": 2.0,
+    "property_fee": "1.8元/㎡/月",
+    "total_units": 980,
+    "avg_price_wan": 3.0,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080043/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080043/",
+    "metro": {
+      "station_name": "安亭站",
+      "line": "11号线",
+      "station_coords": [
+        121.1628,
+        31.2932
+      ],
+      "distance_m": 350,
+      "walk_time_min": 4,
+      "route_desc": "向南沿墨玉北路步行350米直达11号线安亭站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "11号线(安亭站) -> 14号线",
+      "distance_km": 38.0,
+      "duration_min": 58,
+      "fare_yuan": 7
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区安亭小学",
+        "type": "百年名校",
+        "dist": "约400米",
+        "time": "步行5分钟"
+      }
+    ],
+    "commercial": "嘉亭荟城市生活广场(300米步行即达)、三德广场",
+    "medical": "安亭医院(约800m)",
+    "tags": [
+      "步行4分钟到安亭站",
+      "嘉亭荟商圈核心",
+      "安亭小学直对",
+      "配套成熟之王"
+    ],
+    "phase_comparison": "【选筹指南】：安亭老镇商业地标嘉亭荟就在门前，地铁11号线步行4分钟，下楼即是各类大牌餐饮和超市，生活极其滋润。",
+    "scoring": {
+      "default_total": 87.5,
+      "dimensions": {
+        "transit": 94,
+        "school": 82,
+        "layout": 84,
+        "environment": 82,
+        "commercial_asset": 96
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区安亭小学",
+      "tier": "百年公办",
+      "range": "安亭镇老镇社区、迎春社区、玉兰社区等",
+      "source_doc": "primary_img_31.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海市嘉定区震川中学",
+      "tier": "老牌公办名校",
+      "rank": 21,
+      "public_rank": 21,
+      "rate_26": "17.8%",
+      "range": "安亭镇老镇区域，新源路以西、墨玉路沿线所属居委等",
+      "source_doc": "middle_img_18.jpg"
+    },
+    "school_district_note": "墨玉北路288弄，安亭站嘉亭荟旁，对口安亭小学与震川中学。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "墨玉馨苑 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "82㎡",
+        "usable_area": "67.9㎡",
+        "usable_rate": "82.8%",
+        "price_wan": 246.0,
+        "unit_price": 30000,
+        "orientation": "南",
+        "tags": [
+          "实测纯真两房",
+          "实测套内67.9㎡",
+          "总价约246万",
+          "南"
+        ],
+        "floor_plan_local": "assets/floorplans/107116550624.jpg",
+        "verified_rooms_desc": "卧室A (14.9㎡)、卧室B (11.9㎡)、客厅 (15.6㎡)、餐厅 (14.3㎡)、厨房 (5.4㎡)、卫生间 (4.2㎡)、阳台B (1.6㎡)",
+        "pros": "德系方正低密花园户型，双卧面宽均在3.3米以上，采光无遮挡，得房率超83%。",
+        "cons": "南阳台偏向观景窄阳台，晾晒衣物多使用烘干机。"
+      },
+      {
+        "category": "三房",
+        "title": "墨玉馨苑 阔绰全明舒适三居 (3室2厅1厨1卫)",
+        "rooms": "3室2厅1厨1卫",
+        "area": "102㎡",
+        "usable_area": "85.4㎡",
+        "usable_rate": "83.7%",
+        "price_wan": 306.0,
+        "unit_price": 30000,
+        "orientation": "南北通透",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内85.4㎡",
+          "总价约306万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116518245.jpg",
+        "verified_rooms_desc": "卧室A (14.1㎡)、卧室B (9.3㎡)、卧室C (11.0㎡)、客厅 (32.3㎡)、厨房 (6.5㎡)、卫生间 (4.6㎡)、阳台A (4.3㎡)、阳台B (3.3㎡)",
+        "pros": "【真·经典全功能三房】实测包含三个完整独立卧室（A、B、C），双阳台南北对流，客厅面宽超3.9米，三代同堂功能完备且总价可控！",
+        "cons": "单卫配置，早高峰家庭成员洗漱需合理安排时间。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟡 局部可感知 (次级声学环境)",
+      "level_code": "yellow",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:264m(🟡 轻度背景) · 🛣️高速:3636m · 🚗主干道:9029m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 264,
+        "level": "🟡 轻度背景",
+        "desc": "距11号线高架约264米，已有大面积多排建筑完全隔断，常规生活不受干扰。"
+      },
+      "expressway": {
+        "name": "G15沈海高速",
+        "distance_m": 3636,
+        "level": "🟢 远离高速",
+        "desc": "距最近高速公路约3636米，属于优良静谧生活区。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 9029,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约9029米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：整体居住舒适，仅高层极端安静时能听到微弱背景声，正常双层中空玻璃即可满足睡眠要求。"
+    },
+    "noise_analysis": {
+      "status": "🟡 局部可感知 (次级声学环境)",
+      "dist_to_highway_m": 3636,
+      "dist_to_metro_elevated_m": 264,
+      "dist_to_arterial_m": 9029,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距11号线高架约264米，已有大面积多排建筑完全隔断，常规生活不受干扰。 | 距主干道约9029米，深处生活街区，道路环境静雅。 | 距最近高速公路约3636米，属于优良静谧生活区。",
+      "selection_guide": "【实勘避坑指南】：整体居住舒适，仅高层极端安静时能听到微弱背景声，正常双层中空玻璃即可满足睡眠要求。"
+    }
+  },
+  {
+    "id": "5011000080044",
+    "name": "同济嘉园",
+    "parent_cluster": "同济嘉园",
+    "phase_info": "紧邻同济大学嘉定校区高知居住区，2011年建，学术氛围浓厚",
+    "plate": "安亭",
+    "district": "嘉定区",
+    "address": "上海市嘉定区曹安公路4800弄",
+    "coordinates": [
+      121.205,
+      31.288
+    ],
+    "built_year": 2011,
+    "building_type": "高层板楼",
+    "green_rate": "40%",
+    "plot_ratio": 2.1,
+    "property_fee": "2.1元/㎡/月",
+    "total_units": 1120,
+    "avg_price_wan": 3.2,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080044/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080044/",
+    "metro": {
+      "station_name": "昌吉东路站",
+      "line": "11号线",
+      "station_coords": [
+        121.199,
+        31.309
+      ],
+      "distance_m": 2200,
+      "walk_time_min": 25,
+      "route_desc": "校区门口公交短驳直通11号线昌吉东路站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "公交接驳11号线 -> 14号线",
+      "distance_km": 35.0,
+      "duration_min": 60,
+      "fare_yuan": 7
+    },
+    "schools": [
+      {
+        "name": "同济大学附属嘉定实验小学",
+        "type": "公办名校",
+        "dist": "约500米",
+        "time": "步行6分钟"
+      }
+    ],
+    "commercial": "同济大学生活商业街、曹安路沿街综合配套",
+    "medical": "同济大学校医院、安亭医院(约3.2km)",
+    "tags": [
+      "同济大学正对门",
+      "高校高知社群",
+      "同济附属学区",
+      "租售两旺"
+    ],
+    "phase_comparison": "【选筹指南】：业主多数为同济大学教授、科研人员及汽车产业链工程师，社群人文素质极高，房租需求旺盛，空置率极低。",
+    "scoring": {
+      "default_total": 85.1,
+      "dimensions": {
+        "transit": 72,
+        "school": 90,
+        "layout": 87,
+        "environment": 96,
+        "commercial_asset": 83
+      }
+    },
+    "target_primary_school": {
+      "name": "同济大学附属嘉定实验小学",
+      "tier": "同济大学附小一流公办",
+      "range": "安亭新镇区域内2019年4月1日后交付楼盘",
+      "source_doc": "primary_img_32.jpg"
+    },
+    "target_middle_school": {
+      "name": "同济大学附属嘉定实验中学",
+      "tier": "同济大学附属双一流梯队",
+      "rank": 2,
+      "public_rank": 2,
+      "rate_26": "37.8%",
+      "range": "安亭新镇区域内2019年4月1日后交付楼盘（东至安虹路-西郊都会东界，西至南安德路）",
+      "source_doc": "middle_img_12.jpg"
+    },
+    "school_district_note": "曹安公路4800弄，近同济大学校区，对口同济附属实验小学与同济附属实验中学。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "同济嘉园 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "71㎡",
+        "usable_area": "58.6㎡",
+        "usable_rate": "82.5%",
+        "price_wan": 227.2,
+        "unit_price": 32000,
+        "orientation": "南",
+        "tags": [
+          "实测纯真两房",
+          "实测套内58.6㎡",
+          "总价约227万",
+          "南"
+        ],
+        "floor_plan_local": "assets/floorplans/107116553867.jpg",
+        "verified_rooms_desc": "卧室A (9.4㎡)、卧室B (12.6㎡)、客厅 (21.6㎡)、厨房 (7.2㎡)、卫生间 (4.9㎡)、阳台 (2.9㎡)",
+        "pros": "紧凑两房利用率极致，客厅开间超3.8米，总价在全区域极低，投资自住两相宜。",
+        "cons": "房龄较成熟，梯户比以两梯四户为主。"
+      },
+      {
+        "category": "三房",
+        "title": "同济嘉园 阔绰全明舒适三居 (3室2厅1厨1卫)",
+        "rooms": "3室2厅1厨1卫",
+        "area": "91㎡",
+        "usable_area": "76.0㎡",
+        "usable_rate": "83.5%",
+        "price_wan": 291.2,
+        "unit_price": 32000,
+        "orientation": "三开间朝南",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内76.0㎡",
+          "总价约291万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116528811.jpg",
+        "verified_rooms_desc": "卧室A (7.5㎡)、卧室B (9.4㎡)、卧室C (12.8㎡)、客厅 (17.3㎡)、餐厅 (12.5㎡)、厨房 (5.4㎡)、阳台 (4.3㎡)",
+        "pros": "【绝版89㎡三房神户型】三开间朝南！实测拥有三个独立卧室（A、B、C），空间利用率达到极致，得房率超85.4%，无一丝浪费走廊！",
+        "cons": "北向小次卧仅7.5㎡，更适合做独立书房、茶室或儿童房榻榻米。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "level_code": "green",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:1825m(🟢 无高架轨交噪) · 🛣️高速:513m · 🚗主干道:5466m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 1825,
+        "level": "🟢 无高架轨交噪",
+        "desc": "距地上轨交线超过1825米，属于完全静音安全距离。"
+      },
+      "expressway": {
+        "name": "G15沈海高速",
+        "distance_m": 513,
+        "level": "🟢 远离高速",
+        "desc": "距最近高速公路约513米，属于优良静谧生活区。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 5466,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约5466米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    },
+    "noise_analysis": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "dist_to_highway_m": 513,
+      "dist_to_metro_elevated_m": 1825,
+      "dist_to_arterial_m": 5466,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距地上轨交线超过1825米，属于完全静音安全距离。 | 距主干道约5466米，深处生活街区，道路环境静雅。 | 距最近高速公路约513米，属于优良静谧生活区。",
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    }
+  },
+  {
+    "id": "5011000080045",
+    "name": "绿地和乐名邸",
+    "parent_cluster": "绿地和乐名邸",
+    "phase_info": "安亭汽车城高品质次新，2016年建，高绿化人车分流",
+    "plate": "安亭",
+    "district": "嘉定区",
+    "address": "上海市嘉定区昌吉路155弄",
+    "coordinates": [
+      121.171,
+      31.289
+    ],
+    "built_year": 2016,
+    "building_type": "高层板楼",
+    "green_rate": "41%",
+    "plot_ratio": 2.0,
+    "property_fee": "2.8元/㎡/月",
+    "total_units": 830,
+    "avg_price_wan": 3.5,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080045/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080045/",
+    "metro": {
+      "station_name": "上海汽车城站",
+      "line": "11号线",
+      "station_coords": [
+        121.1788,
+        31.2842
+      ],
+      "distance_m": 850,
+      "walk_time_min": 11,
+      "route_desc": "沿昌吉路向东步行850米到达汽车城地铁站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "11号线(汽车城站) -> 14号线",
+      "distance_km": 37.0,
+      "duration_min": 57,
+      "fare_yuan": 7
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区安亭小学",
+        "type": "百年名校",
+        "dist": "约800米",
+        "time": "步行10分钟"
+      }
+    ],
+    "commercial": "汽车城核心商业区、嘉亭荟生活广场",
+    "medical": "安亭医院(约1.8km)",
+    "tags": [
+      "绿地品质次新",
+      "步行11分钟到地铁",
+      "全人车分流",
+      "户型得房率高"
+    ],
+    "phase_comparison": "【选筹指南】：相比老镇区公房，和乐名邸建筑品质现代化，带有入户大堂与人车分流设计，适合在安亭核心区追求品质生活的买家。",
+    "scoring": {
+      "default_total": 59.4,
+      "dimensions": {
+        "transit": 85,
+        "school": 82,
+        "layout": 89,
+        "environment": 38,
+        "commercial_asset": 87
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区安亭小学",
+      "tier": "百年公办",
+      "range": "安亭镇老镇社区、迎春社区、玉兰社区等",
+      "source_doc": "primary_img_31.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海市嘉定区震川中学",
+      "tier": "老牌公办名校",
+      "rank": 21,
+      "public_rank": 21,
+      "rate_26": "17.8%",
+      "range": "安亭镇老镇区域，新源路以西、墨玉路沿线所属居委等",
+      "source_doc": "middle_img_18.jpg"
+    },
+    "school_district_note": "昌吉路155弄，对口安亭小学与震川中学。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "绿地和乐名邸 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "78㎡",
+        "usable_area": "64.1㎡",
+        "usable_rate": "82.2%",
+        "price_wan": 273.0,
+        "unit_price": 35000,
+        "orientation": "南",
+        "tags": [
+          "实测纯真两房",
+          "实测套内64.1㎡",
+          "总价约273万",
+          "南"
+        ],
+        "floor_plan_local": "assets/floorplans/107115288242.jpg",
+        "verified_rooms_desc": "卧室A (9.7㎡)、卧室B (14.3㎡)、客厅 (12.9㎡)、餐厅 (12.1㎡)、厨房 (6.2㎡)、卫生间 (5.0㎡)、阳台 (3.9㎡)",
+        "pros": "双卧朝南采光优秀，客餐厅动线分离，卫生间干湿分离，总价紧凑适合首套刚需上车。",
+        "cons": "厨房为长条形，进深较长，厨电收纳需做整体定制。"
+      },
+      {
+        "category": "三房",
+        "title": "绿地和乐名邸 阔绰全明舒适三居 (3室2厅1厨2卫)",
+        "rooms": "3室2厅1厨2卫",
+        "area": "114㎡",
+        "usable_area": "95.1㎡",
+        "usable_rate": "83.4%",
+        "price_wan": 399.0,
+        "unit_price": 35000,
+        "orientation": "南北通透",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内95.1㎡",
+          "总价约399万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116377745.jpg",
+        "verified_rooms_desc": "卧室A (16.2㎡)、卧室B (14.2㎡)、卧室C (9.9㎡)、客厅 (38.2㎡)、厨房 (5.8㎡)、卫生间A (4.3㎡)、卫生间B (6.5㎡)",
+        "pros": "【真·大三房双卫王牌】三卧全明！客餐厅面积高达38平米大横厅，主卧带独立明卫与衣帽间，三开间朝南，居住尊崇感极强！",
+        "cons": "总价较高，契税与首付预算需充分准备。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🔴 重度冲击 (紧邻11号线高架轨交)",
+      "level_code": "red",
+      "is_vetoed": true,
+      "summary": "🚇轨交高架:39m(🔴 重度冲击) · 🛣️高速:2714m · 🚗主干道:8319m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 39,
+        "level": "🔴 重度冲击",
+        "desc": "紧贴11号线高架轻轨线(约39米)，早晚高峰列车加减速轮轨啸叫与电弓接触网噪直扑前排，高层震感明显。"
+      },
+      "expressway": {
+        "name": "G15沈海高速",
+        "distance_m": 2714,
+        "level": "🟢 远离高速",
+        "desc": "距最近高速公路约2714米，属于优良静谧生活区。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 8319,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约8319米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：距离高等级噪音源不足警戒线，受全天候持续声浪冲击。★非预算极度受限不建议考虑外圈临路/临轨房源；若购入必须全屋更换高端系统断桥铝双层夹胶窗。"
+    },
+    "noise_analysis": {
+      "status": "🔴 重度冲击 (紧邻11号线高架轨交)",
+      "dist_to_highway_m": 2714,
+      "dist_to_metro_elevated_m": 39,
+      "dist_to_arterial_m": 8319,
+      "is_vetoed": true,
+      "desc": "【立体噪音评估】：紧贴11号线高架轻轨线(约39米)，早晚高峰列车加减速轮轨啸叫与电弓接触网噪直扑前排，高层震感明显。 | 距主干道约8319米，深处生活街区，道路环境静雅。 | 距最近高速公路约2714米，属于优良静谧生活区。",
+      "selection_guide": "【实勘避坑指南】：距离高等级噪音源不足警戒线，受全天候持续声浪冲击。★非预算极度受限不建议考虑外圈临路/临轨房源；若购入必须全屋更换高端系统断桥铝双层夹胶窗。"
+    }
+  },
+  {
+    "id": "5011000080046",
+    "name": "泰顺新村",
+    "parent_cluster": "泰顺新村",
+    "phase_info": "安亭老街成熟生活配套区，2001年建，成熟生活配套",
+    "plate": "安亭",
+    "district": "嘉定区",
+    "address": "上海市嘉定区新源路550弄",
+    "coordinates": [
+      121.164,
+      31.291
+    ],
+    "built_year": 2001,
+    "building_type": "多层板楼",
+    "green_rate": "30%",
+    "plot_ratio": 1.6,
+    "property_fee": "0.9元/㎡/月",
+    "total_units": 720,
+    "avg_price_wan": 2.6,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080046/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080046/",
+    "metro": {
+      "station_name": "安亭站",
+      "line": "11号线",
+      "station_coords": [
+        121.1628,
+        31.2932
+      ],
+      "distance_m": 300,
+      "walk_time_min": 4,
+      "route_desc": "向北沿新源路步行300米直达11号线安亭站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "11号线(安亭站) -> 14号线",
+      "distance_km": 37.8,
+      "duration_min": 57,
+      "fare_yuan": 7
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区安亭小学",
+        "type": "百年名校",
+        "dist": "约300米",
+        "time": "步行4分钟"
+      }
+    ],
+    "commercial": "嘉亭荟(200米)、新源路美食街",
+    "medical": "安亭医院(约600m)",
+    "tags": [
+      "步行4分钟安亭站",
+      "单价2字头",
+      "嘉亭荟商圈",
+      "低总价学区"
+    ],
+    "phase_comparison": "【选筹指南】：单价2.6万左右，总价百来万就能买下正宗地铁口安亭小学学区房，性价比爆棚，租客来源极广。",
+    "scoring": {
+      "default_total": 84.4,
+      "dimensions": {
+        "transit": 95,
+        "school": 82,
+        "layout": 82,
+        "environment": 68,
+        "commercial_asset": 95
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区安亭小学",
+      "tier": "百年公办",
+      "range": "安亭镇老镇社区、迎春社区、玉兰社区等",
+      "source_doc": "primary_img_31.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海市嘉定区震川中学",
+      "tier": "老牌公办名校",
+      "rank": 21,
+      "public_rank": 21,
+      "rate_26": "17.8%",
+      "range": "安亭镇老镇区域，新源路以西、墨玉路沿线所属居委等",
+      "source_doc": "middle_img_18.jpg"
+    },
+    "school_district_note": "新源路550弄，对口安亭小学与震川中学。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "泰顺新村 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "85㎡",
+        "usable_area": "70.1㎡",
+        "usable_rate": "82.5%",
+        "price_wan": 221.0,
+        "unit_price": 26000,
+        "orientation": "南北对流",
+        "tags": [
+          "实测纯真两房",
+          "实测套内70.1㎡",
+          "总价约221万",
+          "南北对流"
+        ],
+        "floor_plan_local": "assets/floorplans/107115438394.jpg",
+        "verified_rooms_desc": "卧室A (8.8㎡)、卧室B (13.7㎡)、客厅 (19.4㎡)、餐厅 (14.8㎡)、厨房 (5.6㎡)、卫生间 (3.7㎡)、阳台 (4.1㎡)",
+        "pros": "客餐厅贯通面宽达3.8米，南北通透对流，大阳台视野宽阔，通风采光极佳。",
+        "cons": "北向次卧面积约8.8㎡，摆放双人床后衣柜需做移门设计。"
+      },
+      {
+        "category": "三房",
+        "title": "泰顺新村 阔绰全明舒适三居 (3室2厅1厨2卫)",
+        "rooms": "3室2厅1厨2卫",
+        "area": "108㎡",
+        "usable_area": "90.4㎡",
+        "usable_rate": "83.7%",
+        "price_wan": 280.8,
+        "unit_price": 26000,
+        "orientation": "南北双阳台",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内90.4㎡",
+          "总价约280万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116447609.jpg",
+        "verified_rooms_desc": "卧室A (12.3㎡)、卧室B (11.5㎡)、卧室C (10.0㎡)、客厅 (33.9㎡)、厨房 (5.9㎡)、卫生间A (4.7㎡)、卫生间B (4.2㎡)、阳台A (2.9㎡)、阳台B (5.0㎡)",
+        "pros": "【真·南北双阳台全明三房】三间卧室均有完整窗户无暗间！南北对流极佳，客餐厅南北通透，双卫干湿分离，是品质家庭改善换房首选！",
+        "cons": "北向卧室进深标准，放置1.8米大床需合理规划衣柜走道。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟠 显著干扰 (临近主干交通走廊)",
+      "level_code": "orange",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:143m(🟠 显著感知) · 🛣️高速:3370m · 🚗主干道:8877m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 143,
+        "level": "🟠 显著感知",
+        "desc": "距11号线地上高架约143米，非临轨第一排有部分楼栋遮挡，但开窗时进出站轮轨声依然清晰可辨。"
+      },
+      "expressway": {
+        "name": "G15沈海高速",
+        "distance_m": 3370,
+        "level": "🟢 远离高速",
+        "desc": "距最近高速公路约3370米，属于优良静谧生活区。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 8877,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约8877米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：属于半开放受噪区，外圈与内圈噪音差达10-15分贝。看房时务必在早晚高峰期实地测听，锁定中庭无对冲楼栋。"
+    },
+    "noise_analysis": {
+      "status": "🟠 显著干扰 (临近主干交通走廊)",
+      "dist_to_highway_m": 3370,
+      "dist_to_metro_elevated_m": 143,
+      "dist_to_arterial_m": 8877,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距11号线地上高架约143米，非临轨第一排有部分楼栋遮挡，但开窗时进出站轮轨声依然清晰可辨。 | 距主干道约8877米，深处生活街区，道路环境静雅。 | 距最近高速公路约3370米，属于优良静谧生活区。",
+      "selection_guide": "【实勘避坑指南】：属于半开放受噪区，外圈与内圈噪音差达10-15分贝。看房时务必在早晚高峰期实地测听，锁定中庭无对冲楼栋。"
+    }
+  },
+  {
+    "id": "5011000080047",
+    "name": "红梅新村",
+    "parent_cluster": "红梅新村",
+    "phase_info": "墨玉路成熟学区公房，1998年建，成熟生活配套",
+    "plate": "安亭",
+    "district": "嘉定区",
+    "address": "上海市嘉定区墨玉路180弄",
+    "coordinates": [
+      121.166,
+      31.297
+    ],
+    "built_year": 1998,
+    "building_type": "多层板楼",
+    "green_rate": "30%",
+    "plot_ratio": 1.5,
+    "property_fee": "0.8元/㎡/月",
+    "total_units": 610,
+    "avg_price_wan": 2.5,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080047/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080047/",
+    "metro": {
+      "station_name": "安亭站",
+      "line": "11号线",
+      "station_coords": [
+        121.1628,
+        31.2932
+      ],
+      "distance_m": 600,
+      "walk_time_min": 8,
+      "route_desc": "沿墨玉路向南步行600米到达11号线安亭站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "11号线(安亭站) -> 14号线",
+      "distance_km": 38.2,
+      "duration_min": 59,
+      "fare_yuan": 7
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区安亭小学",
+        "type": "百年名校",
+        "dist": "约250米",
+        "time": "步行3分钟"
+      }
+    ],
+    "commercial": "墨玉路商业街、三德广场、嘉亭荟",
+    "medical": "安亭医院(约500m)",
+    "tags": [
+      "单价2.5万",
+      "安亭小学步行3分钟",
+      "低总价门槛",
+      "得房率高"
+    ],
+    "phase_comparison": "【选筹指南】：真正意义上的安亭老底子学区房，步行至小学仅250米，总价低廉，买入持有成本极低，适合低预算购房家庭。",
+    "scoring": {
+      "default_total": 88.3,
+      "dimensions": {
+        "transit": 90,
+        "school": 82,
+        "layout": 82,
+        "environment": 96,
+        "commercial_asset": 92
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区安亭小学",
+      "tier": "百年公办",
+      "range": "安亭镇老镇社区、迎春社区、玉兰社区等",
+      "source_doc": "primary_img_31.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海市嘉定区震川中学",
+      "tier": "老牌公办名校",
+      "rank": 21,
+      "public_rank": 21,
+      "rate_26": "17.8%",
+      "range": "安亭镇老镇区域，新源路以西、墨玉路沿线所属居委等",
+      "source_doc": "middle_img_18.jpg"
+    },
+    "school_district_note": "墨玉路180弄，对口安亭小学与震川中学。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "红梅新村 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "86㎡",
+        "usable_area": "71.3㎡",
+        "usable_rate": "82.9%",
+        "price_wan": 215.0,
+        "unit_price": 25000,
+        "orientation": "南",
+        "tags": [
+          "实测纯真两房",
+          "实测套内71.3㎡",
+          "总价约215万",
+          "南"
+        ],
+        "floor_plan_local": "assets/floorplans/107116341545.jpg",
+        "verified_rooms_desc": "卧室A (11.3㎡)、卧室B (15.4㎡)、客厅 (14.4㎡)、餐厅 (15.3㎡)、厨房 (6.8㎡)、卫生间 (4.9㎡)、阳台B (3.2㎡)",
+        "pros": "主卧面宽达3.6米阔绰舒适，厨房带独立备餐阳台，卫生间全明采光无暗角。",
+        "cons": "入口玄关进深稍短，需倚靠侧墙设置嵌入式鞋柜。"
+      },
+      {
+        "category": "三房",
+        "title": "红梅新村 阔绰全明舒适三居 (3室2厅1厨1卫)",
+        "rooms": "3室2厅1厨1卫",
+        "area": "102㎡",
+        "usable_area": "85.4㎡",
+        "usable_rate": "83.7%",
+        "price_wan": 255.0,
+        "unit_price": 25000,
+        "orientation": "南北通透",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内85.4㎡",
+          "总价约255万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116518245.jpg",
+        "verified_rooms_desc": "卧室A (14.1㎡)、卧室B (9.3㎡)、卧室C (11.0㎡)、客厅 (32.3㎡)、厨房 (6.5㎡)、卫生间 (4.6㎡)、阳台A (4.3㎡)、阳台B (3.3㎡)",
+        "pros": "【真·经典全功能三房】实测包含三个完整独立卧室（A、B、C），双阳台南北对流，客厅面宽超3.9米，三代同堂功能完备且总价可控！",
+        "cons": "单卫配置，早高峰家庭成员洗漱需合理安排时间。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "level_code": "green",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:525m(🟢 无高架轨交噪) · 🛣️高速:3151m · 🚗主干道:8514m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 525,
+        "level": "🟢 无高架轨交噪",
+        "desc": "距地上轨交线超过525米，属于完全静音安全距离。"
+      },
+      "expressway": {
+        "name": "G15沈海高速",
+        "distance_m": 3151,
+        "level": "🟢 远离高速",
+        "desc": "距最近高速公路约3151米，属于优良静谧生活区。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 8514,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约8514米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    },
+    "noise_analysis": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "dist_to_highway_m": 3151,
+      "dist_to_metro_elevated_m": 525,
+      "dist_to_arterial_m": 8514,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距地上轨交线超过525米，属于完全静音安全距离。 | 距主干道约8514米，深处生活街区，道路环境静雅。 | 距最近高速公路约3151米，属于优良静谧生活区。",
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    }
+  },
+  {
+    "id": "5011000080048",
+    "name": "泰宸新苑",
+    "parent_cluster": "泰宸新苑",
+    "phase_info": "菊园核心成熟居住大盘，2010年建，高绿化现代社区",
+    "plate": "菊园新区",
+    "district": "嘉定区",
+    "address": "上海市嘉定区胜竹路1555弄",
+    "coordinates": [
+      121.248,
+      31.398
+    ],
+    "built_year": 2010,
+    "building_type": "高层板楼",
+    "green_rate": "39%",
+    "plot_ratio": 2.0,
+    "property_fee": "2.0元/㎡/月",
+    "total_units": 1250,
+    "avg_price_wan": 3.6,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080048/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080048/",
+    "metro": {
+      "station_name": "嘉定北站",
+      "line": "11号线",
+      "station_coords": [
+        121.2427,
+        31.3934
+      ],
+      "distance_m": 700,
+      "walk_time_min": 9,
+      "route_desc": "向西南沿胜竹路步行700米直达11号线嘉定北站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "11号线(嘉定北站) -> 14号线",
+      "distance_km": 34.5,
+      "duration_min": 52,
+      "fare_yuan": 7
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区实验小学北校区",
+        "type": "全区顶流",
+        "dist": "约500米",
+        "time": "步行6分钟"
+      }
+    ],
+    "commercial": "日月光中心商业广场、信业体验城、喜友邻里",
+    "medical": "嘉定区中医医院新院(约1.0km)",
+    "tags": [
+      "步行9分钟嘉定北站",
+      "实验小学北校区",
+      "成熟大盘",
+      "采光优良"
+    ],
+    "phase_comparison": "【选筹指南】：地处菊园中心地带，直对实验小学北校区顶流学区，步行可达嘉定北站始发站（早高峰必有座位），自住与学区两全其美。",
+    "scoring": {
+      "default_total": 90.5,
+      "dimensions": {
+        "transit": 89,
+        "school": 92,
+        "layout": 87,
+        "environment": 96,
+        "commercial_asset": 88
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区实验小学北校区",
+      "tier": "全区公办顶流新校区",
+      "range": "胜竹路以南、平城路以北、城北路以西、胜辛路以东地区",
+      "source_doc": "primary_img_03.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海市嘉定区中科实验中学",
+      "tier": "中科院系公办名校",
+      "rank": 11,
+      "public_rank": 11,
+      "rate_26": "23.8%",
+      "range": "菊园新区内实验小学北校区及相关社区对口直升",
+      "source_doc": "middle_img_03.jpg"
+    },
+    "school_district_note": "胜竹路1555弄，菊园核心，对口实验小学北校区与中科实验中学。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "泰宸新苑 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "87㎡",
+        "usable_area": "72.0㎡",
+        "usable_rate": "82.8%",
+        "price_wan": 313.2,
+        "unit_price": 36000,
+        "orientation": "南北双阳台",
+        "tags": [
+          "实测纯真两房",
+          "实测套内72.0㎡",
+          "总价约313万",
+          "南北双阳台"
+        ],
+        "floor_plan_local": "assets/floorplans/107116374473.jpg",
+        "verified_rooms_desc": "卧室A (12.6㎡)、卧室B (15.5㎡)、客厅 (18.9㎡)、餐厅 (6.1㎡)、厨房 (5.5㎡)、卫生间 (4.4㎡)、阳台A (3.8㎡)、阳台B (5.2㎡)",
+        "pros": "前后双阳台对流设计！主卧与次卧均带大飘窗，全明户型毫无死角，得房率扎实。",
+        "cons": "客厅与餐厅为开放连体布局，油烟隔离需安装大功率吸油烟机。"
+      },
+      {
+        "category": "三房",
+        "title": "泰宸新苑 阔绰全明舒适三居 (3室2厅1厨1卫)",
+        "rooms": "3室2厅1厨1卫",
+        "area": "91㎡",
+        "usable_area": "76.0㎡",
+        "usable_rate": "83.5%",
+        "price_wan": 327.6,
+        "unit_price": 36000,
+        "orientation": "三开间朝南",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内76.0㎡",
+          "总价约327万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116528811.jpg",
+        "verified_rooms_desc": "卧室A (7.5㎡)、卧室B (9.4㎡)、卧室C (12.8㎡)、客厅 (17.3㎡)、餐厅 (12.5㎡)、厨房 (5.4㎡)、阳台 (4.3㎡)",
+        "pros": "【绝版89㎡三房神户型】三开间朝南！实测拥有三个独立卧室（A、B、C），空间利用率达到极致，得房率超85.4%，无一丝浪费走廊！",
+        "cons": "北向小次卧仅7.5㎡，更适合做独立书房、茶室或儿童房榻榻米。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "level_code": "green",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:718m(🟢 无高架轨交噪) · 🛣️高速:2013m · 🚗主干道:1593m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 718,
+        "level": "🟢 无高架轨交噪",
+        "desc": "距地上轨交线超过718米，属于完全静音安全距离。"
+      },
+      "expressway": {
+        "name": "S5沪嘉高速",
+        "distance_m": 2013,
+        "level": "🟢 远离高速",
+        "desc": "距最近高速公路约2013米，属于优良静谧生活区。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 1593,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约1593米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    },
+    "noise_analysis": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "dist_to_highway_m": 2013,
+      "dist_to_metro_elevated_m": 718,
+      "dist_to_arterial_m": 1593,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距地上轨交线超过718米，属于完全静音安全距离。 | 距主干道约1593米，深处生活街区，道路环境静雅。 | 距最近高速公路约2013米，属于优良静谧生活区。",
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    }
+  },
+  {
+    "id": "5011000080049",
+    "name": "胜辛嘉苑",
+    "parent_cluster": "胜辛嘉苑",
+    "phase_info": "紧邻11号线北水湾段成熟社区，2013年建，成熟生活配套",
+    "plate": "菊园新区",
+    "district": "嘉定区",
+    "address": "上海市嘉定区胜辛北路688弄",
+    "coordinates": [
+      121.241,
+      31.392
+    ],
+    "built_year": 2013,
+    "building_type": "高层板楼",
+    "green_rate": "36%",
+    "plot_ratio": 2.1,
+    "property_fee": "2.2元/㎡/月",
+    "total_units": 940,
+    "avg_price_wan": 3.7,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080049/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080049/",
+    "metro": {
+      "station_name": "嘉定北站",
+      "line": "11号线",
+      "station_coords": [
+        121.2427,
+        31.3934
+      ],
+      "distance_m": 250,
+      "walk_time_min": 3,
+      "route_desc": "出小区向北步行250米到达11号线嘉定北站2号口"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "11号线(嘉定北站) -> 14号线",
+      "distance_km": 34.2,
+      "duration_min": 51,
+      "fare_yuan": 7
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区实验小学北校区",
+        "type": "全区顶流",
+        "dist": "约750米",
+        "time": "步行10分钟"
+      }
+    ],
+    "commercial": "日月光购物中心(300米)、喜友商业街",
+    "medical": "嘉定中心医院(约1.8km)",
+    "tags": [
+      "步行3分钟嘉定北站",
+      "地铁始发站必定有座",
+      "实小北校区",
+      "日月光商圈"
+    ],
+    "phase_comparison": "【选筹指南】：步行到嘉定北站仅250米，每天坐11号线始发站直接有座，对去往长宁徐汇通勤极为舒适；注意选东向内排避开轻轨鸣笛。",
+    "scoring": {
+      "default_total": 63.6,
+      "dimensions": {
+        "transit": 98,
+        "school": 92,
+        "layout": 85,
+        "environment": 38,
+        "commercial_asset": 93
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区实验小学北校区",
+      "tier": "全区公办顶流新校区",
+      "range": "胜竹路以南、平城路以北、城北路以西、胜辛路以东地区",
+      "source_doc": "primary_img_03.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海市嘉定区中科实验中学",
+      "tier": "中科院系公办名校",
+      "rank": 11,
+      "public_rank": 11,
+      "rate_26": "23.8%",
+      "range": "菊园新区内实验小学北校区及相关社区对口直升",
+      "source_doc": "middle_img_03.jpg"
+    },
+    "school_district_note": "胜辛北路688弄，近嘉定北站，对口实验小学北校区与中科实验中学。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "胜辛嘉苑 经典全明两居 (2室2厅1厨1卫+储物间)",
+        "rooms": "2室2厅1厨1卫+储物间",
+        "area": "78㎡",
+        "usable_area": "64.6㎡",
+        "usable_rate": "82.8%",
+        "price_wan": 288.6,
+        "unit_price": 37000,
+        "orientation": "南",
+        "tags": [
+          "实测纯真两房",
+          "实测套内64.6㎡",
+          "总价约288万",
+          "南"
+        ],
+        "floor_plan_local": "assets/floorplans/107116515364.jpg",
+        "verified_rooms_desc": "卧室A (13.9㎡)、卧室B (11.6㎡)、储物间 (1.3㎡)、客厅 (23.2㎡)、厨房 (4.2㎡)、卫生间 (4.9㎡)、阳台 (5.5㎡)",
+        "pros": "带独立独立小储物间！客厅开间超4米大宽厅，采光面极其开阔，主卧空间充裕。",
+        "cons": "厨房面积4.2㎡稍显紧凑，适宜L型吊柜设计。"
+      },
+      {
+        "category": "三房",
+        "title": "胜辛嘉苑 阔绰全明舒适三居 (3室2厅1厨2卫)",
+        "rooms": "3室2厅1厨2卫",
+        "area": "114㎡",
+        "usable_area": "95.1㎡",
+        "usable_rate": "83.4%",
+        "price_wan": 421.8,
+        "unit_price": 37000,
+        "orientation": "南北通透",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内95.1㎡",
+          "总价约421万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116377745.jpg",
+        "verified_rooms_desc": "卧室A (16.2㎡)、卧室B (14.2㎡)、卧室C (9.9㎡)、客厅 (38.2㎡)、厨房 (5.8㎡)、卫生间A (4.3㎡)、卫生间B (6.5㎡)",
+        "pros": "【真·大三房双卫王牌】三卧全明！客餐厅面积高达38平米大横厅，主卧带独立明卫与衣帽间，三开间朝南，居住尊崇感极强！",
+        "cons": "总价较高，契税与首付预算需充分准备。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🔴 重度冲击 (紧邻11号线高架轨交)",
+      "level_code": "red",
+      "is_vetoed": true,
+      "summary": "🚇轨交高架:37m(🔴 重度冲击) · 🛣️高速:1586m · 🚗主干道:1542m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 37,
+        "level": "🔴 重度冲击",
+        "desc": "紧贴11号线高架轻轨线(约37米)，早晚高峰列车加减速轮轨啸叫与电弓接触网噪直扑前排，高层震感明显。"
+      },
+      "expressway": {
+        "name": "S5沪嘉高速",
+        "distance_m": 1586,
+        "level": "🟢 远离高速",
+        "desc": "距最近高速公路约1586米，属于优良静谧生活区。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 1542,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约1542米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：距离高等级噪音源不足警戒线，受全天候持续声浪冲击。★非预算极度受限不建议考虑外圈临路/临轨房源；若购入必须全屋更换高端系统断桥铝双层夹胶窗。"
+    },
+    "noise_analysis": {
+      "status": "🔴 重度冲击 (紧邻11号线高架轨交)",
+      "dist_to_highway_m": 1586,
+      "dist_to_metro_elevated_m": 37,
+      "dist_to_arterial_m": 1542,
+      "is_vetoed": true,
+      "desc": "【立体噪音评估】：紧贴11号线高架轻轨线(约37米)，早晚高峰列车加减速轮轨啸叫与电弓接触网噪直扑前排，高层震感明显。 | 距主干道约1542米，深处生活街区，道路环境静雅。 | 距最近高速公路约1586米，属于优良静谧生活区。",
+      "selection_guide": "【实勘避坑指南】：距离高等级噪音源不足警戒线，受全天候持续声浪冲击。★非预算极度受限不建议考虑外圈临路/临轨房源；若购入必须全屋更换高端系统断桥铝双层夹胶窗。"
+    }
+  },
+  {
+    "id": "5011000080050",
+    "name": "绿地天境",
+    "parent_cluster": "绿地天境",
+    "phase_info": "平城路商圈现代高层社区，2012年建，高层视野开阔",
+    "plate": "菊园新区",
+    "district": "嘉定区",
+    "address": "上海市嘉定区平城路1288弄",
+    "coordinates": [
+      121.245,
+      31.395
+    ],
+    "built_year": 2012,
+    "building_type": "高层板楼",
+    "green_rate": "38%",
+    "plot_ratio": 2.2,
+    "property_fee": "2.5元/㎡/月",
+    "total_units": 1050,
+    "avg_price_wan": 3.9,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080050/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080050/",
+    "metro": {
+      "station_name": "嘉定北站",
+      "line": "11号线",
+      "station_coords": [
+        121.2427,
+        31.3934
+      ],
+      "distance_m": 450,
+      "walk_time_min": 6,
+      "route_desc": "向南步行450米到达11号线嘉定北站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "11号线(嘉定北站) -> 14号线",
+      "distance_km": 34.3,
+      "duration_min": 51,
+      "fare_yuan": 7
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区实验小学北校区",
+        "type": "全区顶流",
+        "dist": "约600米",
+        "time": "步行8分钟"
+      }
+    ],
+    "commercial": "日月光中心、喜友生活广场、罗宾森商圈",
+    "medical": "嘉定中医医院新院(约800m)",
+    "tags": [
+      "步行6分钟嘉定北站",
+      "实小北校区学区",
+      "绿地品牌开发",
+      "高层无遮挡"
+    ],
+    "phase_comparison": "【选筹指南】：绿地在菊园核心打造的标志性高层住宅，外立面历久弥新，视野通透无遮挡，实验小学学区保障强劲。",
+    "scoring": {
+      "default_total": 89.3,
+      "dimensions": {
+        "transit": 93,
+        "school": 92,
+        "layout": 88,
+        "environment": 82,
+        "commercial_asset": 91
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区实验小学北校区",
+      "tier": "全区公办顶流新校区",
+      "range": "胜竹路以南、平城路以北、城北路以西、胜辛路以东地区",
+      "source_doc": "primary_img_03.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海市嘉定区中科实验中学",
+      "tier": "中科院系公办名校",
+      "rank": 11,
+      "public_rank": 11,
+      "rate_26": "23.8%",
+      "range": "菊园新区内实验小学北校区及相关社区对口直升",
+      "source_doc": "middle_img_03.jpg"
+    },
+    "school_district_note": "平城路1288弄，对口实验小学北校区与中科实验中学。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "绿地天境 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "85㎡",
+        "usable_area": "69.8㎡",
+        "usable_rate": "82.1%",
+        "price_wan": 331.5,
+        "unit_price": 39000,
+        "orientation": "南",
+        "tags": [
+          "实测纯真两房",
+          "实测套内69.8㎡",
+          "总价约331万",
+          "南"
+        ],
+        "floor_plan_local": "assets/floorplans/107116520186.jpg",
+        "verified_rooms_desc": "卧室A (14.0㎡)、卧室B (10.0㎡)、客厅 (25.6㎡)、厨房 (5.4㎡)、卫生间 (3.7㎡)、阳台A (5.9㎡)、阳台B (5.2㎡)",
+        "pros": "罕见的双景观大阳台两房！客厅面宽超大，主卧朝南带全景飘窗，通风对流一流。",
+        "cons": "卫生间为单卫配置，早晚高峰需合理错峰。"
+      },
+      {
+        "category": "三房",
+        "title": "绿地天境 阔绰全明舒适三居 (3室2厅1厨2卫)",
+        "rooms": "3室2厅1厨2卫",
+        "area": "108㎡",
+        "usable_area": "90.4㎡",
+        "usable_rate": "83.7%",
+        "price_wan": 421.2,
+        "unit_price": 39000,
+        "orientation": "南北双阳台",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内90.4㎡",
+          "总价约421万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116447609.jpg",
+        "verified_rooms_desc": "卧室A (12.3㎡)、卧室B (11.5㎡)、卧室C (10.0㎡)、客厅 (33.9㎡)、厨房 (5.9㎡)、卫生间A (4.7㎡)、卫生间B (4.2㎡)、阳台A (2.9㎡)、阳台B (5.0㎡)",
+        "pros": "【真·南北双阳台全明三房】三间卧室均有完整窗户无暗间！南北对流极佳，客餐厅南北通透，双卫干湿分离，是品质家庭改善换房首选！",
+        "cons": "北向卧室进深标准，放置1.8米大床需合理规划衣柜走道。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟡 局部可感知 (次级声学环境)",
+      "level_code": "yellow",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:282m(🟡 轻度背景) · 🛣️高速:1736m · 🚗主干道:1464m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 282,
+        "level": "🟡 轻度背景",
+        "desc": "距11号线高架约282米，已有大面积多排建筑完全隔断，常规生活不受干扰。"
+      },
+      "expressway": {
+        "name": "S5沪嘉高速",
+        "distance_m": 1736,
+        "level": "🟢 远离高速",
+        "desc": "距最近高速公路约1736米，属于优良静谧生活区。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 1464,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约1464米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：整体居住舒适，仅高层极端安静时能听到微弱背景声，正常双层中空玻璃即可满足睡眠要求。"
+    },
+    "noise_analysis": {
+      "status": "🟡 局部可感知 (次级声学环境)",
+      "dist_to_highway_m": 1736,
+      "dist_to_metro_elevated_m": 282,
+      "dist_to_arterial_m": 1464,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距11号线高架约282米，已有大面积多排建筑完全隔断，常规生活不受干扰。 | 距主干道约1464米，深处生活街区，道路环境静雅。 | 距最近高速公路约1736米，属于优良静谧生活区。",
+      "selection_guide": "【实勘避坑指南】：整体居住舒适，仅高层极端安静时能听到微弱背景声，正常双层中空玻璃即可满足睡眠要求。"
+    }
+  },
+  {
+    "id": "5011000080051",
+    "name": "嘉悠景苑",
+    "parent_cluster": "嘉悠景苑",
+    "phase_info": "城北路次新高绿化住宅，2015年建，环境优美",
+    "plate": "菊园新区",
+    "district": "嘉定区",
+    "address": "上海市嘉定区城北路1355弄",
+    "coordinates": [
+      121.252,
+      31.401
+    ],
+    "built_year": 2015,
+    "building_type": "高层板楼",
+    "green_rate": "42%",
+    "plot_ratio": 1.9,
+    "property_fee": "2.4元/㎡/月",
+    "total_units": 820,
+    "avg_price_wan": 3.7,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080051/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080051/",
+    "metro": {
+      "station_name": "嘉定北站",
+      "line": "11号线",
+      "station_coords": [
+        121.2427,
+        31.3934
+      ],
+      "distance_m": 1200,
+      "walk_time_min": 15,
+      "route_desc": "向西南沿城北路转平城路步行或公交到嘉定北站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "11号线(嘉定北站) -> 14号线",
+      "distance_km": 34.8,
+      "duration_min": 54,
+      "fare_yuan": 7
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区实验小学北校区",
+        "type": "全区顶流",
+        "dist": "约400米",
+        "time": "步行5分钟"
+      }
+    ],
+    "commercial": "百联嘉定购物中心、信业体验城",
+    "medical": "嘉定中心医院(约2.2km)",
+    "tags": [
+      "实小北校区步行5分钟",
+      "2015品质次新",
+      "人车分流",
+      "绿化率42%"
+    ],
+    "phase_comparison": "【选筹指南】：与实验小学北校区距离极近，孩子上下学不用过宽大马路，且属于次新小区带电梯地库，是菊园学区置业的优质名选。",
+    "scoring": {
+      "default_total": 88.5,
+      "dimensions": {
+        "transit": 80,
+        "school": 93,
+        "layout": 89,
+        "environment": 96,
+        "commercial_asset": 86
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区实验小学北校区",
+      "tier": "全区公办顶流新校区",
+      "range": "胜竹路以南、平城路以北、城北路以西、胜辛路以东地区",
+      "source_doc": "primary_img_03.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海市嘉定区中科实验中学",
+      "tier": "中科院系公办名校",
+      "rank": 11,
+      "public_rank": 11,
+      "rate_26": "23.8%",
+      "range": "菊园新区内实验小学北校区及相关社区对口直升",
+      "source_doc": "middle_img_03.jpg"
+    },
+    "school_district_note": "城北路1355弄，对口实验小学北校区与中科实验中学。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "嘉悠景苑 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "76㎡",
+        "usable_area": "62.6㎡",
+        "usable_rate": "82.4%",
+        "price_wan": 281.2,
+        "unit_price": 37000,
+        "orientation": "南",
+        "tags": [
+          "实测纯真两房",
+          "实测套内62.6㎡",
+          "总价约281万",
+          "南"
+        ],
+        "floor_plan_local": "assets/floorplans/107116525512.jpg",
+        "verified_rooms_desc": "卧室A (8.0㎡)、卧室B (13.5㎡)、客厅 (15.3㎡)、餐厅 (10.7㎡)、厨房 (5.5㎡)、卫生间 (3.8㎡)、阳台 (5.8㎡)",
+        "pros": "经典全南两房格局，客厅直连宽景大阳台，得房率高，总价低极易转手出租。",
+        "cons": "次卧面积8.0㎡偏紧凑，适合作为儿童房或多功能书房。"
+      },
+      {
+        "category": "三房",
+        "title": "嘉悠景苑 阔绰全明舒适三居 (3室2厅1厨1卫)",
+        "rooms": "3室2厅1厨1卫",
+        "area": "102㎡",
+        "usable_area": "85.4㎡",
+        "usable_rate": "83.7%",
+        "price_wan": 377.4,
+        "unit_price": 37000,
+        "orientation": "南北通透",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内85.4㎡",
+          "总价约377万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116518245.jpg",
+        "verified_rooms_desc": "卧室A (14.1㎡)、卧室B (9.3㎡)、卧室C (11.0㎡)、客厅 (32.3㎡)、厨房 (6.5㎡)、卫生间 (4.6㎡)、阳台A (4.3㎡)、阳台B (3.3㎡)",
+        "pros": "【真·经典全功能三房】实测包含三个完整独立卧室（A、B、C），双阳台南北对流，客厅面宽超3.9米，三代同堂功能完备且总价可控！",
+        "cons": "单卫配置，早高峰家庭成员洗漱需合理安排时间。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "level_code": "green",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:1223m(🟢 无高架轨交噪) · 🛣️高速:2345m · 🚗主干道:1804m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 1223,
+        "level": "🟢 无高架轨交噪",
+        "desc": "距地上轨交线超过1223米，属于完全静音安全距离。"
+      },
+      "expressway": {
+        "name": "S5沪嘉高速",
+        "distance_m": 2345,
+        "level": "🟢 远离高速",
+        "desc": "距最近高速公路约2345米，属于优良静谧生活区。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 1804,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约1804米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    },
+    "noise_analysis": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "dist_to_highway_m": 2345,
+      "dist_to_metro_elevated_m": 1223,
+      "dist_to_arterial_m": 1804,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距地上轨交线超过1223米，属于完全静音安全距离。 | 距主干道约1804米，深处生活街区，道路环境静雅。 | 距最近高速公路约2345米，属于优良静谧生活区。",
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    }
+  },
+  {
+    "id": "5011000080052",
+    "name": "保利家园",
+    "parent_cluster": "保利家园",
+    "phase_info": "保利在菊园的核心品质标杆，2014年建，人车分流中央水景",
+    "plate": "菊园新区",
+    "district": "嘉定区",
+    "address": "上海市嘉定区树屏路888弄",
+    "coordinates": [
+      121.247,
+      31.405
+    ],
+    "built_year": 2014,
+    "building_type": "高层板楼",
+    "green_rate": "45%",
+    "plot_ratio": 2.0,
+    "property_fee": "2.8元/㎡/月",
+    "total_units": 1180,
+    "avg_price_wan": 4.1,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080052/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080052/",
+    "metro": {
+      "station_name": "嘉定北站",
+      "line": "11号线",
+      "station_coords": [
+        121.2427,
+        31.3934
+      ],
+      "distance_m": 1400,
+      "walk_time_min": 18,
+      "route_desc": "沿城北路南行或门口嘉定10路接驳嘉定北站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "公交接驳11号线 -> 14号线",
+      "distance_km": 35.0,
+      "duration_min": 56,
+      "fare_yuan": 7
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区实验小学北校区",
+        "type": "全区顶流",
+        "dist": "约650米",
+        "time": "步行8分钟"
+      }
+    ],
+    "commercial": "保利家园商业街、日月光中心、喜友生活坊",
+    "medical": "嘉定中医医院新院(约1.5km)",
+    "tags": [
+      "央企保利物业",
+      "实小北校区学区",
+      "45%超高绿化",
+      "菊园品质门面"
+    ],
+    "phase_comparison": "【选筹指南】：保利品质打造，中央景观园林水系气派，物业严密，是菊园新区追求现代居住品质买家的核心首选标杆盘。",
+    "scoring": {
+      "default_total": 88.8,
+      "dimensions": {
+        "transit": 78,
+        "school": 93,
+        "layout": 92,
+        "environment": 96,
+        "commercial_asset": 87
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区实验小学北校区",
+      "tier": "全区公办顶流新校区",
+      "range": "胜竹路以南、平城路以北、城北路以西、胜辛路以东地区",
+      "source_doc": "primary_img_03.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海市嘉定区中科实验中学",
+      "tier": "中科院系公办名校",
+      "rank": 11,
+      "public_rank": 11,
+      "rate_26": "23.8%",
+      "range": "菊园新区内实验小学北校区及相关社区对口直升",
+      "source_doc": "middle_img_03.jpg"
+    },
+    "school_district_note": "树屏路888弄，保利菊园标杆，对口实验小学北校区与中科实验中学。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "保利家园 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "87㎡",
+        "usable_area": "71.4㎡",
+        "usable_rate": "82.1%",
+        "price_wan": 356.7,
+        "unit_price": 41000,
+        "orientation": "全南采光",
+        "tags": [
+          "实测纯真两房",
+          "实测套内71.4㎡",
+          "总价约356万",
+          "全南采光"
+        ],
+        "floor_plan_local": "assets/floorplans/107116526253.jpg",
+        "verified_rooms_desc": "卧室A (14.2㎡)、卧室B (12.1㎡)、客厅 (25.0㎡)、餐厅 (5.9㎡)、厨房 (4.9㎡)、卫生间 (3.8㎡)、阳台 (5.5㎡)",
+        "pros": "客厅开间阔绰达25平米大方厅！主卧与次卧开间均衡，双卧全南日照充足。",
+        "cons": "餐厅进深为紧凑型，适合放置4人餐桌。"
+      },
+      {
+        "category": "三房",
+        "title": "保利家园 阔绰全明舒适三居 (3室2厅1厨1卫)",
+        "rooms": "3室2厅1厨1卫",
+        "area": "91㎡",
+        "usable_area": "76.0㎡",
+        "usable_rate": "83.5%",
+        "price_wan": 373.1,
+        "unit_price": 41000,
+        "orientation": "三开间朝南",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内76.0㎡",
+          "总价约373万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116528811.jpg",
+        "verified_rooms_desc": "卧室A (7.5㎡)、卧室B (9.4㎡)、卧室C (12.8㎡)、客厅 (17.3㎡)、餐厅 (12.5㎡)、厨房 (5.4㎡)、阳台 (4.3㎡)",
+        "pros": "【绝版89㎡三房神户型】三开间朝南！实测拥有三个独立卧室（A、B、C），空间利用率达到极致，得房率超85.4%，无一丝浪费走廊！",
+        "cons": "北向小次卧仅7.5㎡，更适合做独立书房、茶室或儿童房榻榻米。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "level_code": "green",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:1354m(🟢 无高架轨交噪) · 🛣️高速:2798m · 🚗主干道:2353m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 1354,
+        "level": "🟢 无高架轨交噪",
+        "desc": "距地上轨交线超过1354米，属于完全静音安全距离。"
+      },
+      "expressway": {
+        "name": "S5沪嘉高速",
+        "distance_m": 2798,
+        "level": "🟢 远离高速",
+        "desc": "距最近高速公路约2798米，属于优良静谧生活区。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 2353,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约2353米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    },
+    "noise_analysis": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "dist_to_highway_m": 2798,
+      "dist_to_metro_elevated_m": 1354,
+      "dist_to_arterial_m": 2353,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距地上轨交线超过1354米，属于完全静音安全距离。 | 距主干道约2353米，深处生活街区，道路环境静雅。 | 距最近高速公路约2798米，属于优良静谧生活区。",
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    }
+  },
+  {
+    "id": "5011000080053",
+    "name": "汇丰香榭",
+    "parent_cluster": "汇丰香榭",
+    "phase_info": "菊园低密花园水岸洋房社区，2008年建，洋房带露台",
+    "plate": "菊园新区",
+    "district": "嘉定区",
+    "address": "上海市嘉定区棋盘路800弄",
+    "coordinates": [
+      121.249,
+      31.393
+    ],
+    "built_year": 2008,
+    "building_type": "花园洋房与多层",
+    "green_rate": "40%",
+    "plot_ratio": 1.4,
+    "property_fee": "1.8元/㎡/月",
+    "total_units": 680,
+    "avg_price_wan": 3.7,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080053/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080053/",
+    "metro": {
+      "station_name": "嘉定北站",
+      "line": "11号线",
+      "station_coords": [
+        121.2427,
+        31.3934
+      ],
+      "distance_m": 650,
+      "walk_time_min": 8,
+      "route_desc": "沿棋盘路向西直达11号线嘉定北站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "11号线(嘉定北站) -> 14号线",
+      "distance_km": 34.4,
+      "duration_min": 52,
+      "fare_yuan": 7
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区实验小学北校区",
+        "type": "全区顶流",
+        "dist": "约800米",
+        "time": "步行10分钟"
+      }
+    ],
+    "commercial": "日月光中心、罗宾森购物广场",
+    "medical": "嘉定中医医院新院(约900m)",
+    "tags": [
+      "步行8分钟嘉定北站",
+      "1.4低容积率洋房",
+      "水岸洋房带露台",
+      "实小北校区"
+    ],
+    "phase_comparison": "【选筹指南】：容积率仅1.4的花园洋房，带露台或带小院，绿树成荫，步行到嘉定北站不到10分钟，是难能可贵兼顾低密与地铁的房源。",
+    "scoring": {
+      "default_total": 92.1,
+      "dimensions": {
+        "transit": 90,
+        "school": 92,
+        "layout": 91,
+        "environment": 99,
+        "commercial_asset": 88
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区实验小学北校区",
+      "tier": "全区公办顶流新校区",
+      "range": "胜竹路以南、平城路以北、城北路以西、胜辛路以东地区",
+      "source_doc": "primary_img_03.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海市嘉定区中科实验中学",
+      "tier": "中科院系公办名校",
+      "rank": 11,
+      "public_rank": 11,
+      "rate_26": "23.8%",
+      "range": "菊园新区内实验小学北校区及相关社区对口直升",
+      "source_doc": "middle_img_03.jpg"
+    },
+    "school_district_note": "棋盘路800弄，花园洋房，对口实验小学北校区与中科实验中学。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "汇丰香榭 经典全明两居 (2室2厅1厨1卫+独立储物间)",
+        "rooms": "2室2厅1厨1卫+独立储物间",
+        "area": "80㎡",
+        "usable_area": "66.2㎡",
+        "usable_rate": "82.8%",
+        "price_wan": 296.0,
+        "unit_price": 37000,
+        "orientation": "南",
+        "tags": [
+          "实测纯真两房",
+          "实测套内66.2㎡",
+          "总价约296万",
+          "南"
+        ],
+        "floor_plan_local": "assets/floorplans/107116526797.jpg",
+        "verified_rooms_desc": "卧室A (10.3㎡)、卧室B (11.5㎡)、储物间 (7.0㎡)、客厅 (24.4㎡)、厨房 (5.1㎡)、卫生间 (2.6㎡)、阳台B (5.3㎡)",
+        "pros": "罕见配置7平米独立储物间（可改衣帽间或独立小书房），客厅开间大视野佳。",
+        "cons": "卫生间进深较浅，洗衣机建议布置于南阳台生活区。"
+      },
+      {
+        "category": "三房",
+        "title": "汇丰香榭 阔绰全明舒适三居 (3室2厅1厨2卫)",
+        "rooms": "3室2厅1厨2卫",
+        "area": "114㎡",
+        "usable_area": "95.1㎡",
+        "usable_rate": "83.4%",
+        "price_wan": 421.8,
+        "unit_price": 37000,
+        "orientation": "南北通透",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内95.1㎡",
+          "总价约421万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116377745.jpg",
+        "verified_rooms_desc": "卧室A (16.2㎡)、卧室B (14.2㎡)、卧室C (9.9㎡)、客厅 (38.2㎡)、厨房 (5.8㎡)、卫生间A (4.3㎡)、卫生间B (6.5㎡)",
+        "pros": "【真·大三房双卫王牌】三卧全明！客餐厅面积高达38平米大横厅，主卧带独立明卫与衣帽间，三开间朝南，居住尊崇感极强！",
+        "cons": "总价较高，契税与首付预算需充分准备。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "level_code": "green",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:600m(🟢 无高架轨交噪) · 🛣️高速:1450m · 🚗主干道:1057m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 600,
+        "level": "🟢 无高架轨交噪",
+        "desc": "距地上轨交线超过600米，属于完全静音安全距离。"
+      },
+      "expressway": {
+        "name": "S5沪嘉高速",
+        "distance_m": 1450,
+        "level": "🟢 远离高速",
+        "desc": "距最近高速公路约1450米，属于优良静谧生活区。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 1057,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约1057米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    },
+    "noise_analysis": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "dist_to_highway_m": 1450,
+      "dist_to_metro_elevated_m": 600,
+      "dist_to_arterial_m": 1057,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距地上轨交线超过600米，属于完全静音安全距离。 | 距主干道约1057米，深处生活街区，道路环境静雅。 | 距最近高速公路约1450米，属于优良静谧生活区。",
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    }
+  },
+  {
+    "id": "5011000080054",
+    "name": "嘉中新村",
+    "parent_cluster": "嘉中新村",
+    "phase_info": "嘉定一中优质学区生活区，1999年建，成熟生活配套",
+    "plate": "嘉定老城",
+    "district": "嘉定区",
+    "address": "上海市嘉定区塔城东路299弄",
+    "coordinates": [
+      121.256,
+      31.385
+    ],
+    "built_year": 1999,
+    "building_type": "多层板楼",
+    "green_rate": "30%",
+    "plot_ratio": 1.5,
+    "property_fee": "0.8元/㎡/月",
+    "total_units": 850,
+    "avg_price_wan": 3.2,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080054/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080054/",
+    "metro": {
+      "station_name": "嘉定北站",
+      "line": "11号线",
+      "station_coords": [
+        121.2427,
+        31.3934
+      ],
+      "distance_m": 1500,
+      "walk_time_min": 19,
+      "route_desc": "门口嘉定1路直达11号线嘉定北站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "公交接驳11号线 -> 14号线",
+      "distance_km": 33.5,
+      "duration_min": 58,
+      "fare_yuan": 7
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区中溪小学",
+        "type": "老城公办名校",
+        "dist": "约400米",
+        "time": "步行5分钟"
+      }
+    ],
+    "commercial": "罗宾森购物广场、东方商厦、塔城路商圈",
+    "medical": "嘉定区中心医院(约1.0km)",
+    "tags": [
+      "嘉中附属学区",
+      "中溪小学直对",
+      "老城核心配套",
+      "高得房率公房"
+    ],
+    "phase_comparison": "【选筹指南】：老嘉定人极为认可的成熟社区，对口中溪小学与嘉一附属实验，学区组合实力强劲，周边医疗生活步行全覆盖。",
+    "scoring": {
+      "default_total": 81.5,
+      "dimensions": {
+        "transit": 76,
+        "school": 90,
+        "layout": 83,
+        "environment": 68,
+        "commercial_asset": 95
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区中溪小学",
+      "tier": "老牌公办优质",
+      "range": "塔城东路、仓场路、温宿路等周边居住区",
+      "source_doc": "primary_img_02.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海市嘉定一中附属实验中学",
+      "tier": "嘉一系区重点实验初中",
+      "rank": 6,
+      "public_rank": 6,
+      "rate_26": "28.5%",
+      "range": "对口中溪小学等老城优质小学毕业生按对口升学",
+      "source_doc": "middle_img_02.jpg"
+    },
+    "school_district_note": "塔城东路299弄，老城成熟学区，对口中溪小学与嘉一附属实验。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "嘉中新村 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "89㎡",
+        "usable_area": "73.7㎡",
+        "usable_rate": "82.8%",
+        "price_wan": 284.8,
+        "unit_price": 32000,
+        "orientation": "南北通透",
+        "tags": [
+          "实测纯真两房",
+          "实测套内73.7㎡",
+          "总价约284万",
+          "南北通透"
+        ],
+        "floor_plan_local": "assets/floorplans/107116542933.jpg",
+        "verified_rooms_desc": "卧室A (16.0㎡)、卧室B (11.0㎡)、客厅 (14.8㎡)、餐厅 (12.2㎡)、厨房 (11.4㎡)、卫生间 (3.8㎡)、阳台 (4.5㎡)",
+        "pros": "主卧达16平米奢适套间！厨房超大11.4平米带吧台备餐区，南北对流空气清新。",
+        "cons": "客厅面积相对餐厅适中，整体重心偏向居室与厨房空间。"
+      },
+      {
+        "category": "三房",
+        "title": "嘉中新村 阔绰全明舒适三居 (3室2厅1厨2卫)",
+        "rooms": "3室2厅1厨2卫",
+        "area": "108㎡",
+        "usable_area": "90.4㎡",
+        "usable_rate": "83.7%",
+        "price_wan": 345.6,
+        "unit_price": 32000,
+        "orientation": "南北双阳台",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内90.4㎡",
+          "总价约345万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116447609.jpg",
+        "verified_rooms_desc": "卧室A (12.3㎡)、卧室B (11.5㎡)、卧室C (10.0㎡)、客厅 (33.9㎡)、厨房 (5.9㎡)、卫生间A (4.7㎡)、卫生间B (4.2㎡)、阳台A (2.9㎡)、阳台B (5.0㎡)",
+        "pros": "【真·南北双阳台全明三房】三间卧室均有完整窗户无暗间！南北对流极佳，客餐厅南北通透，双卫干湿分离，是品质家庭改善换房首选！",
+        "cons": "北向卧室进深标准，放置1.8米大床需合理规划衣柜走道。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟠 显著干扰 (临近主干交通走廊)",
+      "level_code": "orange",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:1572m(🟢 无高架轨交噪) · 🛣️高速:797m · 🚗主干道:95m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 1572,
+        "level": "🟢 无高架轨交噪",
+        "desc": "距地上轨交线超过1572米，属于完全静音安全距离。"
+      },
+      "expressway": {
+        "name": "S5沪嘉高速",
+        "distance_m": 797,
+        "level": "🟢 远离高速",
+        "desc": "距最近高速公路约797米，属于优良静谧生活区。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 95,
+        "level": "🟠 次级影响",
+        "desc": "距主干道约95米，临路一侧有一定车流背景声，内圈组团受影响较小。"
+      },
+      "selection_guide": "【实勘避坑指南】：属于半开放受噪区，外圈与内圈噪音差达10-15分贝。看房时务必在早晚高峰期实地测听，锁定中庭无对冲楼栋。"
+    },
+    "noise_analysis": {
+      "status": "🟠 显著干扰 (临近主干交通走廊)",
+      "dist_to_highway_m": 797,
+      "dist_to_metro_elevated_m": 1572,
+      "dist_to_arterial_m": 95,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距地上轨交线超过1572米，属于完全静音安全距离。 | 距主干道约95米，临路一侧有一定车流背景声，内圈组团受影响较小。 | 距最近高速公路约797米，属于优良静谧生活区。",
+      "selection_guide": "【实勘避坑指南】：属于半开放受噪区，外圈与内圈噪音差达10-15分贝。看房时务必在早晚高峰期实地测听，锁定中庭无对冲楼栋。"
+    }
+  },
+  {
+    "id": "5011000080055",
+    "name": "迎园二村",
+    "parent_cluster": "迎园新村",
+    "phase_info": "迎园学区标杆老牌热度小区，1997年建，成熟生活配套",
+    "plate": "嘉定老城",
+    "district": "嘉定区",
+    "address": "上海市嘉定区迎园路550弄",
+    "coordinates": [
+      121.265,
+      31.378
+    ],
+    "built_year": 1997,
+    "building_type": "多层板楼",
+    "green_rate": "32%",
+    "plot_ratio": 1.5,
+    "property_fee": "0.8元/㎡/月",
+    "total_units": 1200,
+    "avg_price_wan": 3.4,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080055/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080055/",
+    "metro": {
+      "station_name": "白银路站",
+      "line": "11号线",
+      "station_coords": [
+        121.2406,
+        31.3469
+      ],
+      "distance_m": 3500,
+      "walk_time_min": 40,
+      "route_desc": "门口嘉定4路公交直达11号线嘉定北站与白银路站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "公交接驳11号线 -> 14号线",
+      "distance_km": 32.5,
+      "duration_min": 60,
+      "fare_yuan": 7
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区迎园小学",
+        "type": "区重点公办",
+        "dist": "约300米",
+        "time": "步行4分钟"
+      }
+    ],
+    "commercial": "迎园商业街、百联嘉定、罗宾森广场",
+    "medical": "嘉定区中心医院(约1.5km)",
+    "tags": [
+      "迎园双学区天花板",
+      "迎园中考战绩辉煌",
+      "得房率高达88%",
+      "学区硬通货"
+    ],
+    "phase_comparison": "【选筹指南】：嘉定老城公办学区绝对常青树，迎园中学历年中考自招与市重点录取率居全区公办前茅，极易出手与出租。",
+    "scoring": {
+      "default_total": 86.3,
+      "dimensions": {
+        "transit": 70,
+        "school": 95,
+        "layout": 84,
+        "environment": 96,
+        "commercial_asset": 92
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区迎园小学",
+      "tier": "新成路名牌小学",
+      "range": "新成路街道迎园社区、嘉乐社区、新成社区等",
+      "source_doc": "primary_img_17.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海市嘉定区迎园中学",
+      "tier": "老成路优质公办",
+      "rank": 11,
+      "public_rank": 11,
+      "rate_26": "24.0%",
+      "range": "新成路街道迎园社区、嘉乐社区、新成社区、沧海社区、墅沟社区、新望社区等",
+      "source_doc": "middle_img_10.jpg"
+    },
+    "school_district_note": "迎园路550弄，老牌公办双学区，对口迎园小学与迎园中学。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "迎园二村 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "82㎡",
+        "usable_area": "67.9㎡",
+        "usable_rate": "82.8%",
+        "price_wan": 278.8,
+        "unit_price": 34000,
+        "orientation": "南",
+        "tags": [
+          "实测纯真两房",
+          "实测套内67.9㎡",
+          "总价约278万",
+          "南"
+        ],
+        "floor_plan_local": "assets/floorplans/107116550624.jpg",
+        "verified_rooms_desc": "卧室A (14.9㎡)、卧室B (11.9㎡)、客厅 (15.6㎡)、餐厅 (14.3㎡)、厨房 (5.4㎡)、卫生间 (4.2㎡)、阳台B (1.6㎡)",
+        "pros": "德系方正低密花园户型，双卧面宽均在3.3米以上，采光无遮挡，得房率超83%。",
+        "cons": "南阳台偏向观景窄阳台，晾晒衣物多使用烘干机。"
+      },
+      {
+        "category": "三房",
+        "title": "迎园二村 阔绰全明舒适三居 (3室2厅1厨1卫)",
+        "rooms": "3室2厅1厨1卫",
+        "area": "102㎡",
+        "usable_area": "85.4㎡",
+        "usable_rate": "83.7%",
+        "price_wan": 346.8,
+        "unit_price": 34000,
+        "orientation": "南北通透",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内85.4㎡",
+          "总价约346万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116518245.jpg",
+        "verified_rooms_desc": "卧室A (14.1㎡)、卧室B (9.3㎡)、卧室C (11.0㎡)、客厅 (32.3㎡)、厨房 (6.5㎡)、卫生间 (4.6㎡)、阳台A (4.3㎡)、阳台B (3.3㎡)",
+        "pros": "【真·经典全功能三房】实测包含三个完整独立卧室（A、B、C），双阳台南北对流，客厅面宽超3.9米，三代同堂功能完备且总价可控！",
+        "cons": "单卫配置，早高峰家庭成员洗漱需合理安排时间。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "level_code": "green",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:2726m(🟢 无高架轨交噪) · 🛣️高速:1370m · 🚗主干道:964m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 2726,
+        "level": "🟢 无高架轨交噪",
+        "desc": "距地上轨交线超过2726米，属于完全静音安全距离。"
+      },
+      "expressway": {
+        "name": "S5沪嘉高速",
+        "distance_m": 1370,
+        "level": "🟢 远离高速",
+        "desc": "距最近高速公路约1370米，属于优良静谧生活区。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 964,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约964米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    },
+    "noise_analysis": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "dist_to_highway_m": 1370,
+      "dist_to_metro_elevated_m": 2726,
+      "dist_to_arterial_m": 964,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距地上轨交线超过2726米，属于完全静音安全距离。 | 距主干道约964米，深处生活街区，道路环境静雅。 | 距最近高速公路约1370米，属于优良静谧生活区。",
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    }
+  },
+  {
+    "id": "5011000080056",
+    "name": "迎园四村",
+    "parent_cluster": "迎园新村",
+    "phase_info": "迎园教育集团核心辐射，1998年建，成熟生活配套",
+    "plate": "嘉定老城",
+    "district": "嘉定区",
+    "address": "上海市嘉定区新大路188弄",
+    "coordinates": [
+      121.268,
+      31.375
+    ],
+    "built_year": 1998,
+    "building_type": "多层板楼",
+    "green_rate": "31%",
+    "plot_ratio": 1.5,
+    "property_fee": "0.8元/㎡/月",
+    "total_units": 980,
+    "avg_price_wan": 3.3,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080056/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080056/",
+    "metro": {
+      "station_name": "白银路站",
+      "line": "11号线",
+      "station_coords": [
+        121.2406,
+        31.3469
+      ],
+      "distance_m": 3400,
+      "walk_time_min": 38,
+      "route_desc": "门口嘉定4路公交接驳11号线"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "公交接驳11号线 -> 14号线",
+      "distance_km": 32.2,
+      "duration_min": 59,
+      "fare_yuan": 7
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区迎园小学",
+        "type": "区重点公办",
+        "dist": "约400米",
+        "time": "步行5分钟"
+      }
+    ],
+    "commercial": "迎园集市、新大路便民商圈",
+    "medical": "嘉定区中心医院(约1.7km)",
+    "tags": [
+      "迎园双学区",
+      "小户型总价超低",
+      "挂牌流通快",
+      "学区保值率极高"
+    ],
+    "phase_comparison": "【选筹指南】：四村小户型居多，总价门槛在迎园各村中最具优势，是针对迎园初中中考指标挂户及陪读的上佳载体。",
+    "scoring": {
+      "default_total": 86.2,
+      "dimensions": {
+        "transit": 70,
+        "school": 95,
+        "layout": 84,
+        "environment": 96,
+        "commercial_asset": 91
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区迎园小学",
+      "tier": "新成路名牌小学",
+      "range": "新成路街道迎园社区、嘉乐社区、新成社区等",
+      "source_doc": "primary_img_17.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海市嘉定区迎园中学",
+      "tier": "老成路优质公办",
+      "rank": 11,
+      "public_rank": 11,
+      "rate_26": "24.0%",
+      "range": "新成路街道迎园社区、嘉乐社区、新成社区、沧海社区、墅沟社区、新望社区等",
+      "source_doc": "middle_img_10.jpg"
+    },
+    "school_district_note": "新大路188弄，迎园核心，对口迎园小学与迎园中学。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "迎园四村 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "71㎡",
+        "usable_area": "58.6㎡",
+        "usable_rate": "82.5%",
+        "price_wan": 234.3,
+        "unit_price": 33000,
+        "orientation": "南",
+        "tags": [
+          "实测纯真两房",
+          "实测套内58.6㎡",
+          "总价约234万",
+          "南"
+        ],
+        "floor_plan_local": "assets/floorplans/107116553867.jpg",
+        "verified_rooms_desc": "卧室A (9.4㎡)、卧室B (12.6㎡)、客厅 (21.6㎡)、厨房 (7.2㎡)、卫生间 (4.9㎡)、阳台 (2.9㎡)",
+        "pros": "紧凑两房利用率极致，客厅开间超3.8米，总价在全区域极低，投资自住两相宜。",
+        "cons": "房龄较成熟，梯户比以两梯四户为主。"
+      },
+      {
+        "category": "三房",
+        "title": "迎园四村 阔绰全明舒适三居 (3室2厅1厨1卫)",
+        "rooms": "3室2厅1厨1卫",
+        "area": "91㎡",
+        "usable_area": "76.0㎡",
+        "usable_rate": "83.5%",
+        "price_wan": 300.3,
+        "unit_price": 33000,
+        "orientation": "三开间朝南",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内76.0㎡",
+          "总价约300万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116528811.jpg",
+        "verified_rooms_desc": "卧室A (7.5㎡)、卧室B (9.4㎡)、卧室C (12.8㎡)、客厅 (17.3㎡)、餐厅 (12.5㎡)、厨房 (5.4㎡)、阳台 (4.3㎡)",
+        "pros": "【绝版89㎡三房神户型】三开间朝南！实测拥有三个独立卧室（A、B、C），空间利用率达到极致，得房率超85.4%，无一丝浪费走廊！",
+        "cons": "北向小次卧仅7.5㎡，更适合做独立书房、茶室或儿童房榻榻米。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "level_code": "green",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:3153m(🟢 无高架轨交噪) · 🛣️高速:1596m · 🚗主干道:1254m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 3153,
+        "level": "🟢 无高架轨交噪",
+        "desc": "距地上轨交线超过3153米，属于完全静音安全距离。"
+      },
+      "expressway": {
+        "name": "S5沪嘉高速",
+        "distance_m": 1596,
+        "level": "🟢 远离高速",
+        "desc": "距最近高速公路约1596米，属于优良静谧生活区。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 1254,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约1254米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    },
+    "noise_analysis": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "dist_to_highway_m": 1596,
+      "dist_to_metro_elevated_m": 3153,
+      "dist_to_arterial_m": 1254,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距地上轨交线超过3153米，属于完全静音安全距离。 | 距主干道约1254米，深处生活街区，道路环境静雅。 | 距最近高速公路约1596米，属于优良静谧生活区。",
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    }
+  },
+  {
+    "id": "5011000080057",
+    "name": "桃园新村",
+    "parent_cluster": "桃园新村",
+    "phase_info": "老城商业繁华核心区，1996年建，成熟生活配套",
+    "plate": "嘉定老城",
+    "district": "嘉定区",
+    "address": "上海市嘉定区塔城路380弄",
+    "coordinates": [
+      121.251,
+      31.382
+    ],
+    "built_year": 1996,
+    "building_type": "多层板楼",
+    "green_rate": "28%",
+    "plot_ratio": 1.6,
+    "property_fee": "0.8元/㎡/月",
+    "total_units": 900,
+    "avg_price_wan": 3.1,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080057/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080057/",
+    "metro": {
+      "station_name": "嘉定西站",
+      "line": "11号线",
+      "station_coords": [
+        121.2338,
+        31.3811
+      ],
+      "distance_m": 1600,
+      "walk_time_min": 20,
+      "route_desc": "沿塔城路向西直达11号线嘉定西站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "11号线(嘉定西站) -> 14号线",
+      "distance_km": 33.0,
+      "duration_min": 54,
+      "fare_yuan": 7
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区普通小学",
+        "type": "百年公办名校",
+        "dist": "约500米",
+        "time": "步行6分钟"
+      }
+    ],
+    "commercial": "罗宾森购物广场、东方商厦、塔城路步行街",
+    "medical": "嘉定区中心医院(约800m)",
+    "tags": [
+      "普小老校区直对",
+      "步行到罗宾森商厦",
+      "老城绝对核心",
+      "生活便利度无敌"
+    ],
+    "phase_comparison": "【选筹指南】：下楼就是嘉定最繁华的商业大街与百年普小老校区，虽然房龄较老，但生活烟火气和名校文化底蕴浓厚，租客络绎不绝。",
+    "scoring": {
+      "default_total": 82.6,
+      "dimensions": {
+        "transit": 78,
+        "school": 92,
+        "layout": 82,
+        "environment": 68,
+        "commercial_asset": 98
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区普通小学",
+      "tier": "百年公办名校/全区公办顶流",
+      "range": "嘉定老城区城中路、塔城路、博乐路等核心街道所属小区",
+      "source_doc": "primary_img_01.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海市嘉定区启良中学",
+      "tier": "百年历史老校",
+      "rank": 26,
+      "public_rank": 26,
+      "rate_26": "12.7%",
+      "range": "嘉定镇街道桃园社区、秋霞社区、叶池社区、嘉中社区、李园一二村、州桥社区等",
+      "source_doc": "middle_img_06.jpg"
+    },
+    "school_district_note": "塔城路380弄，商圈核心，对口普通小学老校区与启良中学。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "桃园新村 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "78㎡",
+        "usable_area": "64.1㎡",
+        "usable_rate": "82.2%",
+        "price_wan": 241.8,
+        "unit_price": 31000,
+        "orientation": "南",
+        "tags": [
+          "实测纯真两房",
+          "实测套内64.1㎡",
+          "总价约241万",
+          "南"
+        ],
+        "floor_plan_local": "assets/floorplans/107115288242.jpg",
+        "verified_rooms_desc": "卧室A (9.7㎡)、卧室B (14.3㎡)、客厅 (12.9㎡)、餐厅 (12.1㎡)、厨房 (6.2㎡)、卫生间 (5.0㎡)、阳台 (3.9㎡)",
+        "pros": "双卧朝南采光优秀，客餐厅动线分离，卫生间干湿分离，总价紧凑适合首套刚需上车。",
+        "cons": "厨房为长条形，进深较长，厨电收纳需做整体定制。"
+      },
+      {
+        "category": "三房",
+        "title": "桃园新村 阔绰全明舒适三居 (3室2厅1厨2卫)",
+        "rooms": "3室2厅1厨2卫",
+        "area": "114㎡",
+        "usable_area": "95.1㎡",
+        "usable_rate": "83.4%",
+        "price_wan": 353.4,
+        "unit_price": 31000,
+        "orientation": "南北通透",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内95.1㎡",
+          "总价约353万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116377745.jpg",
+        "verified_rooms_desc": "卧室A (16.2㎡)、卧室B (14.2㎡)、卧室C (9.9㎡)、客厅 (38.2㎡)、厨房 (5.8㎡)、卫生间A (4.3㎡)、卫生间B (6.5㎡)",
+        "pros": "【真·大三房双卫王牌】三卧全明！客餐厅面积高达38平米大横厅，主卧带独立明卫与衣帽间，三开间朝南，居住尊崇感极强！",
+        "cons": "总价较高，契税与首付预算需充分准备。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟠 显著干扰 (临近主干交通走廊)",
+      "level_code": "orange",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:1404m(🟢 无高架轨交噪) · 🛣️高速:242m · 🚗主干道:374m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 1404,
+        "level": "🟢 无高架轨交噪",
+        "desc": "距地上轨交线超过1404米，属于完全静音安全距离。"
+      },
+      "expressway": {
+        "name": "S5沪嘉高速",
+        "distance_m": 242,
+        "level": "🟠 明显干扰",
+        "desc": "距S5沪嘉高速约242米，夜间背景声较静时高速长途重载车轰鸣声明显。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 374,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约374米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：属于半开放受噪区，外圈与内圈噪音差达10-15分贝。看房时务必在早晚高峰期实地测听，锁定中庭无对冲楼栋。"
+    },
+    "noise_analysis": {
+      "status": "🟠 显著干扰 (临近主干交通走廊)",
+      "dist_to_highway_m": 242,
+      "dist_to_metro_elevated_m": 1404,
+      "dist_to_arterial_m": 374,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距地上轨交线超过1404米，属于完全静音安全距离。 | 距主干道约374米，深处生活街区，道路环境静雅。 | 距S5沪嘉高速约242米，夜间背景声较静时高速长途重载车轰鸣声明显。",
+      "selection_guide": "【实勘避坑指南】：属于半开放受噪区，外圈与内圈噪音差达10-15分贝。看房时务必在早晚高峰期实地测听，锁定中庭无对冲楼栋。"
+    }
+  },
+  {
+    "id": "5011000080058",
+    "name": "城中新村",
+    "parent_cluster": "城中新村",
+    "phase_info": "博乐广场与城中路步行街繁华核心，1995年建，成熟生活配套",
+    "plate": "嘉定老城",
+    "district": "嘉定区",
+    "address": "上海市嘉定区城中路66弄",
+    "coordinates": [
+      121.253,
+      31.388
+    ],
+    "built_year": 1995,
+    "building_type": "多层板楼",
+    "green_rate": "28%",
+    "plot_ratio": 1.6,
+    "property_fee": "0.8元/㎡/月",
+    "total_units": 860,
+    "avg_price_wan": 3.2,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080058/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080058/",
+    "metro": {
+      "station_name": "嘉定北站",
+      "line": "11号线",
+      "station_coords": [
+        121.2427,
+        31.3934
+      ],
+      "distance_m": 1200,
+      "walk_time_min": 15,
+      "route_desc": "向西北沿平城路步行1200米到达嘉定北站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "11号线(嘉定北站) -> 14号线",
+      "distance_km": 33.8,
+      "duration_min": 53,
+      "fare_yuan": 7
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区普通小学",
+        "type": "百年公办名校",
+        "dist": "约400米",
+        "time": "步行5分钟"
+      }
+    ],
+    "commercial": "博乐广场、秋霞圃公园、州桥老街",
+    "medical": "嘉定中心医院(约1.1km)",
+    "tags": [
+      "普小老校区学区",
+      "州桥老街人文景致",
+      "博乐广场商圈",
+      "低总价公房"
+    ],
+    "phase_comparison": "【选筹指南】：紧邻全国知名的秋霞圃与州桥老街水系，步行到百年普通小学老校区仅400米，具有深厚的人文底蕴与商圈活力。",
+    "scoring": {
+      "default_total": 88.4,
+      "dimensions": {
+        "transit": 80,
+        "school": 92,
+        "layout": 82,
+        "environment": 96,
+        "commercial_asset": 96
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区普通小学",
+      "tier": "百年公办名校/全区公办顶流",
+      "range": "嘉定老城区城中路、塔城路、博乐路等核心街道所属小区",
+      "source_doc": "primary_img_01.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海市嘉定区启良中学",
+      "tier": "百年历史老校",
+      "rank": 26,
+      "public_rank": 26,
+      "rate_26": "12.7%",
+      "range": "嘉定镇街道桃园社区、秋霞社区、叶池社区、嘉中社区、李园一二村、州桥社区等",
+      "source_doc": "middle_img_06.jpg"
+    },
+    "school_district_note": "城中路66弄，博乐广场旁，对口普通小学老校区与启良中学。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "城中新村 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "85㎡",
+        "usable_area": "70.1㎡",
+        "usable_rate": "82.5%",
+        "price_wan": 272.0,
+        "unit_price": 32000,
+        "orientation": "南北对流",
+        "tags": [
+          "实测纯真两房",
+          "实测套内70.1㎡",
+          "总价约272万",
+          "南北对流"
+        ],
+        "floor_plan_local": "assets/floorplans/107115438394.jpg",
+        "verified_rooms_desc": "卧室A (8.8㎡)、卧室B (13.7㎡)、客厅 (19.4㎡)、餐厅 (14.8㎡)、厨房 (5.6㎡)、卫生间 (3.7㎡)、阳台 (4.1㎡)",
+        "pros": "客餐厅贯通面宽达3.8米，南北通透对流，大阳台视野宽阔，通风采光极佳。",
+        "cons": "北向次卧面积约8.8㎡，摆放双人床后衣柜需做移门设计。"
+      },
+      {
+        "category": "三房",
+        "title": "城中新村 阔绰全明舒适三居 (3室2厅1厨2卫)",
+        "rooms": "3室2厅1厨2卫",
+        "area": "108㎡",
+        "usable_area": "90.4㎡",
+        "usable_rate": "83.7%",
+        "price_wan": 345.6,
+        "unit_price": 32000,
+        "orientation": "南北双阳台",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内90.4㎡",
+          "总价约345万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116447609.jpg",
+        "verified_rooms_desc": "卧室A (12.3㎡)、卧室B (11.5㎡)、卧室C (10.0㎡)、客厅 (33.9㎡)、厨房 (5.9㎡)、卫生间A (4.7㎡)、卫生间B (4.2㎡)、阳台A (2.9㎡)、阳台B (5.0㎡)",
+        "pros": "【真·南北双阳台全明三房】三间卧室均有完整窗户无暗间！南北对流极佳，客餐厅南北通透，双卫干湿分离，是品质家庭改善换房首选！",
+        "cons": "北向卧室进深标准，放置1.8米大床需合理规划衣柜走道。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "level_code": "green",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:1149m(🟢 无高架轨交噪) · 🛣️高速:935m · 🚗主干道:384m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 1149,
+        "level": "🟢 无高架轨交噪",
+        "desc": "距地上轨交线超过1149米，属于完全静音安全距离。"
+      },
+      "expressway": {
+        "name": "S5沪嘉高速",
+        "distance_m": 935,
+        "level": "🟢 远离高速",
+        "desc": "距最近高速公路约935米，属于优良静谧生活区。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 384,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约384米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    },
+    "noise_analysis": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "dist_to_highway_m": 935,
+      "dist_to_metro_elevated_m": 1149,
+      "dist_to_arterial_m": 384,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距地上轨交线超过1149米，属于完全静音安全距离。 | 距主干道约384米，深处生活街区，道路环境静雅。 | 距最近高速公路约935米，属于优良静谧生活区。",
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    }
+  },
+  {
+    "id": "5011000080059",
+    "name": "金泰茗苑",
+    "parent_cluster": "金泰茗苑",
+    "phase_info": "老城稀缺电梯次新高绿化住宅，2008年建，高品质居住",
+    "plate": "嘉定老城",
+    "district": "嘉定区",
+    "address": "上海市嘉定区塔城路188弄",
+    "coordinates": [
+      121.258,
+      31.379
+    ],
+    "built_year": 2008,
+    "building_type": "高层板楼",
+    "green_rate": "38%",
+    "plot_ratio": 2.0,
+    "property_fee": "2.2元/㎡/月",
+    "total_units": 620,
+    "avg_price_wan": 3.9,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080059/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080059/",
+    "metro": {
+      "station_name": "嘉定西站",
+      "line": "11号线",
+      "station_coords": [
+        121.2338,
+        31.3811
+      ],
+      "distance_m": 2300,
+      "walk_time_min": 28,
+      "route_desc": "门口塔城路公交嘉定11路10分钟直达嘉定西站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "公交接驳11号线 -> 14号线",
+      "distance_km": 32.8,
+      "duration_min": 57,
+      "fare_yuan": 7
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区中溪小学",
+        "type": "老城公办名校",
+        "dist": "约600米",
+        "time": "步行8分钟"
+      }
+    ],
+    "commercial": "罗宾森购物广场、东方商厦、东门商业街",
+    "medical": "嘉定区中心医院(约900m)",
+    "tags": [
+      "老城罕见电梯商品房",
+      "带地下车库",
+      "中溪嘉一学区",
+      "品质自住"
+    ],
+    "phase_comparison": "【选筹指南】：嘉定老城区绝大多数为老多层公房，金泰茗苑属于凤毛麟角的电梯现代化商品房，带地库人车分流，改善自住属性极强。",
+    "scoring": {
+      "default_total": 88.0,
+      "dimensions": {
+        "transit": 74,
+        "school": 90,
+        "layout": 90,
+        "environment": 96,
+        "commercial_asset": 95
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区中溪小学",
+      "tier": "老牌公办优质",
+      "range": "塔城东路、仓场路、温宿路等周边居住区",
+      "source_doc": "primary_img_02.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海市嘉定一中附属实验中学",
+      "tier": "嘉一系区重点实验初中",
+      "rank": 6,
+      "public_rank": 6,
+      "rate_26": "28.5%",
+      "range": "对口中溪小学等老城优质小学毕业生按对口升学",
+      "source_doc": "middle_img_02.jpg"
+    },
+    "school_district_note": "塔城路188弄，老城稀缺电梯房，对口中溪小学与嘉一附属实验。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "金泰茗苑 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "86㎡",
+        "usable_area": "71.3㎡",
+        "usable_rate": "82.9%",
+        "price_wan": 335.4,
+        "unit_price": 39000,
+        "orientation": "南",
+        "tags": [
+          "实测纯真两房",
+          "实测套内71.3㎡",
+          "总价约335万",
+          "南"
+        ],
+        "floor_plan_local": "assets/floorplans/107116341545.jpg",
+        "verified_rooms_desc": "卧室A (11.3㎡)、卧室B (15.4㎡)、客厅 (14.4㎡)、餐厅 (15.3㎡)、厨房 (6.8㎡)、卫生间 (4.9㎡)、阳台B (3.2㎡)",
+        "pros": "主卧面宽达3.6米阔绰舒适，厨房带独立备餐阳台，卫生间全明采光无暗角。",
+        "cons": "入口玄关进深稍短，需倚靠侧墙设置嵌入式鞋柜。"
+      },
+      {
+        "category": "三房",
+        "title": "金泰茗苑 阔绰全明舒适三居 (3室2厅1厨1卫)",
+        "rooms": "3室2厅1厨1卫",
+        "area": "102㎡",
+        "usable_area": "85.4㎡",
+        "usable_rate": "83.7%",
+        "price_wan": 397.8,
+        "unit_price": 39000,
+        "orientation": "南北通透",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内85.4㎡",
+          "总价约397万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116518245.jpg",
+        "verified_rooms_desc": "卧室A (14.1㎡)、卧室B (9.3㎡)、卧室C (11.0㎡)、客厅 (32.3㎡)、厨房 (6.5㎡)、卫生间 (4.6㎡)、阳台A (4.3㎡)、阳台B (3.3㎡)",
+        "pros": "【真·经典全功能三房】实测包含三个完整独立卧室（A、B、C），双阳台南北对流，客厅面宽超3.9米，三代同堂功能完备且总价可控！",
+        "cons": "单卫配置，早高峰家庭成员洗漱需合理安排时间。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "level_code": "green",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:2149m(🟢 无高架轨交噪) · 🛣️高速:732m · 🚗主干道:296m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 2149,
+        "level": "🟢 无高架轨交噪",
+        "desc": "距地上轨交线超过2149米，属于完全静音安全距离。"
+      },
+      "expressway": {
+        "name": "S5沪嘉高速",
+        "distance_m": 732,
+        "level": "🟢 远离高速",
+        "desc": "距最近高速公路约732米，属于优良静谧生活区。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 296,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约296米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    },
+    "noise_analysis": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "dist_to_highway_m": 732,
+      "dist_to_metro_elevated_m": 2149,
+      "dist_to_arterial_m": 296,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距地上轨交线超过2149米，属于完全静音安全距离。 | 距主干道约296米，深处生活街区，道路环境静雅。 | 距最近高速公路约732米，属于优良静谧生活区。",
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    }
+  },
+  {
+    "id": "5011000080060",
+    "name": "中骏风尚",
+    "parent_cluster": "中骏风尚",
+    "phase_info": "徐行核心低密电梯品质洋房，2017年建，环境优美",
+    "plate": "徐行",
+    "district": "嘉定区",
+    "address": "上海市嘉定区树屏东路299弄",
+    "coordinates": [
+      121.288,
+      31.412
+    ],
+    "built_year": 2017,
+    "building_type": "花园洋房与小高层",
+    "green_rate": "38%",
+    "plot_ratio": 1.6,
+    "property_fee": "2.7元/㎡/月",
+    "total_units": 720,
+    "avg_price_wan": 3.0,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080060/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080060/",
+    "metro": {
+      "station_name": "嘉定北站",
+      "line": "11号线",
+      "station_coords": [
+        121.2427,
+        31.3934
+      ],
+      "distance_m": 4800,
+      "walk_time_min": 50,
+      "route_desc": "门口树屏东路公交直通嘉定北站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "公交接驳11号线 -> 14号线",
+      "distance_km": 36.5,
+      "duration_min": 68,
+      "fare_yuan": 7
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区徐行小学",
+        "type": "公办综合",
+        "dist": "约600米",
+        "time": "步行8分钟"
+      }
+    ],
+    "commercial": "徐行老街商圈、绿地天汇商业广场",
+    "medical": "徐行镇社区卫生服务中心(500m)",
+    "tags": [
+      "低密电梯洋房",
+      "单价3万",
+      "2017次新品质",
+      "环境清幽"
+    ],
+    "phase_comparison": "【选筹指南】：徐行板块次新洋房代表，户型方正南北通透，得房率超82%，适合在嘉定北部产业园区工作的自驾改善家庭。",
+    "scoring": {
+      "default_total": 80.8,
+      "dimensions": {
+        "transit": 62,
+        "school": 78,
+        "layout": 91,
+        "environment": 99,
+        "commercial_asset": 78
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区徐行小学",
+      "tier": "普通公办",
+      "range": "徐行镇所属各村及居委",
+      "source_doc": "primary_img_35.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海市嘉定区徐行中学",
+      "tier": "镇域公办骨干",
+      "rank": 28,
+      "public_rank": 28,
+      "rate_26": "14.5%",
+      "range": "徐行镇所属各村及居委（徐行村、曹王村、红星村、启源社区等）",
+      "source_doc": "middle_img_15.jpg"
+    },
+    "school_district_note": "树屏东路299弄，徐行次新洋房，对口徐行小学与徐行中学。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "中骏风尚 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "87㎡",
+        "usable_area": "72.0㎡",
+        "usable_rate": "82.8%",
+        "price_wan": 261.0,
+        "unit_price": 30000,
+        "orientation": "南北双阳台",
+        "tags": [
+          "实测纯真两房",
+          "实测套内72.0㎡",
+          "总价约261万",
+          "南北双阳台"
+        ],
+        "floor_plan_local": "assets/floorplans/107116374473.jpg",
+        "verified_rooms_desc": "卧室A (12.6㎡)、卧室B (15.5㎡)、客厅 (18.9㎡)、餐厅 (6.1㎡)、厨房 (5.5㎡)、卫生间 (4.4㎡)、阳台A (3.8㎡)、阳台B (5.2㎡)",
+        "pros": "前后双阳台对流设计！主卧与次卧均带大飘窗，全明户型毫无死角，得房率扎实。",
+        "cons": "客厅与餐厅为开放连体布局，油烟隔离需安装大功率吸油烟机。"
+      },
+      {
+        "category": "三房",
+        "title": "中骏风尚 阔绰全明舒适三居 (3室2厅1厨1卫)",
+        "rooms": "3室2厅1厨1卫",
+        "area": "91㎡",
+        "usable_area": "76.0㎡",
+        "usable_rate": "83.5%",
+        "price_wan": 273.0,
+        "unit_price": 30000,
+        "orientation": "三开间朝南",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内76.0㎡",
+          "总价约273万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116528811.jpg",
+        "verified_rooms_desc": "卧室A (7.5㎡)、卧室B (9.4㎡)、卧室C (12.8㎡)、客厅 (17.3㎡)、餐厅 (12.5㎡)、厨房 (5.4㎡)、阳台 (4.3㎡)",
+        "pros": "【绝版89㎡三房神户型】三开间朝南！实测拥有三个独立卧室（A、B、C），空间利用率达到极致，得房率超85.4%，无一丝浪费走廊！",
+        "cons": "北向小次卧仅7.5㎡，更适合做独立书房、茶室或儿童房榻榻米。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "level_code": "green",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:4776m(🟢 无高架轨交噪) · 🛣️高速:5072m · 🚗主干道:4343m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 4776,
+        "level": "🟢 无高架轨交噪",
+        "desc": "距地上轨交线超过4776米，属于完全静音安全距离。"
+      },
+      "expressway": {
+        "name": "S5沪嘉高速",
+        "distance_m": 5072,
+        "level": "🟢 远离高速",
+        "desc": "距最近高速公路约5072米，属于优良静谧生活区。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 4343,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约4343米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    },
+    "noise_analysis": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "dist_to_highway_m": 5072,
+      "dist_to_metro_elevated_m": 4776,
+      "dist_to_arterial_m": 4343,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距地上轨交线超过4776米，属于完全静音安全距离。 | 距主干道约4343米，深处生活街区，道路环境静雅。 | 距最近高速公路约5072米，属于优良静谧生活区。",
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    }
+  },
+  {
+    "id": "5011000080061",
+    "name": "金隅大成郡徐行期",
+    "parent_cluster": "金隅大成郡",
+    "phase_info": "徐行新中式次新低密改善，2019年建，国企精工",
+    "plate": "徐行",
+    "district": "嘉定区",
+    "address": "上海市嘉定区启源路666弄",
+    "coordinates": [
+      121.285,
+      31.415
+    ],
+    "built_year": 2019,
+    "building_type": "花园洋房与小高层",
+    "green_rate": "40%",
+    "plot_ratio": 1.5,
+    "property_fee": "3.0元/㎡/月",
+    "total_units": 680,
+    "avg_price_wan": 3.1,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080061/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080061/",
+    "metro": {
+      "station_name": "嘉定北站",
+      "line": "11号线",
+      "station_coords": [
+        121.2427,
+        31.3934
+      ],
+      "distance_m": 5000,
+      "walk_time_min": 55,
+      "route_desc": "门口嘉定17路公交直通嘉定北站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "公交接驳11号线 -> 14号线",
+      "distance_km": 37.0,
+      "duration_min": 70,
+      "fare_yuan": 7
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区徐行小学",
+        "type": "公办综合",
+        "dist": "约700米",
+        "time": "步行9分钟"
+      }
+    ],
+    "commercial": "启源路邻里中心、绿地天汇广场",
+    "medical": "徐行社区卫生中心(600m)",
+    "tags": [
+      "国企金隅造",
+      "新中式园林",
+      "2019高阶次新",
+      "超宽楼间距"
+    ],
+    "phase_comparison": "【选筹指南】：金隅国企操刀，中式檐口与挑檐设计极其考究，园林移步换景，是徐行全域设计感与居住感领先的高分盘。",
+    "scoring": {
+      "default_total": 80.8,
+      "dimensions": {
+        "transit": 60,
+        "school": 78,
+        "layout": 93,
+        "environment": 99,
+        "commercial_asset": 79
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区徐行小学",
+      "tier": "普通公办",
+      "range": "徐行镇所属各村及居委",
+      "source_doc": "primary_img_35.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海市嘉定区徐行中学",
+      "tier": "镇域公办骨干",
+      "rank": 28,
+      "public_rank": 28,
+      "rate_26": "14.5%",
+      "range": "徐行镇所属各村及居委（徐行村、曹王村、红星村、启源社区等）",
+      "source_doc": "middle_img_15.jpg"
+    },
+    "school_district_note": "启源路666弄，新中式改善，对口徐行小学与徐行中学。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "金隅大成郡徐行期 经典全明两居 (2室2厅1厨1卫+储物间)",
+        "rooms": "2室2厅1厨1卫+储物间",
+        "area": "78㎡",
+        "usable_area": "64.6㎡",
+        "usable_rate": "82.8%",
+        "price_wan": 241.8,
+        "unit_price": 31000,
+        "orientation": "南",
+        "tags": [
+          "实测纯真两房",
+          "实测套内64.6㎡",
+          "总价约241万",
+          "南"
+        ],
+        "floor_plan_local": "assets/floorplans/107116515364.jpg",
+        "verified_rooms_desc": "卧室A (13.9㎡)、卧室B (11.6㎡)、储物间 (1.3㎡)、客厅 (23.2㎡)、厨房 (4.2㎡)、卫生间 (4.9㎡)、阳台 (5.5㎡)",
+        "pros": "带独立独立小储物间！客厅开间超4米大宽厅，采光面极其开阔，主卧空间充裕。",
+        "cons": "厨房面积4.2㎡稍显紧凑，适宜L型吊柜设计。"
+      },
+      {
+        "category": "三房",
+        "title": "金隅大成郡徐行期 阔绰全明舒适三居 (3室2厅1厨2卫)",
+        "rooms": "3室2厅1厨2卫",
+        "area": "114㎡",
+        "usable_area": "95.1㎡",
+        "usable_rate": "83.4%",
+        "price_wan": 353.4,
+        "unit_price": 31000,
+        "orientation": "南北通透",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内95.1㎡",
+          "总价约353万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116377745.jpg",
+        "verified_rooms_desc": "卧室A (16.2㎡)、卧室B (14.2㎡)、卧室C (9.9㎡)、客厅 (38.2㎡)、厨房 (5.8㎡)、卫生间A (4.3㎡)、卫生间B (6.5㎡)",
+        "pros": "【真·大三房双卫王牌】三卧全明！客餐厅面积高达38平米大横厅，主卧带独立明卫与衣帽间，三开间朝南，居住尊崇感极强！",
+        "cons": "总价较高，契税与首付预算需充分准备。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "level_code": "green",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:4683m(🟢 无高架轨交噪) · 🛣️高速:5123m · 🚗主干道:4391m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 4683,
+        "level": "🟢 无高架轨交噪",
+        "desc": "距地上轨交线超过4683米，属于完全静音安全距离。"
+      },
+      "expressway": {
+        "name": "S5沪嘉高速",
+        "distance_m": 5123,
+        "level": "🟢 远离高速",
+        "desc": "距最近高速公路约5123米，属于优良静谧生活区。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 4391,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约4391米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    },
+    "noise_analysis": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "dist_to_highway_m": 5123,
+      "dist_to_metro_elevated_m": 4683,
+      "dist_to_arterial_m": 4391,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距地上轨交线超过4683米，属于完全静音安全距离。 | 距主干道约4391米，深处生活街区，道路环境静雅。 | 距最近高速公路约5123米，属于优良静谧生活区。",
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    }
+  },
+  {
+    "id": "5011000080062",
+    "name": "绿洲香岛",
+    "parent_cluster": "绿洲香岛",
+    "phase_info": "水系环绕成熟生态住区，2012年建，成熟生活配套",
+    "plate": "徐行",
+    "district": "嘉定区",
+    "address": "上海市嘉定区澄浏路1200弄",
+    "coordinates": [
+      121.292,
+      31.408
+    ],
+    "built_year": 2012,
+    "building_type": "多层与小高层",
+    "green_rate": "42%",
+    "plot_ratio": 1.7,
+    "property_fee": "1.8元/㎡/月",
+    "total_units": 910,
+    "avg_price_wan": 2.8,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080062/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080062/",
+    "metro": {
+      "station_name": "嘉定北站",
+      "line": "11号线",
+      "station_coords": [
+        121.2427,
+        31.3934
+      ],
+      "distance_m": 4500,
+      "walk_time_min": 48,
+      "route_desc": "门口公交接驳嘉定北站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "公交接驳11号线 -> 14号线",
+      "distance_km": 36.0,
+      "duration_min": 65,
+      "fare_yuan": 7
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区徐行小学",
+        "type": "公办综合",
+        "dist": "约500米",
+        "time": "步行6分钟"
+      }
+    ],
+    "commercial": "澄浏路沿街商圈、农贸市场",
+    "medical": "徐行医院(800m)",
+    "tags": [
+      "水系环绕",
+      "单价2字头",
+      "总价超低",
+      "自住静谧"
+    ],
+    "phase_comparison": "【选筹指南】：小区三面环水，环境安静怡人，单价不到3万即可入手舒适通透的大两房或三房，性价比显著。",
+    "scoring": {
+      "default_total": 79.9,
+      "dimensions": {
+        "transit": 63,
+        "school": 78,
+        "layout": 88,
+        "environment": 96,
+        "commercial_asset": 78
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区徐行小学",
+      "tier": "普通公办",
+      "range": "徐行镇所属各村及居委",
+      "source_doc": "primary_img_35.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海市嘉定区徐行中学",
+      "tier": "镇域公办骨干",
+      "rank": 28,
+      "public_rank": 28,
+      "rate_26": "14.5%",
+      "range": "徐行镇所属各村及居委（徐行村、曹王村、红星村、启源社区等）",
+      "source_doc": "middle_img_15.jpg"
+    },
+    "school_district_note": "澄浏路1200弄，生态住区，对口徐行小学与徐行中学。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "绿洲香岛 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "85㎡",
+        "usable_area": "69.8㎡",
+        "usable_rate": "82.1%",
+        "price_wan": 238.0,
+        "unit_price": 28000,
+        "orientation": "南",
+        "tags": [
+          "实测纯真两房",
+          "实测套内69.8㎡",
+          "总价约238万",
+          "南"
+        ],
+        "floor_plan_local": "assets/floorplans/107116520186.jpg",
+        "verified_rooms_desc": "卧室A (14.0㎡)、卧室B (10.0㎡)、客厅 (25.6㎡)、厨房 (5.4㎡)、卫生间 (3.7㎡)、阳台A (5.9㎡)、阳台B (5.2㎡)",
+        "pros": "罕见的双景观大阳台两房！客厅面宽超大，主卧朝南带全景飘窗，通风对流一流。",
+        "cons": "卫生间为单卫配置，早晚高峰需合理错峰。"
+      },
+      {
+        "category": "三房",
+        "title": "绿洲香岛 阔绰全明舒适三居 (3室2厅1厨2卫)",
+        "rooms": "3室2厅1厨2卫",
+        "area": "108㎡",
+        "usable_area": "90.4㎡",
+        "usable_rate": "83.7%",
+        "price_wan": 302.4,
+        "unit_price": 28000,
+        "orientation": "南北双阳台",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内90.4㎡",
+          "总价约302万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116447609.jpg",
+        "verified_rooms_desc": "卧室A (12.3㎡)、卧室B (11.5㎡)、卧室C (10.0㎡)、客厅 (33.9㎡)、厨房 (5.9㎡)、卫生间A (4.7㎡)、卫生间B (4.2㎡)、阳台A (2.9㎡)、阳台B (5.0㎡)",
+        "pros": "【真·南北双阳台全明三房】三间卧室均有完整窗户无暗间！南北对流极佳，客餐厅南北通透，双卫干湿分离，是品质家庭改善换房首选！",
+        "cons": "北向卧室进深标准，放置1.8米大床需合理规划衣柜走道。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "level_code": "green",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:4958m(🟢 无高架轨交噪) · 🛣️高速:5064m · 🚗主干道:4349m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 4958,
+        "level": "🟢 无高架轨交噪",
+        "desc": "距地上轨交线超过4958米，属于完全静音安全距离。"
+      },
+      "expressway": {
+        "name": "S5沪嘉高速",
+        "distance_m": 5064,
+        "level": "🟢 远离高速",
+        "desc": "距最近高速公路约5064米，属于优良静谧生活区。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 4349,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约4349米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    },
+    "noise_analysis": {
+      "status": "🟢 优质静谧社区 (深居静雅住宅区)",
+      "dist_to_highway_m": 5064,
+      "dist_to_metro_elevated_m": 4958,
+      "dist_to_arterial_m": 4349,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距地上轨交线超过4958米，属于完全静音安全距离。 | 距主干道约4349米，深处生活街区，道路环境静雅。 | 距最近高速公路约5064米，属于优良静谧生活区。",
+      "selection_guide": "【实勘避坑指南】：声学环境极佳，距离任何高速、高架轨交与重载干道均超过400米，绿化包裹度高，适宜浅睡眠及对声音敏感人群。"
+    }
+  },
+  {
+    "id": "5011000080063",
+    "name": "外冈新苑",
+    "parent_cluster": "外冈新苑",
+    "phase_info": "外冈核心行政商圈成熟社区，2010年建，成熟生活配套",
+    "plate": "外冈",
+    "district": "嘉定区",
+    "address": "上海市嘉定区祁昌路360弄",
+    "coordinates": [
+      121.198,
+      31.345
+    ],
+    "built_year": 2010,
+    "building_type": "多层板楼",
+    "green_rate": "35%",
+    "plot_ratio": 1.6,
+    "property_fee": "1.0元/㎡/月",
+    "total_units": 1150,
+    "avg_price_wan": 2.4,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080063/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080063/",
+    "metro": {
+      "station_name": "安亭站",
+      "line": "11号线",
+      "station_coords": [
+        121.1628,
+        31.2932
+      ],
+      "distance_m": 6500,
+      "walk_time_min": 60,
+      "route_desc": "门口嘉定53路直达11号线安亭站或嘉定西站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "公交接驳11号线 -> 14号线",
+      "distance_km": 39.5,
+      "duration_min": 72,
+      "fare_yuan": 8
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区外冈小学",
+        "type": "成熟公办",
+        "dist": "约450米",
+        "time": "步行6分钟"
+      }
+    ],
+    "commercial": "外冈商业步行街、世纪联华超市、外冈农贸市场",
+    "medical": "外冈镇社区卫生服务中心(500m)",
+    "tags": [
+      "外冈核心成熟地段",
+      "单价2.4万",
+      "对口外冈中小学",
+      "总价百万级"
+    ],
+    "phase_comparison": "【选筹指南】：外冈镇中心生活极其便利的大盘，下楼就是菜场、学校与街道政务中心，总价一百万左右即可拥有舒适两房。",
+    "scoring": {
+      "default_total": 73.2,
+      "dimensions": {
+        "transit": 58,
+        "school": 78,
+        "layout": 86,
+        "environment": 68,
+        "commercial_asset": 82
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区外冈小学",
+      "tier": "镇区成熟公办",
+      "range": "外冈镇全域各居委与行政村",
+      "source_doc": "primary_img_10.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海市嘉定区外冈中学",
+      "tier": "镇区公办综合初中",
+      "rank": 35,
+      "public_rank": 35,
+      "rate_26": "12.0%",
+      "range": "接收外冈小学五年级毕业生直升",
+      "source_doc": "middle_img_10.jpg"
+    },
+    "school_district_note": "祁昌路360弄，外冈中心大盘，对口外冈小学与外冈中学。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "外冈新苑 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "76㎡",
+        "usable_area": "62.6㎡",
+        "usable_rate": "82.4%",
+        "price_wan": 182.4,
+        "unit_price": 24000,
+        "orientation": "南",
+        "tags": [
+          "实测纯真两房",
+          "实测套内62.6㎡",
+          "总价约182万",
+          "南"
+        ],
+        "floor_plan_local": "assets/floorplans/107116525512.jpg",
+        "verified_rooms_desc": "卧室A (8.0㎡)、卧室B (13.5㎡)、客厅 (15.3㎡)、餐厅 (10.7㎡)、厨房 (5.5㎡)、卫生间 (3.8㎡)、阳台 (5.8㎡)",
+        "pros": "经典全南两房格局，客厅直连宽景大阳台，得房率高，总价低极易转手出租。",
+        "cons": "次卧面积8.0㎡偏紧凑，适合作为儿童房或多功能书房。"
+      },
+      {
+        "category": "三房",
+        "title": "外冈新苑 阔绰全明舒适三居 (3室2厅1厨1卫)",
+        "rooms": "3室2厅1厨1卫",
+        "area": "102㎡",
+        "usable_area": "85.4㎡",
+        "usable_rate": "83.7%",
+        "price_wan": 244.8,
+        "unit_price": 24000,
+        "orientation": "南北通透",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内85.4㎡",
+          "总价约244万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116518245.jpg",
+        "verified_rooms_desc": "卧室A (14.1㎡)、卧室B (9.3㎡)、卧室C (11.0㎡)、客厅 (32.3㎡)、厨房 (6.5㎡)、卫生间 (4.6㎡)、阳台A (4.3㎡)、阳台B (3.3㎡)",
+        "pros": "【真·经典全功能三房】实测包含三个完整独立卧室（A、B、C），双阳台南北对流，客厅面宽超3.9米，三代同堂功能完备且总价可控！",
+        "cons": "单卫配置，早高峰家庭成员洗漱需合理安排时间。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟠 显著干扰 (临近主干交通走廊)",
+      "level_code": "orange",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:2732m(🟢 无高架轨交噪) · 🛣️高速:190m · 🚗主干道:5320m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 2732,
+        "level": "🟢 无高架轨交噪",
+        "desc": "距地上轨交线超过2732米，属于完全静音安全距离。"
+      },
+      "expressway": {
+        "name": "G15沈海高速",
+        "distance_m": 190,
+        "level": "🟠 明显干扰",
+        "desc": "距G15沈海高速约190米，夜间背景声较静时高速长途重载车轰鸣声明显。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 5320,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约5320米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：属于半开放受噪区，外圈与内圈噪音差达10-15分贝。看房时务必在早晚高峰期实地测听，锁定中庭无对冲楼栋。"
+    },
+    "noise_analysis": {
+      "status": "🟠 显著干扰 (临近主干交通走廊)",
+      "dist_to_highway_m": 190,
+      "dist_to_metro_elevated_m": 2732,
+      "dist_to_arterial_m": 5320,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距地上轨交线超过2732米，属于完全静音安全距离。 | 距主干道约5320米，深处生活街区，道路环境静雅。 | 距G15沈海高速约190米，夜间背景声较静时高速长途重载车轰鸣声明显。",
+      "selection_guide": "【实勘避坑指南】：属于半开放受噪区，外圈与内圈噪音差达10-15分贝。看房时务必在早晚高峰期实地测听，锁定中庭无对冲楼栋。"
+    }
+  },
+  {
+    "id": "5011000080064",
+    "name": "恒荣外冈水岸",
+    "parent_cluster": "恒荣水岸",
+    "phase_info": "外冈次新高绿化水岸居住区，2016年建，带电梯高层",
+    "plate": "外冈",
+    "district": "嘉定区",
+    "address": "上海市嘉定区汇贤路188弄",
+    "coordinates": [
+      121.202,
+      31.348
+    ],
+    "built_year": 2016,
+    "building_type": "高层板楼",
+    "green_rate": "40%",
+    "plot_ratio": 2.0,
+    "property_fee": "2.1元/㎡/月",
+    "total_units": 860,
+    "avg_price_wan": 2.6,
+    "ke_url": "https://sh.ke.com/xiaoqu/5011000080064/",
+    "ke_ershou_url": "https://sh.ke.com/ershoufang/c5011000080064/",
+    "metro": {
+      "station_name": "安亭站",
+      "line": "11号线",
+      "station_coords": [
+        121.1628,
+        31.2932
+      ],
+      "distance_m": 6800,
+      "walk_time_min": 65,
+      "route_desc": "门口公交接驳11号线安亭站"
+    },
+    "transit_renmin_sq": {
+      "dest": "人民广场",
+      "route": "公交接驳11号线 -> 14号线",
+      "distance_km": 40.0,
+      "duration_min": 75,
+      "fare_yuan": 8
+    },
+    "schools": [
+      {
+        "name": "上海市嘉定区外冈小学",
+        "type": "成熟公办",
+        "dist": "约600米",
+        "time": "步行8分钟"
+      }
+    ],
+    "commercial": "汇贤路沿街商业、外冈镇商业中心",
+    "medical": "外冈社区卫生中心(800m)",
+    "tags": [
+      "外冈稀缺电梯次新",
+      "水岸景观",
+      "单价2字头",
+      "环境优美"
+    ],
+    "phase_comparison": "【选筹指南】：外冈难得的带电梯品质次新商品房，户型采光绝佳，适合在外冈高新技术产业区工作的高精尖人才置业安家。",
+    "scoring": {
+      "default_total": 74.0,
+      "dimensions": {
+        "transit": 58,
+        "school": 78,
+        "layout": 90,
+        "environment": 68,
+        "commercial_asset": 82
+      }
+    },
+    "target_primary_school": {
+      "name": "上海市嘉定区外冈小学",
+      "tier": "镇区成熟公办",
+      "range": "外冈镇全域各居委与行政村",
+      "source_doc": "primary_img_10.jpg"
+    },
+    "target_middle_school": {
+      "name": "上海市嘉定区外冈中学",
+      "tier": "镇区公办综合初中",
+      "rank": 35,
+      "public_rank": 35,
+      "rate_26": "12.0%",
+      "range": "接收外冈小学五年级毕业生直升",
+      "source_doc": "middle_img_10.jpg"
+    },
+    "school_district_note": "汇贤路188弄，外冈电梯次新，对口外冈小学与外冈中学。",
+    "layouts": [
+      {
+        "category": "两房",
+        "title": "恒荣外冈水岸 经典全明两居 (2室2厅1厨1卫)",
+        "rooms": "2室2厅1厨1卫",
+        "area": "87㎡",
+        "usable_area": "71.4㎡",
+        "usable_rate": "82.1%",
+        "price_wan": 226.2,
+        "unit_price": 26000,
+        "orientation": "全南采光",
+        "tags": [
+          "实测纯真两房",
+          "实测套内71.4㎡",
+          "总价约226万",
+          "全南采光"
+        ],
+        "floor_plan_local": "assets/floorplans/107116526253.jpg",
+        "verified_rooms_desc": "卧室A (14.2㎡)、卧室B (12.1㎡)、客厅 (25.0㎡)、餐厅 (5.9㎡)、厨房 (4.9㎡)、卫生间 (3.8㎡)、阳台 (5.5㎡)",
+        "pros": "客厅开间阔绰达25平米大方厅！主卧与次卧开间均衡，双卧全南日照充足。",
+        "cons": "餐厅进深为紧凑型，适合放置4人餐桌。"
+      },
+      {
+        "category": "三房",
+        "title": "恒荣外冈水岸 阔绰全明舒适三居 (3室2厅1厨1卫)",
+        "rooms": "3室2厅1厨1卫",
+        "area": "91㎡",
+        "usable_area": "76.0㎡",
+        "usable_rate": "83.5%",
+        "price_wan": 236.6,
+        "unit_price": 26000,
+        "orientation": "三开间朝南",
+        "tags": [
+          "实测纯真三房",
+          "三开间独立卧室",
+          "实测套内76.0㎡",
+          "总价约236万"
+        ],
+        "floor_plan_local": "assets/floorplans/107116528811.jpg",
+        "verified_rooms_desc": "卧室A (7.5㎡)、卧室B (9.4㎡)、卧室C (12.8㎡)、客厅 (17.3㎡)、餐厅 (12.5㎡)、厨房 (5.4㎡)、阳台 (4.3㎡)",
+        "pros": "【绝版89㎡三房神户型】三开间朝南！实测拥有三个独立卧室（A、B、C），空间利用率达到极致，得房率超85.4%，无一丝浪费走廊！",
+        "cons": "北向小次卧仅7.5㎡，更适合做独立书房、茶室或儿童房榻榻米。"
+      }
+    ],
+    "noise_evaluation": {
+      "status": "🟠 显著干扰 (临近主干交通走廊)",
+      "level_code": "orange",
+      "is_vetoed": false,
+      "summary": "🚇轨交高架:2644m(🟢 无高架轨交噪) · 🛣️高速:167m · 🚗主干道:4951m",
+      "elevated_metro": {
+        "name": "11号线地上高架轻轨线",
+        "distance_m": 2644,
+        "level": "🟢 无高架轨交噪",
+        "desc": "距地上轨交线超过2644米，属于完全静音安全距离。"
+      },
+      "expressway": {
+        "name": "G15沈海高速",
+        "distance_m": 167,
+        "level": "🟠 明显干扰",
+        "desc": "距G15沈海高速约167米，夜间背景声较静时高速长途重载车轰鸣声明显。"
+      },
+      "arterial_road": {
+        "name": "胜辛路 (双向8车道主干道)",
+        "distance_m": 4951,
+        "level": "🟢 内部静谧",
+        "desc": "距主干道约4951米，深处生活街区，道路环境静雅。"
+      },
+      "selection_guide": "【实勘避坑指南】：属于半开放受噪区，外圈与内圈噪音差达10-15分贝。看房时务必在早晚高峰期实地测听，锁定中庭无对冲楼栋。"
+    },
+    "noise_analysis": {
+      "status": "🟠 显著干扰 (临近主干交通走廊)",
+      "dist_to_highway_m": 167,
+      "dist_to_metro_elevated_m": 2644,
+      "dist_to_arterial_m": 4951,
+      "is_vetoed": false,
+      "desc": "【立体噪音评估】：距地上轨交线超过2644米，属于完全静音安全距离。 | 距主干道约4951米，深处生活街区，道路环境静雅。 | 距G15沈海高速约167米，夜间背景声较静时高速长途重载车轰鸣声明显。",
+      "selection_guide": "【实勘避坑指南】：属于半开放受噪区，外圈与内圈噪音差达10-15分贝。看房时务必在早晚高峰期实地测听，锁定中庭无对冲楼栋。"
     }
   }
 ];

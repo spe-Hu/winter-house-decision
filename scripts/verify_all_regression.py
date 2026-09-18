@@ -59,7 +59,7 @@ def test_static_data_and_security():
     with open(JSON_PATH, "r", encoding="utf-8") as f:
         communities = json.load(f)
 
-    assert len(communities) == 80, f"❌ 小区总数异常: 期望 80，实际 {len(communities)}"
+    assert len(communities) == 140, f"❌ 小区总数异常: 期望 140，实际 {len(communities)}"
     
     # 3. 户型图与物理房间数严格匹配断言 (防止保利阳光苑三房误挂两房图)
     total_layouts = 0
