@@ -302,6 +302,70 @@
       "tier": "普通公办",
       "range": "马陆镇樊家村、包桥村、李家村、马陆片区育兰居委、育英街等",
       "source_doc": "primary_img_05.jpg"
+    },
+    "上海市嘉定区徐行中学": {
+      "type": "middle",
+      "plate": "徐行",
+      "tier": "镇域公办骨干",
+      "rank": 28,
+      "rate_26": "14.5%",
+      "range": "徐行镇所属各村及居委（徐行村、曹王村、红星村、启源社区等）",
+      "source_doc": "middle_img_15.jpg"
+    },
+    "上海市嘉定区徐行小学": {
+      "type": "primary",
+      "plate": "徐行",
+      "tier": "普通公办",
+      "range": "徐行镇所属各村及居委",
+      "source_doc": "primary_img_35.jpg"
+    },
+    "上海市嘉定区震川中学": {
+      "type": "middle",
+      "plate": "安亭",
+      "tier": "老牌公办名校",
+      "rank": 21,
+      "rate_26": "17.8%",
+      "range": "安亭镇老镇区域，新源路以西、墨玉路沿线所属居委等",
+      "source_doc": "middle_img_18.jpg"
+    },
+    "上海市嘉定区安亭小学": {
+      "type": "primary",
+      "plate": "安亭",
+      "tier": "百年公办",
+      "range": "安亭镇老镇社区、迎春社区、玉兰社区等",
+      "source_doc": "primary_img_31.jpg"
+    },
+    "上海市嘉定区方泰中学": {
+      "type": "middle",
+      "plate": "安亭",
+      "tier": "普通公办",
+      "rank": 33,
+      "rate_26": "11.5%",
+      "range": "方泰片区所属各村及居委",
+      "source_doc": "middle_img_18.jpg"
+    },
+    "上海市嘉定区方泰小学": {
+      "type": "primary",
+      "plate": "安亭",
+      "tier": "普通公办",
+      "range": "方泰片区所属各村居、昌吉东路周边",
+      "source_doc": "primary_img_31.jpg"
+    },
+    "上海市嘉定区金鹤学校（初中部）": {
+      "type": "middle",
+      "plate": "江桥",
+      "tier": "公办骨干",
+      "rank": 25,
+      "rate_26": "15.8%",
+      "range": "金鹤新城、海川路、金运路以东部分社区",
+      "source_doc": "middle_img_19.jpg"
+    },
+    "上海市嘉定区金鹤小学": {
+      "type": "primary",
+      "plate": "江桥",
+      "tier": "公办骨干",
+      "range": "金鹤片区金达社区、金德社区等",
+      "source_doc": "primary_img_42.jpg"
     }
   }
 }

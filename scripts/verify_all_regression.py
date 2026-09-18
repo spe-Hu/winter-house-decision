@@ -59,7 +59,7 @@ def test_static_data_and_security():
     with open(JSON_PATH, "r", encoding="utf-8") as f:
         communities = json.load(f)
 
-    assert len(communities) == 35, f"❌ 小区总数异常: 期望 35，实际 {len(communities)}"
+    assert len(communities) == 80, f"❌ 小区总数异常: 期望 80，实际 {len(communities)}"
     
     # 3. 户型图与物理房间数严格匹配断言 (防止保利阳光苑三房误挂两房图)
     total_layouts = 0
@@ -84,11 +84,13 @@ def test_static_data_and_security():
         assert "expressway" in ne, f"❌ {c['name']} 缺少高速公路噪音拓扑分析"
         assert "selection_guide" in ne, f"❌ {c['name']} 缺少专家实勘避坑指南"
 
-        # 重点核验：中信泰富必须明确识别胜辛路与11号线地上高架
-        if "中信泰富" in c["name"]:
+        # 重点核验：中信泰富一二三期必须明确识别胜辛路与11号线地上高架
+        if any(k in c["name"] for k in ["中信泰富又一城一期", "中信泰富又一城二期", "中信泰富又一城三期"]):
             assert ne["elevated_metro"]["distance_m"] <= 150, f"❌ {c['name']} 11号线高架测距失真"
             assert ne["arterial_road"]["distance_m"] <= 50, f"❌ {c['name']} 胜辛路测距失真"
             citic_checked = True
+        elif "中信泰富又一城四期" in c["name"]:
+            assert ne["elevated_metro"]["distance_m"] <= 50, f"❌ {c['name']} 11号线高架测距失真"
 
         # 逐一核验每个户型
         for l in c.get("layouts", []):
@@ -153,7 +155,7 @@ def test_static_data_and_security():
         if "安亭新镇·万科莱茵半岛" in c["name"]:
             assert mid["name"] == "同济大学附属嘉定实验中学", f"❌ 莱茵半岛初中真值错误: {mid['name']}"
 
-    print(f"  ✅ 检查项 5 通过: 全量 35 个小区 2026 官方学区（小学+初中）真值 100% 严密对齐，中信泰富洪德中学、好世留云古猗校区、华润留云中小学等历史痛点全部对齐！")
+    print(f"  ✅ 检查项 5 通过: 全量 {len(communities)} 个小区 2026 官方学区（小学+初中）真值 100% 严密对齐，中信泰富洪德中学、好世留云古猗校区、华润留云中小学等历史痛点全部对齐！")
 
 # ═══════════════════════════════════════════════════════
 # 模块二：Playwright 端到端全场景自动化回归测试
