@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>高德底图小区坐标精准校准工具</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="../data/dataset.js"></script>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { display: flex; height: 100vh; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #1a1d27; color: #fff; }
+  #sidebar { width: 360px; border-right: 1px solid #333; display: flex; flex-direction: column; background: #14161f; }
+  #sidebar h2 { padding: 14px 16px; font-size: 15px; border-bottom: 1px solid #2e3354; background: #1a1d27; display: flex; justify-content: space-between; align-items: center; }
+  #list { flex: 1; overflow-y: auto; padding: 10px; display: flex; flex-direction: column; gap: 8px; }
+  .item { padding: 10px 12px; background: #22263a; border-radius: 8px; cursor: pointer; border: 1px solid transparent; }
+  .item:hover, .item.active { border-color: #4f8ef7; background: #2b304a; }
+  .item-name { font-weight: bold; font-size: 14px; margin-bottom: 4px; display: flex; justify-content: space-between; }
+  .item-coords { font-size: 12px; color: #4f8ef7; font-family: monospace; }
+  .item-addr { font-size: 11px; color: #8f94ab; margin-top: 2px; }
+  #map { flex: 1; }
+  #actions { padding: 12px; border-top: 1px solid #2e3354; display: flex; gap: 8px; flex-direction: column; }
+  .btn { padding: 8px 12px; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; background: #4f8ef7; color: #fff; }
+  .btn:hover { background: #3b7ae0; }
+  .btn-copy { background: #3dcfa0; }
+  .btn-copy:hover { background: #32b58b; }
+  .crosshair {
+    width: 32px; height: 32px; border: 2px solid #ff4757; border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 71, 87, 0.8);
+    display: flex; align-items: center; justify-content: center;
+    background: rgba(255, 71, 87, 0.2);
+    font-size: 10px; font-weight: bold; color: #fff;
+    cursor: move;
+  }
+</style>
+</head>
+<body>
+<div id="sidebar">
+  <h2>📍 坐标精准校准工具 <span id="count" style="font-size:12px;color:#3dcfa0">15个</span></h2>
+  <div id="list"></div>
+  <div id="actions">
+    <button class="btn btn-copy" onclick="copyAllJSON()">📋 复制全部校准坐标 JSON</button>
+  </div>
+</div>
+<div id="map"></div>
+
+<script>
+  const communities = window.COMMUNITY_DATA || [];
+  const map = L.map('map').setView([31.33, 121.26], 15);
+  L.tileLayer('https://webrd01.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=8&x={x}&y={y}&z={z}', {
+    maxZoom: 18, attribution: '高德底图'
+  }).addTo(map);
+
+  let currentIdx = 0;
+  let markers = {};
+
+  const listEl = document.getElementById('list');
+
+  communities.forEach((c, idx) => {
+    const item = document.createElement('div');
+    item.className = 'item' + (idx === 0 ? ' active' : '');
+    item.id = 'item-' + idx;
+    item.innerHTML = `
+      <div class="item-name"><span>${c.name}</span><span style="font-size:11px;color:#aaa">${c.plate}</span></div>
+      <div class="item-coords" id="coords-${idx}">[${c.coordinates[0]}, ${c.coordinates[1]}]</div>
+      <div class="item-addr">${c.address}</div>
+    `;
+    item.onclick = () => selectItem(idx);
+    listEl.appendChild(item);
+
+    // 在地图上创建可拖拽标记
+    const icon = L.divIcon({
+      html: `<div class="crosshair" title="可拖拽校准">${c.name.slice(0,2)}</div>`,
+      className: '',
+      iconSize: [32, 32],
+      iconAnchor: [16, 16] // 正中心对齐
+    });
+
+    const marker = L.marker([c.coordinates[1], c.coordinates[0]], {
+      icon: icon,
+      draggable: true
+    }).addTo(map);
+
+    marker.on('dragend', function(e) {
+      const latlng = e.target.getLatLng();
+      const newLng = parseFloat(latlng.lng.toFixed(5));
+      const newLat = parseFloat(latlng.lat.toFixed(5));
+      c.coordinates = [newLng, newLat];
+      document.getElementById('coords-' + idx).innerText = `[${newLng}, ${newLat}]`;
+      selectItem(idx, false);
+    });
+
+    marker.on('click', () => selectItem(idx));
+    markers[idx] = marker;
+  });
+
+  function selectItem(idx, pan = true) {
+    currentIdx = idx;
+    document.querySelectorAll('.item').forEach((el, i) => {
+      el.classList.toggle('active', i === idx);
+    });
+    const c = communities[idx];
+    if (pan) {
+      map.setView([c.coordinates[1], c.coordinates[0]], 16);
+    }
+  }
+
+  map.on('click', function(e) {
+    const lng = parseFloat(e.latlng.lng.toFixed(5));
+    const lat = parseFloat(e.latlng.lat.toFixed(5));
+    console.log('点击坐标:', [lng, lat]);
+    if (currentIdx !== null && communities[currentIdx]) {
+      communities[currentIdx].coordinates = [lng, lat];
+      markers[currentIdx].setLatLng([lat, lng]);
+      document.getElementById('coords-' + currentIdx).innerText = `[${lng}, ${lat}]`;
+    }
+  });
+
+  function copyAllJSON() {
+    const coordsMap = {};
+    communities.forEach(c => {
+      coordsMap[c.name] = c.coordinates;
+    });
+    const text = JSON.stringify(coordsMap, null, 2);
+    navigator.clipboard.writeText(text).then(() => alert('已复制全部坐标！'));
+    console.log(text);
+  }
+
+  // 默认定位到第一个
+  if (communities.length) selectItem(0);
+</script>
+</body>
+</html>

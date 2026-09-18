@@ -1,0 +1,2160 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="theme-obsidian">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>嘉定购房多维决策分析系统 · 交互原型工作台</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="data/dataset.js"></script>
+<style>
+  /* ═══════════════════════════════════════════════════════
+     1. 多主题视觉规范 (CSS 变量体系)
+     ═══════════════════════════════════════════════════════ */
+  :root {
+    --drawer-w: 460px;
+    --transition-fast: 0.18s ease;
+    --transition-mid: 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  /* 主题 1: Obsidian 黑曜终端 (默认 - 科技理性 / 投研) */
+  html.theme-obsidian {
+    --bg: #090c15;
+    --surface: #111726;
+    --surface2: #182238;
+    --surface-hover: #222f4c;
+    --border: #24324f;
+    --border-light: #33446b;
+    --accent: #3b82f6;
+    --accent-glow: rgba(59, 130, 246, 0.25);
+    --text: #f8fafc;
+    --text2: #94a3b8;
+    --text-muted: #64748b;
+    --gold: #f59e0b;
+    --gold-bg: rgba(245, 158, 11, 0.12);
+    --green: #10b981;
+    --green-bg: rgba(16, 185, 129, 0.12);
+    --red: #ef4444;
+    --red-bg: rgba(239, 68, 68, 0.15);
+    --badge-bg: #1e293b;
+    --shadow-main: 0 10px 30px rgba(0,0,0,0.5);
+  }
+
+  /* 主题 2: Warm Paper 暖调纸本 (《Monocle》建筑志 / 人文杂志) */
+  html.theme-paper {
+    --bg: #f6f3ed;
+    --surface: #ffffff;
+    --surface2: #ece6dc;
+    --surface-hover: #e2dacd;
+    --border: #dcd3c4;
+    --border-light: #c8bdab;
+    --accent: #b45309;
+    --accent-glow: rgba(180, 83, 9, 0.2);
+    --text: #1c1917;
+    --text2: #57534e;
+    --text-muted: #8c827a;
+    --gold: #b45309;
+    --gold-bg: rgba(180, 83, 9, 0.1);
+    --green: #15803d;
+    --green-bg: rgba(21, 128, 61, 0.1);
+    --red: #b91c1c;
+    --red-bg: rgba(185, 28, 28, 0.1);
+    --badge-bg: #ece6dc;
+    --shadow-main: 0 10px 30px rgba(70,55,40,0.12);
+  }
+
+  /* 主题 3: Cyber Blueprint 极客蓝图 (现代建筑工程规划) */
+  html.theme-blueprint {
+    --bg: #06111e;
+    --surface: #0a1f36;
+    --surface2: #0f2d4e;
+    --surface-hover: #163f6d;
+    --border: #164673;
+    --border-light: #1f619e;
+    --accent: #00d2d3;
+    --accent-glow: rgba(0, 210, 211, 0.3);
+    --text: #e0f2fe;
+    --text2: #7dd3fc;
+    --text-muted: #38bdf8;
+    --gold: #ff9f43;
+    --gold-bg: rgba(255, 159, 67, 0.15);
+    --green: #1dd1a1;
+    --green-bg: rgba(29, 209, 161, 0.15);
+    --red: #ff6b6b;
+    --red-bg: rgba(255, 107, 107, 0.18);
+    --badge-bg: #0e2b4a;
+    --shadow-main: 0 10px 30px rgba(0,210,211,0.15);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+    transition: background var(--transition-mid), color var(--transition-mid);
+    text-wrap: pretty;
+  }
+
+  /* ═══════════════════════════════════════════════════════
+     2. 顶部主控制台
+     ═══════════════════════════════════════════════════════ */
+  #topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    z-index: 1000;
+    flex-shrink: 0;
+    gap: 12px;
+  }
+  .brand-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+  }
+  .brand-logo {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    background: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 800;
+    color: #fff;
+  }
+  .brand-title {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .3px;
+  }
+  .brand-tag {
+    font-size: 11px;
+    padding: 2px 7px;
+    border-radius: 12px;
+    background: var(--accent-glow);
+    color: var(--accent);
+    border: 1px solid var(--accent);
+  }
+
+  /* 板块胶囊过滤 */
+  .plate-filters {
+    display: flex;
+    gap: 4px;
+    overflow-x: auto;
+    padding-bottom: 2px;
+  }
+  .plate-pill {
+    padding: 3px 9px;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    background: var(--surface2);
+    color: var(--text2);
+    font-size: 11px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all var(--transition-fast);
+  }
+  .plate-pill:hover, .plate-pill.active {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+  }
+
+  /* 右侧工具组 */
+  .toolbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: auto;
+    white-space: nowrap;
+  }
+
+  /* 一票否决按钮 */
+  .veto-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    background: var(--surface2);
+    color: var(--text2);
+    font-size: 11px;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+  }
+  .veto-btn.active {
+    background: var(--red-bg);
+    border-color: var(--red);
+    color: var(--red);
+    font-weight: 600;
+  }
+
+  /* 视图切换按钮组 */
+  .view-switcher {
+    display: flex;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 2px;
+    gap: 2px;
+  }
+  .view-btn {
+    padding: 4px 9px;
+    border: none;
+    border-radius: 4px;
+    background: transparent;
+    color: var(--text2);
+    font-size: 11px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: all var(--transition-fast);
+  }
+  .view-btn.active {
+    background: var(--accent);
+    color: #fff;
+  }
+
+  /* 主题选择器 */
+  .theme-select {
+    padding: 4px 8px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: var(--surface2);
+    color: var(--text);
+    font-size: 11px;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .icon-tool-btn {
+    padding: 4px 9px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: var(--surface2);
+    color: var(--text2);
+    font-size: 12px;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+  }
+  .icon-tool-btn:hover {
+    background: var(--surface-hover);
+    color: var(--text);
+  }
+
+  /* ═══════════════════════════════════════════════════════
+     3. 核心容器与多视图布局 (分屏 / 全屏表格 / 纯地图)
+     ═══════════════════════════════════════════════════════ */
+  #main-viewport {
+    flex: 1;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* 分屏联动模式 (Split) */
+  #main-viewport.mode-split #map-pane {
+    width: 44%;
+    display: block;
+  }
+  #main-viewport.mode-split #table-pane {
+    width: 56%;
+    display: flex;
+  }
+
+  /* 全屏表格模式 (Table) */
+  #main-viewport.mode-table #map-pane {
+    display: none;
+  }
+  #main-viewport.mode-table #table-pane {
+    width: 100%;
+    display: flex;
+  }
+
+  /* 纯地图模式 (Map) */
+  #main-viewport.mode-map #map-pane {
+    width: 100%;
+    display: block;
+  }
+  #main-viewport.mode-map #table-pane {
+    display: none;
+  }
+
+  /* 地图面板 */
+  #map-pane {
+    position: relative;
+    height: 100%;
+    border-right: 1px solid var(--border);
+  }
+  #map {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* 多维表格面板 */
+  #table-pane {
+    flex-direction: column;
+    background: var(--bg);
+    height: 100%;
+    overflow: hidden;
+  }
+  .table-header-bar {
+    padding: 8px 14px;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    font-size: 12px;
+  }
+  .table-meta-summary {
+    color: var(--text2);
+  }
+  .table-meta-summary b {
+    color: var(--text);
+  }
+  .table-tools {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .table-search-input {
+    padding: 4px 10px;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    background: var(--surface2);
+    color: var(--text);
+    font-size: 11px;
+    width: 140px;
+    outline: none;
+  }
+
+  /* 表格滚动与样式 (Notion/Bitable 风格) */
+  /* ═══════════════════════════════════════════════════════
+     多维表格容器与十字交叉冻结 (Sticky Header + Columns)
+     ═══════════════════════════════════════════════════════ */
+  .grid-scroll-wrapper {
+    flex: 1;
+    overflow: auto;
+    position: relative;
+    background: var(--bg);
+  }
+  table.bitable-grid {
+    width: 100%;
+    border-collapse: separate; /* 关键：separate 确保 sticky 在水平垂直滚动时不闪烁、不丢失边框 */
+    border-spacing: 0;
+    font-size: 12px;
+    text-align: left;
+    min-width: 1280px;
+  }
+
+  /* 普通表头单元格：吸顶 (纵向滚动) */
+  table.bitable-grid thead th {
+    position: sticky;
+    top: 0;
+    background: var(--surface) !important;
+    color: var(--text2);
+    padding: 10px 12px;
+    font-weight: 600;
+    border-bottom: 2px solid var(--border);
+    border-right: 1px solid var(--border);
+    white-space: nowrap;
+    z-index: 20;
+    user-select: none;
+  }
+  table.bitable-grid thead th.sortable {
+    cursor: pointer;
+  }
+  table.bitable-grid thead th.sortable:hover {
+    color: var(--accent);
+    background: var(--surface2) !important;
+  }
+
+  /* 普通表格数据单元格 */
+  table.bitable-grid td {
+    padding: 9px 12px;
+    border-bottom: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    vertical-align: middle;
+    white-space: nowrap;
+    background: var(--bg);
+  }
+  table.bitable-grid tbody tr {
+    transition: background var(--transition-fast);
+    cursor: pointer;
+  }
+  table.bitable-grid tbody tr:hover td {
+    background: var(--surface-hover);
+  }
+  table.bitable-grid tbody tr.selected-row td {
+    background: var(--accent-glow) !important;
+  }
+  table.bitable-grid tbody tr.vetoed-row {
+    opacity: 0.55;
+  }
+
+  /* ═══ 十字交叉第 1 列：小区名称 (固定在 left: 0) ═══ */
+  table.bitable-grid thead th.sticky-col-1 {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 38 !important; /* 核心修复：十字交叉最高优先级，彻底盖住滑动过来的后续表头与数据行 */
+    background: var(--surface) !important;
+    min-width: 180px;
+    max-width: 180px;
+    width: 180px;
+    border-right: 1px solid var(--border);
+  }
+  table.bitable-grid tbody td.sticky-col-1 {
+    position: sticky;
+    left: 0;
+    z-index: 12;
+    background: var(--surface) !important;
+    min-width: 180px;
+    max-width: 180px;
+    width: 180px;
+    font-weight: 600;
+    border-right: 1px solid var(--border);
+  }
+  table.bitable-grid tbody tr:hover td.sticky-col-1 {
+    background: var(--surface-hover) !important;
+  }
+  table.bitable-grid tbody tr.selected-row td.sticky-col-1 {
+    background: var(--surface2) !important;
+  }
+
+  /* ═══ 十字交叉第 2 列：综合得分 (固定在 left: 180px) ═══ */
+  table.bitable-grid thead th.sticky-col-2 {
+    position: sticky;
+    top: 0;
+    left: 180px;
+    z-index: 38 !important; /* 核心修复：十字交叉最高优先级 */
+    background: var(--surface) !important;
+    min-width: 95px;
+    max-width: 95px;
+    width: 95px;
+    text-align: center;
+    border-right: 2px solid var(--border) !important;
+    box-shadow: 4px 0 8px -2px rgba(0, 0, 0, 0.18);
+  }
+  table.bitable-grid tbody td.sticky-col-2 {
+    position: sticky;
+    left: 180px;
+    z-index: 12;
+    background: var(--surface) !important;
+    min-width: 95px;
+    max-width: 95px;
+    width: 95px;
+    text-align: center;
+    border-right: 2px solid var(--border) !important;
+    box-shadow: 4px 0 8px -2px rgba(0, 0, 0, 0.18);
+  }
+  table.bitable-grid tbody tr:hover td.sticky-col-2 {
+    background: var(--surface-hover) !important;
+  }
+  table.bitable-grid tbody tr.selected-row td.sticky-col-2 {
+    background: var(--surface2) !important;
+  }
+
+  /* 徽章与标签 */
+  .score-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: .5px;
+  }
+  .score-high { background: var(--green-bg); color: var(--green); border: 1px solid var(--green); }
+  .score-mid { background: var(--gold-bg); color: var(--gold); border: 1px solid var(--gold); }
+  .score-low { background: var(--red-bg); color: var(--red); border: 1px solid var(--red); }
+
+  .school-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 7px;
+    border-radius: 4px;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    font-size: 11px;
+  }
+  .rate-high { color: var(--green); font-weight: 700; }
+  .rate-mid { color: var(--accent); font-weight: 700; }
+
+  .usable-tag {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 4px;
+    background: var(--gold-bg);
+    color: var(--gold);
+    font-weight: 600;
+    font-size: 11px;
+    border: 1px solid rgba(245, 158, 11, 0.3);
+  }
+  .noise-tag {
+    font-size: 11px;
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+  }
+  .noise-veto {
+    color: var(--red);
+    font-weight: 700;
+  }
+
+  .notes-input {
+    background: transparent;
+    border: 1px dashed var(--border);
+    border-radius: 4px;
+    color: var(--text);
+    padding: 3px 6px;
+    font-size: 11px;
+    width: 140px;
+    transition: all var(--transition-fast);
+  }
+  .notes-input:focus {
+    border-style: solid;
+    border-color: var(--accent);
+    background: var(--surface2);
+    width: 200px;
+    outline: none;
+  }
+
+  /* ═══════════════════════════════════════════════════════
+     4. 地图标记与样式
+     ═══════════════════════════════════════════════════════ */
+  .custom-marker {
+    background: var(--surface);
+    color: var(--text);
+    border: 2px solid var(--accent);
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 7px;
+    white-space: nowrap;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    cursor: pointer;
+    transition: transform 0.15s ease, background 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+  .custom-marker:hover {
+    transform: scale(1.1);
+    z-index: 9999 !important;
+    border-color: #fff;
+  }
+  .custom-marker.vetoed-marker {
+    opacity: 0.45;
+    border-color: var(--red);
+    background: #2a1111;
+  }
+
+  /* ═══════════════════════════════════════════════════════
+     5. 权重配置抽屉面板
+     ═══════════════════════════════════════════════════════ */
+  #weight-modal {
+    position: fixed;
+    top: 0; right: 0; bottom: 0;
+    width: 360px;
+    background: var(--surface);
+    border-left: 1px solid var(--border);
+    box-shadow: -10px 0 30px rgba(0,0,0,0.5);
+    z-index: 2000;
+    transform: translateX(100%);
+    transition: transform var(--transition-mid);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  #weight-modal.active {
+    transform: translateX(0);
+  }
+  .weight-slider-group {
+    margin-bottom: 16px;
+  }
+  .weight-slider-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+  .weight-slider-header span.val {
+    font-weight: 700;
+    color: var(--accent);
+  }
+  .weight-slider-group input[type=range] {
+    width: 100%;
+    accent-color: var(--accent);
+  }
+
+  /* ═══════════════════════════════════════════════════════
+     6. 访问密码门禁遮罩 (Access Gate)
+     ═══════════════════════════════════════════════════════ */
+  #access-gate {
+    position: fixed;
+    inset: 0;
+    background: rgba(8, 12, 22, 0.88);
+    backdrop-filter: blur(16px);
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease, visibility 0.3s;
+  }
+  #access-gate.unlocked {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  .gate-card {
+    width: 360px;
+    padding: 32px 28px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: var(--shadow-main);
+    text-align: center;
+  }
+  .gate-card h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  .gate-card p {
+    font-size: 12px;
+    color: var(--text2);
+    margin-bottom: 24px;
+    line-height: 1.5;
+  }
+  .gate-input-box {
+    position: relative;
+    margin-bottom: 16px;
+  }
+  .gate-input {
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--surface2);
+    color: var(--text);
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-align: center;
+    outline: none;
+  }
+  .gate-input:focus {
+    border-color: var(--accent);
+  }
+  .gate-btn {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background: var(--accent);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: opacity 0.2s;
+  }
+  .gate-btn:hover {
+    opacity: 0.9;
+  }
+  .gate-error {
+    font-size: 11px;
+    color: var(--red);
+    margin-top: 8px;
+    min-height: 16px;
+  }
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-6px); }
+    40%, 80% { transform: translateX(6px); }
+  }
+  .shake {
+    animation: shake 0.3s ease;
+  }
+
+  /* ═══════════════════════════════════════════════════════
+     7. 小区全景决策工作台弹窗 (Center Workspace Modal)
+     ═══════════════════════════════════════════════════════ */
+  #detail-drawer {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(10px);
+    z-index: 8000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  #detail-drawer.active {
+    display: flex;
+    animation: fadeIn 0.2s ease;
+  }
+  .drawer-modal-card {
+    width: 880px;
+    max-width: 94vw;
+    max-height: 90vh;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: 0 25px 65px rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .drawer-head {
+    padding: 12px 20px;
+    background: var(--surface2);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .drawer-head h2 { font-size: 16px; font-weight: 700; color: var(--text); }
+  .drawer-close-btn {
+    background: transparent; border: none; font-size: 20px; color: var(--text2); cursor: pointer; padding: 2px 6px; border-radius: 4px;
+  }
+  .drawer-close-btn:hover { color: #fff; background: var(--surface); }
+  .drawer-content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px 24px;
+  }
+
+  /* ═══════════════════════════════════════════════════════
+     7. 小区详情抽屉升级 & 全系户型图档案
+     ═══════════════════════════════════════════════════════ */
+  .layout-filter-pills {
+    display: flex;
+    gap: 6px;
+    margin: 10px 0 14px 0;
+    overflow-x: auto;
+  }
+  .layout-filter-pill {
+    padding: 4px 10px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text2);
+    font-size: 11px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all var(--transition-fast);
+  }
+  .layout-filter-pill:hover, .layout-filter-pill.active {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+  }
+
+  .layout-card {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px;
+    margin-bottom: 14px;
+    transition: all var(--transition-fast);
+  }
+  .layout-card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  }
+  .layout-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 6px;
+  }
+  .layout-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text);
+  }
+  .layout-meta-row {
+    font-size: 11px;
+    color: var(--text2);
+    margin-top: 2px;
+  }
+
+  /* 户型图展示窗 */
+  .floorplan-thumb-wrap {
+    position: relative;
+    width: 100%;
+    height: 190px;
+    background: #ffffff;
+    border-radius: 6px;
+    overflow: hidden;
+    margin: 10px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0,0,0,0.1);
+  }
+  .floorplan-thumb-wrap img {
+    max-width: 96%;
+    max-height: 94%;
+    object-fit: contain;
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .floorplan-thumb-wrap:hover img {
+    transform: scale(1.04);
+  }
+  .floorplan-zoom-badge {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    background: rgba(15, 23, 42, 0.82);
+    color: #fff;
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    border: 1px solid rgba(255,255,255,0.15);
+    transition: background 0.2s, transform 0.2s;
+  }
+  .floorplan-thumb-wrap:hover .floorplan-zoom-badge {
+    background: var(--accent);
+    transform: translateY(-2px);
+  }
+
+  /* 户型参数网格 */
+  .layout-specs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 8px 10px;
+    margin-bottom: 8px;
+    font-size: 11px;
+  }
+  .layout-spec-item b {
+    color: var(--gold);
+    font-size: 12px;
+  }
+
+  /* 优缺点客观分析 */
+  .layout-pros {
+    font-size: 11px;
+    color: var(--green);
+    background: var(--green-bg);
+    border: 1px solid rgba(16, 185, 129, 0.2);
+    padding: 6px 8px;
+    border-radius: 4px;
+    margin-top: 5px;
+    line-height: 1.45;
+  }
+  .layout-cons {
+    font-size: 11px;
+    color: var(--red);
+    background: var(--red-bg);
+    border: 1px solid rgba(239, 68, 68, 0.2);
+    padding: 6px 8px;
+    border-radius: 4px;
+    margin-top: 5px;
+    line-height: 1.45;
+  }
+
+  /* ═══════════════════════════════════════════════════════
+     8. 全屏高清户型图灯箱 (Lightbox Modal)
+     ═══════════════════════════════════════════════════════ */
+  #floorplan-lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.88);
+    backdrop-filter: blur(12px);
+    z-index: 99999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  #floorplan-lightbox.active {
+    display: flex;
+    animation: fadeIn 0.2s ease;
+  }
+  .lightbox-container {
+    position: relative;
+    max-width: 92vw;
+    max-height: 92vh;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .lightbox-header {
+    padding: 12px 20px;
+    background: var(--surface2);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .lightbox-title {
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .lightbox-close-btn {
+    background: transparent;
+    border: none;
+    font-size: 22px;
+    color: var(--text2);
+    cursor: pointer;
+    line-height: 1;
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+  .lightbox-close-btn:hover {
+    color: #fff;
+    background: var(--surface);
+  }
+  .lightbox-img-stage {
+    flex: 1;
+    overflow: auto;
+    padding: 16px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 380px;
+  }
+  .lightbox-img-stage img {
+    max-width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+  }
+  .lightbox-footer-info {
+    padding: 10px 20px;
+    background: var(--surface2);
+    border-top: 1px solid var(--border);
+    font-size: 12px;
+    color: var(--text2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* ═══════════════════════════════════════════════════════
+     9. 多源立体交通噪音全景报告组件
+     ═══════════════════════════════════════════════════════ */
+  .noise-report-card {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 14px;
+  }
+  .noise-report-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  .noise-badge-tag {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 4px;
+  }
+  .noise-badge-red {
+    background: var(--red-bg);
+    color: var(--red);
+    border: 1px solid var(--red);
+  }
+  .noise-badge-orange {
+    background: rgba(249, 115, 22, 0.15);
+    color: #f97316;
+    border: 1px solid #f97316;
+  }
+  .noise-badge-yellow {
+    background: var(--gold-bg);
+    color: var(--gold);
+    border: 1px solid var(--gold);
+  }
+  .noise-badge-green {
+    background: var(--green-bg);
+    color: var(--green);
+    border: 1px solid var(--green);
+  }
+
+  .noise-source-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 10px 0;
+  }
+  .noise-source-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 8px 10px;
+    font-size: 11px;
+  }
+  .noise-source-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+  }
+  .noise-source-name {
+    font-weight: 700;
+    color: var(--text);
+  }
+  .noise-source-dist {
+    font-weight: 700;
+    color: var(--accent);
+  }
+  .noise-source-desc {
+    color: var(--text2);
+    line-height: 1.45;
+  }
+
+  /* 专家实勘避坑指南 */
+  .noise-guide-box {
+    background: rgba(245, 158, 11, 0.08);
+    border: 1px solid rgba(245, 158, 11, 0.35);
+    border-radius: 6px;
+    padding: 9px 12px;
+    font-size: 11px;
+    color: var(--text);
+    line-height: 1.5;
+    margin-top: 8px;
+  }
+  .noise-guide-box b {
+    color: var(--gold);
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════
+     1. 访问密码门禁遮罩 (Access Gate)
+     ═══════════════════════════════════════════════════════ -->
+<div id="access-gate">
+  <div class="gate-card" id="gate-card-box">
+    <div style="font-size:32px; margin-bottom:12px;">🔒</div>
+    <h2>嘉定选筹决策工作台</h2>
+    <p>个人专属私密购房档案与多维决策分析系统<br>请输入访问口令以解锁全量数据</p>
+    <div class="gate-input-box">
+      <input type="password" id="gate-pass-input" class="gate-input" placeholder="请输入私密访问口令..." autocomplete="off" onkeydown="if(event.key==='Enter') verifyAccessPin()"/>
+    </div>
+    <button class="gate-btn" onclick="verifyAccessPin()">解锁并进入系统</button>
+    <div id="gate-error-tip" class="gate-error"></div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     2. 顶部主控制台
+     ═══════════════════════════════════════════════════════ -->
+<header id="topbar">
+  <div class="brand-group">
+    <div class="brand-logo">嘉</div>
+    <div>
+      <span class="brand-title">嘉定购房多维决策分析</span>
+      <span class="brand-tag">35盘深度横评</span>
+    </div>
+  </div>
+
+  <!-- 板块胶囊 -->
+  <div class="plate-filters" id="plate-filters-box">
+    <button class="plate-pill active" onclick="filterPlate('全部')">全部板块</button>
+    <button class="plate-pill" onclick="filterPlate('嘉定新城')">嘉定新城</button>
+    <button class="plate-pill" onclick="filterPlate('南翔')">南翔</button>
+    <button class="plate-pill" onclick="filterPlate('江桥')">江桥</button>
+    <button class="plate-pill" onclick="filterPlate('马陆')">马陆</button>
+    <button class="plate-pill" onclick="filterPlate('菊园新区')">菊园新区</button>
+    <button class="plate-pill" onclick="filterPlate('嘉定老城')">嘉定老城</button>
+    <button class="plate-pill" onclick="filterPlate('安亭')">安亭</button>
+  </div>
+
+  <!-- 工具与视图切换 -->
+  <div class="toolbar-actions">
+    <!-- 一票否决开关 -->
+    <button id="veto-toggle-btn" class="veto-btn" onclick="toggleNoiseVeto()">
+      <span>🚫</span>
+      <span>高架噪音一票否决: <b>关</b></span>
+    </button>
+
+    <!-- 权重偏好调节 -->
+    <button class="icon-tool-btn" onclick="openWeightModal()" title="设置5大维度打分权重">
+      ⚙️ 权重偏好
+    </button>
+
+    <!-- 三模视图切换器 -->
+    <div class="view-switcher">
+      <button class="view-btn active" id="btn-view-split" onclick="switchViewMode('split')">◫ 分屏联动</button>
+      <button class="view-btn" id="btn-view-table" onclick="switchViewMode('table')">📊 全屏表格</button>
+      <button class="view-btn" id="btn-view-map" onclick="switchViewMode('map')">🗺️ 纯地图</button>
+    </div>
+
+    <!-- 多主题选择 -->
+    <select class="theme-select" id="theme-switcher" onchange="changeTheme(this.value)">
+      <option value="theme-obsidian">🎨 黑曜终端 (投研)</option>
+      <option value="theme-paper">🎨 暖调纸本 (杂志)</option>
+      <option value="theme-blueprint">🎨 极客蓝图 (工程)</option>
+    </select>
+
+    <!-- 安全锁定 -->
+    <button class="icon-tool-btn" onclick="lockSystem()" title="锁定退出">🔒</button>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════════════════════
+     3. 核心双视图容器 (地图 + 多维决策表格)
+     ═══════════════════════════════════════════════════════ -->
+<main id="main-viewport" class="mode-split">
+  
+  <!-- 左侧: Leaflet 高德真彩/航拍地图 -->
+  <div id="map-pane">
+    <div id="map"></div>
+  </div>
+
+  <!-- 右侧: 多维决策大表 (Notion/Bitable 风格) -->
+  <div id="table-pane">
+    <div class="table-header-bar">
+      <div class="table-meta-summary">
+        共收录 <b id="stat-total-count">35</b> 个小区 · 当前展示 <b id="stat-visible-count">35</b> 个 · 排序依据: <span id="current-sort-label" style="color:var(--accent);font-weight:600;">综合得分 倒序</span>
+      </div>
+      <div class="table-tools">
+        <input type="text" id="grid-search" class="table-search-input" placeholder="搜索小区/学校..." oninput="handleSearch(this.value)"/>
+        <button class="icon-tool-btn" onclick="exportUserData()" title="导出我的打分与看房笔记">💾 导出备份</button>
+        <button class="icon-tool-btn" onclick="document.getElementById('import-file-input').click()" title="导入备份">📂 导入</button>
+        <input type="file" id="import-file-input" style="display:none" onchange="importUserData(event)"/>
+      </div>
+    </div>
+
+    <div class="grid-scroll-wrapper">
+      <table class="bitable-grid" id="main-grid">
+        <thead>
+          <tr>
+            <th class="sticky-col-1 sortable" onclick="sortBy('name')">小区 / 分期大盘 ⬍</th>
+            <th class="sticky-col-2 sortable" onclick="sortBy('total_score')">综合得分 ⬍</th>
+            <th class="sortable" onclick="sortBy('school_score')">🎓 双学区 (小学 / 初中) ⬍</th>
+            <th class="sortable" onclick="sortBy('metro_dist')">地铁通勤 ⬍</th>
+            <th class="sortable" onclick="sortBy('usable_rate')">实测得房率 ⬍</th>
+            <th class="sortable" onclick="sortBy('noise')">高架噪音状态 ⬍</th>
+            <th class="sortable" onclick="sortBy('avg_price')">挂牌均价 ⬍</th>
+            <th class="sortable" onclick="sortBy('built_year')">房龄建成年份 ⬍</th>
+            <th>主力两房总价</th>
+            <th>主力三房总价</th>
+            <th>商业与医疗配套</th>
+            <th>看房实勘备忘录</th>
+            <th>操作</th>
+          </tr>
+        </thead>
+        <tbody id="grid-tbody">
+          <!-- 动态渲染 35 个小区行 -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+</main>
+
+<!-- ═══════════════════════════════════════════════════════
+     4. 权重偏好调节面板 (抽屉)
+     ═══════════════════════════════════════════════════════ -->
+<aside id="weight-modal">
+  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:18px;">
+    <h3 style="font-size:15px; font-weight:700;">⚙️ 个人权重与决策偏好</h3>
+    <button class="drawer-close-btn" onclick="closeWeightModal()">✕</button>
+  </div>
+  <p style="font-size:11px; color:var(--text2); margin-bottom:16px; line-height:1.4;">
+    根据你个人的选筹痛点自由分配权重，系统将基于 16 项指标对全量 35 个小区进行瞬时动态重排。
+  </p>
+
+  <div class="weight-slider-group">
+    <div class="weight-slider-header">
+      <span>🚆 交通与市中心通勤</span>
+      <span class="val" id="val-w-transit">25%</span>
+    </div>
+    <input type="range" id="slider-w-transit" min="0" max="50" value="25" oninput="updateWeights()"/>
+  </div>
+
+  <div class="weight-slider-group">
+    <div class="weight-slider-header">
+      <span>🎓 优质初中教育 (以市重率计)</span>
+      <span class="val" id="val-w-school">20%</span>
+    </div>
+    <input type="range" id="slider-w-school" min="0" max="50" value="20" oninput="updateWeights()"/>
+  </div>
+
+  <div class="weight-slider-group">
+    <div class="weight-slider-header">
+      <span>📐 户型空间与得房率</span>
+      <span class="val" id="val-w-layout">20%</span>
+    </div>
+    <input type="range" id="slider-w-layout" min="0" max="50" value="20" oninput="updateWeights()"/>
+  </div>
+
+  <div class="weight-slider-group">
+    <div class="weight-slider-header">
+      <span>🌳 居住环境与静谧避噪</span>
+      <span class="val" id="val-w-env">20%</span>
+    </div>
+    <input type="range" id="slider-w-env" min="0" max="50" value="20" oninput="updateWeights()"/>
+  </div>
+
+  <div class="weight-slider-group">
+    <div class="weight-slider-header">
+      <span>🛒 商业医疗与房龄资产</span>
+      <span class="val" id="val-w-asset">15%</span>
+    </div>
+    <input type="range" id="slider-w-asset" min="0" max="50" value="15" oninput="updateWeights()"/>
+  </div>
+
+  <div style="margin-top:auto; display:flex; gap:8px;">
+    <button class="icon-tool-btn" style="flex:1;" onclick="resetDefaultWeights()">恢复默认</button>
+    <button class="gate-btn" style="flex:2;" onclick="closeWeightModal()">应用并完成</button>
+  </div>
+</aside>
+
+<!-- ═══════════════════════════════════════════════════════
+     5. 小区全景决策工作台弹窗 (Center Workspace Modal)
+     ═══════════════════════════════════════════════════════ -->
+<div id="detail-drawer" onclick="closeDrawer(event)">
+  <div class="drawer-modal-card" onclick="event.stopPropagation()">
+    <div class="drawer-head">
+      <div style="display:flex; align-items:center; gap:12px;">
+        <h2 id="drawer-title" style="margin:0;">小区全景决策档案</h2>
+        <span id="drawer-score-badge" class="score-badge score-high">--分</span>
+      </div>
+      <div style="display:flex; align-items:center; gap:8px;">
+        <button class="icon-tool-btn" onclick="switchDrawerCommunity(-1)" title="快捷键: ← 切换上一个小区">◀ 上一个</button>
+        <button class="icon-tool-btn" onclick="switchDrawerCommunity(1)" title="快捷键: → 切换下一个小区">下一个 ▶</button>
+        <button class="drawer-close-btn" onclick="closeDrawer()" title="关闭 (ESC)">✕</button>
+      </div>
+    </div>
+    <div class="drawer-content" id="drawer-body">
+      <!-- 动态填入全景决策档案 -->
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════
+     6. 全屏高清户型图灯箱 (Floorplan Lightbox)
+     ═══════════════════════════════════════════════════════ -->
+<div id="floorplan-lightbox" onclick="closeFloorplanLightbox(event)">
+  <div class="lightbox-container" onclick="event.stopPropagation()">
+    <div class="lightbox-header">
+      <div>
+        <span class="lightbox-title" id="lb-title">高清户型平面图</span>
+        <span class="lightbox-meta" id="lb-meta"></span>
+      </div>
+      <button class="lightbox-close-btn" onclick="closeFloorplanLightbox()" title="关闭 (ESC)">✕</button>
+    </div>
+    <div class="lightbox-img-stage">
+      <img id="lb-img" src="" alt="高清户型图"/>
+    </div>
+    <div class="lightbox-footer-info">
+      <div id="lb-footer-desc">🔍 1440x1080 贝壳实勘标准户型平面测绘图</div>
+      <div style="font-size:11px; color:var(--text-muted);">按 ESC 或点击外侧即可退出全屏</div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ═══════════════════════════════════════════════════════
+// 全局状态管理
+// ═══════════════════════════════════════════════════════
+const STATE = {
+  activePlate: '全部',
+  searchQuery: '',
+  vetoNoiseEnabled: false,
+  sortKey: 'total_score',
+  sortAsc: false,
+  selectedId: null,
+  viewMode: 'split', // 'split', 'table', 'map'
+  theme: 'theme-obsidian',
+  weights: {
+    transit: 0.25,
+    school: 0.20,
+    layout: 0.20,
+    env: 0.20,
+    asset: 0.15
+  },
+  customScores: {}, // { id: { transit: 90, ... } }
+  userNotes: {}     // { id: "看房笔记..." }
+};
+
+// 恢复本地持久化数据
+try {
+  const savedWeights = localStorage.getItem('JIADING_DECISION_WEIGHTS');
+  if (savedWeights) STATE.weights = JSON.parse(savedWeights);
+  const savedVeto = localStorage.getItem('JIADING_DECISION_VETO');
+  if (savedVeto) STATE.vetoNoiseEnabled = JSON.parse(savedVeto);
+  const savedTheme = localStorage.getItem('JIADING_DECISION_THEME');
+  if (savedTheme) STATE.theme = savedTheme;
+  const savedNotes = localStorage.getItem('JIADING_DECISION_NOTES');
+  if (savedNotes) STATE.userNotes = JSON.parse(savedNotes);
+} catch (e) {}
+
+// ═══════════════════════════════════════════════════════
+// 安全门禁逻辑
+// ═══════════════════════════════════════════════════════
+function initSecurityGate() {
+  const isAuth = sessionStorage.getItem('JIADING_AUTH_PASSED');
+  if (isAuth === 'true') {
+    document.getElementById('access-gate').classList.add('unlocked');
+  }
+}
+
+// 不可逆单向加盐哈希认证 (杜绝前端明文密码泄露)
+const AUTH_SALT = 'jiading_vault_salt_2026_';
+const AUTH_HASH = '231a519a1727e107b4809777c1bbb51a84f327d72b4b3499a362e72eb21ab7a4';
+
+async function calcSha256Hex(text) {
+  const enc = new TextEncoder().encode(text);
+  const buf = await crypto.subtle.digest('SHA-256', enc);
+  return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join('');
+}
+
+async function verifyAccessPin() {
+  const input = document.getElementById('gate-pass-input');
+  const tip = document.getElementById('gate-error-tip');
+  const card = document.getElementById('gate-card-box');
+  const pin = input.value.trim();
+
+  if (!pin) {
+    tip.innerText = '请输入访问口令';
+    return;
+  }
+
+  const computed = await calcSha256Hex(AUTH_SALT + pin);
+  if (computed === AUTH_HASH) {
+    sessionStorage.setItem('JIADING_AUTH_PASSED', 'true');
+    document.getElementById('access-gate').classList.add('unlocked');
+    tip.innerText = '';
+  } else {
+    card.classList.add('shake');
+    tip.innerText = '口令校验未通过，请重新输入';
+    setTimeout(() => card.classList.remove('shake'), 400);
+  }
+}
+
+function lockSystem() {
+  sessionStorage.removeItem('JIADING_AUTH_PASSED');
+  document.getElementById('access-gate').classList.remove('unlocked');
+  document.getElementById('gate-pass-input').value = '';
+}
+
+// ═══════════════════════════════════════════════════════
+// 地图初始化与渲染
+// ═══════════════════════════════════════════════════════
+let mapInstance = null;
+let mapMarkers = [];
+
+function initMap() {
+  mapInstance = L.map('map', {
+    center: [31.332, 121.253],
+    zoom: 13,
+    zoomControl: true
+  });
+
+  // 1. 高德官方矢量全要素最新底图 (style=7)
+  const vectorLayer = L.tileLayer('https://wprd0{s}.is.autonavi.com/appmaptile?x={x}&y={y}&z={z}&lang=zh_cn&size=1&scl=1&style=7', {
+    subdomains: '1234',
+    maxZoom: 18,
+    minZoom: 10,
+    attribution: '© 高德官方矢量地图'
+  });
+
+  // 2. 高德官方真实航拍卫星实景
+  const satLayer = L.tileLayer('https://wprd0{s}.is.autonavi.com/appmaptile?x={x}&y={y}&z={z}&lang=zh_cn&size=1&scl=1&style=6', {
+    subdomains: '1234', maxZoom: 18, minZoom: 10
+  });
+  const satRoad = L.tileLayer('https://wprd0{s}.is.autonavi.com/appmaptile?x={x}&y={y}&z={z}&lang=zh_cn&size=1&scl=1&style=8', {
+    subdomains: '1234', maxZoom: 18, minZoom: 10
+  });
+  const satGroup = L.layerGroup([satLayer, satRoad]);
+
+  vectorLayer.addTo(mapInstance);
+
+  L.control.layers({
+    "🗺️ 官方矢量底图": vectorLayer,
+    "🛰️ 航拍卫星实景": satGroup
+  }, null, { position: 'topright' }).addTo(mapInstance);
+}
+
+// ═══════════════════════════════════════════════════════
+// 计算与排序引擎
+// ═══════════════════════════════════════════════════════
+function computeCommunityScore(c) {
+  const s = c.scoring || {};
+  const d = s.dimensions || { transit: 80, school: 80, layout: 80, environment: 80, commercial_asset: 80 };
+  const w = STATE.weights;
+
+  let total = d.transit * w.transit +
+              d.school * w.school +
+              d.layout * w.layout +
+              d.environment * w.env +
+              d.commercial_asset * w.asset;
+
+  const isVeto = c.noise_analysis && c.noise_analysis.is_vetoed;
+  if (isVeto && STATE.vetoNoiseEnabled) {
+    total = total * 0.4; // 触发一票否决时总分直接腰斩下沉
+  }
+  return Math.round(total * 10) / 10;
+}
+
+function getFilteredAndSortedData() {
+  const rawList = window.COMMUNITY_DATA || [];
+  
+  // 1. 过滤
+  let filtered = rawList.filter(c => {
+    if (STATE.activePlate !== '全部' && c.plate !== STATE.activePlate) return false;
+    if (STATE.searchQuery) {
+      const q = STATE.searchQuery.toLowerCase();
+      const schoolName = (c.target_middle_school && c.target_middle_school.name) || '';
+      const primaryName = (c.target_primary_school && c.target_primary_school.name) || '';
+      if (!c.name.toLowerCase().includes(q) && !schoolName.toLowerCase().includes(q) && !primaryName.toLowerCase().includes(q)) return false;
+    }
+    return true;
+  });
+
+  // 2. 排序
+  filtered.sort((a, b) => {
+    let va = 0, vb = 0;
+    if (STATE.sortKey === 'total_score') {
+      va = computeCommunityScore(a);
+      vb = computeCommunityScore(b);
+    } else if (STATE.sortKey === 'avg_price') {
+      va = a.avg_price_wan || 0;
+      vb = b.avg_price_wan || 0;
+    } else if (STATE.sortKey === 'usable_rate') {
+      va = parseFloat((a.layouts && a.layouts[0] && a.layouts[0].usable_rate) || "80");
+      vb = parseFloat((b.layouts && b.layouts[0] && b.layouts[0].usable_rate) || "80");
+    } else if (STATE.sortKey === 'metro_dist') {
+      va = (a.metro && a.metro.distance_m) || 9999;
+      vb = (b.metro && b.metro.distance_m) || 9999;
+    } else if (STATE.sortKey === 'school_score') {
+      va = (a.target_middle_school && a.target_middle_school.score) || 0;
+      vb = (b.target_middle_school && b.target_middle_school.score) || 0;
+    } else if (STATE.sortKey === 'built_year') {
+      va = a.built_year || 2000;
+      vb = b.built_year || 2000;
+    } else {
+      va = a.name.localeCompare(b.name, 'zh-CN');
+      vb = 0;
+    }
+    return STATE.sortAsc ? (va > vb ? 1 : -1) : (va < vb ? 1 : -1);
+  });
+
+  return filtered;
+}
+
+// ═══════════════════════════════════════════════════════
+// 表格渲染与地图图钉同步
+// ═══════════════════════════════════════════════════════
+function renderTableAndMap() {
+  const data = getFilteredAndSortedData();
+  const tbody = document.getElementById('grid-tbody');
+  tbody.innerHTML = '';
+
+  // 清除现有地图图钉
+  mapMarkers.forEach(m => mapInstance.removeLayer(m));
+  mapMarkers = [];
+
+  document.getElementById('stat-visible-count').innerText = data.length;
+  document.getElementById('stat-total-count').innerText = (window.COMMUNITY_DATA || []).length;
+
+  data.forEach(c => {
+    const score = computeCommunityScore(c);
+    const ne = c.noise_evaluation || {};
+    const isVeto = (c.noise_analysis && c.noise_analysis.is_vetoed) || ne.is_vetoed;
+    const sch = c.target_middle_school || { name: '交大附中附属嘉定德富中学', rate_26: '25.4%', public_rank: 8 };
+    const pri = c.target_primary_school || {};
+    const mInfo = c.metro || { station_name: '嘉定新城', distance_m: 500, walk_time_min: 7 };
+    const layout0 = (c.layouts && c.layouts[0]) || { usable_rate: '82%', price_wan: 320 };
+    const layout1 = (c.layouts && c.layouts[1]) || { usable_rate: '84%', price_wan: 420 };
+    const userNote = STATE.userNotes[c.id] || '';
+
+    // 得分徽章样式
+    let scoreClass = 'score-high';
+    if (score < 75) scoreClass = 'score-low';
+    else if (score < 85) scoreClass = 'score-mid';
+
+    // 复合噪音徽章样式
+    let noiseBadgeClass = 'noise-badge-green';
+    if (ne.level_code === 'red') noiseBadgeClass = 'noise-badge-red';
+    else if (ne.level_code === 'orange') noiseBadgeClass = 'noise-badge-orange';
+    else if (ne.level_code === 'yellow') noiseBadgeClass = 'noise-badge-yellow';
+
+    const metroDist = (ne.elevated_metro && ne.elevated_metro.distance_m) || 500;
+    const roadDist = (ne.arterial_road && ne.arterial_road.distance_m) || 500;
+    const expressDist = (ne.expressway && ne.expressway.distance_m) || 800;
+
+    // 行渲染
+    const tr = document.createElement('tr');
+    tr.id = `row-${c.id}`;
+    if (isVeto && STATE.vetoNoiseEnabled) tr.className = 'vetoed-row';
+    if (STATE.selectedId === c.id) tr.classList.add('selected-row');
+
+    tr.onclick = () => selectCommunity(c, true);
+    tr.ondblclick = () => openDetailDrawer(c.id);
+
+    tr.innerHTML = `
+      <td class="sticky-col-1">
+        <div style="display:flex; align-items:center; gap:6px;">
+          <span>${c.name}</span>
+          <span style="font-size:10px; padding:1px 5px; border-radius:3px; background:var(--surface2); color:var(--text2);">${c.plate}</span>
+        </div>
+      </td>
+      <td class="sticky-col-2">
+        <span class="score-badge ${scoreClass}">${score}</span>
+      </td>
+      <td>
+        <div style="font-size:11px; line-height:1.4;">
+          <div style="font-weight:600; color:var(--text); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:180px;" title="${pri.name || ''}">
+            🏫 ${pri.name ? pri.name.replace('上海市嘉定区', '').replace('上海市', '').replace('上海交通大学附属嘉定实验学校总部', '交大嘉定实验') : '公办小学'}
+          </div>
+          <div class="school-tag" style="margin-top:2px;">
+            <span>${sch.name ? sch.name.replace('上海市嘉定区', '').replace('上海市', '').replace('交大附中附属嘉定', '交附') : ''}</span>
+            <span class="${parseFloat(sch.rate_26) >= 24 ? 'rate-high' : 'rate-mid'}">(${sch.rate_26})</span>
+            <span style="color:var(--text-muted); font-size:10px;">No.${sch.public_rank}</span>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div style="font-size:11px;">
+          <b>${mInfo.station_name}</b> · ${mInfo.distance_m}m (${mInfo.walk_time_min}分)
+        </div>
+      </td>
+      <td>
+        <span class="usable-tag">${layout0.usable_rate || '82%'}</span>
+      </td>
+      <td>
+        <div style="font-size:11px; line-height:1.4;" title="${(c.noise_analysis ? c.noise_analysis.desc : '') + '\n' + (ne.selection_guide || '')}">
+          <div style="display:flex; align-items:center; gap:4px; margin-bottom:2px;">
+            <span class="noise-badge-tag ${noiseBadgeClass}">
+              ${ne.status ? ne.status.split(' ')[0] + ' ' + ne.status.split(' ')[1] : (isVeto ? '🔴 重度冲击' : '🟢 优质静谧')}
+            </span>
+            ${isVeto ? '<span style="color:var(--red); font-weight:700; font-size:10px;">[否决]</span>' : ''}
+          </div>
+          <div style="color:var(--text2); font-size:10px; white-space:nowrap;">
+            <span>🚇轨交高架 ${metroDist}m</span> · <span>🚗主干道 ${roadDist}m</span>
+          </div>
+        </div>
+      </td>
+      <td>
+        <b>${c.avg_price_wan || 4.2}w</b>
+      </td>
+      <td>
+        <span>${c.built_year || 2012}年</span>
+      </td>
+      <td>两房: <b>${layout0.price_wan || 310}w</b></td>
+      <td>三房: <b>${layout1.price_wan || 410}w</b></td>
+      <td style="max-width:180px; overflow:hidden; text-overflow:ellipsis;" title="${c.commercial || ''}">
+        ${c.commercial || '周边商圈配套完善'}
+      </td>
+      <td>
+        <input type="text" class="notes-input" placeholder="输入看房备忘..." value="${userNote}" 
+          onclick="event.stopPropagation()"
+          onchange="saveNote('${c.id}', this.value)"/>
+      </td>
+      <td>
+        <button class="icon-tool-btn" style="padding:4px 10px; font-weight:600; color:var(--accent); border-color:var(--accent); background:var(--accent-glow);" onclick="event.stopPropagation(); openDetailDrawer('${c.id}')" title="双击该行或点击展开全景档案">🔍 全景档案</button>
+      </td>
+    `;
+    tbody.appendChild(tr);
+
+    // 地图图钉同步创建
+    if (c.coordinates && c.coordinates.length === 2) {
+      const isVetoMarker = isVeto && STATE.vetoNoiseEnabled;
+      const markerHtml = `
+        <div class="custom-marker ${isVetoMarker ? 'vetoed-marker' : ''}" id="marker-${c.id}">
+          <span style="color:var(--gold);">${score}分</span>
+          <span>${c.name.replace('又一城', '').replace('安亭新镇·', '')}</span>
+        </div>
+      `;
+      const icon = L.divIcon({
+        className: 'marker-container',
+        html: markerHtml,
+        iconSize: [80, 24],
+        iconAnchor: [40, 12]
+      });
+      const marker = L.marker([c.coordinates[1], c.coordinates[0]], { icon: icon });
+      marker.on('click', () => selectCommunity(c, false));
+      marker.addTo(mapInstance);
+      mapMarkers.push(marker);
+    }
+  });
+}
+
+// ═══════════════════════════════════════════════════════
+// 联动交互 (双向高亮飞渡，不抢占覆盖表格)
+// ═══════════════════════════════════════════════════════
+function selectCommunity(c, fromTable) {
+  STATE.selectedId = c.id;
+
+  // 1. 高亮表格行并滚动到位
+  document.querySelectorAll('.bitable-grid tbody tr').forEach(r => r.classList.remove('selected-row'));
+  const targetRow = document.getElementById(`row-${c.id}`);
+  if (targetRow) {
+    targetRow.classList.add('selected-row');
+    if (!fromTable) {
+      targetRow.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }
+
+  // 2. 地图平滑飞渡并弹出信息气泡
+  if (c.coordinates && c.coordinates.length === 2) {
+    mapInstance.flyTo([c.coordinates[1], c.coordinates[0]], 15, { duration: 0.8 });
+    
+    // 打开地图气泡
+    const score = computeCommunityScore(c);
+    const popupHtml = `
+      <div style="font-size:12px; line-height:1.4;">
+        <div style="font-weight:700; color:var(--accent); font-size:13px; margin-bottom:2px;">${c.name}</div>
+        <div style="color:var(--text2); margin-bottom:4px;">板块: ${c.plate} · 综合评分: <b style="color:var(--gold);">${score}分</b></div>
+        <div style="margin-bottom:6px; font-size:11px; color:var(--text2);">
+          建面单价: <b>${c.avg_price_wan || 4.2}w/㎡</b> · 建成年份: ${c.built_year || 2012}年
+        </div>
+        <button class="gate-btn" style="padding:4px 8px; font-size:11px; width:100%; border-radius:4px;" onclick="openDetailDrawer('${c.id}')">🔍 查看全景决策档案与户型图</button>
+      </div>
+    `;
+    L.popup({ offset: [0, -10] })
+      .setLatLng([c.coordinates[1], c.coordinates[0]])
+      .setContent(popupHtml)
+      .openOn(mapInstance);
+  }
+}
+
+// 弹窗内快速切换上一个 / 下一个小区 (支持键盘左右箭头)
+function switchDrawerCommunity(delta) {
+  let currentList = getFilteredAndSortedData();
+  // 用户体验保障：如果当前搜索结果只有1个小区，自动回退到全量小区列表进行环形翻页，避免按左右箭头无响应
+  if (!currentList || currentList.length <= 1) {
+    currentList = window.COMMUNITY_DATA || [];
+    const searchInput = document.getElementById('grid-search');
+    if (searchInput && searchInput.value) {
+      searchInput.value = '';
+      if (typeof renderTable === 'function') renderTable();
+    }
+  }
+  if (!currentList || currentList.length === 0) return;
+
+  const currentId = STATE.currentDrawerCommunity ? STATE.currentDrawerCommunity.id : STATE.selectedId;
+  let currentIndex = currentList.findIndex(item => item.id === currentId);
+  if (currentIndex === -1) currentIndex = 0;
+
+  let newIndex = currentIndex + delta;
+  if (newIndex < 0) newIndex = currentList.length - 1;
+  else if (newIndex >= currentList.length) newIndex = 0;
+
+  const targetCommunity = currentList[newIndex];
+  selectCommunity(targetCommunity, false);
+  openDetailDrawer(targetCommunity.id);
+}
+
+// ═══════════════════════════════════════════════════════
+// 视图切换与主题切换
+// ═══════════════════════════════════════════════════════
+function switchViewMode(mode) {
+  STATE.viewMode = mode;
+  const viewport = document.getElementById('main-viewport');
+  viewport.className = `mode-${mode}`;
+
+  document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById(`btn-view-${mode}`).classList.add('active');
+
+  // 触发地图重绘适应容器尺寸
+  setTimeout(() => {
+    if (mapInstance) mapInstance.invalidateSize();
+  }, 200);
+}
+
+function changeTheme(themeName) {
+  document.documentElement.className = themeName;
+  STATE.theme = themeName;
+  localStorage.setItem('JIADING_DECISION_THEME', themeName);
+}
+
+function toggleNoiseVeto() {
+  STATE.vetoNoiseEnabled = !STATE.vetoNoiseEnabled;
+  localStorage.setItem('JIADING_DECISION_VETO', JSON.stringify(STATE.vetoNoiseEnabled));
+  
+  const btn = document.getElementById('veto-toggle-btn');
+  btn.classList.toggle('active', STATE.vetoNoiseEnabled);
+  btn.querySelector('b').innerText = STATE.vetoNoiseEnabled ? '已开启' : '关';
+
+  renderTableAndMap();
+}
+
+function filterPlate(plate) {
+  STATE.activePlate = plate;
+  document.querySelectorAll('.plate-pill').forEach(p => p.classList.remove('active'));
+  event.target.classList.add('active');
+  renderTableAndMap();
+}
+
+function handleSearch(val) {
+  STATE.searchQuery = val.trim();
+  renderTableAndMap();
+}
+
+function sortBy(key) {
+  if (STATE.sortKey === key) {
+    STATE.sortAsc = !STATE.sortAsc;
+  } else {
+    STATE.sortKey = key;
+    STATE.sortAsc = false;
+  }
+  document.getElementById('current-sort-label').innerText = `${key} ${STATE.sortAsc ? '升序' : '倒序'}`;
+  renderTableAndMap();
+}
+
+// ═══════════════════════════════════════════════════════
+// 权重滑块抽屉
+// ═══════════════════════════════════════════════════════
+function openWeightModal() {
+  document.getElementById('weight-modal').classList.add('active');
+}
+function closeWeightModal() {
+  document.getElementById('weight-modal').classList.remove('active');
+}
+
+function updateWeights() {
+  const wTransit = parseInt(document.getElementById('slider-w-transit').value);
+  const wSchool = parseInt(document.getElementById('slider-w-school').value);
+  const wLayout = parseInt(document.getElementById('slider-w-layout').value);
+  const wEnv = parseInt(document.getElementById('slider-w-env').value);
+  const wAsset = parseInt(document.getElementById('slider-w-asset').value);
+
+  const sum = wTransit + wSchool + wLayout + wEnv + wAsset;
+  if (sum === 0) return;
+
+  // 归一化
+  STATE.weights = {
+    transit: wTransit / sum,
+    school: wSchool / sum,
+    layout: wLayout / sum,
+    env: wEnv / sum,
+    asset: wAsset / sum
+  };
+
+  document.getElementById('val-w-transit').innerText = Math.round(STATE.weights.transit * 100) + '%';
+  document.getElementById('val-w-school').innerText = Math.round(STATE.weights.school * 100) + '%';
+  document.getElementById('val-w-layout').innerText = Math.round(STATE.weights.layout * 100) + '%';
+  document.getElementById('val-w-env').innerText = Math.round(STATE.weights.env * 100) + '%';
+  document.getElementById('val-w-asset').innerText = Math.round(STATE.weights.asset * 100) + '%';
+
+  localStorage.setItem('JIADING_DECISION_WEIGHTS', JSON.stringify(STATE.weights));
+  renderTableAndMap();
+}
+
+function resetDefaultWeights() {
+  STATE.weights = { transit: 0.25, school: 0.20, layout: 0.20, env: 0.20, asset: 0.15 };
+  document.getElementById('slider-w-transit').value = 25;
+  document.getElementById('slider-w-school').value = 20;
+  document.getElementById('slider-w-layout').value = 20;
+  document.getElementById('slider-w-env').value = 20;
+  document.getElementById('slider-w-asset').value = 15;
+  updateWeights();
+}
+
+// ═══════════════════════════════════════════════════════
+// ═══════════════════════════════════════════════════════
+// 详情抽屉与全系户型图档案
+// ═══════════════════════════════════════════════════════
+function openDetailDrawer(id) {
+  const c = (window.COMMUNITY_DATA || []).find(item => item.id === id);
+  if (!c) return;
+  STATE.currentDrawerCommunity = c;
+  STATE.activeLayoutFilter = '全部';
+
+  document.getElementById('drawer-title').innerText = c.name;
+  const score = computeCommunityScore(c);
+  let scoreClass = 'score-high';
+  if (score < 75) scoreClass = 'score-low';
+  else if (score < 85) scoreClass = 'score-mid';
+  const badge = document.getElementById('drawer-score-badge');
+  if (badge) {
+    badge.className = `score-badge ${scoreClass}`;
+    badge.innerText = `${score}分 (${c.plate})`;
+  }
+  
+  const body = document.getElementById('drawer-body');
+  const sch = c.target_middle_school || {};
+  const pri = c.target_primary_school || {};
+  const noise = c.noise_analysis || {};
+  const ne = c.noise_evaluation || {};
+  const mInfo = c.metro || {};
+
+  // 基础档案与配套
+  const metaHtml = `
+    <div style="margin-bottom:14px; background:var(--surface2); border:1px solid var(--border); border-radius:8px; padding:12px; font-size:12px;">
+      <div style="display:flex; justify-content:space-between; margin-bottom:4px;">
+        <span>所属大盘: <b>${c.parent_cluster || c.name}</b></span>
+        <span style="color:var(--accent); font-weight:700;">${c.plate}板块</span>
+      </div>
+      <div style="color:var(--text2); margin-bottom:2px;">📍 门牌地址: ${c.address}</div>
+      <div style="display:flex; gap:12px; color:var(--text2); margin-top:4px;">
+        <span>建成年份: <b>${c.built_year}年</b></span>
+        <span>绿化率: <b>${c.green_rate}</b></span>
+        <span>容积率: <b>${c.plot_ratio}</b></span>
+        <span>物业费: <b>${c.property_fee || '2.8元/㎡'}</b></span>
+      </div>
+      ${c.phase_comparison ? `<div style="margin-top:6px; font-size:11px; color:var(--gold); line-height:1.4;">${c.phase_comparison}</div>` : ''}
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════
+         2026 官方权威双学区档案 (小学 + 初中官方划片真值)
+         ═══════════════════════════════════════════════════════ -->
+    <div style="padding:12px 14px; border-radius:8px; background:var(--surface2); border:1px solid var(--border); margin-bottom:12px; font-size:12px;">
+      <div style="font-weight:700; margin-bottom:8px; display:flex; justify-content:space-between; align-items:center;">
+        <span>🎓 2026 官方权威双学区全景档案</span>
+        <span class="rate-high">${sch.rate_26 || '25%'} 统考市重率 · 全区第${sch.rank}名</span>
+      </div>
+      
+      <!-- 小学档案 -->
+      <div style="margin-bottom:8px; padding-bottom:8px; border-bottom:1px dashed var(--border);">
+        <div style="display:flex; justify-content:space-between; margin-bottom:2px;">
+          <span>🏫 对口小学: <b>${pri.name || '公办优质小学'}</b></span>
+          <span style="color:var(--accent); font-size:11px; font-weight:600;">${pri.tier || '公办名校'}</span>
+        </div>
+        ${pri.range ? `<div style="color:var(--text2); font-size:11px; line-height:1.4; margin-top:2px;">📍 官方划片范围: ${pri.range}</div>` : ''}
+      </div>
+
+      <!-- 初中档案 -->
+      <div>
+        <div style="display:flex; justify-content:space-between; margin-bottom:2px;">
+          <span>🏛️ 对口初中: <b>${sch.name || '对口公办初中'}</b></span>
+          <span style="color:var(--gold); font-size:11px; font-weight:600;">${sch.tier || '区重点梯队'}</span>
+        </div>
+        ${sch.range ? `<div style="color:var(--text2); font-size:11px; line-height:1.4; margin-top:2px;">📍 官方划片范围: ${sch.range}</div>` : ''}
+      </div>
+
+      ${c.school_district_note ? `
+        <div style="margin-top:8px; padding:6px 10px; background:rgba(217, 119, 6, 0.1); border-left:3px solid var(--gold); border-radius:4px; font-size:11px; color:var(--text); line-height:1.4;">
+          💡 <b>官方划片考证避坑</b>: ${c.school_district_note}
+        </div>
+      ` : ''}
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════
+         多源立体交通噪音全景分析报告 (轨交高架/主干道/高速)
+         ═══════════════════════════════════════════════════════ -->
+    <div class="noise-report-card">
+      <div class="noise-report-head">
+        <span style="font-weight:700; font-size:12px;">🔇 多源立体交通噪音全景分析报告</span>
+        <span class="noise-badge-tag ${ne.level_code === 'red' ? 'noise-badge-red' : (ne.level_code === 'orange' ? 'noise-badge-orange' : (ne.level_code === 'yellow' ? 'noise-badge-yellow' : 'noise-badge-green'))}">
+          ${ne.status || (noise.status || '🟢 优质静谧')}
+        </span>
+      </div>
+
+      <div class="noise-source-grid">
+        <!-- 1. 地上高架轨交 (11号线等) -->
+        <div class="noise-source-item">
+          <div class="noise-source-header">
+            <span class="noise-source-name">🚊 地上高架轨道交通 (${(ne.elevated_metro && ne.elevated_metro.name) || '11号线高架'})</span>
+            <span class="noise-source-dist">实测约 ${(ne.elevated_metro && ne.elevated_metro.distance_m) || 500}米 · ${(ne.elevated_metro && ne.elevated_metro.level) || '🟢 安全距离'}</span>
+          </div>
+          <div class="noise-source-desc">${(ne.elevated_metro && ne.elevated_metro.desc) || '列车进出站及加减速运行特征'}</div>
+        </div>
+
+        <!-- 2. 城市核心客货运主干道 (胜辛路/曹安公路等) -->
+        <div class="noise-source-item">
+          <div class="noise-source-header">
+            <span class="noise-source-name">🚗 城市核心交通主干道 (${(ne.arterial_road && ne.arterial_road.name) || '胜辛路'})</span>
+            <span class="noise-source-dist">实测约 ${(ne.arterial_road && ne.arterial_road.distance_m) || 300}米 · ${(ne.arterial_road && ne.arterial_road.level) || '🟢 内部静谧'}</span>
+          </div>
+          <div class="noise-source-desc">${(ne.arterial_road && ne.arterial_road.desc) || '双向多车道车流及路口刹车起步'}</div>
+        </div>
+
+        <!-- 3. 高速公路与城市快速路 (S5/G15/嘉闵高架等) -->
+        <div class="noise-source-item">
+          <div class="noise-source-header">
+            <span class="noise-source-name">🛣️ 高速/高架快速路 (${(ne.expressway && ne.expressway.name) || 'S5沪嘉高速'})</span>
+            <span class="noise-source-dist">实测约 ${(ne.expressway && ne.expressway.distance_m) || 800}米 · ${(ne.expressway && ne.expressway.level) || '🟢 远离高速'}</span>
+          </div>
+          <div class="noise-source-desc">${(ne.expressway && ne.expressway.desc) || '高速行驶连续胎噪与风噪'}</div>
+        </div>
+      </div>
+
+      <!-- 专家实勘避坑指南 -->
+      <div class="noise-guide-box">
+        <b>🛡️ 专家实勘避坑与选房指引：</b><br>
+        ${ne.selection_guide || (noise.selection_guide || '该小区声学环境优良，常规选房注意避开朝向主干道路段即可。')}
+      </div>
+    </div>
+
+    <div style="padding:10px 12px; border-radius:8px; background:var(--surface2); border:1px solid var(--border); margin-bottom:14px; font-size:12px;">
+      <div style="font-weight:700; margin-bottom:4px;">🚇 轨道交通与生活圈</div>
+      <div>最近地铁: <b>${mInfo.station_name || '嘉定新城站'}</b> · 步行约 <b>${mInfo.distance_m || 300}米</b> (${mInfo.walk_time_min || 4}分钟)</div>
+      <div style="color:var(--text2); font-size:11px; margin-top:2px;">商业医疗: ${c.commercial || '周边万达/西云楼商业配套齐全'} · ${c.medical || '瑞金医院北院'}</div>
+    </div>
+  `;
+
+  // 户型分类提取
+  const layouts = c.layouts || [];
+  const categories = ['全部', ...new Set(layouts.map(l => l.category || '其它'))];
+
+  let pillHtml = `<div class="layout-filter-pills">`;
+  categories.forEach(cat => {
+    const count = cat === '全部' ? layouts.length : layouts.filter(l => l.category === cat).length;
+    pillHtml += `<button class="layout-filter-pill ${cat === '全部' ? 'active' : ''}" onclick="filterDrawerLayouts('${cat}')">${cat} (${count})</button>`;
+  });
+  pillHtml += `</div>`;
+
+  body.innerHTML = `
+    ${metaHtml}
+    <div style="font-weight:700; font-size:13px; margin:16px 0 6px 0; display:flex; justify-content:space-between; align-items:center;">
+      <span>🏛️ 全系主力户型档案与高清实勘图 (共 ${layouts.length} 套)</span>
+      <span style="font-size:11px; color:var(--text-muted);">点击图片放大</span>
+    </div>
+    ${pillHtml}
+    <div id="drawer-layouts-container">
+      ${buildLayoutCardsHtml(layouts)}
+    </div>
+  `;
+
+  document.getElementById('detail-drawer').classList.add('active');
+}
+
+// 渲染户型卡片列表 HTML
+function buildLayoutCardsHtml(layouts) {
+  if (!layouts || layouts.length === 0) {
+    return `<div style="text-align:center; padding:20px; color:var(--text2); font-size:12px;">暂无该分类户型档案</div>`;
+  }
+
+  return layouts.map((l, idx) => {
+    const tagsHtml = (l.tags || []).map(t => `<span style="font-size:10px; padding:1px 5px; border-radius:3px; background:var(--surface); color:var(--text2); border:1px solid var(--border);">${t}</span>`).join(' ');
+    const imgSrc = l.floor_plan_local || 'assets/floorplans/107116518245.jpg';
+    const safeTitle = (l.title || l.category).replace(/'/g, "\\'");
+    const safeMeta = `${l.rooms || ''} · ${l.area} (套内${l.usable_area}) · 得房率${l.usable_rate}`.replace(/'/g, "\\'");
+    const safePros = (l.pros || '').replace(/'/g, "\\'");
+    const safeCons = (l.cons || '').replace(/'/g, "\\'");
+
+    return `
+      <div class="layout-card">
+        <div class="layout-header">
+          <div>
+            <div class="layout-title">${l.title || l.category}</div>
+            <div class="layout-meta-row">${l.rooms || ''} · 朝向: <b>${l.orientation || '南'}</b></div>
+          </div>
+          <span class="usable-tag" style="font-size:12px; padding:3px 8px;">得房率 ${l.usable_rate}</span>
+        </div>
+
+        <!-- 高清户型图缩略展示窗 (点击弹出全屏大图) -->
+        <div class="floorplan-thumb-wrap" onclick="openFloorplanLightbox('${imgSrc}', '${safeTitle}', '${safeMeta}', '${safePros}', '${safeCons}')" title="点击放大查看1440P高清实勘大图">
+          <img src="${imgSrc}" alt="${l.title}" loading="lazy"/>
+          <div class="floorplan-zoom-badge">
+            <span>🔍 点击全屏查看实勘大图</span>
+          </div>
+        </div>
+
+        <div class="layout-specs-grid">
+          <div class="layout-spec-item">
+            <span style="color:var(--text2);">建筑面积:</span> <b>${l.area}</b>
+          </div>
+          <div class="layout-spec-item">
+            <span style="color:var(--text2);">套内实测:</span> <b>${l.usable_area}</b>
+          </div>
+          <div class="layout-spec-item">
+            <span style="color:var(--text2);">参考总价:</span> <b>${l.price_wan}万</b>
+          </div>
+          <div class="layout-spec-item">
+            <span style="color:var(--text2);">参考单价:</span> <b>${l.unit_price}元/㎡</b>
+          </div>
+        </div>
+
+        <div style="display:flex; gap:4px; flex-wrap:wrap; margin-bottom:6px;">
+          ${tagsHtml}
+        </div>
+
+        <div class="layout-pros">
+          <b>✅ 空间优势:</b> ${l.pros || '户型全明采光，动静分区明确，无浪费过道面积。'}
+        </div>
+        <div class="layout-cons">
+          <b>⚠️ 避坑提示:</b> ${l.cons || '进深开间比适中，摆放大家具需提前规划动线。'}
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+// 户型分类切换
+function filterDrawerLayouts(category) {
+  STATE.activeLayoutFilter = category;
+  document.querySelectorAll('.layout-filter-pill').forEach(btn => {
+    btn.classList.toggle('active', btn.innerText.startsWith(category));
+  });
+
+  const c = STATE.currentDrawerCommunity;
+  if (!c) return;
+
+  const filtered = category === '全部' 
+    ? (c.layouts || []) 
+    : (c.layouts || []).filter(l => l.category === category);
+
+  document.getElementById('drawer-layouts-container').innerHTML = buildLayoutCardsHtml(filtered);
+}
+
+// 关闭详情工作台弹窗
+function closeDrawer(e) {
+  if (e && e.target && e.target.closest('.drawer-modal-card') && !e.target.classList.contains('drawer-close-btn')) {
+    return;
+  }
+  document.getElementById('detail-drawer').classList.remove('active');
+}
+
+// ═══════════════════════════════════════════════════════
+// 全屏高清户型图灯箱 (Lightbox) 控制
+// ═══════════════════════════════════════════════════════
+function openFloorplanLightbox(imgUrl, title, metaText, pros, cons) {
+  const lb = document.getElementById('floorplan-lightbox');
+  document.getElementById('lb-img').src = imgUrl;
+  document.getElementById('lb-title').innerText = title;
+  document.getElementById('lb-meta').innerText = ` · ${metaText}`;
+  
+  let footerDesc = `🔍 1440x1080 贝壳实勘标准户型平面测绘图`;
+  if (pros) {
+    footerDesc += ` · ✅ 亮点: ${pros.slice(0, 30)}...`;
+  }
+  document.getElementById('lb-footer-desc').innerText = footerDesc;
+
+  lb.classList.add('active');
+}
+
+function closeFloorplanLightbox(e) {
+  if (e && e.target && e.target.closest('.lightbox-container') && !e.target.classList.contains('lightbox-close-btn')) {
+    return;
+  }
+  document.getElementById('floorplan-lightbox').classList.remove('active');
+}
+
+// 支持键盘快捷键 (ESC关闭 / 左右箭头切换相邻小区)
+window.addEventListener('keydown', (e) => {
+  const lb = document.getElementById('floorplan-lightbox');
+  const drawer = document.getElementById('detail-drawer');
+  const weightModal = document.getElementById('weight-modal');
+
+  if (e.key === 'Escape') {
+    if (lb && lb.classList.contains('active')) {
+      closeFloorplanLightbox();
+      return;
+    }
+    if (drawer && drawer.classList.contains('active')) {
+      closeDrawer();
+      return;
+    }
+    if (weightModal && weightModal.classList.contains('active')) {
+      closeWeightModal();
+      return;
+    }
+  }
+
+  // 当处于工作台全景弹窗时，按左右箭头自由切换上一个/下一个小区
+  if (drawer && drawer.classList.contains('active') && (!lb || !lb.classList.contains('active'))) {
+    if (e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA')) {
+      return; // 输入框内不拦截光标移动
+    }
+    if (e.key === 'ArrowLeft') {
+      e.preventDefault();
+      switchDrawerCommunity(-1);
+    } else if (e.key === 'ArrowRight') {
+      e.preventDefault();
+      switchDrawerCommunity(1);
+    }
+  }
+});
+
+// ═══════════════════════════════════════════════════════
+// 备忘录持久化与导入导出
+// ═══════════════════════════════════════════════════════
+function saveNote(id, note) {
+  STATE.userNotes[id] = note;
+  localStorage.setItem('JIADING_DECISION_NOTES', JSON.stringify(STATE.userNotes));
+}
+
+function exportUserData() {
+  const payload = {
+    exportDate: new Date().toISOString(),
+    weights: STATE.weights,
+    vetoEnabled: STATE.vetoNoiseEnabled,
+    theme: STATE.theme,
+    notes: STATE.userNotes
+  };
+  const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = `jiading_house_decision_backup_${new Date().toISOString().slice(0,10)}.json`;
+  a.click();
+}
+
+function importUserData(e) {
+  const file = e.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = function(evt) {
+    try {
+      const data = JSON.parse(evt.target.result);
+      if (data.weights) STATE.weights = data.weights;
+      if (data.notes) STATE.userNotes = data.notes;
+      if (data.theme) changeTheme(data.theme);
+      localStorage.setItem('JIADING_DECISION_NOTES', JSON.stringify(STATE.userNotes));
+      alert('✅ 导入成功！已恢复你的全部看房笔记与权重偏好。');
+      renderTableAndMap();
+    } catch (err) {
+      alert('❌ 导入文件格式有误');
+    }
+  };
+  reader.readAsText(file);
+}
+
+// ═══════════════════════════════════════════════════════
+// 页面启动装载
+// ═══════════════════════════════════════════════════════
+window.addEventListener('DOMContentLoaded', () => {
+  initSecurityGate();
+  changeTheme(STATE.theme);
+  document.getElementById('theme-switcher').value = STATE.theme;
+  initMap();
+  
+  if (STATE.vetoNoiseEnabled) {
+    const btn = document.getElementById('veto-toggle-btn');
+    btn.classList.add('active');
+    btn.querySelector('b').innerText = '已开启';
+  }
+
+  // 初始化滑块
+  document.getElementById('slider-w-transit').value = Math.round(STATE.weights.transit * 100);
+  document.getElementById('slider-w-school').value = Math.round(STATE.weights.school * 100);
+  document.getElementById('slider-w-layout').value = Math.round(STATE.weights.layout * 100);
+  document.getElementById('slider-w-env').value = Math.round(STATE.weights.env * 100);
+  document.getElementById('slider-w-asset').value = Math.round(STATE.weights.asset * 100);
+  document.getElementById('val-w-transit').innerText = Math.round(STATE.weights.transit * 100) + '%';
+  document.getElementById('val-w-school').innerText = Math.round(STATE.weights.school * 100) + '%';
+  document.getElementById('val-w-layout').innerText = Math.round(STATE.weights.layout * 100) + '%';
+  document.getElementById('val-w-env').innerText = Math.round(STATE.weights.env * 100) + '%';
+  document.getElementById('val-w-asset').innerText = Math.round(STATE.weights.asset * 100) + '%';
+
+  renderTableAndMap();
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,343 @@
+{
+  "金地世家": {
+    "name": "金地世家",
+    "gaode_name": "金地世家",
+    "plate": "嘉定新城",
+    "address": "合作路199弄",
+    "coordinates": [
+      121.2599,
+      31.3265
+    ],
+    "strategy": "严格住宅POI"
+  },
+  "日月光伯爵天地": {
+    "name": "日月光伯爵天地",
+    "gaode_name": "日月光·伯爵天地",
+    "plate": "嘉定新城",
+    "address": "嘉唐公路72号",
+    "coordinates": [
+      121.2409,
+      31.3946
+    ],
+    "strategy": "严格住宅POI"
+  },
+  "保利天和尚品": {
+    "name": "保利天和尚品",
+    "gaode_name": "保利锦上",
+    "plate": "嘉定新城",
+    "address": "北江洲路280弄",
+    "coordinates": [
+      121.5007,
+      31.0854
+    ],
+    "strategy": "严格住宅POI"
+  },
+  "名城澄品": {
+    "name": "名城澄品",
+    "gaode_name": "大华西溪风情7期澄品",
+    "plate": "嘉定新城",
+    "address": "永福路与大华欣华支路交汇处",
+    "coordinates": [
+      120.033,
+      30.2821
+    ],
+    "strategy": "严格住宅POI"
+  },
+  "绿地西云绿洲": {
+    "name": "绿地西云绿洲",
+    "gaode_name": "上海市普陀区上海绿地",
+    "plate": "嘉定新城",
+    "address": "上海绿地",
+    "coordinates": [
+      121.4252,
+      31.2341
+    ],
+    "strategy": "严格住宅POI"
+  },
+  "首创旭辉城": {
+    "name": "首创旭辉城",
+    "gaode_name": "首创旭辉城",
+    "plate": "嘉定新城",
+    "address": "汇源路778弄",
+    "coordinates": [
+      121.1989,
+      31.4128
+    ],
+    "strategy": "严格住宅POI"
+  },
+  "好世皇冠苑": {
+    "name": "好世皇冠苑",
+    "gaode_name": "好世鹿鸣苑",
+    "plate": "嘉定新城",
+    "address": "闵城路199弄(莘朱路口)",
+    "coordinates": [
+      121.384,
+      31.1054
+    ],
+    "strategy": "严格住宅POI"
+  },
+  "湖畔天下": {
+    "name": "湖畔天下",
+    "gaode_name": "湖畔天下",
+    "plate": "南翔",
+    "address": "芳仁路68号(近瑞林路)",
+    "coordinates": [
+      121.3058,
+      31.3128
+    ],
+    "strategy": "严格住宅POI"
+  },
+  "金地格林世界": {
+    "name": "金地格林世界",
+    "gaode_name": "金地·格林春岸",
+    "plate": "南翔",
+    "address": "塔城路556、718弄",
+    "coordinates": [
+      121.2388,
+      31.3756
+    ],
+    "strategy": "严格住宅POI"
+  },
+  "星信名邸": {
+    "name": "星信名邸",
+    "gaode_name": "星信名邸",
+    "plate": "南翔",
+    "address": "德园路955弄(陈翔公路地铁站3号口步行450米)",
+    "coordinates": [
+      121.303,
+      31.304
+    ],
+    "strategy": "严格住宅POI"
+  },
+  "西郊金茂府": {
+    "name": "西郊金茂府",
+    "gaode_name": "西郊金茂府",
+    "plate": "南翔",
+    "address": "封周路885弄",
+    "coordinates": [
+      121.2632,
+      31.3275
+    ],
+    "strategy": "严格住宅POI"
+  },
+  "朗香坊": {
+    "name": "朗香坊",
+    "gaode_name": "融创兰园",
+    "plate": "南翔",
+    "address": "拥军路302号",
+    "coordinates": [
+      126.6844,
+      45.6945
+    ],
+    "strategy": "严格住宅POI"
+  },
+  "海伦堡爱伦坡": {
+    "name": "海伦堡爱伦坡",
+    "gaode_name": "复地爱伦坡",
+    "plate": "南翔",
+    "address": "九亭镇顾戴路3459弄",
+    "coordinates": [
+      121.3439,
+      31.1256
+    ],
+    "strategy": "严格住宅POI"
+  },
+  "龙湖天璞": {
+    "name": "龙湖天璞",
+    "gaode_name": "龙湖·天璞",
+    "plate": "江桥",
+    "address": "海波路与嘉涛路交汇处路西",
+    "coordinates": [
+      121.3222,
+      31.2713
+    ],
+    "strategy": "严格住宅POI"
+  },
+  "保利云上": {
+    "name": "保利云上",
+    "gaode_name": "保利云上",
+    "plate": "江桥",
+    "address": "海波路1155弄",
+    "coordinates": [
+      121.3195,
+      31.2674
+    ],
+    "strategy": "严格住宅POI"
+  },
+  "保利云上澄光": {
+    "name": "保利云上澄光",
+    "gaode_name": "保利云上澄光",
+    "plate": "江桥",
+    "address": "海波路1555号",
+    "coordinates": [
+      121.3098,
+      31.2685
+    ],
+    "strategy": "严格住宅POI"
+  },
+  "富友嘉园": {
+    "name": "富友嘉园",
+    "gaode_name": "富友嘉园",
+    "plate": "江桥",
+    "address": "江桥镇临夏路999-1000弄",
+    "coordinates": [
+      121.3225,
+      31.2592
+    ],
+    "strategy": "严格住宅POI"
+  },
+  "绿地新江桥城": {
+    "name": "绿地新江桥城",
+    "gaode_name": "绿地新江桥城",
+    "plate": "江桥",
+    "address": "金耀南路300弄",
+    "coordinates": [
+      121.3109,
+      31.2361
+    ],
+    "strategy": "严格住宅POI"
+  },
+  "好世凤翔苑": {
+    "name": "好世凤翔苑",
+    "gaode_name": "好世凤翔苑",
+    "plate": "马陆",
+    "address": "金通路1737弄",
+    "coordinates": [
+      121.323,
+      31.2849
+    ],
+    "strategy": "严格住宅POI"
+  },
+  "骏丰玲珑坊": {
+    "name": "骏丰玲珑坊",
+    "gaode_name": "骏丰·玲珑坊",
+    "plate": "马陆",
+    "address": "崇教路241号(马陆地铁站4号口步行310米)",
+    "coordinates": [
+      121.2736,
+      31.3196
+    ],
+    "strategy": "严格住宅POI"
+  },
+  "恒飞金陵花园": {
+    "name": "恒飞金陵花园",
+    "gaode_name": "金陵花园",
+    "plate": "马陆",
+    "address": "唯亭街道金陵西路",
+    "coordinates": [
+      120.794,
+      31.3595
+    ],
+    "strategy": "严格住宅POI"
+  },
+  "嘉宝梦之湾": {
+    "name": "嘉宝梦之湾",
+    "gaode_name": "嘉宝·梦之湾",
+    "plate": "菊园新区",
+    "address": "平城路2055弄",
+    "coordinates": [
+      121.2263,
+      31.3815
+    ],
+    "strategy": "严格住宅POI"
+  },
+  "嘉宝梦之缘": {
+    "name": "嘉宝梦之缘",
+    "gaode_name": "嘉宝梦之缘景庭",
+    "plate": "菊园新区",
+    "address": "云屏路1033弄",
+    "coordinates": [
+      121.2464,
+      31.3368
+    ],
+    "strategy": "严格住宅POI"
+  },
+  "汇丰凯苑": {
+    "name": "汇丰凯苑",
+    "gaode_name": "汇丰凯苑",
+    "plate": "菊园新区",
+    "address": "红石路730号",
+    "coordinates": [
+      121.2275,
+      31.387
+    ],
+    "strategy": "严格住宅POI"
+  },
+  "悠活城": {
+    "name": "悠活城",
+    "gaode_name": "新城·悠活城",
+    "plate": "菊园新区",
+    "address": "红石路333弄(嘉定西地铁站1号口步行410米)",
+    "coordinates": [
+      121.2286,
+      31.3783
+    ],
+    "strategy": "严格住宅POI"
+  },
+  "莱茵半岛": {
+    "name": "莱茵半岛",
+    "gaode_name": "莱茵半岛",
+    "plate": "安亭",
+    "address": "翔殷路500弄之1-64号",
+    "coordinates": [
+      121.5368,
+      31.3079
+    ],
+    "strategy": "严格住宅POI"
+  },
+  "新外滩花苑": {
+    "name": "新外滩花苑",
+    "gaode_name": "新外滩花苑",
+    "plate": "安亭",
+    "address": "东大名路888弄之1-17号",
+    "coordinates": [
+      121.5042,
+      31.2499
+    ],
+    "strategy": "严格住宅POI"
+  },
+  "绿苑新村": {
+    "name": "绿苑新村",
+    "gaode_name": "绿苑新村",
+    "plate": "安亭",
+    "address": "锦坪街18号",
+    "coordinates": [
+      106.5276,
+      29.5893
+    ],
+    "strategy": "严格住宅POI"
+  },
+  "金地格林春晓": {
+    "name": "金地格林春晓",
+    "gaode_name": "金地·格林春晓",
+    "plate": "嘉定老城",
+    "address": "真南路4233弄",
+    "coordinates": [
+      121.3256,
+      31.2934
+    ],
+    "strategy": "严格住宅POI"
+  },
+  "汇丰荷苑": {
+    "name": "汇丰荷苑",
+    "gaode_name": "汇丰荷苑",
+    "plate": "嘉定老城",
+    "address": "树屏路1517弄4号",
+    "coordinates": [
+      121.2453,
+      31.4021
+    ],
+    "strategy": "严格住宅POI"
+  },
+  "清河三村": {
+    "name": "清河三村",
+    "gaode_name": "通河三村冶金小区",
+    "plate": "嘉定老城",
+    "address": "通河路472弄",
+    "coordinates": [
+      121.4453,
+      31.3354
+    ],
+    "strategy": "严格住宅POI"
+  }
+}
