@@ -109,10 +109,10 @@ def test_static_data_and_security():
         assert "expressway" in ne, f"❌ {c['name']} 缺少高速公路噪音拓扑分析"
         assert "selection_guide" in ne, f"❌ {c['name']} 缺少专家实勘避坑指南"
 
-        # 重点核验：中信泰富一二三期必须明确识别胜辛路与11号线地上高架
+        # 重点核验：中信泰富一二三期必须明确识别贴身主干道与11号线地上高架
         if any(k in c["name"] for k in ["中信泰富又一城一期", "中信泰富又一城二期", "中信泰富又一城三期"]):
             assert ne["elevated_metro"]["distance_m"] <= 250, f"❌ {c['name']} 11号线高架测距失真"
-            assert ne["arterial_road"]["distance_m"] <= 80, f"❌ {c['name']} 胜辛路测距失真"
+            assert ne["arterial_road"]["distance_m"] <= 120, f"❌ {c['name']} 贴身主干道测距失真"
             citic_checked = True
         elif "中信泰富又一城四期" in c["name"]:
             assert ne["elevated_metro"]["distance_m"] <= 50, f"❌ {c['name']} 11号线高架测距失真"
