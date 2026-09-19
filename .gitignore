@@ -5,3 +5,5 @@ test_results/
 node_modules/
 .wrangler/
 bin_vision_ocr
+dist/
+

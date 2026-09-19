@@ -59,7 +59,7 @@ open index.html
 
 该工作流会自动按序执行 6 大质量关卡，耗时约 16 秒：
 1. **户型图真值元数据库校验与生成**（`build_floorplan_catalog.py`，OCR 物理房间标尺比对）
-2. **全量 35 个小区 78 套户型实证断言**（`refine_layouts_data.py`，物理房间真值对齐，绝无串图）
+2. **全量 140 个小区 288 套户型实证断言**（`refine_layouts_data.py`，物理房间真值对齐，绝无串图）
 3. **2026 官方权威双学区真值库对齐**（`align_school_ground_truth.py`，基于官方文字版与独家学区图 100% 对齐）
 4. **多源立体交通噪音几何拓扑计算**（`spatial_noise_engine.py`，11号线地上高架/胜辛路主干道立体噪音测算）
 5. **零依赖离线数据集打包编译**（`build_dataset.py`，编译生成 `data/dataset.js`）

@@ -43,12 +43,13 @@
 | **官方双学区真值对齐与校验** | `python3 scripts/align_school_ground_truth.py` |
 | **多源立体交通噪音拓扑测算** | `python3 scripts/spatial_noise_engine.py` |
 | **高德官方 POI 0米误差核验** | `python3 scripts/verify_all_phases.py` |
+| **Cloudflare Pages 全球极速发布** | `./scripts/deploy_cloudflare.sh` |
 
 ## 深入文档指南
 
 | 文档 | 受众与内容 |
 |---|---|
-| [README.md](file:///Users/wentao.hu/Documents/HomePage/00-projects/00-doing/买房参考软件/README.md) | 快速启动、目录结构、全域 35 个小区覆盖概况与工作流说明 |
+| [README.md](file:///Users/wentao.hu/Documents/HomePage/00-projects/00-doing/买房参考软件/README.md) | 快速启动、目录结构、全域 140 个小区覆盖概况与线上部署说明 |
 | [docs/architecture.md](file:///Users/wentao.hu/Documents/HomePage/00-projects/00-doing/买房参考软件/docs/architecture.md) | 系统架构、Leaflet 居中渲染、高德免 Key 瓦片机制与多维交互防遮挡体系 |
 | [docs/data-guide.md](file:///Users/wentao.hu/Documents/HomePage/00-projects/00-doing/买房参考软件/docs/data-guide.md) | 小区模型、双学区档案、得房率与两房/三房户型规范 |
 | [docs/runbook.md](file:///Users/wentao.hu/Documents/HomePage/00-projects/00-doing/买房参考软件/docs/runbook.md) | 运维手册、高德 POI 抓取工作流、自动化核验与故障排查 |

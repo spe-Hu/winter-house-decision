@@ -82,3 +82,18 @@ const marker = L.marker([c.coordinates[1], c.coordinates[0]], {
 2. **户型图房间数物理真值**：建立 `data/floorplan_catalog.json` 权威元数据，所有图片经 OCR 物理房间标尺比对，两房有且仅有 2 间卧室，三房必须有 3 间卧室（主卧、次卧、书房/客卧），两房三房绝对不可同图；
 3. **多源立体交通噪音几何引擎**：建立 11 号线地上高架段、胜辛路主干道、S5 高速空间矢量折线，精确计算空间垂距与衰减，实施一票否决权；
 4. **2026 官方学区权威真值库**：基于嘉定教育局 2026 官方文字版与 63 张全彩学区切片图（Apple Vision OCR），为全量小区注入小学+初中双学区档案与划片避坑指南。
+
+## 5. 全球双通道网络部署架构
+
+为彻底解决国内直连访问受阻痛点，系统构建了免翻墙直连与开源备份双通道：
+
+1. **Cloudflare Pages 全球 CDN 加速（主推荐）**：
+   - 地址：`https://winter-house-decision.pages.dev/`
+   - 通过 Cloudflare Anycast 边缘网络分发静态页面与高清原图，亚太直连延迟极低，中国大陆地区免翻墙秒开；
+   - 自动化部署入口：`./scripts/deploy_cloudflare.sh`。
+2. **GitHub Pages（备用镜像通道）**：
+   - 地址：`https://spe-hu.github.io/winter-house-decision/`
+   - 托管于 GitHub 远程主仓库 `spe-Hu/winter-house-decision`，自动化流水线推送即触发构建。
+3. **安全门禁认证机制**：
+   - 采用前端加盐单向哈希算法（`calcSha256Hex(AUTH_SALT + pin)`），有效防御静态源码泄露，输入口令 `9802` 即可解密进入决策工作台。
+

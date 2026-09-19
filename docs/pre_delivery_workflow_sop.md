@@ -66,10 +66,11 @@ flowchart TD
 | 步骤编号 | 执行脚本 | 职责与校验内容 | 核心输出产物 |
 | :--- | :--- | :--- | :--- |
 | **步骤 1** | `build_floorplan_catalog.py` | 扫描本地高清户型图资源，依据 OCR 物理房间标尺构建权威真值特征库 | `data/floorplan_catalog.json` |
-| **步骤 2** | `refine_layouts_data.py` | 将 35 个小区 78 套户型档案与真值库对齐，执行房间数数学断言 | `data/jiading_xiaoqu.json` |
-| **步骤 3** | `spatial_noise_engine.py` | 载入 11 号线地上高架段、胜辛路主干道、S5 高速空间拓扑折线计算垂距与声屏障衰减 | 注入多源立体交通噪音评估报告 |
-| **步骤 4** | `build_dataset.py` | 将结构化 JSON 编译为免跨域、零依赖的全局只读 JavaScript 数据包 | `data/dataset.js` |
-| **步骤 5** | `verify_all_regression.py` | 静态数据代码安全检验 + Playwright 无头浏览器端到端 9 大全场景回归测试 | 终端通过仪表盘报告 (Exit Code 0) |
+| **步骤 2** | `refine_layouts_data.py` | 将 140 个小区 288 套户型档案与真值库对齐，执行房间数数学断言 | `data/jiading_xiaoqu.json` |
+| **步骤 3** | `align_school_ground_truth.py` | 依据官方 2026 文字版与权威学区图，为全量小区对齐小学+初中双学区档案 | 注入 2026 双学区真值 |
+| **步骤 4** | `spatial_noise_engine.py` | 载入 11 号线地上高架段、胜辛路主干道、S5 高速空间拓扑折线计算垂距与声屏障衰减 | 注入多源立体交通噪音评估报告 |
+| **步骤 5** | `build_dataset.py` | 将结构化 JSON 编译为免跨域、零依赖的全局只读 JavaScript 数据包 | `data/dataset.js` |
+| **步骤 6** | `verify_all_regression.py` | 静态数据代码安全检验 + Playwright 无头浏览器端到端 9 大全场景回归测试 | 终端通过仪表盘报告 (Exit Code 0) |
 
 ---
 
@@ -79,8 +80,8 @@ flowchart TD
 
 ### 阶段一：静态数据真值与代码安全性核验
 - **检查项 1（代码安全性）**：扫描 [index.html](file:///Users/wentao.hu/Documents/HomePage/00-projects/00-doing/买房参考软件/index.html)，断言绝对不得包含任何明文密码字符串，门禁校验仅允许使用 SHA-256 加盐哈希；
-- **检查项 2（数据完整性）**：扫描 [data/jiading_xiaoqu.json](file:///Users/wentao.hu/Documents/HomePage/00-projects/00-doing/买房参考软件/data/jiading_xiaoqu.json)，断言全量 35 个小区的坐标、年份、绿化率及 2026 中考统考市重点率对口初中完整存在；
-- **检查项 3（户型真值核验）**：断言 78 套户型名称中的“两房/三房”与图片中的物理房间数 100% 严格一致，严禁保利阳光苑等两房三房串图；
+- **检查项 2（数据完整性）**：扫描 [data/jiading_xiaoqu.json](file:///Users/wentao.hu/Documents/HomePage/00-projects/00-doing/买房参考软件/data/jiading_xiaoqu.json)，断言全量 140 个小区的坐标、年份、绿化率及 2026 中考统考市重点率对口初中完整存在；
+- **检查项 3（户型真值核验）**：断言 288 套户型名称中的“两房/三房”与图片中的物理房间数 100% 严格一致，严禁保利阳光苑等两房三房串图；
 - **检查项 4（多源噪音拓扑核验）**：断言中信泰富一二三期的数据中同时包含 `11号线地上轻轨高架`、`胜辛路双向8车道主干道` 以及实勘避坑指南。
 
 ### 阶段二：Playwright 端到端全场景浏览器自动化测试
