@@ -77,9 +77,11 @@ open index.html
 
 ## 在线访问与自动化部署
 
-- **公网线上访问地址**：[https://spe-hu.github.io/winter-house-decision/](https://spe-hu.github.io/winter-house-decision/)
+- **Cloudflare Pages 全球极速直连（推荐·国内免翻墙秒开）**：[https://winter-house-decision.pages.dev/](https://winter-house-decision.pages.dev/)
+- **GitHub Pages 备用通道**：[https://spe-hu.github.io/winter-house-decision/](https://spe-hu.github.io/winter-house-decision/)
 - **GitHub 远程仓库**：[https://github.com/spe-Hu/winter-house-decision](https://github.com/spe-Hu/winter-house-decision)
 - **安全门禁认证**：开箱即用，前端输入安全口令 `9802`（加盐不可逆 SHA-256 哈希认证）。
+
 
 ## 当前覆盖范围
 
