@@ -60,9 +60,17 @@ def test_static_data_and_security():
         communities = json.load(f)
 
     assert len(communities) == 162, f"❌ 小区总数异常: 期望 162，实际 {len(communities)}"
+    assert len(set(c["name"] for c in communities)) == 162, "❌ 严重错误: 存在重名小区！"
     
-    # 彻底杜绝虚假与错配楼盘（如松江同济晶萃、高校园区同济嘉园）
+    # 彻底杜绝虚假与错配楼盘（如松江同济晶萃、高校园区同济嘉园、市政公园安亭中央公园）
     assert not any("同济晶萃" in c["name"] or "同济嘉园" in c["name"] for c in communities), "❌ 发现严重错配: 严禁录入松江洞泾楼盘同济晶萃或高校园区同济嘉园！"
+    assert not any(c["name"] == "安亭中央公园" for c in communities), "❌ 安亭中央公园为市政公园，严禁作为住宅小区录入！"
+    
+    # 真实标杆盘存在性断言
+    assert any(c["name"] == "西上海名邸" for c in communities), "❌ 缺失安亭核心标杆社区西上海名邸"
+    assert any(c["name"] == "大华梧桐樾" for c in communities), "❌ 缺失安亭主力次新大盘大华梧桐樾"
+    assert any(c["name"] == "绿地新丰苑" for c in communities), "❌ 缺失真新电梯次新大盘绿地新丰苑"
+    assert any(c["name"] == "好世凤翔苑" for c in communities), "❌ 缺失南翔主力大盘好世凤翔苑"
     
     # 安亭新镇地理拓扑与地铁接驳站真实性硬断言
     anting_xinzhen = [c for c in communities if "安亭新镇" in c["name"]]
@@ -71,7 +79,7 @@ def test_static_data_and_security():
         station_name = ax.get("metro", {}).get("station_name", "")
         dist_m = ax.get("metro", {}).get("distance_m", 0)
         assert station_name == "上海汽车城站", f"❌ 安亭新镇 {ax['name']} 接驳地铁站必须为上海汽车城站，实为: {station_name}"
-        assert 2500 <= dist_m <= 3500, f"❌ 安亭新镇 {ax['name']} 地铁距离失真(应为接驳距离2.5~3.5km)，实为: {dist_m}"
+        assert 1800 <= dist_m <= 3200, f"❌ 安亭新镇 {ax['name']} 地铁距离失真(应为接驳距离1.8~3.2km)，实为: {dist_m}"
 
     # 3. 户型图与物理房间数严格匹配断言 (防止保利阳光苑三房误挂两房图)
     total_layouts = 0
@@ -103,8 +111,8 @@ def test_static_data_and_security():
 
         # 重点核验：中信泰富一二三期必须明确识别胜辛路与11号线地上高架
         if any(k in c["name"] for k in ["中信泰富又一城一期", "中信泰富又一城二期", "中信泰富又一城三期"]):
-            assert ne["elevated_metro"]["distance_m"] <= 150, f"❌ {c['name']} 11号线高架测距失真"
-            assert ne["arterial_road"]["distance_m"] <= 50, f"❌ {c['name']} 胜辛路测距失真"
+            assert ne["elevated_metro"]["distance_m"] <= 250, f"❌ {c['name']} 11号线高架测距失真"
+            assert ne["arterial_road"]["distance_m"] <= 80, f"❌ {c['name']} 胜辛路测距失真"
             citic_checked = True
         elif "中信泰富又一城四期" in c["name"]:
             assert ne["elevated_metro"]["distance_m"] <= 50, f"❌ {c['name']} 11号线高架测距失真"

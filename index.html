@@ -1288,6 +1288,9 @@
       <span class="val" id="val-w-transit">25%</span>
     </div>
     <input type="range" id="slider-w-transit" min="0" max="50" value="25" oninput="updateWeights()"/>
+    <div style="font-size:10px; color:var(--text3); margin-top:4px; line-height:1.3;">
+      📐 科学三元加权：地铁步行可达性(35%) + 到市中心人民广场(35%) + 到产业核心漕河泾(30%)
+    </div>
   </div>
 
   <div class="weight-slider-group">
@@ -1793,10 +1796,16 @@ function selectCommunity(c, fromTable) {
     // 打开地图气泡
     const score = computeCommunityScore(c);
     const keLinks = getKeLinks(c);
+    const rp = c.transit_renmin_sq || { duration_min: 45, distance_km: 25 };
+    const chj = c.transit_caohejing || { duration_min: 50, distance_km: 28 };
     const popupHtml = `
-      <div style="font-size:12px; line-height:1.4;">
+      <div style="font-size:12px; line-height:1.4; min-width:190px;">
         <div style="font-weight:700; color:var(--accent); font-size:13px; margin-bottom:2px;">${c.name}</div>
         <div style="color:var(--text2); margin-bottom:4px;">板块: ${c.plate} · 综合评分: <b style="color:var(--gold);">${score}分</b></div>
+        <div style="margin-bottom:5px; font-size:11px; color:var(--text); background:var(--surface2); padding:4px 6px; border-radius:4px; display:flex; justify-content:space-between; border:1px solid var(--border);">
+          <span>🏛️ 人广: <b style="color:var(--accent);">${rp.duration_min}分</b></span>
+          <span>💼 漕河泾: <b style="color:var(--gold);">${chj.duration_min}分</b></span>
+        </div>
         <div style="margin-bottom:6px; font-size:11px; color:var(--text2);">
           建面单价: <b>${c.avg_price_wan || 4.2}w/㎡</b> · 建成年份: ${c.built_year || 2012}年
         </div>
@@ -1821,12 +1830,11 @@ function switchDrawerCommunity(delta) {
   let currentList = getFilteredAndSortedData();
   // 用户体验保障：如果当前搜索结果只有1个小区，自动回退到全量小区列表进行环形翻页，避免按左右箭头无响应
   if (!currentList || currentList.length <= 1) {
-    currentList = window.COMMUNITY_DATA || [];
     const searchInput = document.getElementById('grid-search');
-    if (searchInput && searchInput.value) {
-      searchInput.value = '';
-      if (typeof renderTable === 'function') renderTable();
-    }
+    if (searchInput) searchInput.value = '';
+    STATE.searchQuery = '';
+    if (typeof renderTable === 'function') renderTable();
+    currentList = getFilteredAndSortedData();
   }
   if (!currentList || currentList.length === 0) return;
 
@@ -2206,6 +2214,9 @@ function openDetailDrawer(id) {
   `;
 
   document.getElementById('detail-drawer').classList.add('active');
+  if (document.activeElement && typeof document.activeElement.blur === 'function') {
+    document.activeElement.blur();
+  }
 }
 
 // 渲染户型卡片列表 HTML
@@ -2351,8 +2362,8 @@ window.addEventListener('keydown', (e) => {
 
   // 当处于工作台全景弹窗时，按左右箭头自由切换上一个/下一个小区
   if (drawer && drawer.classList.contains('active') && (!lb || !lb.classList.contains('active'))) {
-    if (e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA')) {
-      return; // 输入框内不拦截光标移动
+    if (e.target && e.target.closest('#detail-drawer') && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA')) {
+      return; // 仅抽屉内部输入框不拦截光标移动
     }
     if (e.key === 'ArrowLeft') {
       e.preventDefault();
