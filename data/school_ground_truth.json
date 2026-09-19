@@ -437,6 +437,36 @@
       "tier": "公办骨干",
       "range": "金鹤片区金达社区、金德社区等",
       "source_doc": "primary_img_42.jpg"
+    },
+    "上海市嘉定区紫荆小学": {
+      "type": "primary",
+      "plate": "安亭",
+      "tier": "老牌公办名校",
+      "range": "安亭墨玉路沿线、嘉亭菁苑、安亭中央公园、沁富佳苑等老镇主力社区",
+      "source_doc": "primary_img_31.jpg"
+    },
+    "上海市嘉定区汽车城小学": {
+      "type": "primary",
+      "plate": "安亭",
+      "tier": "汽车城核心公办",
+      "range": "昌吉东路周边路劲上海派盛世/观澜、嘉宝梦之晴等次新住宅群",
+      "source_doc": "primary_img_31.jpg"
+    },
+    "上海世外教育附属嘉定云翔小学": {
+      "type": "primary",
+      "plate": "南翔",
+      "tier": "世外托管优质公办",
+      "range": "南翔云翔拓展区，惠桂路、象屿都汇云境等新建及次新社区",
+      "source_doc": "primary_img_09.jpg"
+    },
+    "上海世外教育附属嘉定云翔中学": {
+      "type": "middle",
+      "plate": "南翔",
+      "tier": "世外托管名校初中",
+      "rank": 8,
+      "rate_26": "26.5%",
+      "range": "对口上海世外教育附属嘉定云翔小学五年级毕业生直升",
+      "source_doc": "middle_img_13.jpg"
     }
   }
 }

@@ -1047,6 +1047,97 @@
   .noise-guide-box b {
     color: var(--gold);
   }
+
+  /* 🚆 双核心通勤实测看板样式 */
+  .commute-card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 10px 0;
+  }
+  @media (max-width: 768px) {
+    .commute-card-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  .commute-card-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 11px;
+    position: relative;
+    overflow: hidden;
+  }
+  .commute-card-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--accent);
+    opacity: 0.8;
+  }
+  .commute-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dashed var(--border);
+    padding-bottom: 6px;
+  }
+  .commute-time-hero {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    margin: 4px 0;
+  }
+  .commute-time-hero .big-time {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--accent);
+    font-family: var(--font-mono, monospace);
+  }
+  .commute-meta-badge {
+    font-size: 10px;
+    padding: 2px 7px;
+    border-radius: 4px;
+    font-weight: 600;
+  }
+  .commute-badge-green {
+    background: rgba(16, 185, 129, 0.15);
+    color: var(--green);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+  }
+  .commute-badge-yellow {
+    background: rgba(245, 158, 11, 0.15);
+    color: var(--gold);
+    border: 1px solid rgba(245, 158, 11, 0.3);
+  }
+  .commute-badge-orange {
+    background: rgba(249, 115, 22, 0.15);
+    color: #f97316;
+    border: 1px solid rgba(249, 115, 22, 0.3);
+  }
+  .commute-route-desc {
+    color: var(--text2);
+    line-height: 1.45;
+  }
+  .commute-drive-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text);
+    font-weight: 600;
+    background: var(--surface2);
+    padding: 5px 9px;
+    border-radius: 5px;
+    margin-top: 4px;
+    font-size: 10.5px;
+  }
 </style>
 </head>
 <body>
@@ -1158,6 +1249,8 @@
             <th class="sticky-col-2 sortable" onclick="sortBy('total_score')">综合得分 ⬍</th>
             <th class="sortable" onclick="sortBy('school_score')">🎓 双学区 (小学 / 初中) ⬍</th>
             <th class="sortable" onclick="sortBy('metro_dist')">地铁通勤 ⬍</th>
+            <th class="sortable" onclick="sortBy('renmin_sq_time')" title="按到市中心人民广场地铁耗时排序">🏛️ 市中心(人广) ⬍</th>
+            <th class="sortable" onclick="sortBy('caohejing_time')" title="按到产业核心漕河泾开发区地铁耗时排序">💼 产业核心(漕河泾) ⬍</th>
             <th class="sortable" onclick="sortBy('usable_rate')">实测得房率 ⬍</th>
             <th class="sortable" onclick="sortBy('noise')">高架噪音状态 ⬍</th>
             <th class="sortable" onclick="sortBy('avg_price')">挂牌均价 ⬍</th>
@@ -1170,7 +1263,7 @@
           </tr>
         </thead>
         <tbody id="grid-tbody">
-          <!-- 动态渲染 140 个全量小区行 -->
+          <!-- 动态渲染 162 个全量小区行 -->
         </tbody>
       </table>
     </div>
@@ -1186,12 +1279,12 @@
     <button class="drawer-close-btn" onclick="closeWeightModal()">✕</button>
   </div>
   <p style="font-size:11px; color:var(--text2); margin-bottom:16px; line-height:1.4;">
-    根据你个人的选筹痛点自由分配权重，系统将基于 16 项指标对全量 140 个小区进行瞬时动态重排。
+    根据你个人的选筹痛点自由分配权重，系统将基于 16 项指标对全量 162 个小区进行瞬时动态重排。
   </p>
 
   <div class="weight-slider-group">
     <div class="weight-slider-header">
-      <span>🚆 交通与市中心通勤</span>
+      <span>🚆 交通通勤 (地铁步行+人广+漕河泾双核心)</span>
       <span class="val" id="val-w-transit">25%</span>
     </div>
     <input type="range" id="slider-w-transit" min="0" max="50" value="25" oninput="updateWeights()"/>
@@ -1405,6 +1498,18 @@ function initMap() {
 // ═══════════════════════════════════════════════════════
 // 计算与排序引擎
 // ═══════════════════════════════════════════════════════
+// 贝壳找房权威链接解析器 (保障 100% 直达不 404)
+// ═══════════════════════════════════════════════════════
+function getKeLinks(c) {
+  const encName = encodeURIComponent(c.name);
+  const ershouSearch = `https://sh.ke.com/ershoufang/rs${encName}/`;
+  const xiaoquSearch = `https://sh.ke.com/xiaoqu/rs${encName}/`;
+  const ershouUrl = (c.ke_ershou_url && c.ke_ershou_url.startsWith('http')) ? c.ke_ershou_url : ershouSearch;
+  const xiaoquUrl = (c.ke_url && c.ke_url.startsWith('http')) ? c.ke_url : xiaoquSearch;
+  return { ershouUrl, xiaoquUrl, ershouSearch };
+}
+
+// ═══════════════════════════════════════════════════════
 function computeCommunityScore(c) {
   const s = c.scoring || {};
   const d = s.dimensions || { transit: 80, school: 80, layout: 80, environment: 80, commercial_asset: 80 };
@@ -1453,6 +1558,12 @@ function getFilteredAndSortedData() {
     } else if (STATE.sortKey === 'metro_dist') {
       va = (a.metro && a.metro.distance_m) || 9999;
       vb = (b.metro && b.metro.distance_m) || 9999;
+    } else if (STATE.sortKey === 'renmin_sq_time') {
+      va = (a.transit_renmin_sq && a.transit_renmin_sq.duration_min) || 999;
+      vb = (b.transit_renmin_sq && b.transit_renmin_sq.duration_min) || 999;
+    } else if (STATE.sortKey === 'caohejing_time') {
+      va = (a.transit_caohejing && a.transit_caohejing.duration_min) || 999;
+      vb = (b.transit_caohejing && b.transit_caohejing.duration_min) || 999;
     } else if (STATE.sortKey === 'school_score') {
       va = (a.target_middle_school && a.target_middle_school.score) || 0;
       vb = (b.target_middle_school && b.target_middle_school.score) || 0;
@@ -1491,9 +1602,12 @@ function renderTableAndMap() {
     const sch = c.target_middle_school || { name: '交大附中附属嘉定德富中学', rate_26: '25.4%', public_rank: 8 };
     const pri = c.target_primary_school || {};
     const mInfo = c.metro || { station_name: '嘉定新城', distance_m: 500, walk_time_min: 7 };
+    const rp = c.transit_renmin_sq || { duration_min: 44, distance_km: 29.5, fare_yuan: 6, driving_time_min: 38, driving_dist_km: 30.8 };
+    const chj = c.transit_caohejing || { duration_min: 54, distance_km: 30.5, fare_yuan: 6, driving_time_min: 42, driving_dist_km: 32.5 };
     const layout0 = (c.layouts && c.layouts[0]) || { usable_rate: '82%', price_wan: 320 };
     const layout1 = (c.layouts && c.layouts[1]) || { usable_rate: '84%', price_wan: 420 };
     const userNote = STATE.userNotes[c.id] || '';
+    const keLinks = getKeLinks(c);
 
     // 得分徽章样式
     let scoreClass = 'score-high';
@@ -1521,9 +1635,22 @@ function renderTableAndMap() {
 
     tr.innerHTML = `
       <td class="sticky-col-1">
-        <div style="display:flex; align-items:center; gap:6px;">
-          <span>${c.name}</span>
-          <span style="font-size:10px; padding:1px 5px; border-radius:3px; background:var(--surface2); color:var(--text2);">${c.plate}</span>
+        <div style="display:flex; flex-direction:column; gap:2px;">
+          <div style="display:flex; align-items:center; gap:6px;">
+            <span style="font-weight:600;">${c.name}</span>
+            <span style="font-size:10px; padding:1px 5px; border-radius:3px; background:var(--surface2); color:var(--text2);">${c.plate}</span>
+          </div>
+          <div style="display:flex; align-items:center; gap:4px; font-size:10px; margin-top:1px;">
+            <a href="${keLinks.ershouUrl}" target="_blank" rel="noopener noreferrer" style="color:#3072f6; text-decoration:none; display:inline-flex; align-items:center; gap:2px; font-weight:600;" onclick="event.stopPropagation()" title="在贝壳找房查看 ${c.name} 真实在售二手房">
+              <span>🏠 贝壳在售</span>
+              <span style="font-size:9px;">↗</span>
+            </a>
+            <span style="color:var(--border);">|</span>
+            <a href="${keLinks.xiaoquUrl}" target="_blank" rel="noopener noreferrer" style="color:var(--text-muted); text-decoration:none; display:inline-flex; align-items:center; gap:2px;" onclick="event.stopPropagation()" title="在贝壳找房查看 ${c.name} 小区百科与成交行情">
+              <span>小区主页</span>
+              <span style="font-size:9px;">↗</span>
+            </a>
+          </div>
         </div>
       </td>
       <td class="sticky-col-2">
@@ -1544,6 +1671,30 @@ function renderTableAndMap() {
       <td>
         <div style="font-size:11px;">
           <b>${mInfo.station_name}</b> · ${mInfo.distance_m}m (${mInfo.walk_time_min}分)
+        </div>
+      </td>
+      <td>
+        <div style="font-size:11px; line-height:1.35;" title="🚇 地铁路线: ${rp.route || ''}\n🚗 自驾通道: 约${rp.driving_time_min}分钟 (${rp.driving_dist_km}km, ${rp.driving_route || ''})">
+          <div style="font-weight:700; color:var(--text);">
+            <span>${rp.duration_min}分</span>
+            <span style="color:var(--text-muted); font-size:10px; font-weight:400;">· ${rp.distance_km}km</span>
+          </div>
+          <div style="font-size:10px; color:var(--text2); display:flex; gap:4px; margin-top:2px;">
+            <span style="background:var(--surface2); padding:0 3px; border-radius:2px;">🚗 ${rp.driving_time_min}分</span>
+            <span style="color:var(--text-muted);">¥${rp.fare_yuan}</span>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div style="font-size:11px; line-height:1.35;" title="🚇 地铁路线: ${chj.route || ''}\n🚗 自驾通道: 约${chj.driving_time_min}分钟 (${chj.driving_dist_km}km, ${chj.driving_route || ''})">
+          <div style="font-weight:700; color:var(--text);">
+            <span>${chj.duration_min}分</span>
+            <span style="color:var(--text-muted); font-size:10px; font-weight:400;">· ${chj.distance_km}km</span>
+          </div>
+          <div style="font-size:10px; color:var(--text2); display:flex; gap:4px; margin-top:2px;">
+            <span style="background:var(--surface2); padding:0 3px; border-radius:2px;">🚗 ${chj.driving_time_min}分</span>
+            <span style="color:var(--text-muted);">¥${chj.fare_yuan}</span>
+          </div>
         </div>
       </td>
       <td>
@@ -1579,7 +1730,13 @@ function renderTableAndMap() {
           onchange="saveNote('${c.id}', this.value)"/>
       </td>
       <td>
-        <button class="icon-tool-btn" style="padding:4px 10px; font-weight:600; color:var(--accent); border-color:var(--accent); background:var(--accent-glow);" onclick="event.stopPropagation(); openDetailDrawer('${c.id}')" title="双击该行或点击展开全景档案">🔍 全景档案</button>
+        <div style="display:flex; align-items:center; gap:6px;">
+          <button class="icon-tool-btn" style="padding:4px 8px; font-weight:600; color:var(--accent); border-color:var(--accent); background:var(--accent-glow);" onclick="event.stopPropagation(); openDetailDrawer('${c.id}')" title="双击该行或点击展开全景档案">🔍 档案</button>
+          <a href="${keLinks.ershouUrl}" target="_blank" rel="noopener noreferrer" class="icon-tool-btn" style="padding:4px 8px; font-weight:600; color:#3072f6; border-color:rgba(48,114,246,0.35); background:rgba(48,114,246,0.08); text-decoration:none; display:inline-flex; align-items:center; gap:2px;" onclick="event.stopPropagation()" title="在贝壳找房查看 ${c.name} 在售真实二手房">
+            <span>🏠 贝壳在售</span>
+            <span style="font-size:9px;">↗</span>
+          </a>
+        </div>
       </td>
     `;
     tbody.appendChild(tr);
@@ -1605,6 +1762,12 @@ function renderTableAndMap() {
       mapMarkers.push(marker);
     }
   });
+
+  // 视口自适应：如果筛选了特定板块，平滑飞渡至该板块对应小区群
+  if (mapMarkers.length > 0 && STATE.activePlate && STATE.activePlate !== '全部') {
+    const group = L.featureGroup(mapMarkers);
+    mapInstance.fitBounds(group.getBounds().pad(0.15), { maxZoom: 15, animate: true, duration: 0.8 });
+  }
 }
 
 // ═══════════════════════════════════════════════════════
@@ -1629,6 +1792,7 @@ function selectCommunity(c, fromTable) {
     
     // 打开地图气泡
     const score = computeCommunityScore(c);
+    const keLinks = getKeLinks(c);
     const popupHtml = `
       <div style="font-size:12px; line-height:1.4;">
         <div style="font-weight:700; color:var(--accent); font-size:13px; margin-bottom:2px;">${c.name}</div>
@@ -1636,7 +1800,13 @@ function selectCommunity(c, fromTable) {
         <div style="margin-bottom:6px; font-size:11px; color:var(--text2);">
           建面单价: <b>${c.avg_price_wan || 4.2}w/㎡</b> · 建成年份: ${c.built_year || 2012}年
         </div>
-        <button class="gate-btn" style="padding:4px 8px; font-size:11px; width:100%; border-radius:4px;" onclick="openDetailDrawer('${c.id}')">🔍 查看全景决策档案与户型图</button>
+        <div style="display:flex; gap:6px; margin-top:6px;">
+          <button class="gate-btn" style="padding:4px 8px; font-size:11px; flex:1; border-radius:4px;" onclick="openDetailDrawer('${c.id}')">🔍 全景档案</button>
+          <a href="${keLinks.ershouUrl}" target="_blank" rel="noopener noreferrer" class="gate-btn" style="padding:4px 8px; font-size:11px; flex:1; border-radius:4px; background:#3072f6; color:#ffffff; text-decoration:none; display:inline-flex; align-items:center; justify-content:center; gap:3px;">
+            <span>🏠 贝壳在售</span>
+            <span>↗</span>
+          </a>
+        </div>
       </div>
     `;
     L.popup({ offset: [0, -10] })
@@ -1724,9 +1894,23 @@ function sortBy(key) {
     STATE.sortAsc = !STATE.sortAsc;
   } else {
     STATE.sortKey = key;
-    STATE.sortAsc = false;
+    // 耗时与距离类指标，默认升序（耗时越少、距离越近越优）
+    STATE.sortAsc = (key === 'metro_dist' || key === 'renmin_sq_time' || key === 'caohejing_time');
   }
-  document.getElementById('current-sort-label').innerText = `${key} ${STATE.sortAsc ? '升序' : '倒序'}`;
+  const sortLabels = {
+    'total_score': '综合得分',
+    'name': '小区名称',
+    'school_score': '双学区实力',
+    'metro_dist': '地铁步行距离',
+    'renmin_sq_time': '🏛️ 人民广场通勤耗时',
+    'caohejing_time': '💼 漕河泾产业通勤耗时',
+    'usable_rate': '实测得房率',
+    'noise': '高架噪音状态',
+    'avg_price': '挂牌均价',
+    'built_year': '房龄建成年份'
+  };
+  const labelText = sortLabels[key] || key;
+  document.getElementById('current-sort-label').innerText = `${labelText} ${STATE.sortAsc ? '升序(优/近)' : '倒序(高/远)'}`;
   renderTableAndMap();
 }
 
@@ -1806,6 +1990,9 @@ function openDetailDrawer(id) {
   const noise = c.noise_analysis || {};
   const ne = c.noise_evaluation || {};
   const mInfo = c.metro || {};
+  const rp = c.transit_renmin_sq || { duration_min: 44, total_commute_min: 47, distance_km: 29.5, fare_yuan: 6, driving_time_min: 38, driving_dist_km: 30.8, route: '11号线 -> 14号线' };
+  const chj = c.transit_caohejing || { duration_min: 54, total_commute_min: 57, distance_km: 30.5, fare_yuan: 6, driving_time_min: 42, driving_dist_km: 32.5, route: '11号线 -> 15号线' };
+  const keLinks = getKeLinks(c);
 
   // 基础档案与配套
   const metaHtml = `
@@ -1822,6 +2009,18 @@ function openDetailDrawer(id) {
         <span>物业费: <b>${c.property_fee || '2.8元/㎡'}</b></span>
       </div>
       ${c.phase_comparison ? `<div style="margin-top:6px; font-size:11px; color:var(--gold); line-height:1.4;">${c.phase_comparison}</div>` : ''}
+
+      <!-- 贝壳找房权威直达通廊 -->
+      <div style="margin-top:10px; padding-top:10px; border-top:1px dashed var(--border); display:flex; gap:10px; flex-wrap:wrap;">
+        <a href="${keLinks.ershouUrl}" target="_blank" rel="noopener noreferrer" style="flex:1; min-width:180px; display:inline-flex; align-items:center; justify-content:center; gap:6px; background:#3072f6; color:#ffffff; font-weight:700; font-size:12px; padding:8px 14px; border-radius:6px; text-decoration:none; box-shadow:0 2px 6px rgba(48,114,246,0.25); transition:all 0.2s;" onmouseover="this.style.opacity='0.9'" onmouseout="this.style.opacity='1'">
+          <span>🏠 贝壳在售二手房 (实时房源)</span>
+          <span style="font-size:11px;">↗</span>
+        </a>
+        <a href="${keLinks.xiaoquUrl}" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; justify-content:center; gap:6px; background:var(--surface); color:var(--text); border:1px solid var(--border); font-weight:600; font-size:12px; padding:8px 14px; border-radius:6px; text-decoration:none; transition:all 0.2s;" onmouseover="this.style.borderColor='var(--accent)'" onmouseout="this.style.borderColor='var(--border)'">
+          <span>📖 贝壳小区主页与历史成交</span>
+          <span style="font-size:11px;">↗</span>
+        </a>
+      </div>
     </div>
 
     <!-- ═══════════════════════════════════════════════════════
@@ -1902,6 +2101,77 @@ function openDetailDrawer(id) {
       <div class="noise-guide-box">
         <b>🛡️ 专家实勘避坑与选房指引：</b><br>
         ${ne.selection_guide || (noise.selection_guide || '该小区声学环境优良，常规选房注意避开朝向主干道路段即可。')}
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════
+         🚆 双核心通勤实测看板 (市中心·人民广场 vs 产业办公·漕河泾)
+         ═══════════════════════════════════════════════════════ -->
+    <div style="padding:12px 14px; border-radius:8px; background:var(--surface2); border:1px solid var(--border); margin-bottom:12px; font-size:12px;">
+      <div style="font-weight:700; margin-bottom:8px; display:flex; justify-content:space-between; align-items:center;">
+        <span>🚆 双核心通勤实测看板 (市区与高薪产业时空矩阵)</span>
+        <span style="font-size:11px; color:var(--text-muted);">门到门耗时含步行至地铁站</span>
+      </div>
+
+      <div class="commute-card-grid">
+        <!-- 1. 人民广场卡片 -->
+        <div class="commute-card-item">
+          <div class="commute-card-header">
+            <span style="font-weight:700; color:var(--text);">🏛️ 上海市中心 · 人民广场</span>
+            <span class="commute-meta-badge ${rp.duration_min <= 35 ? 'commute-badge-green' : (rp.duration_min <= 48 ? 'commute-badge-green' : (rp.duration_min <= 60 ? 'commute-badge-yellow' : 'commute-badge-orange'))}">
+              ${rp.duration_min <= 35 ? '🟢 35分黄金极速圈' : (rp.duration_min <= 48 ? '🟢 45分舒适直达圈' : (rp.duration_min <= 60 ? '🟡 1小时都市圈' : '🟠 70分+远郊接驳'))}
+            </span>
+          </div>
+          <div class="commute-time-hero">
+            <span class="big-time">${rp.duration_min}</span>
+            <span style="font-size:12px; font-weight:600; color:var(--text);">分钟地铁</span>
+            <span style="color:var(--text-muted); font-size:11px;">(门到门约 ${rp.total_commute_min || (rp.duration_min + (mInfo.walk_time_min||5))}分 · ${rp.distance_km}km)</span>
+          </div>
+          <div class="commute-route-desc">
+            <b>🚇 推荐路线:</b> ${rp.route} · 单程 <b>¥${rp.fare_yuan}</b>
+          </div>
+          <div class="commute-drive-info">
+            <span>🚗 自驾约 <b>${rp.driving_time_min}分钟</b> (${rp.driving_dist_km}km)</span>
+            <span style="color:var(--text-muted); font-size:10px;">${rp.driving_route || '高架直达'}</span>
+          </div>
+        </div>
+
+        <!-- 2. 漕河泾开发区卡片 -->
+        <div class="commute-card-item">
+          <div class="commute-card-header">
+            <span style="font-weight:700; color:var(--text);">💼 核心产业办公 · 漕河泾开发区</span>
+            <span class="commute-meta-badge ${chj.duration_min <= 38 ? 'commute-badge-green' : (chj.duration_min <= 50 ? 'commute-badge-green' : (chj.duration_min <= 65 ? 'commute-badge-yellow' : 'commute-badge-orange'))}">
+              ${chj.duration_min <= 38 ? '🟢 35分产业极速高地' : (chj.duration_min <= 50 ? '🟢 45分大厂极速圈' : (chj.duration_min <= 65 ? '🟡 1小时产业辐射圈' : '🟠 75分+长距通勤'))}
+            </span>
+          </div>
+          <div class="commute-time-hero">
+            <span class="big-time">${chj.duration_min}</span>
+            <span style="font-size:12px; font-weight:600; color:var(--text);">分钟地铁</span>
+            <span style="color:var(--text-muted); font-size:11px;">(门到门约 ${chj.total_commute_min || (chj.duration_min + (mInfo.walk_time_min||5))}分 · ${chj.distance_km}km)</span>
+          </div>
+          <div class="commute-route-desc">
+            <b>🚇 推荐路线:</b> ${chj.route} · 单程 <b>¥${chj.fare_yuan}</b>
+          </div>
+          <div class="commute-drive-info">
+            <span>🚗 自驾约 <b>${chj.driving_time_min}分钟</b> (${chj.driving_dist_km}km)</span>
+            <span style="color:var(--text-muted); font-size:10px;">${chj.driving_route || '嘉闵高架'}</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 通勤避坑锦囊 -->
+      <div style="margin-top:8px; padding:7px 10px; background:rgba(59, 130, 246, 0.08); border-left:3px solid var(--accent); border-radius:4px; font-size:11px; color:var(--text); line-height:1.45;">
+        💡 <b>通勤实勘指引</b>: 
+        ${c.plate === '真新' ? '紧贴普陀市区，13号线/中环双轴赋能，至人广与漕河泾均在35分钟黄金极速通勤圈内！' :
+          c.plate === '江桥' ? '依托13/14号线双轨与嘉闵高架大动脉，自驾至漕河泾仅需25分钟，轨交40分钟直抵，属于大厂产业辐射核心第一梯队！' :
+          c.plate === '南翔' ? '11号线直连徐家汇并可便捷换乘14/15号线，早高峰陈翔公路/南翔站进站客流较大，建议提早10分钟错峰或优先选择嘉闵高架自驾。' :
+          c.plate === '嘉定新城' ? '11号线主支线枢纽大站，早高峰进站有座率较高；到人广44分、漕河泾54分，自驾走胜辛南路接驳嘉闵高架约42分钟直达。' :
+          c.plate === '马陆' ? '11号线嘉定段南门户，马陆站直通真如换乘15号线至漕河泾约51分钟，自驾走嘉闵高架约38分钟，兼具学区、宜居与通勤性价比。' :
+          c.plate === '安亭' ? '11号线支线需在嘉定新城站同台或贯通运行，地铁至市区/漕河泾需1小时以上，建议有自驾条件的家庭走京沪高速转嘉闵高架(约40-45分钟)。' :
+          c.plate === '徐行' ? '无直达地铁站，通常需由公交/班车接驳至11号线嘉定北站(约15-18分钟)，市区通勤门到门需预留70-85分钟，自驾走S5沪嘉高速约52分钟。' :
+          c.plate === '外冈' ? '无直达地铁站，门口有公交直达11号线安亭站/嘉定西站(约18-20分钟)，门到门至市区需预留80分钟以上，自驾走京沪高速约55分钟。' :
+          '建议综合考量日常上班动线与早晚高峰自驾高架路况，根据家庭通勤权重科学选筹。'
+        }
       </div>
     </div>
 
@@ -1994,6 +2264,14 @@ function buildLayoutCardsHtml(layouts) {
         </div>
         <div class="layout-cons">
           <b>⚠️ 避坑提示:</b> ${l.cons || '进深开间比适中，摆放大家具需提前规划动线。'}
+        </div>
+
+        <div style="margin-top:10px; padding-top:8px; border-top:1px dashed var(--border); display:flex; justify-content:space-between; align-items:center;">
+          <span style="font-size:11px; color:var(--text-muted);">真实挂牌房源:</span>
+          <a href="https://sh.ke.com/ershoufang/rs${encodeURIComponent((STATE.currentDrawerCommunity ? STATE.currentDrawerCommunity.name : '') + ' ' + (l.category || ''))}/" target="_blank" rel="noopener noreferrer" style="font-size:11px; color:#3072f6; text-decoration:none; display:inline-flex; align-items:center; gap:3px; font-weight:600;" title="在贝壳找房检索该小区${l.category}真实在售房源">
+            <span>在贝壳搜索 ${l.category}在售房源</span>
+            <span style="font-size:10px;">↗</span>
+          </a>
         </div>
       </div>
     `;

@@ -59,8 +59,20 @@ def test_static_data_and_security():
     with open(JSON_PATH, "r", encoding="utf-8") as f:
         communities = json.load(f)
 
-    assert len(communities) == 140, f"❌ 小区总数异常: 期望 140，实际 {len(communities)}"
+    assert len(communities) == 162, f"❌ 小区总数异常: 期望 162，实际 {len(communities)}"
     
+    # 彻底杜绝虚假与错配楼盘（如松江同济晶萃、高校园区同济嘉园）
+    assert not any("同济晶萃" in c["name"] or "同济嘉园" in c["name"] for c in communities), "❌ 发现严重错配: 严禁录入松江洞泾楼盘同济晶萃或高校园区同济嘉园！"
+    
+    # 安亭新镇地理拓扑与地铁接驳站真实性硬断言
+    anting_xinzhen = [c for c in communities if "安亭新镇" in c["name"]]
+    assert len(anting_xinzhen) >= 5, "❌ 安亭新镇核心居住组团数量不足"
+    for ax in anting_xinzhen:
+        station_name = ax.get("metro", {}).get("station_name", "")
+        dist_m = ax.get("metro", {}).get("distance_m", 0)
+        assert station_name == "上海汽车城站", f"❌ 安亭新镇 {ax['name']} 接驳地铁站必须为上海汽车城站，实为: {station_name}"
+        assert 2500 <= dist_m <= 3500, f"❌ 安亭新镇 {ax['name']} 地铁距离失真(应为接驳距离2.5~3.5km)，实为: {dist_m}"
+
     # 3. 户型图与物理房间数严格匹配断言 (防止保利阳光苑三房误挂两房图)
     total_layouts = 0
     poly_checked = False
@@ -76,6 +88,11 @@ def test_static_data_and_security():
         sch = c.get("target_middle_school", {})
         assert "name" in sch and "rate_26" in sch, f"❌ {c['name']} 缺少初中中考市重率数据"
         assert sch.get("public_rank", 0) > 0, f"❌ {c['name']} 初中公办排名异常"
+
+        # 贝壳找房直达链接完整性
+        assert "ke_url" in c and "ke_ershou_url" in c, f"❌ {c['name']} 缺少贝壳找房链接"
+        assert "sh.ke.com" in c["ke_url"], f"❌ {c['name']} 贝壳主页域名异常"
+        assert "sh.ke.com" in c["ke_ershou_url"], f"❌ {c['name']} 贝壳二手房域名异常"
 
         # 多源立体噪音拓扑数据
         ne = c.get("noise_evaluation", {})
@@ -156,6 +173,27 @@ def test_static_data_and_security():
             assert mid["name"] == "同济大学附属嘉定实验中学", f"❌ 莱茵半岛初中真值错误: {mid['name']}"
 
     print(f"  ✅ 检查项 5 通过: 全量 {len(communities)} 个小区 2026 官方学区（小学+初中）真值 100% 严密对齐，中信泰富洪德中学、好世留云古猗校区、华润留云中小学等历史痛点全部对齐！")
+
+    # 检查项 6: 双核心通勤数据真值与科学得分核验
+    for c in communities:
+        assert "transit_renmin_sq" in c, f"❌ 小区 {c['name']} 缺失人民广场通勤数据"
+        assert "transit_caohejing" in c, f"❌ 小区 {c['name']} 缺失漕河泾通勤数据"
+        rp = c["transit_renmin_sq"]
+        chj = c["transit_caohejing"]
+        assert 20 <= rp.get("duration_min", 0) <= 90, f"❌ {c['name']} 人民广场耗时异常: {rp.get('duration_min')}"
+        assert 20 <= chj.get("duration_min", 0) <= 100, f"❌ {c['name']} 漕河泾耗时异常: {chj.get('duration_min')}"
+        assert rp.get("fare_yuan", 0) >= 3, f"❌ {c['name']} 人广票价异常"
+        assert chj.get("fare_yuan", 0) >= 3, f"❌ {c['name']} 漕河泾票价异常"
+        
+        # 交通维度得分合理性
+        dims = c.get("scoring", {}).get("dimensions", {})
+        assert 40 <= dims.get("transit", 0) <= 100, f"❌ {c['name']} 交通得分异常: {dims.get('transit')}"
+
+    # 板块梯度断言：真新/江桥交通分必须显著高于远郊徐行/外冈
+    zhenxin_transit = [c["scoring"]["dimensions"]["transit"] for c in communities if c["plate"] == "真新"]
+    xuhang_transit = [c["scoring"]["dimensions"]["transit"] for c in communities if c["plate"] == "徐行"]
+    assert sum(zhenxin_transit) / len(zhenxin_transit) > sum(xuhang_transit) / len(xuhang_transit) + 25, "❌ 真新交通通勤均分必须高于徐行25分以上"
+    print(f"  ✅ 检查项 6 通过: 全量 162 盘人民广场 & 漕河泾双核心通勤指标完整无误，真新/江桥与外冈/徐行形成明确合理的通勤梯队！")
 
 # ═══════════════════════════════════════════════════════
 # 模块二：Playwright 端到端全场景自动化回归测试
@@ -255,7 +293,12 @@ def test_browser_e2e():
             assert "107116374473" in img1_src, f"❌ 两房图片异常: {img1_src}"
             assert "107116447609" in img2_src, f"❌ 三房图片异常: {img2_src}"
             assert img1_src != img2_src, "❌ 两房和三房绝对不允许共用图片！"
-            print("  ✅ 场景 4 验证通过: 保利湖畔阳光苑工作台两房(2卧)与三房(3卧双卫)图片独立真实！")
+
+            # 贝壳找房直达通道校验
+            drawer_content = page.inner_text("#detail-drawer")
+            assert "贝壳在售二手房" in drawer_content, "❌ 工作台缺少贝壳在售二手房直达通道"
+            assert "贝壳小区主页" in drawer_content, "❌ 工作台缺少贝壳小区主页通道"
+            print("  ✅ 场景 4 验证通过: 保利湖畔阳光苑工作台两房(2卧)与三房(3卧双卫)图片独立真实，贝壳在售直达链接完整！")
 
             # 5. 全屏 Lightbox 原图与 ESC 退出测试
             print("  ▶ 正在验证全屏 1440P 原图 Lightbox 展开与 ESC 关闭...")
@@ -333,6 +376,38 @@ def test_browser_e2e():
             theme_select.select_option("theme-obsidian") # 恢复默认
             time.sleep(0.3)
             print("  ✅ 场景 9 验证通过: 黑曜终端 / 暖调纸本 / 极客蓝图 三套主题自适应切换无误！")
+
+            # 10. 双核心通勤列排序与看板核验
+            print("  ▶ 正在验证【市中心(人广)】与【产业核心(漕河泾)】排序列与详情看板...")
+            headers = page.inner_text("#main-grid thead")
+            assert "市中心(人广)" in headers, "❌ 表头未见【市中心(人广)】列"
+            assert "产业核心(漕河泾)" in headers, "❌ 表头未见【产业核心(漕河泾)】列"
+            
+            # 点击按人民广场耗时排序
+            page.click("th:has-text('市中心(人广)')")
+            time.sleep(0.6)
+            first_row_text = page.inner_text("tbody tr:first-child")
+            # 耗时由短到长升序，首行应为紧贴市区的丰庄/真新或江桥
+            assert any(p in first_row_text for p in ["真新", "江桥"]), f"❌ 按人广耗时升序后首行板块异常: {first_row_text}"
+            
+            # 点击按漕河泾耗时排序
+            page.click("th:has-text('产业核心(漕河泾)')")
+            time.sleep(0.6)
+            first_chj_row = page.inner_text("tbody tr:first-child")
+            assert any(p in first_chj_row for p in ["真新", "江桥"]), f"❌ 按漕河泾耗时升序后首行板块异常: {first_chj_row}"
+
+            # 打开第一个小区的详情看双核心看板
+            page.query_selector("tbody tr:first-child button").click()
+            time.sleep(0.8)
+            drawer_content = page.inner_text("#detail-drawer")
+            assert "双核心通勤实测看板" in drawer_content, "❌ 详情弹窗未展示双核心通勤实测看板"
+            assert "人民广场" in drawer_content, "❌ 看板缺失人民广场"
+            assert "漕河泾开发区" in drawer_content, "❌ 看板缺失漕河泾开发区"
+            assert "分钟地铁" in drawer_content, "❌ 看板缺失地铁耗时"
+            assert "自驾约" in drawer_content, "❌ 看板缺失自驾耗时"
+            page.keyboard.press("Escape")
+            time.sleep(0.4)
+            print("  ✅ 场景 10 验证通过: 表格双核心通勤排序列与全景实测看板验证完整！")
 
             browser.close()
             print("\n🎉 恭喜！阶段二所有端到端场景自动化测试 100% 全部通过！")

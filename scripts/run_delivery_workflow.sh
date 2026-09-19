@@ -18,36 +18,41 @@ echo "⏱  开始时间: $(date '+%Y-%m-%d %H:%M:%S')"
 echo "------------------------------------------------------------------------"
 
 # 步骤 1：户型图真值元数据库校验与生成
-echo "▶ [1/6] 执行户型图物理房间标尺元数据库构建 (build_floorplan_catalog.py)..."
+echo "▶ [1/7] 执行户型图物理房间标尺元数据库构建 (build_floorplan_catalog.py)..."
 python3 scripts/build_floorplan_catalog.py
-echo "  ✅ [1/6] 户型真值库构建完毕。"
+echo "  ✅ [1/7] 户型真值库构建完毕。"
 
-# 步骤 2：全量 140 个小区 288 套户型数据对齐与断言
-echo "▶ [2/6] 执行户型真实图片对齐与物理房间数硬断言 (refine_layouts_data.py)..."
+# 步骤 2：全量 162 个小区主力户型数据对齐与断言
+echo "▶ [2/7] 执行户型真实图片对齐与物理房间数硬断言 (refine_layouts_data.py)..."
 python3 scripts/refine_layouts_data.py
-echo "  ✅ [2/6] 户型档案物理真值对齐校验通过。"
+echo "  ✅ [2/7] 户型档案物理真值对齐校验通过。"
 
 # 步骤 3：2026 官方权威双学区（小学+初中）真值库对齐与划片考证
-echo "▶ [3/6] 执行 2026 官方学区权威真值对齐与断言 (align_school_ground_truth.py)..."
+echo "▶ [3/7] 执行 2026 官方学区权威真值对齐与断言 (align_school_ground_truth.py)..."
 python3 scripts/align_school_ground_truth.py
-echo "  ✅ [3/6] 官方学区权威真值库与 140 个小区全量对齐完成。"
+echo "  ✅ [3/7] 官方学区权威真值库与 162 个小区全量对齐完成。"
 
-# 步骤 4：多源立体交通噪音空间矢量拓扑计算
-echo "▶ [4/6] 执行多源立体交通噪音空间几何引擎 (spatial_noise_engine.py)..."
+# 步骤 4：双核心交通通勤数据引擎与科学加权重构 (人广 & 漕河泾)
+echo "▶ [4/7] 执行双核心交通通勤数据引擎 (enrich_commute_data.py)..."
+python3 scripts/enrich_commute_data.py
+echo "  ✅ [4/7] 人民广场与漕河泾开发区双核心真实通勤数据构建完毕。"
+
+# 步骤 5：多源立体交通噪音空间矢量拓扑计算
+echo "▶ [5/7] 执行多源立体交通噪音空间几何引擎 (spatial_noise_engine.py)..."
 python3 scripts/spatial_noise_engine.py
-echo "  ✅ [4/6] 轨交高架/胜辛路/高速多源立体噪音计算完毕。"
+echo "  ✅ [5/7] 轨交高架/胜辛路/高速多源立体噪音计算完毕。"
 
-# 步骤 5：只读全量离线数据集编译打包
-echo "▶ [5/6] 执行离线只读数据集打包编译 (build_dataset.py)..."
+# 步骤 6：只读全量离线数据集编译打包
+echo "▶ [6/7] 执行离线只读数据集打包编译 (build_dataset.py)..."
 python3 scripts/build_dataset.py
-echo "  ✅ [5/6] 离线 dataset.js 编译完成并生成。"
+echo "  ✅ [6/7] 离线 dataset.js 编译完成并生成。"
 
-# 步骤 6：全量回归自动化测试集（静态安全性 + 学区真值 + Playwright 浏览器端到端 9 大场景）
-echo "▶ [6/6] 执行交付前全量质量门禁与全场景自动化回归测试 (verify_all_regression.py)..."
+# 步骤 7：全量回归自动化测试集（静态安全性 + 学区真值 + 双核心通勤 + Playwright 浏览器端到端）
+echo "▶ [7/7] 执行交付前全量质量门禁与全场景自动化回归测试 (verify_all_regression.py)..."
 python3 scripts/verify_all_regression.py
-echo "  ✅ [6/6] 全量自动化回归测试集 100% 成功通过！"
+echo "  ✅ [7/7] 全量自动化回归测试集 100% 成功通过！"
 
 echo "------------------------------------------------------------------------"
-echo "🎉 恭喜！交付前全流程 6 大质量关卡全部通过，软件已处于可信交付状态！"
+echo "🎉 恭喜！交付前全流程 7 大质量关卡全部通过，软件已处于可信交付状态！"
 echo "⏱  完成时间: $(date '+%Y-%m-%d %H:%M:%S')"
 echo "========================================================================"

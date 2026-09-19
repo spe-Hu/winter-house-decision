@@ -28,6 +28,7 @@ METRO_STATIONS = [
     {"name": "金运路站", "line": "13号线首发站", "coords": [121.3188, 31.2415]},
     {"name": "安亭站", "line": "11号线安亭支线", "coords": [121.1628, 31.2932]},
     {"name": "上海汽车城站", "line": "11号线安亭支线", "coords": [121.1788, 31.2842]},
+    {"name": "昌吉东路站", "line": "11号线安亭支线", "coords": [121.2014, 31.2985]},
     {"name": "嘉定西站", "line": "11号线主线", "coords": [121.2338, 31.3811]},
     {"name": "嘉定北站", "line": "11号线主线终点", "coords": [121.2427, 31.3934]},
 ]
@@ -53,16 +54,27 @@ def compile_dataset():
         assert 121.0 <= lng <= 121.5, f"{c['name']} 经度越界: {lng}"
         assert 31.1 <= lat <= 31.6, f"{c['name']} 纬度越界: {lat}"
         
+        # 双核心通勤数据完整性校验 (人民广场 & 漕河泾)
+        assert "transit_renmin_sq" in c, f"{c['name']} 缺失市中心人民广场通勤档案"
+        assert "transit_caohejing" in c, f"{c['name']} 缺失产业核心漕河泾通勤档案"
+        rp = c["transit_renmin_sq"]
+        chj = c["transit_caohejing"]
+        assert 20 <= rp.get("duration_min", 0) <= 90, f"{c['name']} 人民广场通勤耗时异常: {rp.get('duration_min')}"
+        assert 20 <= chj.get("duration_min", 0) <= 100, f"{c['name']} 漕河泾通勤耗时异常: {chj.get('duration_min')}"
+        assert 10 <= rp.get("distance_km", 0) <= 60, f"{c['name']} 人民广场通勤距离异常: {rp.get('distance_km')}"
+        assert 10 <= chj.get("distance_km", 0) <= 60, f"{c['name']} 漕河泾通勤距离异常: {chj.get('distance_km')}"
+        assert "driving_time_min" in rp and "driving_time_min" in chj, f"{c['name']} 缺少自驾耗时数据"
+
         layouts = c.get("layouts", [])
         layout_count += len(layouts)
         valid_count += 1
 
-    print(f"✅ 校验通过: {valid_count} 个小区坐标合法，共包含 {layout_count} 个两房/三房户型档案")
+    print(f"✅ 校验通过: {valid_count} 个小区坐标与双核心通勤指标(人广+漕河泾)合法，共包含 {layout_count} 个两房/三房户型档案")
 
     # 生成 dataset.js
     header = f"""// 嘉定购房参考地图 — 离线运行数据集
-// 包含全域 35 个标杆小区、大盘期数精准拆解与两房/三房深度档案
-// 自动编译时间: 2026-09-18
+// 包含全域 162 个标杆小区档案、双核心通勤(人广+漕河泾)与两房/三房深度档案
+// 自动编译时间: 2026-09-19
 
 window.METRO_DATA = {json.dumps(METRO_STATIONS, ensure_ascii=False, indent=2)};
 
